@@ -7255,21 +7255,14 @@ a.th {
   right: 35%;
 }
 /* line 97, ../sass/app.scss */
-.header .brackets.edge {
-  width: 200px;
-  height: 150px;
-  top: 400px;
-  left: 10%;
-}
-/* line 102, ../sass/app.scss */
-.header .brackets.inspect {
-  width: 100px;
-  height: 100px;
-  top: -70px;
-  right: 10%;
+.header .brackets.plus {
+  width: 400px;
+  height: 300px;
+  top: 350px;
+  right: 5%;
 }
 
-/* line 109, ../sass/app.scss */
+/* line 104, ../sass/app.scss */
 .menu {
   height: 50px;
   width: 100%;
@@ -7278,17 +7271,17 @@ a.th {
   top: 0;
   z-index: 999;
 }
-/* line 115, ../sass/app.scss */
+/* line 110, ../sass/app.scss */
 .menu .sub-nav {
   font-size: 20px;
   color: black;
   background: white;
 }
-/* line 119, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 .menu .sub-nav .dd:not(.title) {
   padding: 20px;
 }
-/* line 124, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
 .menu .logoTop {
   position: absolute;
   top: -10px;
@@ -7296,23 +7289,23 @@ a.th {
   width: 60px;
 }
 
-/* line 132, ../sass/app.scss */
+/* line 127, ../sass/app.scss */
 [data-magellan-expedition] {
   background: none !important;
 }
 
-/* line 134, ../sass/app.scss */
+/* line 129, ../sass/app.scss */
 .title {
   font-family: "tektonpro-regular";
   font-size: 50px;
   margin: 3px 20px;
 }
-/* line 139, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 .title strong {
   color: red;
 }
 
-/* line 144, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 .main {
   background: #fff;
   position: relative;

@@ -94,14 +94,9 @@ $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !d
             top: -70px; right: 35%;
         }
         
-        &.edge {
-            width: 200px; height: 150px;
-            top: $header-height+px; left: 10%;
-        }
-        
-        &.inspect {
-            width: 100px; height: 100px;
-            top: -70px; right: 10%;
+        &.plus {
+            width: 400px; height: 300px;
+            top: ($header-height - 50)+px; right: 5%;
         }
     }
 }
