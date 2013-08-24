@@ -1,0 +1,148 @@
+
+
+//Foundation override
+$primary-color: rgb(255 , 0, 0);
+//Personnal variables
+$header-height: 400;
+$menu-height: 50;
+$menu-font-size: 20;
+
+$body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
+
+@font-face {
+	font-family: 'tektonpro-regular';
+	src: url('tektonpro-regular.eot');
+	src: local('☺'), url('tektonpro-regular.woff') format('woff'), url('tektonpro-regular.ttf') format('truetype'), url('tektonpro-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+    
+
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/components/global"; // *always required
+// @import "foundation/components/grid";
+
+//
+// Use this grid if you want to start using the new Foundation 5 grid early.
+// It will change breakpoints to min-width: 640px and 1024px.
+//
+// @import "foundation/components/grid-5";
+//
+
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+.header {
+    background: $secondary-color;
+    position: fixed; top: $menu-height+px; left: 0;
+    height: $header-height+px; width: 100%;
+    
+    &>div { position: relative; }
+    
+    h2 { 
+        padding-top: ($header-height - 50)px;
+    }
+    
+    .brackets {
+        position: absolute; 
+        
+        &.original {
+            width: 400px; height: 400px;
+            top: -70px; right: 35%;
+        }
+        
+        &.edge {
+            width: 200px; height: 150px;
+            top: $header-height+px; left: 10%;
+        }
+        
+        &.inspect {
+            width: 100px; height: 100px;
+            top: -70px; right: 10%;
+        }
+    }
+}
+
+.menu {
+    height: $menu-height+px; width: 100%;
+    background: white;
+    position: fixed; top: 0;
+    z-index: 999;
+    
+    .sub-nav {
+        font-size: $menu-font-size+px; color: black;
+        background: white;
+        
+        .dd:not(.title) {
+            padding: 20px;
+        }
+    }
+    
+    .logoTop {
+        position: absolute;
+        top: -10px;
+        right: 20px;
+        width: 60px;
+    }
+}
+
+[data-magellan-expedition] { background: none !important; }
+
+.title {
+    font-family: "tektonpro-regular";
+    font-size: 50px;
+    margin: 3px 20px;
+    
+    strong {
+        color: $primary-color;
+    }
+}
+
+.main {
+    background: #fff;
+    position: relative;
+    margin-top: ($header-height -$menu-height)+px;
+}

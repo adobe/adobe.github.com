@@ -1,0 +1,656 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tooltip",
+				"tooltipSettings"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"stroke",
+				"stroke-width"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"cost",
+				"costRepGroup"
+			],
+			[
+				"pri",
+				"primary-color"
+			],
+			[
+				"fee",
+				"feedStatus"
+			],
+			[
+				"feed",
+				"feedAction"
+			],
+			[
+				"feeds",
+				"feedsOut"
+			],
+			[
+				"fed",
+				"feedsOut"
+			],
+			[
+				"bucke",
+				"buckets"
+			],
+			[
+				"error",
+				"errorId"
+			],
+			[
+				"pr",
+				"primary-color"
+			],
+			[
+				"obj",
+				"object"
+			],
+			[
+				"ob",
+				"object"
+			],
+			[
+				"secon",
+				"secondary-color"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"do",
+				"dow	downto(0) { |n| .. }"
+			],
+			[
+				"col",
+				"column_names"
+			],
+			[
+				"in",
+				"integer"
+			],
+			[
+				"post",
+				"post"
+			],
+			[
+				"det",
+				"detailled_regex"
+			],
+			[
+				"aw",
+				"aws_detailled_tag"
+			],
+			[
+				"Usa",
+				"UsageType"
+			],
+			[
+				"Us",
+				"UsageQuantity"
+			],
+			[
+				"aws",
+				"aws_detailled_tag"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"ht",
+				"htmlLoaded"
+			],
+			[
+				"data",
+				"dataGet"
+			],
+			[
+				"my",
+				"mysql_error"
+			],
+			[
+				"imag",
+				"imageIn"
+			],
+			[
+				"out",
+				"outY"
+			],
+			[
+				"lis",
+				"listO"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"htm",
+				"html	html"
+			],
+			[
+				"img",
+				"imgUrl"
+			],
+			[
+				"parse",
+				"parseError"
+			],
+			[
+				"arg",
+				"argc"
+			],
+			[
+				"buck",
+				"bucket"
+			],
+			[
+				"a",
+				"array	$… = array (…)"
+			],
+			[
+				"listB",
+				"listB"
+			],
+			[
+				"print",
+				"print_r"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 15963,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Remove Package"
+			],
+			[
+				"PAc",
+				"Package Control: Install Package"
+			],
+			[
+				"Package in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/application.js",
+		"/Applications/MAMP/htdocs/adobe/github/githube-adobe.sublime-project",
+		"/Applications/MAMP/htdocs/adobe/adobe.sublime-project",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/think.js.coffee",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/public/ec2_test.json",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/public/ec2-hours_07-18_08-19.json",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/controllers/export/aws_raw_controller.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/controllers/welcome_controller.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/controllers/think_controller.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/innersvg.js",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.1/js/foundation/foundation.tooltips.js",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/controllers/settings_controller.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/settings/index.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/migrate/20130821151447_create_settings.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/settings.css.scss",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/application.css.scss",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/feed.js.coffee",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/seeds.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/test/fixtures/recorded_names.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/test/fixtures/feeds.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/test/fixtures/actions.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/test/fixtures/errors.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/test/fixtures/logs.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/test/fixtures/sources.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config/database.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/csv/dashboard_billing_inport/101210481631-aws-billing-detailed-line-items-with-resources-and-tags-2013-07.csv",
+		"/Applications/MAMP/htdocs/adobe/aws/S3/src/s3_manager.php",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/feed/new.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/feed/index.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/controllers/feed_controller.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-4.0.0/lib/active_record/connection_adapters/postgresql/database_statements.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-4.0.0/lib/active_record/connection_adapters/postgresql_adapter.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-redshift-adapter-0.9.1/lib/active_record/connection_adapters/redshift_adapter.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-4.0.0/lib/active_record/connection_adapters/statement_pool.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/pg-0.16.0/lib/pg/constants.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/pg-0.16.0/lib/pg/exceptions.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/pg-0.16.0/lib/pg/result.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/pg-0.16.0/lib/pg/connection.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/pg-0.16.0/lib/pg.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/migrate/20130813215245_create_feeds.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/migrate/20130813215011_create_actions.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/migrate/20130813215855_create_logs.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/migrate/20130813215809_create_error.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/migrate/20130813214700_create_sources.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/migrate/20130813214620_create_statuses.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config/initializers/change_primary_key_datatype.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/schema.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-redshift-adapter-0.9.1/lib/activerecord_redshift_adapter.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/activerecord-redshift-adapter-0.9.1/lib/activerecord_redshift_adapter/version.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/init.js.coffee",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/application.js.coffee",
+		"/Users/chouard/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/chouard/Library/Application Support/Sublime Text 2/Packages/User/CoffeeScript.sublime-settings",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/test/fixtures/statuses.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/Gemfile",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/feed.css.scss",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/db/migrate/20130726155349_create_aws_raw_costs.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/main.css.scss",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/import/aws_s3/objectDet.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/import/aws_s3/bucketObjList.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/controllers/import/aws_s3_controller.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/import/aws_s3/bucketsList.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/models/log.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/models/error.rb",
+		"/Users/chouard/.ssh/config",
+		"/private/etc/hosts",
+		"/Users/chouard/minecloud-project/minecloud-ami/build-ami.py",
+		"/Users/chouard/.bash_profile",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/models/aws_raw_cost.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/ruby test/app/models/post.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/ruby test/app/models/comment.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/feed.js.coffee 2",
+		"/Applications/MAMP/htdocs/adobe/billing/script_redshift.sql",
+		"/Applications/MAMP/htdocs/adobe/billing/query.sql",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/Applications/MAMP/htdocs/ClientsKeeweb/erdf_smart_grids/stylesheets/styles.css",
+		"/Applications/MAMP/htdocs/ClientsKeeweb/erdf_smart_grids/index.html",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/application/_base.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/application.css",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/feed.js.coffee 2",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.1/scss/foundation/components/_top-bar.scss",
+		"/Applications/MAMP/htdocs/ClientsKeeweb/MyBandMarketv2/betaGit/js/flip.js",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config/environments/production.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/awsavant.sublime-project",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/welcome/start.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/welcome/index.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config/compass.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/images/usage.svg",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/images/bills.svg",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/helpers/import/aws_s3_helper.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/import/aws_s3.js.coffee",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/test/fixtures/aws_raw_costs.yml",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/images/untitled",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config/environments/development.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config/application.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/main.css",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/public/assets/main.css",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config.ru",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/screen.css.scss",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/print.css.scss",
+		"/Applications/MAMP/htdocs/adobe/billing/ruby test/app/views/posts/index.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/prout.js",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/javascripts/feed.js",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config/environment.rb",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/application.scss",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.0.9/scss/foundation/components/_top-bar.scss",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.1/scss/foundation.scss",
+		"/Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.1/templates/project/scss/app.scss",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/assets/stylesheets/application.sass",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/config/initializers/aws.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/application/_header.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/import/aws_s3/bucket.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/import/aws_s3/buckets.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/import_csv.rb",
+		"/Applications/MAMP/htdocs/adobe/splunk_wiki/map_splunk.svg",
+		"/Applications/MAMP/htdocs/adobe/splunk_wiki/index.html",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/import/aws_s3/_base.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/controllers/export/aws_raw_cost_controller.rb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/layouts/application.html.erb",
+		"/Users/chouard/mac_replace_icons.sh",
+		"/Applications/Sublime Text 2.app/Contents/Resources/Sublime Text 2.icns",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/export/aws_raw/_base.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/export/aws_raw_cost/index.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/views/export/aws_raw_cost/_raw.html.erb",
+		"/Applications/MAMP/htdocs/adobe/billing/awsavant.sublime-workspace",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/awsavant.sublime-project",
+		"/Applications/MAMP/htdocs/adobe/billing/AWSavant/app/controllers/export_controller.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#",
+			" #",
+			"    	)",
+			"sum",
+			"sumCost",
+			"$scope.Math",
+			".Math",
+			"Math",
+			"sumCost",
+			"ec2_run_daily",
+			"as",
+			"aws_account_names",
+			"Day",
+			"json",
+			"source: ",
+			"source:",
+			"so",
+			"SO",
+			"so",
+			"SO",
+			"so",
+			"source: ",
+			"nt:",
+			"\n\n	",
+			" => '",
+			"' => :",
+			"> '",
+			"' =",
+			"'\n",
+			"costPermont",
+			",",
+			"info",
+			"replace",
+			"selector",
+			"tipTemplate",
+			"tooltip",
+			"parsedFeed",
+			"data.",
+			"\"]",
+			"parsedFeed[\"",
+			"use_insert_returning",
+			"returning",
+			"sql_for_insert",
+			"RETURNING",
+			"insert_sql",
+			"use_insert_returning",
+			"insert_sql",
+			"insert",
+			"return",
+			"returning",
+			"use_insert_returning?",
+			"use_insert_returning",
+			"returning",
+			"supports_insert_with_returning",
+			"RETURNING",
+			"TRIGGER",
+			"isSelec",
+			"$filter",
+			"340",
+			"monthlyCostChart",
+			"costRepGroup",
+			"sumCost",
+			"color",
+			"stroke",
+			"fill",
+			"dateDimension",
+			"reduceSum",
+			"moveChart",
+			"VolumeChart",
+			"volumeChart",
+			"moveMonths",
+			"moveChart",
+			"WHERE",
+			"all",
+			"6",
+			"data",
+			">\n",
+			"\"",
+			"status",
+			"actProg",
+			"addObject",
+			"apply",
+			"box",
+			"fadeIn",
+			"example",
+			"Bt",
+			"selBu",
+			"\n			              ",
+			"\n		",
+			"\n			              ",
+			"addObject",
+			"clickLinks",
+			"null",
+			">\n",
+			"ng",
+			"{}",
+			"->\n",
+			"buckets",
+			"s3",
+			"svg",
+			"nbImport",
+			"apply",
+			"appply",
+			"import_csv",
+			"e)",
+			"e",
+			"null",
+			"infos",
+			"text",
+			"infos",
+			"strings",
+			"details",
+			">\n",
+			"h3",
+			"'></",
+			"()",
+			"!\")",
+			"	",
+			"section",
+			"primary",
+			"000",
+			"topbar-bg",
+			"background",
+			"hover",
+			"em-base",
+			"48em",
+			"base",
+			"hover-lightness"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"aws_raw_detailled_line_tag",
+			"aws_raw_detailled"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 15963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1044,
+								1044
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/MAMP/htdocs/adobe/billing/awsavant.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true
+}
