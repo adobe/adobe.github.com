@@ -2046,7 +2046,7 @@ p aside {
 /* Default header styles */
 /* line 181, ../../../../../../Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.1/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Cambria, "Times New Roman", Times, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -7226,7 +7226,7 @@ a.th {
   max-width: 800px;
 }
 
-/* line 78, ../sass/app.scss */
+/* line 80, ../sass/app.scss */
 .header {
   background: #e9e9e9;
   position: fixed;
@@ -7234,35 +7234,81 @@ a.th {
   left: 0;
   height: 400px;
   width: 100%;
+  overflow: hidden;
 }
-/* line 83, ../sass/app.scss */
+/* line 86, ../sass/app.scss */
 .header > div {
   position: relative;
 }
-/* line 85, ../sass/app.scss */
-.header h2 {
-  padding-top: 350 px;
+/* line 88, ../sass/app.scss */
+.header h3 {
+  padding-top: 150px;
+  margin: 0;
 }
-/* line 89, ../sass/app.scss */
-.header .brackets {
+/* line 93, ../sass/app.scss */
+.header .details {
+  color: #888;
+}
+/* line 96, ../sass/app.scss */
+.header .details a {
+  font-size: 13px;
+}
+/* line 101, ../sass/app.scss */
+.header .icon {
   position: absolute;
 }
-/* line 92, ../sass/app.scss */
-.header .brackets.original {
+/* line 104, ../sass/app.scss */
+.header .icon.original {
   width: 400px;
   height: 400px;
   top: -70px;
   right: 35%;
 }
-/* line 97, ../sass/app.scss */
-.header .brackets.plus {
+/* line 109, ../sass/app.scss */
+.header .icon.plus {
   width: 400px;
   height: 300px;
   top: 350px;
   right: 5%;
 }
 
-/* line 104, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
+.header_org {
+  background: #e9e9e9;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 121, ../sass/app.scss */
+.header_org > div {
+  position: relative;
+}
+/* line 123, ../sass/app.scss */
+.header_org h3 {
+  padding-top: 150px;
+  margin: 0;
+}
+/* line 128, ../sass/app.scss */
+.header_org .details {
+  color: #888;
+}
+/* line 131, ../sass/app.scss */
+.header_org .details a {
+  font-size: 13px;
+}
+/* line 136, ../sass/app.scss */
+.header_org .icon {
+  position: absolute;
+}
+/* line 139, ../sass/app.scss */
+.header_org .icon.original {
+  width: 400px;
+  height: 400px;
+  top: 10px;
+  right: 25%;
+}
+
+/* line 146, ../sass/app.scss */
 .menu {
   height: 50px;
   width: 100%;
@@ -7271,17 +7317,38 @@ a.th {
   top: 0;
   z-index: 999;
 }
-/* line 110, ../sass/app.scss */
+/* line 152, ../sass/app.scss */
 .menu .sub-nav {
   font-size: 20px;
   color: black;
   background: white;
 }
-/* line 114, ../sass/app.scss */
-.menu .sub-nav .dd:not(.title) {
-  padding: 20px;
+/* line 156, ../sass/app.scss */
+.menu .sub-nav dd:not(.title) {
+  padding: 0px 10px;
 }
-/* line 119, ../sass/app.scss */
+/* line 159, ../sass/app.scss */
+.menu .sub-nav dd:not(.title) a {
+  color: black;
+  font-size: 15px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/* line 165, ../sass/app.scss */
+.menu .sub-nav dd:not(.title).active a, .menu .sub-nav dd:not(.title):hover a {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  font-weight: normal;
+  color: red;
+  background: none;
+  border-bottom: red 3px solid;
+  padding: 0.1875em 0;
+  cursor: default;
+}
+/* line 175, ../sass/app.scss */
 .menu .logoTop {
   position: absolute;
   top: -10px;
@@ -7289,25 +7356,67 @@ a.th {
   width: 60px;
 }
 
-/* line 127, ../sass/app.scss */
+/* line 183, ../sass/app.scss */
 [data-magellan-expedition] {
   background: none !important;
 }
 
-/* line 129, ../sass/app.scss */
+/* line 185, ../sass/app.scss */
 .title {
   font-family: "tektonpro-regular";
-  font-size: 50px;
-  margin: 3px 20px;
+  font-size: 55px;
+  margin: 3px 30px 3px 20px;
 }
-/* line 134, ../sass/app.scss */
+/* line 190, ../sass/app.scss */
 .title strong {
   color: red;
 }
 
-/* line 139, ../sass/app.scss */
+/* line 195, ../sass/app.scss */
 .main {
   background: #fff;
   position: relative;
+  margin-top: 0;
+  padding-top: 30px;
+}
+/* line 199, ../sass/app.scss */
+.main.top {
   margin-top: 350px;
+}
+/* line 202, ../sass/app.scss */
+.main h2 {
+  font-weight: normal;
+}
+/* line 206, ../sass/app.scss */
+.main .project {
+  font-size: 14px;
+}
+/* line 209, ../sass/app.scss */
+.main .project h1 {
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+/* line 214, ../sass/app.scss */
+.main .project p {
+  margin-bottom: 5px;
+}
+/* line 216, ../sass/app.scss */
+.main .project .language {
+  padding-left: 10px;
+  color: #666;
+}
+/* line 221, ../sass/app.scss */
+.main .project .more {
+  text-align: right;
+  border-bottom: 1px solid red;
+  margin-bottom: 25px;
+}
+
+/* For reseting magellan on top :) */
+/* line 230, ../sass/app.scss */
+.featured {
+  position: absolute;
+  top: 0;
+  margin-top: -350px;
+  display: block;
 }

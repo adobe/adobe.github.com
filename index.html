@@ -10,14 +10,7 @@
 
   
   <link rel="stylesheet" href="css/app.css">
-  
-
-  <script src="js/vendor/custom.modernizr.js"></script>
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/zepto.js"></script>
-  <script src="js/foundation/foundation.js"></script>
-  <script src="js/foundation/foundation.magellan.js"></script>
-  <script src="js/script.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -29,6 +22,7 @@
                     <div class="large-12 columns">
                         <dl class="sub-nav">
                             <dd class="title"><strong>Adobe</strong> Open Source</dd>
+                            <dd data-magellan-arrival="featured"><a href="#featured">Featured</a></dd>
                             <dd data-magellan-arrival="projects"><a href="#projects">Projects</a></dd>
                             <dd data-magellan-arrival="organisations"><a href="#organisations">Organisation</a></dd>
                         </dl>
@@ -42,17 +36,21 @@
 	</div>
 
 	<div class="header">
-        <div class="row">
+        <div class="row" id="text-header">
             <div class="large-12 columns">
-                <h2>Brackets</h2>
+                <h3>Brackets</h3>
+                <p class="details">Open-source code editor<br> built <em>with</em> the web <em>for</em> the web<br/>
+                <a href="">Learn more...</a>
+                </p>
             </div>
         </div>
         
-        <img class="brackets original" id="brackets" src="img/brackets_logo.svg" title="Brackets, code the web" />
-        <img class="brackets plus" id="brackets_plus" src="img/brackets_plus.svg" title="Adobe Edge Code & Inspect" />
+        <img class="icon original" id="icon1" src="img/brackets_logo.svg" title="Brackets, code the web" />
 	</div>
 
-	<div class="main">
+	<div class="main top">
+        <a name="featured" class="featured" data-magellan-destination="featured"></a>
+        
         <div class="row">
             
             <!-- --------------------------------------------------------------------------------------
@@ -61,192 +59,280 @@
             
             <div class="large-12 columns">
                 <a name="projects"></a>
-                <h3 data-magellan-destination="projects">Projects</h3>
+                <h2 data-magellan-destination="projects">Projects</h2>
     
                 <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 1</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 2</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 1</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 2</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 1</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 2</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 1</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 2</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 1</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                     <div class="large-6 columns">
-                        <div class="panel">
-                            <p>Projet 2</p>
-                        </div>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
+    
+                <!-- Grid Example -->
+                <div class="row">
+                    <div class="large-6 columns">
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
+                    </div>
+                    <div class="large-6 columns">
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
+                    </div>
+                </div>
+    
+                <!-- Grid Example -->
+                <div class="row">
+                    <div class="large-6 columns">
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
+                    </div>
+                    <div class="large-6 columns">
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="header_org">
+        <div class="row" id="text-header_org">
+            <div class="large-12 columns">
+                <h3>Photoshop</h3>
+                <p class="details">Stuff from the Adobe Photoshop team<br/>
+                <a href="">Learn more...</a>
+                </p>
+            </div>
+        </div>
+        
+        <img class="icon original" id="icon2" src="img/photoshop_logo.svg" title="Brackets, code the web" />
+    </div>
+    
+    <div class="main">
+        <div class="row">
+            <div class="large-12 columns">
             
             <!-- --------------------------------------------------------------------------------------
                                 Organisations
             --------------------------------------------------------------------------------------  -->
             
                 <a name="organisations"></a>
-                <h3 data-magellan-destination="organisations">Organisations</h3>
-        
+                <h2 data-magellan-destination="organisations">Organisations</h2>
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                      <p><a href="#" class="small button">Small Button</a></p>
-                      <p><a href="#" class="button">Medium Button</a></p>
-                      <p><a href="#" class="large button">Large Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
-                    
                     <div class="large-6 columns">
-                      <p><a href="#" class="small alert button">Small Alert Button</a></p>
-                      <p><a href="#" class="success button">Medium Success Button</a></p>
-                      <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
-        
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                      <p><a href="#" class="small button">Small Button</a></p>
-                      <p><a href="#" class="button">Medium Button</a></p>
-                      <p><a href="#" class="large button">Large Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
-                    
                     <div class="large-6 columns">
-                      <p><a href="#" class="small alert button">Small Alert Button</a></p>
-                      <p><a href="#" class="success button">Medium Success Button</a></p>
-                      <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
-        
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                      <p><a href="#" class="small button">Small Button</a></p>
-                      <p><a href="#" class="button">Medium Button</a></p>
-                      <p><a href="#" class="large button">Large Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
-                    
                     <div class="large-6 columns">
-                      <p><a href="#" class="small alert button">Small Alert Button</a></p>
-                      <p><a href="#" class="success button">Medium Success Button</a></p>
-                      <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
-        
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                      <p><a href="#" class="small button">Small Button</a></p>
-                      <p><a href="#" class="button">Medium Button</a></p>
-                      <p><a href="#" class="large button">Large Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
-                    
                     <div class="large-6 columns">
-                      <p><a href="#" class="small alert button">Small Alert Button</a></p>
-                      <p><a href="#" class="success button">Medium Success Button</a></p>
-                      <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
-            </div>
-        
+    
+                <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns">
-                      <p><a href="#" class="small button">Small Button</a></p>
-                      <p><a href="#" class="button">Medium Button</a></p>
-                      <p><a href="#" class="large button">Large Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
-                    
                     <div class="large-6 columns">
-                      <p><a href="#" class="small alert button">Small Alert Button</a></p>
-                      <p><a href="#" class="success button">Medium Success Button</a></p>
-                      <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="large-6 columns">
-                      <p><a href="#" class="small button">Small Button</a></p>
-                      <p><a href="#" class="button">Medium Button</a></p>
-                      <p><a href="#" class="large button">Large Button</a></p>
-                    </div>
-                    
-                    <div class="large-6 columns">
-                      <p><a href="#" class="small alert button">Small Alert Button</a></p>
-                      <p><a href="#" class="success button">Medium Success Button</a></p>
-                      <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="large-6 columns">
-                      <p><a href="#" class="small button">Small Button</a></p>
-                      <p><a href="#" class="button">Medium Button</a></p>
-                      <p><a href="#" class="large button">Large Button</a></p>
-                    </div>
-                    
-                    <div class="large-6 columns">
-                      <p><a href="#" class="small alert button">Small Alert Button</a></p>
-                      <p><a href="#" class="success button">Medium Success Button</a></p>
-                      <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="large-6 columns">
-                      <p><a href="#" class="small button">Small Button</a></p>
-                      <p><a href="#" class="button">Medium Button</a></p>
-                      <p><a href="#" class="large button">Large Button</a></p>
-                    </div>
-                    
-                    <div class="large-6 columns">
-                      <p><a href="#" class="small alert button">Small Alert Button</a></p>
-                      <p><a href="#" class="success button">Medium Success Button</a></p>
-                      <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+                        <section class="project">
+                            <h1>Crossbridge</h1>
+                            <p class="language">C++</p>
+                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
+                            <p class="more"><a href="">Learn more...</a></p>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
 	</div>
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
 
   <script>
   document.write('<script src=' +
@@ -285,10 +371,7 @@
 	<script src="js/foundation/foundation.tooltips.js"></script>
 	
 	<script src="js/foundation/foundation.topbar.js"></script>
-	
-  
-  <script>
-    $(document).foundation();
-  </script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>

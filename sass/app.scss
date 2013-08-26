@@ -7,8 +7,6 @@ $header-height: 400;
 $menu-height: 50;
 $menu-font-size: 20;
 
-$body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
-
 @font-face {
 	font-family: 'tektonpro-regular';
 	src: url('tektonpro-regular.eot');
@@ -16,6 +14,9 @@ $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !d
 	font-weight: normal;
 	font-style: normal;
 }
+
+$body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
+$header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
 
     
 
@@ -27,6 +28,7 @@ $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !d
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
+@import "compass/css3";
 
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
@@ -79,14 +81,24 @@ $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !d
     background: $secondary-color;
     position: fixed; top: $menu-height+px; left: 0;
     height: $header-height+px; width: 100%;
+    overflow: hidden;
     
     &>div { position: relative; }
     
-    h2 { 
-        padding-top: ($header-height - 50)px;
+    h3 { 
+        padding-top: 150px;
+        margin: 0;
     }
     
-    .brackets {
+    .details {
+        color: #888;
+        
+        a {
+            font-size: 13px;
+        }
+    }
+    
+    .icon {
         position: absolute; 
         
         &.original {
@@ -101,6 +113,36 @@ $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !d
     }
 }
 
+.header_org {
+    background: $secondary-color;
+    height: ($header-height - $menu-height)+px; 
+    overflow: hidden; position: relative;
+    
+    &>div { position: relative; }
+    
+    h3 { 
+        padding-top: 150px;
+        margin: 0;
+    }
+    
+    .details {
+        color: #888;
+        
+        a {
+            font-size: 13px;
+        }
+    }
+    
+    .icon {
+        position: absolute; 
+        
+        &.original {
+            width: 400px; height: 400px;
+            top: 10px; right:25%;
+        }
+    }
+}
+
 .menu {
     height: $menu-height+px; width: 100%;
     background: white;
@@ -111,8 +153,22 @@ $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !d
         font-size: $menu-font-size+px; color: black;
         background: white;
         
-        .dd:not(.title) {
-            padding: 20px;
+        dd:not(.title) {
+            padding: 0px 10px;
+        
+            a {
+                color: black;
+                font-size: 15px;
+                @include transition(all 0.1s);
+            }
+            
+            &.active a, &:hover a {
+                @include border-radius(0px);
+                font-weight: normal; color: red;
+                background: none; border-bottom: red 3px solid;
+                padding: 0.1875em 0;
+                cursor: default;
+            }
         }
     }
     
@@ -128,8 +184,8 @@ $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !d
 
 .title {
     font-family: "tektonpro-regular";
-    font-size: 50px;
-    margin: 3px 20px;
+    font-size: 55px;
+    margin: 3px 30px 3px 20px;
     
     strong {
         color: $primary-color;
@@ -139,5 +195,39 @@ $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !d
 .main {
     background: #fff;
     position: relative;
-    margin-top: ($header-height -$menu-height)+px;
+    margin-top: 0;
+    &.top { margin-top: ($header-height - $menu-height)+px; }
+    padding-top: 30px;
+    
+    h2 {
+        font-weight: normal;
+    }
+    
+    .project {
+        font-size: 14px;
+        
+        h1 {
+            font-size: 17px;
+            margin-bottom: 3px;
+        }
+        
+        p { margin-bottom: 5px; }
+        
+        .language {
+            padding-left: 10px;
+            color: #666;
+        }
+        
+        .more {
+            text-align:right;
+            border-bottom: 1px solid red;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+/* For reseting magellan on top :) */
+.featured {
+    position: absolute; top: 0;
+    margin-top: - ($header-height -$menu-height)+px; display: block;
 }
