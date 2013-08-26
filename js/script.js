@@ -3,7 +3,7 @@ $(function(){
     
     $(window).scroll(function () {
         topLogoOriginal = ( $(window).scrollTop()/3 ) - 70;
-        topLogoOriginal_org = ( ( $(window).scrollTop() - $(".header_org").position().top ) / 3 ) - 10 ;
+        topLogoOriginal_org = ( ( $(window).scrollTop() - $(".header_org").position().top + 350 ) / 2 ) - 10 ;
         console.info(topLogoOriginal_org);
         topText = - ( $(window).scrollTop() );
         $("#icon1").css({ top: topLogoOriginal });
