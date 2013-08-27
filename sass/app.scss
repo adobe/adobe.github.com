@@ -83,7 +83,13 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     height: $header-height+px; width: 100%;
     overflow: hidden;
     
-    &>div { position: relative; }
+    &>div {
+        position: relative; z-index: 999;
+        
+        h3, p {
+            background: $secondary-color;
+        }
+    }
     
     h3 { 
         padding-top: 150px;
@@ -98,22 +104,17 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         }
     }
     
-    .icon {
+    .logo {
         position: absolute; 
         
         &.original {
             width: 400px; height: 400px;
             top: -70px; right: 35%;
         }
-        
-        &.plus {
-            width: 400px; height: 300px;
-            top: ($header-height - 50)+px; right: 5%;
-        }
     }
 }
 
-.header_org {
+.header_inline {
     background: $secondary-color;
     height: ($header-height - $menu-height)+px; 
     overflow: hidden; position: relative;
@@ -133,12 +134,42 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         }
     }
     
-    .icon {
+    .logo {
         position: absolute; 
         
         &.original {
             width: 400px; height: 400px;
-            top: 10px; right:25%;
+            top: 10px; left:15%;
+        }
+    }
+}
+
+.footer {
+    background: $secondary-color;
+    height: ($header-height - $menu-height)+px; 
+    overflow: hidden; position: relative;
+    
+    &>div { position: relative; }
+    
+    h3 { 
+        padding-top: 150px;
+        margin: 0;
+    }
+    
+    .details {
+        color: #888;
+        
+        a {
+            font-size: 13px;
+        }
+    }
+    
+    .logo {
+        position: absolute; 
+        
+        &.original {
+            width: 400px; height: 400px;
+            bottom: 0px; right:25%;
         }
     }
 }
@@ -220,9 +251,12 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         
         .more {
             text-align:right;
-            border-bottom: 1px solid red;
             margin-bottom: 25px;
         }
+    }
+    
+    .clear {
+        clear: both;
     }
 }
 
