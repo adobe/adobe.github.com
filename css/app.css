@@ -7383,74 +7383,83 @@ a.th {
   cursor: default;
 }
 /* line 206, ../sass/app.scss */
-.menu .logoTop {
+.menu .wrapLogoTop {
   position: absolute;
   top: -10px;
   right: 20px;
-  width: 60px;
+  overflow: hidden;
+  height: 100px;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  transition: height 0.2s;
+}
+/* line 212, ../sass/app.scss */
+.menu .logoTop {
+  width: 45px;
 }
 
-/* line 214, ../sass/app.scss */
+/* line 217, ../sass/app.scss */
 [data-magellan-expedition] {
   background: none !important;
 }
 
-/* line 216, ../sass/app.scss */
+/* line 219, ../sass/app.scss */
 .title {
   font-family: "tektonpro-regular";
   font-size: 55px;
   margin: 3px 30px 3px 20px;
 }
-/* line 221, ../sass/app.scss */
+/* line 224, ../sass/app.scss */
 .title strong {
   color: red;
 }
 
-/* line 226, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 .main {
   background: #fff;
   position: relative;
   margin-top: 0;
   padding-top: 30px;
 }
-/* line 230, ../sass/app.scss */
+/* line 233, ../sass/app.scss */
 .main.top {
   margin-top: 350px;
 }
-/* line 233, ../sass/app.scss */
+/* line 236, ../sass/app.scss */
 .main h2 {
   font-weight: normal;
 }
-/* line 237, ../sass/app.scss */
+/* line 240, ../sass/app.scss */
 .main .project {
   font-size: 14px;
 }
-/* line 240, ../sass/app.scss */
+/* line 243, ../sass/app.scss */
 .main .project h1 {
   font-size: 17px;
   margin-bottom: 3px;
 }
-/* line 245, ../sass/app.scss */
+/* line 248, ../sass/app.scss */
 .main .project p {
   margin-bottom: 5px;
 }
-/* line 247, ../sass/app.scss */
+/* line 250, ../sass/app.scss */
 .main .project .language {
   padding-left: 10px;
   color: #666;
 }
-/* line 252, ../sass/app.scss */
+/* line 255, ../sass/app.scss */
 .main .project .more {
   text-align: right;
   margin-bottom: 25px;
 }
-/* line 258, ../sass/app.scss */
+/* line 261, ../sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 264, ../sass/app.scss */
+/* line 267, ../sass/app.scss */
 .featured {
   position: absolute;
   top: 0;
