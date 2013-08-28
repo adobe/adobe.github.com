@@ -70,7 +70,7 @@
                     <div class="large-6 columns" ng-repeat="project in projects.slice(projFirst, projLast) | orderBy:'-watchers_count'" ng-class-odd="'clear'">
                         <section class="project">
                             <h1>{{project.name}}</h1>
-                            <p class="language">{{project.language}}</p>
+                            <p class="language"><code ng-repeat="language in project.languages">{{language}}</code></p>
                             <p class="details">{{project.description}}</p>
                             <p class="stars">{{project.watchers_count}} stars</p>
                             <p class="more"><a href="">Learn more...</a></p>

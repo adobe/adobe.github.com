@@ -15,6 +15,8 @@ app.factory("GitRepo", function($resource) {
     return $resource("https://api.github.com/repos/adobe/:repo/:info", {owner: "@owner", languages: "@languages"})
 });
 
+//TODO : Manage offline project list when errors
+
 this.ProjectCtrl = function($scope, GitAdobe, GitRepo) {
     //Init display range
     $scope.projFirst = 0;
@@ -23,15 +25,31 @@ this.ProjectCtrl = function($scope, GitAdobe, GitRepo) {
     //Get all projects
     $scope.projects = GitAdobe.query({ type: "repos" }, function() {
         $($scope.projects).each(function(i) {
-            this.languages = GitRepo.query({ repo: this.name, info: "languages" }, function() {
-                console.info( $scope.projects[i].languages );
+            var actProj = $scope.projects[i];
+            $scope.projects.languages = {
+                $scope.projects.language: 0
+            };
+            
+            var request = $.ajax({
+                url: "https://api.github.com/repos/adobe/"+this.name+"/languages"
+            });
+            
+            request.done( function( repLang ) {
+                $scope.$apply( function () {
+                    var tempProj = 
+                    $scope.projects.languages = repLang;
+                    console.info( $scope.projects.languages );
+                });
+            });
+            
+            //If it fails, we use the main language only
+            request.fail( function ( jqXHR, textStatus ) {
+                $scope.$apply( function () {
+                    $scope.projects.languages = $scope.projects.language;
+                });
+                console.log("Language query failed for "+actProj.name+", error: "+textStatus, jqXHR);
             });
         });
-        
-        console.info( $scope.projects );
-    });
-    $scope.test = GitRepo.query({ repo: "brackets", info: "languages" }, function() {
-        console.info( $scope.test );
     });
 };
 
