@@ -239,6 +239,14 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     
     .project {
         font-size: 14px;
+        border-left: 3px $secondary-color solid;
+        @include transition(border-left 0.2s);
+        padding-left: 20px;
+        color: black;
+        
+        &:hover {
+            border-left: 3px $primary-color solid;
+        }
         
         h1 {
             font-size: 17px;
@@ -252,9 +260,24 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
             color: #666;
         }
         
+        .watchCount {
+            padding: 5px 10px;
+            float: right;
+            color: #666;
+        }
+        
+        .star {
+            float: right;
+            
+            img { width: 20px; }
+        }
+        
         .more {
             text-align:right;
             margin-bottom: 25px;
+            color: $primary-color;
+            
+            &:hover { color: darken($primary-color, 5%); }
         }
     }
     
@@ -262,6 +285,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         clear: both;
     }
 }
+
 
 /* For reseting magellan on top :) */
 .featured {

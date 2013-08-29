@@ -68,18 +68,33 @@
                 
                 <div class="row">
                     <div class="large-6 columns" ng-repeat="project in projects.slice(projFirst, projLast) | orderBy:'-watchers_count'" ng-class-odd="'clear'">
-                        <section class="project">
-                            <h1>{{project.name}}</h1>
-                            <p class="language"><code ng-repeat="language in project.languages">{{language}}</code></p>
-                            <p class="details">{{project.description}}</p>
-                            <p class="stars">{{project.watchers_count}} stars</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
+                        <a href="{{project | link}}" target="_blank">
+                            <section class="project">
+                                <div class="row">
+                                    <div class="large-6 columns">
+                                        <h1>{{project.name}}</h1>
+                                    </div>
+                                    <div class="large-6 columns">
+                                        <div class="star" ng-repeat="i in [0,1,2,3,4]">
+                                            <img ng-src="img/star_{{ { id: 4-i, value: project.watchers_count} | star}}.svg" />
+                                        </div>
+                                        
+                                        <div class="watchCount">{{project.watchers_count | niceNum}}</div>
+                                    </div>
+                                </div>
+                                <p class="language"><span ng-repeat="language in project.languages | orderBy:'-value'" ng-hide="Math.floor( language.value * 100 / project.languagesTotal ) < 10 ">{{language.name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
+                                <p class="details">{{project.description | shortenStr}}</p>
+                                <p class="more">Learn more...</p>
+                            </section>
+                        </a>
                     </div>
                 </div>
                     
                 <div class="row text-center">
-                    <button class="button" ng-click="projLast = 100">Show more...</button>
+                    <button class="button" ng-click="showHideProj()">
+                        <span ng-hide="projLast == 100">Show more...</span>
+                        <span ng-hide="projLast == 10">Show less...</span>
+                    </button>
                 </div>
             </div>
         </div>

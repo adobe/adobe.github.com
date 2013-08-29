@@ -5,19 +5,81 @@
 //Initialisation
 var app = angular.module("AdobeOpenSource", ["ngResource"])
 
+app.filter('star', function() {
+	return function(infos) {
+        switch(infos.id)
+        {
+        case 0:
+          state = (infos.value > 1) ? "on" : "off";
+          break;
+        case 1:
+          state = (infos.value > 5) ? "on" : "off";
+          break;
+        case 2:
+          state = (infos.value > 30) ? "on" : "off";
+          break;
+        case 3:
+          state = (infos.value > 100) ? "on" : "off";
+          break;
+        case 4:
+          state = (infos.value > 1000) ? "on" : "off";
+          break;
+        default:
+          state = "off";
+        }
+		return state;
+    };
+});
+
+app.filter('link', function() {
+	return function(project) {
+        return (project.homepage == "" || project.homepage == null) ? project.html_url : project.homepage;
+    };
+});
+
+app.filter('niceNum', function() {
+	return function (num) {
+		var niceNum = "";
+		var step = 1;
+        
+		while ( num > 1 ) {
+			rest = num % 1000;
+			
+			//Put it in a nice string
+			if ( num > 1000 ) {
+				if ( rest < 10 ) {
+					rest = "00" + rest;
+                }
+				else if ( rest < 100 ) {
+					rest = "0" + rest;
+                };
+            };
+
+			niceNum =  rest + "'" + niceNum;
+			num = Math.floor(num / 1000);
+        }
+        
+		return (niceNum == "") ? "0" : niceNum.substring(0, niceNum.length-1);
+    }
+});
+
+app.filter('shortenStr', function() {
+	return function (string) {
+        maxChar = 120;
+		return (string.length > maxChar ) ?  string.substring(0, maxChar)+"..." : string;
+    }
+});
+
 //Get Adobe Github repos
 app.factory("GitAdobe", function($resource) {
     return $resource("https://api.github.com/users/adobe/:type?sort=updated", {type: "@type"})
 });
 
-//Get Adobe Github repos
-app.factory("GitRepo", function($resource) {
-    return $resource("https://api.github.com/repos/adobe/:repo/:info", {owner: "@owner", languages: "@languages"})
-});
-
 //TODO : Manage offline project list when errors
-
-this.ProjectCtrl = function($scope, GitAdobe, GitRepo) {
+this.ProjectCtrl = function($scope, GitAdobe) {
+    //Be able to call math functions
+    $scope.Math = Math;
+    
     //Init display range
     $scope.projFirst = 0;
     $scope.projLast = 10;
@@ -26,19 +88,21 @@ this.ProjectCtrl = function($scope, GitAdobe, GitRepo) {
     $scope.projects = GitAdobe.query({ type: "repos" }, function() {
         $($scope.projects).each(function(i) {
             var actProj = $scope.projects[i];
-            $scope.projects.languages = {
-                $scope.projects.language: 0
-            };
+            $scope.projects.languages = [ $scope.projects.language ];
             
             var request = $.ajax({
-                url: "https://api.github.com/repos/adobe/"+this.name+"/languages"
+                url: actProj.languages_url,
+                cache: true
             });
             
             request.done( function( repLang ) {
                 $scope.$apply( function () {
-                    var tempProj = 
-                    $scope.projects.languages = repLang;
-                    console.info( $scope.projects.languages );
+                    actProj.languages = new Array();
+                    actProj.languagesTotal = 0;
+                    for (var key in repLang) {
+                        actProj.languages.push( { name: key, value: repLang[key] } );
+                        actProj.languagesTotal += repLang[key];
+                    }
                 });
             });
             
@@ -50,7 +114,19 @@ this.ProjectCtrl = function($scope, GitAdobe, GitRepo) {
                 console.log("Language query failed for "+actProj.name+", error: "+textStatus, jqXHR);
             });
         });
+        
+        console.info($scope.projects);
     });
+    
+    $scope.showHideProj = function() {
+        if ($scope.projLast == 10) {
+            $scope.projLast = 100
+        }
+        else {
+            $("html, body").animate({ scrollTop: 350 }, 100);
+            $scope.projLast = 10
+        }
+    }
 };
 
 
