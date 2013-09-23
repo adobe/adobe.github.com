@@ -7455,7 +7455,7 @@ a.th {
   margin-bottom: 5px;
 }
 /* line 258, ../sass/app.scss */
-.main .project .language {
+.main .project .details {
   padding-left: 10px;
   color: #666;
 }
@@ -7475,21 +7475,24 @@ a.th {
 }
 /* line 275, ../sass/app.scss */
 .main .project .more {
-  text-align: right;
   margin-bottom: 25px;
+}
+/* line 278, ../sass/app.scss */
+.main .project .more .link {
+  text-align: right;
   color: red;
 }
-/* line 280, ../sass/app.scss */
-.main .project .more:hover {
+/* line 282, ../sass/app.scss */
+.main .project .more .link:hover {
   color: #e60000;
 }
-/* line 284, ../sass/app.scss */
+/* line 287, ../sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 291, ../sass/app.scss */
+/* line 294, ../sass/app.scss */
 .featured {
   position: absolute;
   top: 0;

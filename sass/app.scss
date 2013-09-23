@@ -255,7 +255,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         
         p { margin-bottom: 5px; }
         
-        .language {
+        .details {
             padding-left: 10px;
             color: #666;
         }
@@ -273,11 +273,14 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         }
         
         .more {
-            text-align:right;
             margin-bottom: 25px;
-            color: $primary-color;
-            
-            &:hover { color: darken($primary-color, 5%); }
+			
+						.link {
+								text-align:right;
+								color: $primary-color;
+								
+								&:hover { color: darken($primary-color, 5%); }
+						}
         }
     }
     

@@ -13,7 +13,7 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body ng-controller="GitHubCtrl">
 
 	<div class="menu">
         <div data-magellan-expedition="fixed">
@@ -62,40 +62,52 @@
                                 Projects
             --------------------------------------------------------------------------------------  -->
             
-            <div class="large-12 columns" ng-controller="ProjectCtrl">
+            <div class="large-12 columns">
                 <a name="projects"></a>
                 <h2 data-magellan-destination="projects">Projects</h2>
                 
-                <div class="row">
-                    <div class="large-6 columns" ng-repeat="project in projects.slice(projFirst, projLast) | orderBy:'-watchers_count'" ng-class-odd="'clear'">
-                        <a href="{{project | link}}" target="_blank">
-                            <section class="project">
-                                <div class="row">
-                                    <div class="large-6 columns">
-                                        <h1>{{project.name}}</h1>
-                                    </div>
-                                    <div class="large-6 columns">
-                                        <div class="star" ng-repeat="i in [0,1,2,3,4]">
-                                            <img ng-src="img/star_{{ { id: 4-i, value: project.watchers_count} | star}}.svg" />
-                                        </div>
-                                        
-                                        <div class="watchCount">{{project.watchers_count | niceNum}}</div>
-                                    </div>
-                                </div>
-                                <p class="language"><span ng-repeat="language in project.languages | orderBy:'-value'" ng-hide="Math.floor( language.value * 100 / project.languagesTotal ) < 10 ">{{language.name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
-                                <p class="details">{{project.description | shortenStr}}</p>
-                                <p class="more">Learn more...</p>
-                            </section>
-                        </a>
-                    </div>
-                </div>
-                    
-                <div class="row text-center">
-                    <button class="button" ng-click="showHideProj()">
-                        <span ng-hide="projLast == 100">Show more...</span>
-                        <span ng-hide="projLast == 10">Show less...</span>
-                    </button>
-                </div>
+                <div ng-show="loading == false">
+										<div class="row">
+												<div class="large-6 columns" ng-repeat="project in projects.slice(projFirst, projLast) | orderBy:'-watchers_count'" ng-class-odd="'clear'">
+														<a href="{{project | link}}" target="_blank">
+																<section class="project">
+																		<div class="row">
+																				<div class="large-6 columns">
+																						<h1>{{project.name}}</h1>
+																				</div>
+																				<div class="large-6 columns">
+																						<div class="star" ng-repeat="i in [0,1,2,3,4]">
+																								<img ng-src="img/star_{{ { id: 4-i, value: project.watchers_count} | star}}.svg" />
+																						</div>
+																						
+																						<div class="watchCount">{{project.watchers_count | niceNum}}</div>
+																				</div>
+																		</div>
+																		<div class="row">
+																			<p class="details large-6 columns"><span ng-repeat="language in project.languages | orderBy:'-value'" ng-hide="Math.floor( language.value * 100 / project.languagesTotal ) < 10 ">{{language.name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
+																			<p class="details large-6 columns text-right">{{project.org}}</p>
+																		</div>
+																		<p class="details">{{project.description | shortenStr}}</p>
+																		<div class="row more">
+																			<p class="details large-6 columns"><strong>Last pushed:</strong> {{project.pushed_at | timeDiff }}</p>
+																			<p class="link large-6 columns">Learn more...</p>
+																		</div>
+																</section>
+														</a>
+												</div>
+										</div>
+												
+										<div class="row text-center">
+												<button class="button" ng-click="showHideProj()">
+														<span ng-hide="projLast == 100">Show more...</span>
+														<span ng-hide="projLast == 10">Show less...</span>
+												</button>
+										</div>
+								</div>
+                
+                <div ng-hide="loading == false">
+									Loading...
+								</div>
             </div>
         </div>
     </div>
@@ -126,101 +138,20 @@
     
                 <!-- Grid Example -->
                 <div class="row">
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                </div>
-    
-                <!-- Grid Example -->
-                <div class="row">
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                </div>
-    
-                <!-- Grid Example -->
-                <div class="row">
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                </div>
-    
-                <!-- Grid Example -->
-                <div class="row">
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                </div>
-    
-                <!-- Grid Example -->
-                <div class="row">
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
-                    </div>
-                    <div class="large-6 columns">
-                        <section class="project">
-                            <h1>Crossbridge</h1>
-                            <p class="language">C++</p>
-                            <p class="details">A C++ to ActionScript compiler toolchain.</p>
-                            <p class="more"><a href="">Learn more...</a></p>
-                        </section>
+                    <div class="large-6 columns" ng-repeat="org in orgs" ng-class-odd="'clear'">
+                        <a href="http://github.com/{{org.userName}}" target="_blank">
+                            <section class="project">
+                                <div class="row">
+                                    <div class="large-6 columns">
+                                        <h1>{{org.name}}</h1>
+                                    </div>
+                                    <div class="large-6 columns">
+                                    </div>
+                                </div>
+                                <p class="details">{{org.desc | shortenStr}}</p>
+                                <p class="more">Learn more...</p>
+                            </section>
+                        </a>
                     </div>
                 </div>
             </div>
