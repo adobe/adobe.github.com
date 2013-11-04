@@ -64,7 +64,45 @@
             
             <div class="large-12 columns">
                 <a name="projects"></a>
-                <h2 data-magellan-destination="projects">Projects</h2>
+                <div class="row">
+                    <h2 class="large-6 columns" data-magellan-destination="projects">Projects</h2>
+                    
+                    <div class="large-6 columns">
+                        <div class="small-3 columns">
+                            <label for="orderby" class="right inline">Order by</label>
+                        </div>
+                        <div class="small-9 columns">
+                            <select id="orderby">
+                                <option>Popularity</option>
+                                <option>Last Push</option>
+                                <option>Organisation</option>
+                                <option>Name</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filters">
+                    <div class="large-3 columns">
+                      <input type="text" placeholder="Name">
+                    </div>
+                    
+                    <div class="star large-2 columns">
+                        <img ng-src="img/star_on.svg" />
+                        <img ng-src="img/star_on.svg" />
+                        <img ng-src="img/star_off.svg" />
+                        <img ng-src="img/star_off.svg" />
+                        <img ng-src="img/star_off.svg" />
+                    </div>
+                    
+                    <div class="large-3 columns">
+                      <input type="text" placeholder="Languages">
+                    </div>
+                    
+                    <div class="large-3 columns">
+                      <button class="button">More filters</button>
+                    </div>
+                </div>
                 
                 <div ng-show="loading == false">
 										<div class="row">
@@ -76,7 +114,7 @@
 																						<h1>{{project.name}}</h1>
 																				</div>
 																				<div class="large-6 columns">
-																						<div class="star" ng-repeat="i in [0,1,2,3,4]">
+																						<div class="star right" ng-repeat="i in [0,1,2,3,4]">
 																								<img ng-src="img/star_{{ { id: 4-i, value: project.watchers_count} | star}}.svg" />
 																						</div>
 																						
@@ -90,7 +128,7 @@
 																		<p class="details">{{project.description | shortenStr}}</p>
 																		<div class="row more">
 																			<p class="details large-6 columns"><strong>Last pushed:</strong> {{project.pushed_at | timeDiff }}</p>
-																			<p class="link large-6 columns">Learn more...</p>
+																			<p class="link large-6 columns">View on github ></p>
 																		</div>
 																</section>
 														</a>
@@ -176,6 +214,7 @@
     <script src="js/vendor/angular-resource.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
+    <script src="js/foundation/foundation.forms.js"></script>
     <script src="js/script.js"></script>
     
     <!-- Unused Foundation scripts

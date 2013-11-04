@@ -237,6 +237,10 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         font-weight: normal;
     }
     
+    .filters {
+        .star img { width: 23px; }
+    }
+    
     .project {
         font-size: 14px;
         border-left: 3px $secondary-color solid;
@@ -259,6 +263,8 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
             padding-left: 10px;
             color: #666;
         }
+    
+        .star img { width: 20px; }
         
         .watchCount {
             padding: 5px 10px;
@@ -266,21 +272,15 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
             color: #666;
         }
         
-        .star {
-            float: right;
-            
-            img { width: 20px; }
-        }
-        
         .more {
             margin-bottom: 25px;
-			
-						.link {
-								text-align:right;
-								color: $primary-color;
-								
-								&:hover { color: darken($primary-color, 5%); }
-						}
+    
+            .link {
+                text-align:right;
+                color: $primary-color;
+                
+                &:hover { color: darken($primary-color, 5%); }
+            }
         }
     }
     

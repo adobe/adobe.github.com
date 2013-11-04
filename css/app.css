@@ -7430,7 +7430,11 @@ a.th {
 .main h2 {
   font-weight: normal;
 }
-/* line 240, ../sass/app.scss */
+/* line 241, ../sass/app.scss */
+.main .filters .star img {
+  width: 23px;
+}
+/* line 244, ../sass/app.scss */
 .main .project {
   font-size: 14px;
   border-left: 3px #e9e9e9 solid;
@@ -7441,37 +7445,33 @@ a.th {
   padding-left: 20px;
   color: black;
 }
-/* line 247, ../sass/app.scss */
+/* line 251, ../sass/app.scss */
 .main .project:hover {
   border-left: 3px red solid;
 }
-/* line 251, ../sass/app.scss */
+/* line 255, ../sass/app.scss */
 .main .project h1 {
   font-size: 17px;
   margin-bottom: 3px;
 }
-/* line 256, ../sass/app.scss */
+/* line 260, ../sass/app.scss */
 .main .project p {
   margin-bottom: 5px;
 }
-/* line 258, ../sass/app.scss */
+/* line 262, ../sass/app.scss */
 .main .project .details {
   padding-left: 10px;
   color: #666;
 }
-/* line 263, ../sass/app.scss */
+/* line 267, ../sass/app.scss */
+.main .project .star img {
+  width: 20px;
+}
+/* line 269, ../sass/app.scss */
 .main .project .watchCount {
   padding: 5px 10px;
   float: right;
   color: #666;
-}
-/* line 269, ../sass/app.scss */
-.main .project .star {
-  float: right;
-}
-/* line 272, ../sass/app.scss */
-.main .project .star img {
-  width: 20px;
 }
 /* line 275, ../sass/app.scss */
 .main .project .more {
