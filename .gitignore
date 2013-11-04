@@ -1,4 +1,4 @@
 _site
-sass-cache
+.sass-cache/
 .sublime-workspace
 .sublime-project
