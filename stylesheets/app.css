@@ -14,7 +14,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, ../sass/_normalize.scss */
+/* line 22, sass/_normalize.scss */
 article,
 aside,
 details,
@@ -33,7 +33,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, ../sass/_normalize.scss */
+/* line 32, sass/_normalize.scss */
 audio,
 canvas,
 video {
@@ -44,7 +44,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, ../sass/_normalize.scss */
+/* line 41, sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -53,7 +53,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 50, ../sass/_normalize.scss */
+/* line 50, sass/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -70,7 +70,7 @@ audio:not([controls]) {
  * 4. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 68, ../sass/_normalize.scss */
+/* line 68, sass/_normalize.scss */
 html {
   background: #fff;
   /* 1 */
@@ -87,7 +87,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 80, ../sass/_normalize.scss */
+/* line 80, sass/_normalize.scss */
 body {
   margin: 0;
 }
@@ -98,7 +98,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 92, ../sass/_normalize.scss */
+/* line 92, sass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -106,7 +106,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 101, ../sass/_normalize.scss */
+/* line 101, sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -119,7 +119,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 114, ../sass/_normalize.scss */
+/* line 114, sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -128,7 +128,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 123, ../sass/_normalize.scss */
+/* line 123, sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -136,7 +136,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 132, ../sass/_normalize.scss */
+/* line 132, sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -145,7 +145,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 140, ../sass/_normalize.scss */
+/* line 140, sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -153,7 +153,7 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 148, ../sass/_normalize.scss */
+/* line 148, sass/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -163,7 +163,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 158, ../sass/_normalize.scss */
+/* line 158, sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -172,7 +172,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 170, ../sass/_normalize.scss */
+/* line 170, sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -184,7 +184,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 179, ../sass/_normalize.scss */
+/* line 179, sass/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -192,7 +192,7 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 187, ../sass/_normalize.scss */
+/* line 187, sass/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -200,7 +200,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 195, ../sass/_normalize.scss */
+/* line 195, sass/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -208,7 +208,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 204, ../sass/_normalize.scss */
+/* line 204, sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -217,12 +217,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 211, ../sass/_normalize.scss */
+/* line 211, sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 215, ../sass/_normalize.scss */
+/* line 215, sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -233,7 +233,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 227, ../sass/_normalize.scss */
+/* line 227, sass/_normalize.scss */
 img {
   border: 0;
 }
@@ -241,7 +241,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 235, ../sass/_normalize.scss */
+/* line 235, sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -252,7 +252,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 247, ../sass/_normalize.scss */
+/* line 247, sass/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -263,7 +263,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 259, ../sass/_normalize.scss */
+/* line 259, sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -274,7 +274,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 270, ../sass/_normalize.scss */
+/* line 270, sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -287,7 +287,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 284, ../sass/_normalize.scss */
+/* line 284, sass/_normalize.scss */
 button,
 input,
 select,
@@ -304,7 +304,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 296, ../sass/_normalize.scss */
+/* line 296, sass/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -316,7 +316,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 308, ../sass/_normalize.scss */
+/* line 308, sass/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -329,7 +329,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 323, ../sass/_normalize.scss */
+/* line 323, sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -343,7 +343,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 333, ../sass/_normalize.scss */
+/* line 333, sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -353,7 +353,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 343, ../sass/_normalize.scss */
+/* line 343, sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -367,7 +367,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 354, ../sass/_normalize.scss */
+/* line 354, sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -381,7 +381,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 367, ../sass/_normalize.scss */
+/* line 367, sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -390,7 +390,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 376, ../sass/_normalize.scss */
+/* line 376, sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -401,7 +401,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 386, ../sass/_normalize.scss */
+/* line 386, sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -415,7 +415,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 399, ../sass/_normalize.scss */
+/* line 399, sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -7226,7 +7226,7 @@ a.th {
   max-width: 800px;
 }
 
-/* line 80, ../sass/app.scss */
+/* line 80, sass/app.scss */
 .header {
   background: #e9e9e9;
   position: fixed;
@@ -7236,33 +7236,33 @@ a.th {
   width: 100%;
   overflow: hidden;
 }
-/* line 86, ../sass/app.scss */
+/* line 86, sass/app.scss */
 .header > div {
   position: relative;
   z-index: 999;
 }
-/* line 89, ../sass/app.scss */
+/* line 89, sass/app.scss */
 .header > div h3, .header > div p {
   background: #e9e9e9;
 }
-/* line 94, ../sass/app.scss */
+/* line 94, sass/app.scss */
 .header h3 {
   padding-top: 150px;
   margin: 0;
 }
-/* line 99, ../sass/app.scss */
+/* line 99, sass/app.scss */
 .header .details {
   color: #888;
 }
-/* line 102, ../sass/app.scss */
+/* line 102, sass/app.scss */
 .header .details a {
   font-size: 13px;
 }
-/* line 107, ../sass/app.scss */
+/* line 107, sass/app.scss */
 .header .logo {
   position: absolute;
 }
-/* line 110, ../sass/app.scss */
+/* line 110, sass/app.scss */
 .header .logo.original {
   width: 400px;
   height: 400px;
@@ -7270,35 +7270,35 @@ a.th {
   right: 35%;
 }
 
-/* line 117, ../sass/app.scss */
+/* line 117, sass/app.scss */
 .header_inline {
   background: #e9e9e9;
   height: 350px;
   overflow: hidden;
   position: relative;
 }
-/* line 122, ../sass/app.scss */
+/* line 122, sass/app.scss */
 .header_inline > div {
   position: relative;
 }
-/* line 124, ../sass/app.scss */
+/* line 124, sass/app.scss */
 .header_inline h3 {
   padding-top: 150px;
   margin: 0;
 }
-/* line 129, ../sass/app.scss */
+/* line 129, sass/app.scss */
 .header_inline .details {
   color: #888;
 }
-/* line 132, ../sass/app.scss */
+/* line 132, sass/app.scss */
 .header_inline .details a {
   font-size: 13px;
 }
-/* line 137, ../sass/app.scss */
+/* line 137, sass/app.scss */
 .header_inline .logo {
   position: absolute;
 }
-/* line 140, ../sass/app.scss */
+/* line 140, sass/app.scss */
 .header_inline .logo.original {
   width: 400px;
   height: 400px;
@@ -7306,35 +7306,35 @@ a.th {
   left: 15%;
 }
 
-/* line 147, ../sass/app.scss */
+/* line 147, sass/app.scss */
 .footer {
   background: #e9e9e9;
   height: 350px;
   overflow: hidden;
   position: relative;
 }
-/* line 152, ../sass/app.scss */
+/* line 152, sass/app.scss */
 .footer > div {
   position: relative;
 }
-/* line 154, ../sass/app.scss */
+/* line 154, sass/app.scss */
 .footer h3 {
   padding-top: 150px;
   margin: 0;
 }
-/* line 159, ../sass/app.scss */
+/* line 159, sass/app.scss */
 .footer .details {
   color: #888;
 }
-/* line 162, ../sass/app.scss */
+/* line 162, sass/app.scss */
 .footer .details a {
   font-size: 13px;
 }
-/* line 167, ../sass/app.scss */
+/* line 167, sass/app.scss */
 .footer .logo {
   position: absolute;
 }
-/* line 170, ../sass/app.scss */
+/* line 170, sass/app.scss */
 .footer .logo.original {
   width: 400px;
   height: 400px;
@@ -7342,7 +7342,7 @@ a.th {
   right: 25%;
 }
 
-/* line 177, ../sass/app.scss */
+/* line 177, sass/app.scss */
 .menu {
   height: 50px;
   width: 100%;
@@ -7351,17 +7351,17 @@ a.th {
   top: 0;
   z-index: 999;
 }
-/* line 183, ../sass/app.scss */
+/* line 183, sass/app.scss */
 .menu .sub-nav {
   font-size: 20px;
   color: black;
   background: white;
 }
-/* line 187, ../sass/app.scss */
+/* line 187, sass/app.scss */
 .menu .sub-nav dd:not(.title) {
   padding: 0px 10px;
 }
-/* line 190, ../sass/app.scss */
+/* line 190, sass/app.scss */
 .menu .sub-nav dd:not(.title) a {
   color: black;
   font-size: 15px;
@@ -7370,7 +7370,7 @@ a.th {
   -o-transition: all 0.1s;
   transition: all 0.1s;
 }
-/* line 196, ../sass/app.scss */
+/* line 196, sass/app.scss */
 .menu .sub-nav dd:not(.title).active a, .menu .sub-nav dd:not(.title):hover a {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -7382,7 +7382,7 @@ a.th {
   padding: 0.1875em 0;
   cursor: default;
 }
-/* line 206, ../sass/app.scss */
+/* line 206, sass/app.scss */
 .menu .wrapLogoTop {
   position: absolute;
   top: -10px;
@@ -7394,47 +7394,57 @@ a.th {
   -o-transition: height 0.2s;
   transition: height 0.2s;
 }
-/* line 212, ../sass/app.scss */
+/* line 212, sass/app.scss */
 .menu .logoTop {
   width: 45px;
 }
 
-/* line 217, ../sass/app.scss */
+/* line 217, sass/app.scss */
 [data-magellan-expedition] {
   background: none !important;
 }
 
-/* line 219, ../sass/app.scss */
+/* line 219, sass/app.scss */
 .title {
   font-family: "tektonpro-regular";
   font-size: 55px;
   margin: 3px 30px 3px 20px;
 }
-/* line 224, ../sass/app.scss */
+/* line 224, sass/app.scss */
 .title strong {
   color: red;
 }
 
-/* line 229, ../sass/app.scss */
+/* line 229, sass/app.scss */
 .main {
   background: #fff;
   position: relative;
   margin-top: 0;
   padding-top: 30px;
 }
-/* line 233, ../sass/app.scss */
+/* line 233, sass/app.scss */
 .main.top {
   margin-top: 350px;
 }
-/* line 236, ../sass/app.scss */
+/* line 236, sass/app.scss */
 .main h2 {
   font-weight: normal;
 }
-/* line 241, ../sass/app.scss */
+/* line 241, sass/app.scss */
 .main .filters .star img {
-  width: 23px;
+  width: 21px;
 }
-/* line 244, ../sass/app.scss */
+/* line 244, sass/app.scss */
+.main .wrapProject {
+  height: 800px;
+  overflow: hidden;
+}
+/* line 248, sass/app.scss */
+.main .wrapProject .project {
+  height: 140px;
+  margin: 10px 0;
+}
+/* line 251, sass/app.scss */
 .main .project {
   font-size: 14px;
   border-left: 3px #e9e9e9 solid;
@@ -7445,54 +7455,55 @@ a.th {
   padding-left: 20px;
   color: black;
 }
-/* line 251, ../sass/app.scss */
+/* line 258, sass/app.scss */
 .main .project:hover {
   border-left: 3px red solid;
 }
-/* line 255, ../sass/app.scss */
+/* line 262, sass/app.scss */
 .main .project h1 {
   font-size: 17px;
   margin-bottom: 3px;
 }
-/* line 260, ../sass/app.scss */
+/* line 267, sass/app.scss */
 .main .project p {
   margin-bottom: 5px;
 }
-/* line 262, ../sass/app.scss */
+/* line 269, sass/app.scss */
 .main .project .details {
+  height: 45px;
   padding-left: 10px;
   color: #666;
 }
-/* line 267, ../sass/app.scss */
+/* line 275, sass/app.scss */
 .main .project .star img {
   width: 20px;
 }
-/* line 269, ../sass/app.scss */
+/* line 277, sass/app.scss */
 .main .project .watchCount {
   padding: 5px 10px;
   float: right;
   color: #666;
 }
-/* line 275, ../sass/app.scss */
+/* line 283, sass/app.scss */
 .main .project .more {
   margin-bottom: 25px;
 }
-/* line 278, ../sass/app.scss */
+/* line 286, sass/app.scss */
 .main .project .more .link {
   text-align: right;
   color: red;
 }
-/* line 282, ../sass/app.scss */
+/* line 290, sass/app.scss */
 .main .project .more .link:hover {
   color: #e60000;
 }
-/* line 287, ../sass/app.scss */
+/* line 295, sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 294, ../sass/app.scss */
+/* line 302, sass/app.scss */
 .featured {
   position: absolute;
   top: 0;

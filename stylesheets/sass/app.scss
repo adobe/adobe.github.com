@@ -238,9 +238,16 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
     
     .filters {
-        .star img { width: 23px; }
+        .star img { width: 21px; }
     }
     
+    .wrapProject {
+        height: 5*160px;
+        overflow: hidden;
+        
+        .project { height: 140px; margin: 10px 0; }
+    }
+        
     .project {
         font-size: 14px;
         border-left: 3px $secondary-color solid;
@@ -260,6 +267,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         p { margin-bottom: 5px; }
         
         .details {
+            height: 45px;
             padding-left: 10px;
             color: #666;
         }

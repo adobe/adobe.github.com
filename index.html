@@ -4,15 +4,13 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" ng-app="AdobeOpenSource"> <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Adobe Open Source</title>
-
-  
-  <link rel="stylesheet" href="css/app.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Adobe Open Source</title>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
+
 <body ng-controller="GitHubCtrl">
 
 	<div class="menu">
@@ -64,14 +62,11 @@
             
             <div class="large-12 columns">
                 <a name="projects"></a>
-                <div class="row">
+                
+                <div class="large-12 columns">
                     <h2 class="large-6 columns" data-magellan-destination="projects">Projects</h2>
-                    
-                    <div class="large-6 columns">
-                        <div class="small-3 columns">
-                            <label for="orderby" class="right inline">Order by</label>
-                        </div>
-                        <div class="small-9 columns">
+                    <form class="large-3 columns custom">
+                        <div class="large-10 columns">
                             <select id="orderby">
                                 <option>Popularity</option>
                                 <option>Last Push</option>
@@ -79,12 +74,21 @@
                                 <option>Name</option>
                             </select>
                         </div>
-                    </div>
+                        <button class="star button large-2 columns"><img src="img/filter.svg" title="Filters" alt="Filters"/></button>
+                    </form>
                 </div>
                 
-                <div class="filters">
+                <form class="custom large-12 columns filters">
                     <div class="large-3 columns">
-                      <input type="text" placeholder="Name">
+                      <input type="text" ng-model="searchName" placeholder="Search name, description...">
+                    </div>
+                    
+                    <div class="large-2 columns">
+                      <input type="text" placeholder="Languages">
+                    </div>
+                    
+                    <div class="large-2 columns">
+                      <input type="text" placeholder="Organisations">
                     </div>
                     
                     <div class="star large-2 columns">
@@ -94,54 +98,46 @@
                         <img ng-src="img/star_off.svg" />
                         <img ng-src="img/star_off.svg" />
                     </div>
-                    
-                    <div class="large-3 columns">
-                      <input type="text" placeholder="Languages">
-                    </div>
-                    
-                    <div class="large-3 columns">
-                      <button class="button">More filters</button>
+                </form>
+                
+                <div class="wrapProject large-12 columns" ng-show="loading == false">
+                    <div class="row">
+                            <div class="large-6 columns" ng-repeat="project in projects | filter:searchName | orderBy:'-watchers_count'" ng-class-odd="'clear'">
+                                    <a href="{{project | link}}" target="_blank">
+                                            <section class="project">
+                                                    <div class="row">
+                                                            <div class="large-6 columns">
+                                                                    <h1>{{project.name}}</h1>
+                                                            </div>
+                                                            <div class="large-6 columns">
+                                                                    <div class="star right" ng-repeat="i in [0,1,2,3,4]">
+                                                                            <img ng-src="img/star_{{ { id: 4-i, value: project.watchers_count} | star}}.svg" />
+                                                                    </div>
+                                                                    
+                                                                    <div class="watchCount">{{project.watchers_count | niceNum}}</div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class=" large-6 columns"><span ng-repeat="language in project.languages | orderBy:'-value'" ng-hide="Math.floor( language.value * 100 / project.languagesTotal ) < 10 ">{{language.name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
+                                                        <p class=" large-6 columns text-right">{{project.org}}</p>
+                                                    </div>
+                                                    <p class="details">{{project.description | shortenStr}}</p>
+                                                    <div class="row more">
+                                                        <p class="details large-6 columns"><strong>Last pushed:</strong> {{project.pushed_at | timeDiff }}</p>
+                                                        <p class="link large-6 columns">View on github ></p>
+                                                    </div>
+                                            </section>
+                                    </a>
+                            </div>
                     </div>
                 </div>
-                
-                <div ng-show="loading == false">
-										<div class="row">
-												<div class="large-6 columns" ng-repeat="project in projects.slice(projFirst, projLast) | orderBy:'-watchers_count'" ng-class-odd="'clear'">
-														<a href="{{project | link}}" target="_blank">
-																<section class="project">
-																		<div class="row">
-																				<div class="large-6 columns">
-																						<h1>{{project.name}}</h1>
-																				</div>
-																				<div class="large-6 columns">
-																						<div class="star right" ng-repeat="i in [0,1,2,3,4]">
-																								<img ng-src="img/star_{{ { id: 4-i, value: project.watchers_count} | star}}.svg" />
-																						</div>
-																						
-																						<div class="watchCount">{{project.watchers_count | niceNum}}</div>
-																				</div>
-																		</div>
-																		<div class="row">
-																			<p class="details large-6 columns"><span ng-repeat="language in project.languages | orderBy:'-value'" ng-hide="Math.floor( language.value * 100 / project.languagesTotal ) < 10 ">{{language.name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
-																			<p class="details large-6 columns text-right">{{project.org}}</p>
-																		</div>
-																		<p class="details">{{project.description | shortenStr}}</p>
-																		<div class="row more">
-																			<p class="details large-6 columns"><strong>Last pushed:</strong> {{project.pushed_at | timeDiff }}</p>
-																			<p class="link large-6 columns">View on github ></p>
-																		</div>
-																</section>
-														</a>
-												</div>
-										</div>
-												
-										<div class="row text-center">
-												<button class="button" ng-click="showHideProj()">
-														<span ng-hide="projLast == 100">Show more...</span>
-														<span ng-hide="projLast == 10">Show less...</span>
-												</button>
-										</div>
-								</div>
+                            
+                <div class="row text-center">
+                        <button class="button" ng-click="showHideProj()">
+                                <span ng-hide="projLast == 100">Show more...</span>
+                                <span ng-hide="projLast == 10">Show less...</span>
+                        </button>
+                </div>
                 
                 <div ng-hide="loading == false">
 									Loading...
