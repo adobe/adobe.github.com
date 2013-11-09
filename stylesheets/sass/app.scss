@@ -237,8 +237,25 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         font-weight: normal;
     }
     
+    .mainFilters {
+        margin-top: 15px;
+        
+        .button {
+            padding: 6px 3px 4px;
+            svg {
+                width: 19px; height: 19px;
+                
+                path { fill: #fff; }
+            }
+        }
+    }
+    
     .filters {
-        .star img { width: 21px; }
+        background: #e9e9e9;
+        margin-top: -16px;
+        height: 65px;
+        
+        .star img { width: 21px; margin-top: 3px; }
     }
     
     .wrapProject {
