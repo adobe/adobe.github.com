@@ -237,6 +237,12 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         font-weight: normal;
     }
     
+    .topProject {
+        h2, form {
+            margin-bottom: 0;
+        }
+    }
+    
     .mainFilters {
         margin-top: 15px;
         
@@ -251,9 +257,15 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
     
     .filters {
+        &.flat {
+            height: 0px;
+        }
+        
+        overflow: hidden;
         background: #e9e9e9;
-        margin-top: -16px;
-        height: 65px;
+        width: 100%; height: 60px;
+        
+        @include transition(height 0.2s);
         
         .star img { width: 21px; margin-top: 3px; }
     }
