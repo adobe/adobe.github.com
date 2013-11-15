@@ -34,6 +34,14 @@ app.filter('star', function() {
     };
 });
 
+app.filter('projectsFilter', function() {
+    return function(projects, scope) {
+        console.info(scope.filterOrder);
+        projects = scope.orderBy(scope.projects,(scope.filterOrder) ? "-"+scope.filterOrder : "-watchers_count");
+		return projects.slice(0, scope.projLast);
+    };
+});
+
 app.filter('link', function() {
 	return function(project) {
         return (project.homepage == "" || project.homepage == null) ? project.html_url : project.homepage;
@@ -128,6 +136,12 @@ app.factory("ReposAdobe", function($resource) {
 this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe) {
 	//Be able to call math functions
 	$scope.Math = Math;
+    $scope.orderBy = function(data, filter) {
+        newData = $filter('orderBy')(data, filter);
+        console.info(newData);
+        
+        return newData;
+    };
 	
 	//Loading active
 	$scope.loading = true;
@@ -143,7 +157,7 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe) {
 	$scope.projects = ReposAdobe.query(function() { 
 		//Loading over
 		$scope.loading = false;
-		console.info($scope.projects);
+		//console.info($scope.projects);
 	});
 	
 	$scope.showHideProj = function() {

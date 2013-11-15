@@ -269,13 +269,6 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         
         .star img { width: 21px; margin-top: 3px; }
     }
-    
-    .wrapProject {
-        height: 5*160px;
-        overflow: hidden;
-        
-        .project { height: 140px; margin: 10px 0; }
-    }
         
     .project {
         font-size: 14px;
@@ -283,6 +276,8 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         @include transition(border-left 0.2s);
         padding-left: 20px;
         color: black;
+        
+        height: 140px; margin: 10px 0; 
         
         &:hover {
             border-left: 3px $primary-color solid;

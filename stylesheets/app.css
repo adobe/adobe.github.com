@@ -7472,16 +7472,6 @@ a.th {
   margin-top: 3px;
 }
 /* line 273, sass/app.scss */
-.main .wrapProject {
-  height: 800px;
-  overflow: hidden;
-}
-/* line 277, sass/app.scss */
-.main .wrapProject .project {
-  height: 140px;
-  margin: 10px 0;
-}
-/* line 280, sass/app.scss */
 .main .project {
   font-size: 14px;
   border-left: 3px #e9e9e9 solid;
@@ -7491,56 +7481,58 @@ a.th {
   transition: border-left 0.2s;
   padding-left: 20px;
   color: black;
+  height: 140px;
+  margin: 10px 0;
 }
-/* line 287, sass/app.scss */
+/* line 282, sass/app.scss */
 .main .project:hover {
   border-left: 3px red solid;
 }
-/* line 291, sass/app.scss */
+/* line 286, sass/app.scss */
 .main .project h1 {
   font-size: 17px;
   margin-bottom: 3px;
 }
-/* line 296, sass/app.scss */
+/* line 291, sass/app.scss */
 .main .project p {
   margin-bottom: 5px;
 }
-/* line 298, sass/app.scss */
+/* line 293, sass/app.scss */
 .main .project .details {
   height: 45px;
   padding-left: 10px;
   color: #666;
 }
-/* line 304, sass/app.scss */
+/* line 299, sass/app.scss */
 .main .project .star img {
   width: 20px;
 }
-/* line 306, sass/app.scss */
+/* line 301, sass/app.scss */
 .main .project .watchCount {
   padding: 5px 10px;
   float: right;
   color: #666;
 }
-/* line 312, sass/app.scss */
+/* line 307, sass/app.scss */
 .main .project .more {
   margin-bottom: 25px;
 }
-/* line 315, sass/app.scss */
+/* line 310, sass/app.scss */
 .main .project .more .link {
   text-align: right;
   color: red;
 }
-/* line 319, sass/app.scss */
+/* line 314, sass/app.scss */
 .main .project .more .link:hover {
   color: #e60000;
 }
-/* line 324, sass/app.scss */
+/* line 319, sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 331, sass/app.scss */
+/* line 326, sass/app.scss */
 .featured {
   position: absolute;
   top: 0;
