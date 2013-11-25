@@ -170,13 +170,18 @@ app.factory("ReposAdobe", function($resource) {
     return $resource("/offline/repos.json")
 });
 
+//Get Adobe Github language used
+app.factory("LangAdobe", function($resource) {
+    return $resource("/offline/languages.json")
+});
+
 //Get Feaatured for the header
 app.factory("FeaturedHeader", function($resource) {
     return $resource("/offline/featured.json")
 });
 
 //TODO : Manage offline project list when errors
-this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, FeaturedHeader) {
+this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, FeaturedHeader) {
 	//Be able to call math functions
 	$scope.Math = Math;
     $scope.filter = $filter;
@@ -216,6 +221,8 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, FeaturedHeade
 	
 	//Reference Orgs
 	$scope.orgs = OrgsAdobe.query( function() { });
+    
+	$scope.langs = LangAdobe.query( function() { });
 	
 	//Reference Orgs
 	$scope.projects = ReposAdobe.query(function() { 
@@ -372,7 +379,7 @@ $(function(){
         
         // ----------------------------------------------------------------------------
         //					3rd parrallax: footer
-        topLogo_footer = ( scrollTop + $(window).height() - $("#footer").position().top - $("#footer").height()*2 ) - 65;
+        topLogo_footer = ( scrollTop + $(window).height() - $("#footer").position().top - $("#footer").height()*2 ) - 115;
         $("#logo3").css({ bottom: topLogo_footer });
     });
 });
