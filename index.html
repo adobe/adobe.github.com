@@ -87,7 +87,6 @@
                 </form>
             </div>
         </div>
-               
         <!-- ------- Filters --------  -->
         <div class="filters" ng-class="{flat: !toggleFilters}">
             <div class="row">
@@ -97,7 +96,7 @@
                     </div>
                     
                     <div class="large-3 columns">
-                      <input type="text" ng-model="searchLang" placeholder="Languages">
+                      <input type="text" ng-model="searchLangInput" placeholder="Languages">
                     </div>
                     
                     <div class="large-3 columns">
@@ -109,7 +108,30 @@
                     </div>
                 </form>
             </div>
+            
+            <div class="row">
+                <div class="large-12 columns activeFilter">
+                    <div>
+                        Filters :
+                        <button class="filterLang tiny" ng-repeat="lang in searchLang">
+                            {{lang}}
+                        </button>
+                    </div>
+                    <div ng-show="">No filter</div>
+                </div>
+            </div>
         </div>
+        
+        <div class="autocomplete row">
+            <div class="wrapperLang columns large-offset-4">
+                <div class="langs large-3 columns" ng-show="searchLangInput">
+                    <a class="lang" ng-repeat="lang in langs | filter:searchLangInput" ng-click="addFilterLang(lang)">
+                        {{lang.name}}
+                    </a>
+                </div>
+            </div>
+        </div> 
+                 
         
         <!-- ------- Items --------  -->
         <div class="row">

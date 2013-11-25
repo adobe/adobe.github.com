@@ -360,11 +360,10 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         }
         
         margin-bottom: 10px;
-        overflow: hidden;
         background: #e9e9e9;
-        width: 100%; height: 60px;
-        
+        width: 100%; /*height: 60px;*/
         @include transition(height 0.2s);
+        overflow: hidden;
         
         .star {
             .fitlerStar {
@@ -375,6 +374,41 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
                 float: left;
                 
                 &:hover, &.on { background-image: url("../img/star_on.svg"); }
+            }
+        }
+        
+        .activeFilter {
+            margin: -10px 0.9375em 15px;
+            
+            button {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .autocomplete {
+        position: relative;
+        z-index: 999;
+        margin-top: -10px;
+        
+        .wrapperLang {
+            position: absolute;
+        
+            .langs {
+                background: $secondary-color;
+                padding: 0;
+                
+                .lang {
+                    padding: 10px 20px;
+                    display: block;
+                    color: #333;
+                    
+                    &:hover {
+                        background: darken($secondary-color, 20);
+                        color: white;
+                    }
+                }
             }
         }
     }

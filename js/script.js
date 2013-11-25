@@ -65,10 +65,18 @@ app.filter('projectsFilter', function() {
                     break;
                 }
                 
-                var resLang = scope.filter('filter')(actProj.languages, scope.searchLang);
+                
+                var resLang = new Array();
+                for (var j = 0; (j < scope.searchLang.length && resLang.length == 0); j++) {
+                    resLang = scope.filter('filter')(actProj.languages, scope.searchLang[j]);
+                }
+                
+//                var resLang = scope.filter('filter')(actProj.languages, scope.searchLang);
                 var resOrg = actProj.org.search(/scope.searchOrg/i);
                 
-                if (resLang.length && (resOrg != -1 || !scope.searchOrg) && filterStarBool) {
+                if ((resLang.length || scope.searchLang.length == 0)
+                && (resOrg != -1 || !scope.searchOrg)
+                && filterStarBool) {
                     newProject.push(actProj);
                 }
             }
@@ -182,14 +190,21 @@ app.factory("FeaturedHeader", function($resource) {
 
 //TODO : Manage offline project list when errors
 this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, FeaturedHeader) {
+    
+    //------------------------------- Init --------------------------------
+    
 	//Be able to call math functions
 	$scope.Math = Math;
     $scope.filter = $filter;
     $scope.filterStarIndex = 0;
     $scope.indexFeatured = 0;
+    $scope.searchLang = new Array();
 	
 	//Loading active
 	$scope.loading = true;
+    
+    
+    //------------------------------- Featured header --------------------------------
     
     // hFeatured on the header
     $scope.featureds = FeaturedHeader.query( function() {
@@ -214,6 +229,8 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, Fe
     $scope.setIndexFeatured = function(index) {
         $scope.indexFeatured = index;
     }
+    
+    //------------------------------- Datas --------------------------------
 	
 	//Init display range
 	$scope.projFirst = 0;
@@ -241,8 +258,26 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, Fe
 		}
 	}
     
+    //------------------------------- Filters --------------------------------
+    
     $scope.majDisplayStar = function(index) { $scope.displayStarIndex = index; }
     $scope.majFilterStar = function(index) { $scope.filterStarIndex = index; }
+    
+    $scope.addFilterLang = function(lang) {
+        var present = false;
+        
+        for (var i=0; i < $scope.searchLang.length; i++) {
+            if ($scope.searchLang[i].name == lang.name) {
+                present = true;
+            }
+        }
+        
+        if (!present) {
+            $scope.searchLang.push(lang.name);
+        }
+        
+        $scope.searchLangInput = "";
+    }
 };
 
 /* ----------------------------------------------------------------------------
