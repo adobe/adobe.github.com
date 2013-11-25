@@ -259,15 +259,27 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     .filters {
         &.flat {
             height: 0px;
+            margin-bottom: 0px;
         }
         
+        margin-bottom: 10px;
         overflow: hidden;
         background: #e9e9e9;
         width: 100%; height: 60px;
         
         @include transition(height 0.2s);
         
-        .star img { width: 21px; margin-top: 3px; }
+        .star {
+            .fitlerStar {
+                width: 21px; height: 21px;
+                margin-top: 5px;
+                background: url("../img/star_off.svg") top left no-repeat;
+                background-size: 21px 21px;
+                float: left;
+                
+                &:hover, &.on { background-image: url("../img/star_on.svg"); }
+            }
+        }
     }
         
     .project {

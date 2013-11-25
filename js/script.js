@@ -39,14 +39,36 @@ app.filter('projectsFilter', function() {
         projects = scope.filter('filter')(scope.projects, scope.searchName);
         var newProject = new Array();
         
-        if (scope.searchLang || scope.searchOrg) {
+        if (scope.searchLang || scope.searchOrg || scope.filterStarIndex != 0) {
             for (var i = 0; i < projects.length; i++) {
                var actProj = projects[i];
                 
+                switch(scope.filterStarIndex)
+                {
+                case 1:
+                    filterStarBool = (actProj.watchers_count > 5) ? true : false;
+                    break;
+                case 2:
+                    filterStarBool = (actProj.watchers_count > 30) ? true : false;
+                    break;
+                case 3:
+                    filterStarBool = (actProj.watchers_count > 100) ? true : false;
+                    break;
+                case 4:
+                    filterStarBool = (actProj.watchers_count > 300) ? true : false;
+                    break;
+                case 5:
+                    filterStarBool = (actProj.watchers_count > 1000) ? true : false;
+                    break;
+                default:
+                    filterStarBool = true;
+                    break;
+                }
+                
                 var resLang = scope.filter('filter')(actProj.languages, scope.searchLang);
-                var resOrg = actProj.org.indexOf(scope.searchOrg);
-                console.log("Org: ", resOrg);
-                if (resLang.length && (resOrg != -1 || !scope.searchOrg) ) {
+                var resOrg = actProj.org.search(/scope.searchOrg/i);
+                
+                if (resLang.length && (resOrg != -1 || !scope.searchOrg) && filterStarBool) {
                     newProject.push(actProj);
                 }
             }
@@ -153,6 +175,7 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe) {
 	//Be able to call math functions
 	$scope.Math = Math;
     $scope.filter = $filter;
+    $scope.filterStarIndex = 0;
 	
 	//Loading active
 	$scope.loading = true;
@@ -177,9 +200,12 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe) {
 		}
 		else {
 			$("html, body").animate({ scrollTop: 350 }, 100);
-			$scope.projLast = 10
+			$scope.projLast = 10;
 		}
 	}
+    
+    $scope.majDisplayStar = function(index) { $scope.displayStarIndex = index; }
+    $scope.majFilterStar = function(index) { $scope.filterStarIndex = index; }
 };
 
 /* ----------------------------------------------------------------------------

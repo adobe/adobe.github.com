@@ -100,11 +100,7 @@
                     </div>
                     
                     <div class="star large-2 columns">
-                        <img ng-src="img/star_off.svg" />
-                        <img ng-src="img/star_off.svg" />
-                        <img ng-src="img/star_off.svg" />
-                        <img ng-src="img/star_off.svg" />
-                        <img ng-src="img/star_off.svg" />
+                        <div class="fitlerStar" ng-repeat="i in [1,2,3,4,5]" ng-class="{on: (i <= displayStarIndex)}" ng-click="majFilterStar(i)" ng-mouseenter="majDisplayStar(i)" ng-mouseleave="majDisplayStar(filterStarIndex)"></div>
                     </div>
                 </form>
             </div>
