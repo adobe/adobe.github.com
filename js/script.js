@@ -70,9 +70,11 @@ app.filter('projectsFilter', function() {
                 for (var j = 0; (j < scope.searchLang.length && resLang.length == 0); j++) {
                     resLang = scope.filter('filter')(actProj.languages, scope.searchLang[j]);
                 }
-                
-//                var resLang = scope.filter('filter')(actProj.languages, scope.searchLang);
-                var resOrg = actProj.org.search(/scope.searchOrg/i);
+                var resOrg = -2; //init value
+                for (var k = 0; (k < scope.searchOrg.length && resOrg < 0); k++) {
+                    var regOrg = new RegExp(scope.searchOrg[k], "i");
+                    resOrg = actProj.org.search(regOrg);
+                }
                 
                 if ((resLang.length || scope.searchLang.length == 0)
                 && (resOrg != -1 || !scope.searchOrg)
@@ -199,6 +201,7 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, Fe
     $scope.filterStarIndex = 0;
     $scope.indexFeatured = 0;
     $scope.searchLang = new Array();
+    $scope.searchOrg = new Array();
 	
 	//Loading active
 	$scope.loading = true;
@@ -213,7 +216,6 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, Fe
             
             actFeatured.textHeader = actFeatured.textHeader.join("\n");
         };
-        console.log($scope.featureds);
     });
     
     $scope.changeIndexFeatured = function(delta) {
@@ -263,20 +265,25 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, Fe
     $scope.majDisplayStar = function(index) { $scope.displayStarIndex = index; }
     $scope.majFilterStar = function(index) { $scope.filterStarIndex = index; }
     
-    $scope.addFilterLang = function(lang) {
+    $scope.addFilter = function(filter, item) {
         var present = false;
         
-        for (var i=0; i < $scope.searchLang.length; i++) {
-            if ($scope.searchLang[i].name == lang.name) {
+        for (var i=0; i < filter.length; i++) {
+            if (filter[i].name == item.name) {
                 present = true;
             }
         }
         
         if (!present) {
-            $scope.searchLang.push(lang.name);
+            filter.push(item.name);
         }
         
         $scope.searchLangInput = "";
+        $scope.searchOrgInput = "";
+    }
+    
+    $scope.deleteFilter = function(array, i) {
+        array.splice(i, 1);
     }
 };
 

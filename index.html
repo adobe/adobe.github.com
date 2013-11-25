@@ -88,7 +88,7 @@
             </div>
         </div>
         <!-- ------- Filters --------  -->
-        <div class="filters" ng-class="{flat: !toggleFilters}">
+        <div class="filters" ng-class="{flat: toggleFilters}">
             <div class="row">
                 <form class="custom large-12 columns mainFilters">
                     <div class="large-4 columns">
@@ -100,7 +100,7 @@
                     </div>
                     
                     <div class="large-3 columns">
-                      <input type="text" ng-model="searchOrg" placeholder="Organisations">
+                      <input type="text" ng-model="searchOrgInput" placeholder="Organisations">
                     </div>
                     
                     <div class="star large-2 columns">
@@ -109,24 +109,35 @@
                 </form>
             </div>
             
-            <div class="row">
+            <div class="row" ng-show="searchLang.length != 0 || searchOrg.length != 0 || searchName">
                 <div class="large-12 columns activeFilter">
                     <div>
-                        Filters :
-                        <button class="filterLang tiny" ng-repeat="lang in searchLang">
-                            {{lang}}
-                        </button>
+                        Filters : {{searchName}}, 
+                        <ul class="button-group filterLang" ng-repeat="lang in searchLang">
+                          <li><a class="button tiny"># {{lang}}</a></li>
+                          <li><a class="button tiny" ng-click="deleteFilter(searchLang, $index)">X</a></li>
+                        </ul>
+                        <ul class="button-group filterLang" ng-repeat="org in searchOrg">
+                          <li><a class="button tiny">{{org}}</a></li>
+                          <li><a class="button tiny" ng-click="deleteFilter(searchOrg, $index)">X</a></li>
+                        </ul>
                     </div>
-                    <div ng-show="">No filter</div>
                 </div>
             </div>
         </div>
         
         <div class="autocomplete row">
             <div class="wrapperLang columns large-offset-4">
-                <div class="langs large-3 columns" ng-show="searchLangInput">
-                    <a class="lang" ng-repeat="lang in langs | filter:searchLangInput" ng-click="addFilterLang(lang)">
+                <div class="items large-3 columns" ng-show="searchLangInput">
+                    <a class="item" ng-repeat="lang in langs | filter:searchLangInput" ng-click="addFilter(searchLang, lang)">
                         {{lang.name}}
+                    </a>
+                </div>
+            </div>
+            <div class="wrapperLang columns large-offset-4">
+                <div class="items large-3 columns" ng-show="searchOrgInput">
+                    <a class="item" ng-repeat="org in orgs | filter:searchOrgInput" ng-click="addFilter(searchOrg, org)">
+                        {{org.name}}
                     </a>
                 </div>
             </div>

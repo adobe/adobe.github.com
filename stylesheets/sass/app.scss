@@ -380,9 +380,13 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         .activeFilter {
             margin: -10px 0.9375em 15px;
             
-            button {
+            .filterLang {
                 margin-right: 10px;
-                margin-bottom: 0;
+                display: inline-block;
+                
+                .button {
+                    margin-bottom: 0px;
+                }
             }
         }
     }
@@ -390,23 +394,24 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     .autocomplete {
         position: relative;
         z-index: 999;
-        margin-top: -10px;
+        top: -61px;
         
         .wrapperLang {
             position: absolute;
+            padding-left: 3px;
         
-            .langs {
-                background: $secondary-color;
-                padding: 0;
+            .items {
                 
-                .lang {
+                .item {
                     padding: 10px 20px;
                     display: block;
+                    border-bottom: $secondary-color 1px solid;
                     color: #333;
                     
+                    background: white;
+                    
                     &:hover {
-                        background: darken($secondary-color, 20);
-                        color: white;
+                        color: $primary-color;
                     }
                 }
             }
