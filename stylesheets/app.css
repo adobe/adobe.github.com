@@ -7254,81 +7254,136 @@ a.th {
   left: 0;
 }
 /* line 100, sass/app.scss */
+.header .wrapper .text-header {
+  position: absolute;
+  bottom: 45px;
+}
+/* line 105, sass/app.scss */
 .header .wrapper h3, .header .wrapper p {
   background: #e9e9e9;
 }
-/* line 104, sass/app.scss */
+/* line 109, sass/app.scss */
 .header .wrapper h3 {
-  padding-top: 150px;
   margin: 0;
 }
-/* line 109, sass/app.scss */
+/* line 113, sass/app.scss */
 .header .wrapper .details {
   color: #888;
 }
-/* line 112, sass/app.scss */
+/* line 116, sass/app.scss */
 .header .wrapper .details a {
   font-size: 13px;
 }
-/* line 117, sass/app.scss */
+/* line 121, sass/app.scss */
 .header .wrapper .logo {
   position: absolute;
 }
-/* line 120, sass/app.scss */
+/* line 124, sass/app.scss */
 .header .wrapper .logo.original {
   width: 400px;
   height: 400px;
   top: -70px;
   right: 35%;
 }
-/* line 127, sass/app.scss */
+/* line 131, sass/app.scss */
+.header .dots {
+  position: absolute;
+  z-index: 999;
+  bottom: 65px;
+  left: 50%;
+}
+/* line 136, sass/app.scss */
+.header .dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  background: #b6b6b6;
+  float: left;
+}
+/* line 143, sass/app.scss */
+.header .dots .dot.actual, .header .dots .dot:hover {
+  background: red;
+}
+/* line 150, sass/app.scss */
 .header .prev, .header .next {
   width: 30px;
   height: 50px;
   background: red;
   position: absolute;
   z-index: 999;
+  overflow: hidden;
   cursor: pointer;
   top: 150px;
 }
-/* line 134, sass/app.scss */
+/* line 159, sass/app.scss */
+.header .prev:before, .header .prev:after, .header .next:before, .header .next:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 14px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+/* line 168, sass/app.scss */
 .header .prev {
   left: 0;
 }
-/* line 135, sass/app.scss */
+/* line 171, sass/app.scss */
+.header .prev:before {
+  left: 6px;
+  border-right: 12px solid white;
+}
+/* line 176, sass/app.scss */
+.header .prev:after {
+  left: 12px;
+  border-right: 12px solid red;
+}
+/* line 182, sass/app.scss */
 .header .next {
   right: 0;
 }
+/* line 185, sass/app.scss */
+.header .next:before {
+  right: 6px;
+  border-left: 12px solid white;
+}
+/* line 190, sass/app.scss */
+.header .next:after {
+  right: 12px;
+  border-left: 12px solid red;
+}
 
-/* line 142, sass/app.scss */
+/* line 201, sass/app.scss */
 .header_inline {
   background: #e9e9e9;
   height: 300px;
   overflow: hidden;
   position: relative;
 }
-/* line 147, sass/app.scss */
+/* line 206, sass/app.scss */
 .header_inline > div {
   position: relative;
 }
-/* line 149, sass/app.scss */
+/* line 208, sass/app.scss */
 .header_inline h3 {
   padding-top: 150px;
   margin: 0;
 }
-/* line 154, sass/app.scss */
+/* line 213, sass/app.scss */
 .header_inline .details {
   color: #888;
 }
-/* line 157, sass/app.scss */
+/* line 216, sass/app.scss */
 .header_inline .details a {
   font-size: 13px;
 }
-/* line 162, sass/app.scss */
+/* line 221, sass/app.scss */
 .header_inline .logo {
   position: absolute;
 }
-/* line 165, sass/app.scss */
+/* line 224, sass/app.scss */
 .header_inline .logo.original {
   width: 400px;
   height: 400px;
@@ -7336,35 +7391,35 @@ a.th {
   left: 15%;
 }
 
-/* line 176, sass/app.scss */
+/* line 235, sass/app.scss */
 .footer {
   background: #e9e9e9;
   height: 300px;
   overflow: hidden;
   position: relative;
 }
-/* line 181, sass/app.scss */
+/* line 240, sass/app.scss */
 .footer > div {
   position: relative;
 }
-/* line 183, sass/app.scss */
+/* line 242, sass/app.scss */
 .footer h3 {
   padding-top: 150px;
   margin: 0;
 }
-/* line 188, sass/app.scss */
+/* line 247, sass/app.scss */
 .footer .details {
   color: #888;
 }
-/* line 191, sass/app.scss */
+/* line 250, sass/app.scss */
 .footer .details a {
   font-size: 13px;
 }
-/* line 196, sass/app.scss */
+/* line 255, sass/app.scss */
 .footer .logo {
   position: absolute;
 }
-/* line 199, sass/app.scss */
+/* line 258, sass/app.scss */
 .footer .logo.original {
   width: 400px;
   height: 400px;
@@ -7372,7 +7427,7 @@ a.th {
   right: 25%;
 }
 
-/* line 210, sass/app.scss */
+/* line 269, sass/app.scss */
 .menu {
   height: 50px;
   width: 100%;
@@ -7381,18 +7436,18 @@ a.th {
   top: 0;
   z-index: 999;
 }
-/* line 216, sass/app.scss */
+/* line 275, sass/app.scss */
 .menu .sub-nav {
   font-size: 20px;
   color: black;
   background: white;
 }
-/* line 220, sass/app.scss */
+/* line 279, sass/app.scss */
 .menu .sub-nav dd:not(.title) {
   padding: 0px 10px;
   cursor: pointer;
 }
-/* line 224, sass/app.scss */
+/* line 283, sass/app.scss */
 .menu .sub-nav dd:not(.title) a {
   color: black;
   font-size: 15px;
@@ -7401,7 +7456,7 @@ a.th {
   -o-transition: all 0.1s;
   transition: all 0.1s;
 }
-/* line 230, sass/app.scss */
+/* line 289, sass/app.scss */
 .menu .sub-nav dd:not(.title).active a, .menu .sub-nav dd:not(.title):hover a {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -7413,7 +7468,7 @@ a.th {
   padding: 0.1875em 0;
   cursor: default;
 }
-/* line 240, sass/app.scss */
+/* line 299, sass/app.scss */
 .menu .wrapLogoTop {
   position: absolute;
   top: -10px;
@@ -7425,64 +7480,64 @@ a.th {
   -o-transition: height 0.2s;
   transition: height 0.2s;
 }
-/* line 246, sass/app.scss */
+/* line 305, sass/app.scss */
 .menu .logoTop {
   width: 45px;
 }
 
-/* line 251, sass/app.scss */
+/* line 310, sass/app.scss */
 [data-magellan-expedition] {
   background: none !important;
 }
 
-/* line 253, sass/app.scss */
+/* line 312, sass/app.scss */
 .title {
   font-family: "tektonpro-regular";
   font-size: 55px;
   margin: 3px 30px 3px 20px;
 }
-/* line 258, sass/app.scss */
+/* line 317, sass/app.scss */
 .title strong {
   color: red;
 }
 
-/* line 267, sass/app.scss */
+/* line 326, sass/app.scss */
 .main {
   background: #fff;
   position: relative;
   margin-top: 0;
   padding-top: 30px;
 }
-/* line 271, sass/app.scss */
+/* line 330, sass/app.scss */
 .main.top {
   margin-top: 350px;
 }
-/* line 274, sass/app.scss */
+/* line 333, sass/app.scss */
 .main h2 {
   font-weight: normal;
 }
-/* line 279, sass/app.scss */
+/* line 338, sass/app.scss */
 .main .topProject h2, .main .topProject form {
   margin-bottom: 0;
 }
-/* line 284, sass/app.scss */
+/* line 343, sass/app.scss */
 .main .mainFilters {
   margin-top: 15px;
 }
-/* line 287, sass/app.scss */
+/* line 346, sass/app.scss */
 .main .mainFilters .button {
   padding: 6px 3px 4px;
 }
-/* line 289, sass/app.scss */
+/* line 348, sass/app.scss */
 .main .mainFilters .button svg {
   width: 19px;
   height: 19px;
 }
-/* line 292, sass/app.scss */
+/* line 351, sass/app.scss */
 .main .mainFilters .button svg path {
   fill: #fff;
 }
-/* line 297, sass/app.scss */
+/* line 356, sass/app.scss */
 .main .filters {
   margin-bottom: 10px;
   overflow: hidden;
@@ -7494,12 +7549,12 @@ a.th {
   -o-transition: height 0.2s;
   transition: height 0.2s;
 }
-/* line 298, sass/app.scss */
+/* line 357, sass/app.scss */
 .main .filters.flat {
   height: 0px;
   margin-bottom: 0px;
 }
-/* line 311, sass/app.scss */
+/* line 370, sass/app.scss */
 .main .filters .star .fitlerStar {
   width: 21px;
   height: 21px;
@@ -7508,11 +7563,11 @@ a.th {
   background-size: 21px 21px;
   float: left;
 }
-/* line 318, sass/app.scss */
+/* line 377, sass/app.scss */
 .main .filters .star .fitlerStar:hover, .main .filters .star .fitlerStar.on {
   background-image: url("../img/star_on.svg");
 }
-/* line 323, sass/app.scss */
+/* line 382, sass/app.scss */
 .main .project {
   font-size: 14px;
   border-left: 3px #e9e9e9 solid;
@@ -7525,55 +7580,55 @@ a.th {
   height: 140px;
   margin: 10px 0;
 }
-/* line 332, sass/app.scss */
+/* line 391, sass/app.scss */
 .main .project:hover {
   border-left: 3px red solid;
 }
-/* line 336, sass/app.scss */
+/* line 395, sass/app.scss */
 .main .project h1 {
   font-size: 17px;
   margin-bottom: 3px;
 }
-/* line 341, sass/app.scss */
+/* line 400, sass/app.scss */
 .main .project p {
   margin-bottom: 5px;
 }
-/* line 343, sass/app.scss */
+/* line 402, sass/app.scss */
 .main .project .details {
   height: 45px;
   padding-left: 10px;
   color: #666;
 }
-/* line 349, sass/app.scss */
+/* line 408, sass/app.scss */
 .main .project .star img {
   width: 20px;
 }
-/* line 351, sass/app.scss */
+/* line 410, sass/app.scss */
 .main .project .watchCount {
   padding: 5px 10px;
   float: right;
   color: #666;
 }
-/* line 357, sass/app.scss */
+/* line 416, sass/app.scss */
 .main .project .more {
   margin-bottom: 25px;
 }
-/* line 360, sass/app.scss */
+/* line 419, sass/app.scss */
 .main .project .more .link {
   text-align: right;
   color: red;
 }
-/* line 364, sass/app.scss */
+/* line 423, sass/app.scss */
 .main .project .more .link:hover {
   color: #e60000;
 }
-/* line 369, sass/app.scss */
+/* line 428, sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 376, sass/app.scss */
+/* line 435, sass/app.scss */
 .featured {
   position: absolute;
   top: 0;

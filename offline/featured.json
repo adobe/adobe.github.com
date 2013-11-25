@@ -17,5 +17,14 @@
             "PhoneGap is a distribution of <a href='http://cordova.apache.org/'>Apache Cordova</a><br/>",
             "<a href='https://github.com/phonegap/'>View on GitHub ></a></p>"
         ]
+    },
+    {
+        "title": "Snap.svg",
+        "logo": "img/snapsvg.svg",
+        "textHeader": [
+            "<h3>Snap.svg</h3>",
+            "<p class='details'>The JavaScript SVG library for the modern web.<br/>",
+            "<a href='http://snapsvg.io/'>Learn more...</a></p>"
+        ]
     }
 ]

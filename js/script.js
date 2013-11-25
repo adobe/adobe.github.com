@@ -205,6 +205,10 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, FeaturedHeade
             $scope.indexFeatured += delta;
         }
     }
+    
+    $scope.setIndexFeatured = function(index) {
+        $scope.indexFeatured = index;
+    }
 	
 	//Init display range
 	$scope.projFirst = 0;
@@ -345,62 +349,17 @@ this.OfflineCtrl = function($scope, $filter, GitAdobe, OrgsAdobe) {
 var scrollTop, topLogo_footer, topLogo_org, topLogo_header;
 $(function(){ 
     $(document).foundation();
-    $(document).foundation('orbit', {
-      animation: 'fade',
-      timer_speed: 10000,
-      pause_on_hover: true,
-      resume_on_mouseout: false,
-      animation_speed: 500,
-      stack_on_small: true,
-      navigation_arrows: false,
-      slide_number: false,
-      container_class: 'orbit-container',
-      stack_on_small_class: 'orbit-stack-on-small',
-      next_class: 'orbit-next',
-      prev_class: 'orbit-prev',
-      timer_container_class: 'orbit-timer',
-      timer_paused_class: 'paused',
-      timer_progress_class: 'orbit-progress',
-      slides_container_class: 'orbit-slides-container',
-      bullets_container_class: 'orbit-bullets',
-      bullets_active_class: 'active',
-      slide_number_class: 'orbit-slide-number',
-      caption_class: 'orbit-caption',
-      active_slide_class: 'active',
-      orbit_transition_class: 'orbit-transitioning',
-      bullets: true,
-      timer: false,
-      variable_height: false,
-      before_slide_change: function(){},
-      after_slide_change: function(){}
-    });
         
     
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
 			
-        /* / ----------------------------------------------------------------------------
-        //						Logo animation
-        var baseH = 100;
-        var adobeLogoLimit = $(".header").height() - 150;
-        if ( scrollTop > adobeLogoLimit ) {
-            if ( (scrollTop - adobeLogoLimit) <= 50 ) {
-                newHeight = baseH - (scrollTop - adobeLogoLimit)
-                $(".wrapLogoTop").css({height: newHeight });
-            } else {
-                $(".wrapLogoTop").css({height: baseH-50 });
-            };
-        }
-        else if (scrollTop < adobeLogoLimit) {
-            $(".wrapLogoTop").css({height: baseH });
-        }*/
-        
         // ----------------------------------------------------------------------------
         //					First parallax: header
         if (scrollTop < ($(".header").height() + 20) ) {
             topLogo_header = ( $(window).scrollTop()/3 ) - 70;
-            $("#logo1").css({ top: topLogo_header });
-            $("#text-header").css({ top: - scrollTop });
+            $(".logoFeatured").css({ top: topLogo_header });
+            $(".text-header").css({ bottom: 45 + scrollTop });
         }
         
         // ----------------------------------------------------------------------------

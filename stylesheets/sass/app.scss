@@ -97,12 +97,16 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         
         &.actual { left: 0; }
         
+        .text-header  {
+            position: absolute;
+            bottom: 45px;
+        }
+        
         h3, p {
             background: $secondary-color;
         }
     
         h3 { 
-            padding-top: 150px;
             margin: 0;
         }
         
@@ -123,16 +127,71 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
             }
         }
     }
+    
+    .dots {
+        position: absolute; z-index: 999;
+        bottom: 65px;
+        left: 50%;
         
+        .dot {
+            width: 10px; height: 10px;
+            border-radius: 5px;
+            margin: 0 5px;
+            background: darken($secondary-color, 20);
+            float: left;
+            
+            &.actual, &:hover {
+                background: $primary-color;
+            }
+        }
+    }
+    
+    $arrow-size: 12;    
     .prev, .next {
+        
         width: 30px; height: 50px;
         background: $primary-color;
         position:absolute; z-index: 999;
+        overflow: hidden;
         cursor: pointer;
         top: (($header-height - 50)/2)+px;
+        
+        &:before, &:after {
+            content: "";
+            width: 0; height: 0;
+            position: absolute; top: 14px;
+            border-top: $arrow-size+px solid transparent;
+            border-bottom: $arrow-size+px solid transparent;
+        }
     }
-    .prev { left: 0; }
-    .next { right: 0; }
+    
+    .prev {
+        left: 0;
+        
+        &:before {
+            left: 6px;
+            border-right: $arrow-size+px solid white;
+        }
+        
+        &:after {
+            left: 12px;
+            border-right: $arrow-size+px solid $primary-color;
+        }
+    
+    }
+    .next {
+        right: 0;
+        
+        &:before {
+            right: 6px;
+            border-left: $arrow-size+px solid white;
+        }
+        
+        &:after {
+            right: 12px;
+            border-left: $arrow-size+px solid $primary-color;
+        }
+    }
 }
 
 //---------------------------------------------------------------------------------
