@@ -36,9 +36,25 @@ app.filter('star', function() {
 
 app.filter('projectsFilter', function() {
     return function(projects, scope) {
-        console.info(scope.filterOrder);
-        projects = scope.orderBy(scope.projects,(scope.filterOrder) ? "-"+scope.filterOrder : "-watchers_count");
-		return projects.slice(0, scope.projLast);
+        projects = scope.filter('filter')(scope.projects, scope.searchName);
+        var newProject = new Array();
+        
+        if (scope.searchLang || scope.searchOrg) {
+            for (var i = 0; i < projects.length; i++) {
+               var actProj = projects[i];
+                
+                var resLang = scope.filter('filter')(actProj.languages, scope.searchLang);
+                var resOrg = actProj.org.indexOf(scope.searchOrg);
+                console.log("Org: ", resOrg);
+                if (resLang.length && (resOrg != -1 || !scope.searchOrg) ) {
+                    newProject.push(actProj);
+                }
+            }
+        } else {
+            newProject = projects;
+        }
+        projects = scope.filter('orderBy')(projects,(scope.filterOrder) ? scope.filterOrder : "-watchers_count");
+		return newProject.slice(0, scope.projLast);
     };
 });
 
@@ -136,12 +152,7 @@ app.factory("ReposAdobe", function($resource) {
 this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe) {
 	//Be able to call math functions
 	$scope.Math = Math;
-    $scope.orderBy = function(data, filter) {
-        newData = $filter('orderBy')(data, filter);
-        console.info(newData);
-        
-        return newData;
-    };
+    $scope.filter = $filter;
 	
 	//Loading active
 	$scope.loading = true;
@@ -181,9 +192,11 @@ app.factory("GitAdobe", function($resource) {
 
 //TODO : Manage offline project list when errors
 this.OfflineCtrl = function($scope, $filter, GitAdobe, OrgsAdobe) {	
+    //Initialize the project array
+    $scope.projects = new Array();
+    $scope.languages = new Array();
+    
 	$scope.getOffline = function() {
-		//Initialize the project array
-		$scope.projects = new Array();
 	
 		//Loading active
 		$scope.loading = true;
@@ -229,6 +242,7 @@ this.OfflineCtrl = function($scope, $filter, GitAdobe, OrgsAdobe) {
 								for (var key in repLang) {
 									actProj.languages.push( { name: key, value: repLang[key] } );
 									actProj.languagesTotal += repLang[key];
+                                    $scope.addLanguage( { name: key, value: repLang[key] } );
 								};
 							});
 						});
@@ -249,8 +263,26 @@ this.OfflineCtrl = function($scope, $filter, GitAdobe, OrgsAdobe) {
 				});
 				
 			});
-		});
-	}
+		},
+        function (data, status, headers, config) {
+            console.log(response);
+        });
+	};
+    
+    $scope.addLanguage = function (lang) {
+        var isPresent = false;
+        
+        for (var i = 0; i < $scope.languages.length; i++) {
+            if ($scope.languages[i].name == lang.name) {
+                isPresent = true;
+            }
+        }
+        
+        console.log(lang, isPresent, $scope.languages);
+        if ($scope.languages[lang.key]) {
+            $scope.languages.push( lang );
+        }
+    }
 };
 
 

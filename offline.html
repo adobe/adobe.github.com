@@ -9,18 +9,22 @@
   <title>Adobe Open Source - Offline pull</title>
 
   
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 <body ng-controller="OfflineCtrl">
-		<input type="button" value="Load" ng-click="getOffline()"/>
+		<input class="button" type="button" value="Load" ng-click="getOffline()"/>
 		<div ng-hide="loading == false || loading == unknown">
 			Loading...
 		</div>
 	
 		<textarea ng-show="loading == false">
 			{{projects}}
+		</textarea>
+	
+		<textarea ng-show="loading == false">
+			{{languages}}
 		</textarea>
     
     <script src="js/vendor/custom.modernizr.js"></script>
