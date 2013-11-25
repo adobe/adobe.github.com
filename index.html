@@ -115,33 +115,36 @@
         <div class="row">
             <div class="wrapProject large-12 columns" ng-show="loading == false">
                 <div class="row">
-                        <div class="large-6 columns" ng-repeat="project in projects | projectsFilter:this" ng-class-odd="'clear'">
-                                <a href="{{project | link}}" target="_blank">
-                                        <section class="project">
-                                                <div class="row">
-                                                        <div class="large-6 columns">
-                                                                <h1>{{project.name}}</h1>
-                                                        </div>
-                                                        <div class="large-6 columns">
-                                                                <div class="star right" ng-repeat="i in [0,1,2,3,4]">
-                                                                        <img ng-src="img/star_{{ { id: 4-i, value: project.watchers_count} | star}}.svg" />
-                                                                </div>
-                                                                
-                                                                <div class="watchCount">{{project.watchers_count | niceNum}}</div>
-                                                        </div>
-                                                </div>
-                                                <div class="row">
-                                                    <p class=" large-6 columns"><span ng-repeat="language in project.languages | orderBy:'-value'" ng-hide="Math.floor( language.value * 100 / project.languagesTotal ) < 10 ">{{language.name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
-                                                    <p class=" large-6 columns text-right">{{project.org}}</p>
-                                                </div>
-                                                <p class="details">{{project.description | shortenStr}}</p>
-                                                <div class="row more">
-                                                    <p class="details large-6 columns"><strong>Last pushed:</strong> {{project.pushed_at | timeDiff }}</p>
-                                                    <p class="link large-6 columns">View on github ></p>
-                                                </div>
-                                        </section>
-                                </a>
-                        </div>
+                    <div class="large-6 columns" ng-repeat="project in projects | projectsFilter:this" ng-class-odd="'clear'">
+                        <a href="{{project | link}}" target="_blank">
+                            <section class="project">
+                                <div class="row">
+                                    <div class="large-6 columns">
+                                        <h1>{{project.name}}</h1>
+                                    </div>
+                                    <div class="large-6 columns">
+                                        <div class="star right" ng-repeat="i in [0,1,2,3,4]">
+                                            <img ng-src="img/star_{{ { id: 4-i, value: project.watchers_count} | star}}.svg" />
+                                        </div>
+                                            
+                                        <div class="watchCount">{{project.watchers_count | niceNum}}</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class=" large-6 columns"><span ng-repeat="language in project.languages | orderBy:'-value'" ng-hide="Math.floor( language.value * 100 / project.languagesTotal ) < 10 ">{{language.name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
+                                    <p class=" large-6 columns text-right">{{project.org}}</p>
+                                </div>
+                                <p class="details">{{project.description | shortenStr}}</p>
+                                <div class="row more">
+                                    <p class="details large-6 columns"><strong>Last pushed:</strong> {{project.pushed_at | timeDiff }}</p>
+                                    <p class="link large-6 columns">View on github ></p>
+                                </div>
+                            </section>
+                        </a>
+                    </div>
+                    
+                    <!-- Reseter -->
+                    <div class="large-6 columns" class"clear"></div>
                 </div>
             </div>
                         
@@ -186,7 +189,7 @@
                 <div class="row">
                     <div class="large-6 columns" ng-repeat="org in orgs" ng-class-odd="'clear'">
                         <a href="http://github.com/{{org.userName}}" target="_blank">
-                            <section class="project">
+                            <section class="org">
                                 <div class="row">
                                     <div class="large-6 columns">
                                         <h1>{{org.name}}</h1>
@@ -199,6 +202,9 @@
                             </section>
                         </a>
                     </div>
+                    
+                    <!-- Reseter -->
+                    <div class="large-6 columns" class"clear"></div>
                 </div>
             </div>
         </div>

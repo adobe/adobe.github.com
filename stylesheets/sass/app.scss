@@ -379,14 +379,14 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         }
     }
         
-    .project {
+    .project, .org {
         font-size: 14px;
         border-left: 3px $secondary-color solid;
         @include transition(border-left 0.2s);
         padding-left: 20px;
         color: black;
         
-        height: 140px; margin: 10px 0; 
+        margin: 10px 0; 
         
         &:hover {
             border-left: 3px $primary-color solid;
@@ -424,6 +424,9 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
             }
         }
     }
+    
+    .project { height: 140px; }
+    .org { height: 100px; }
     
     .clear {
         clear: both;
