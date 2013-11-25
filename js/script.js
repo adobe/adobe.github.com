@@ -75,7 +75,7 @@ app.filter('projectsFilter', function() {
         } else {
             newProject = projects;
         }
-        projects = scope.filter('orderBy')(projects,(scope.filterOrder) ? scope.filterOrder : "-watchers_count");
+        newProject = scope.filter('orderBy')(newProject,(scope.filterOrder) ? scope.filterOrder : "-watchers_count");
 		return newProject.slice(0, scope.projLast);
     };
 });
@@ -330,12 +330,13 @@ this.OfflineCtrl = function($scope, $filter, GitAdobe, OrgsAdobe) {
         
         for (var i = 0; i < $scope.languages.length; i++) {
             if ($scope.languages[i].name == lang.name) {
+                $scope.languages[i].value += lang.value;
                 isPresent = true;
             }
         }
         
         console.log(lang, isPresent, $scope.languages);
-        if ($scope.languages[lang.key]) {
+        if (!isPresent) {
             $scope.languages.push( lang );
         }
     }
