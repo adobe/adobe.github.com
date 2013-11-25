@@ -170,15 +170,41 @@ app.factory("ReposAdobe", function($resource) {
     return $resource("/offline/repos.json")
 });
 
+//Get Feaatured for the header
+app.factory("FeaturedHeader", function($resource) {
+    return $resource("/offline/featured.json")
+});
+
 //TODO : Manage offline project list when errors
-this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe) {
+this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, FeaturedHeader) {
 	//Be able to call math functions
 	$scope.Math = Math;
     $scope.filter = $filter;
     $scope.filterStarIndex = 0;
+    $scope.indexFeatured = 0;
 	
 	//Loading active
 	$scope.loading = true;
+    
+    // hFeatured on the header
+    $scope.featureds = FeaturedHeader.query( function() {
+        for (var i = 0; i < $scope.featureds.length; i++) {
+            var actFeatured = $scope.featureds[i];
+            
+            actFeatured.textHeader = actFeatured.textHeader.join("\n");
+        };
+        console.log($scope.featureds);
+    });
+    
+    $scope.changeIndexFeatured = function(delta) {
+        if ($scope.indexFeatured <= 0 && delta < 0) {
+            $scope.indexFeatured = $scope.featureds.length - 1;
+        } else if ($scope.indexFeatured >= $scope.featureds.length-1 && delta > 0) {
+            $scope.indexFeatured = 0;
+        } else {
+            $scope.indexFeatured += delta;
+        }
+    }
 	
 	//Init display range
 	$scope.projFirst = 0;

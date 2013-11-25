@@ -3,7 +3,7 @@
 //Foundation override
 $primary-color: rgb(255 , 0, 0);
 //Personnal variables
-$header-height: 400;
+$header-height: 350;
 $menu-height: 50;
 $menu-font-size: 20;
 
@@ -77,42 +77,67 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+
+//---------------------------------------------------------------------------------
+//                          Header
+//---------------------------------------------------------------------------------
+
 .header {
     background: $secondary-color;
     position: fixed; top: $menu-height+px; left: 0;
     height: $header-height+px; width: 100%;
     overflow: hidden;
     
-    &>div {
-        position: relative; z-index: 999;
+    .wrapper {
+        position: absolute; z-index: 99;
+        left:100%;
+        @include transition(left 0.5s);
+        background: $secondary-color;
+        width: 100%; height: $header-height+px;
+        
+        &.actual { left: 0; }
         
         h3, p {
             background: $secondary-color;
         }
-    }
     
-    h3 { 
-        padding-top: 150px;
-        margin: 0;
-    }
-    
-    .details {
-        color: #888;
+        h3 { 
+            padding-top: 150px;
+            margin: 0;
+        }
         
-        a {
-            font-size: 13px;
+        .details {
+            color: #888;
+            
+            a {
+                font-size: 13px;
+            }
+        }
+        
+        .logo {
+            position: absolute; 
+            
+            &.original {
+                width: 400px; height: 400px;
+                top: -70px; right: 35%;
+            }
         }
     }
-    
-    .logo {
-        position: absolute; 
         
-        &.original {
-            width: 400px; height: 400px;
-            top: -70px; right: 35%;
-        }
+    .prev, .next {
+        width: 30px; height: 50px;
+        background: $primary-color;
+        position:absolute; z-index: 999;
+        cursor: pointer;
+        top: (($header-height - 50)/2)+px;
     }
+    .prev { left: 0; }
+    .next { right: 0; }
 }
+
+//---------------------------------------------------------------------------------
+//                          Header 2 (inline)
+//---------------------------------------------------------------------------------
 
 .header_inline {
     background: $secondary-color;
@@ -144,6 +169,10 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
 }
 
+//---------------------------------------------------------------------------------
+//                          Footer
+//---------------------------------------------------------------------------------
+
 .footer {
     background: $secondary-color;
     height: ($header-height - $menu-height)+px; 
@@ -174,6 +203,10 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
 }
 
+//---------------------------------------------------------------------------------
+//                          Menu
+//---------------------------------------------------------------------------------
+
 .menu {
     height: $menu-height+px; width: 100%;
     background: white;
@@ -186,6 +219,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         
         dd:not(.title) {
             padding: 0px 10px;
+            cursor: pointer;
         
             a {
                 color: black;
@@ -226,11 +260,15 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
 }
 
+//---------------------------------------------------------------------------------
+//                          Main
+//---------------------------------------------------------------------------------
+
 .main {
     background: #fff;
     position: relative;
     margin-top: 0;
-    &.top { margin-top: ($header-height - $menu-height)+px; }
+    &.top { margin-top: $header-height+px; }
     padding-top: 30px;
     
     h2 {

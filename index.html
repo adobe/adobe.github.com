@@ -15,40 +15,41 @@
 
 	<div class="menu">
         <div data-magellan-expedition="fixed">
-            <div>
-                <div class="row">
-                    <div class="large-12 columns">
-                        <dl class="sub-nav">
-                            <dd class="title"><strong>Adobe</strong> Open Source</dd>
-                            <dd data-magellan-arrival="featured"><a href="#featured">Featured</a></dd>
-                            <dd data-magellan-arrival="projects"><a href="#projects">Projects</a></dd>
-                            <dd data-magellan-arrival="organisations"><a href="#organisations">Organisation</a></dd>
-                        </dl>
-                        
-                        <div class="wrapLogoTop">
-                            <img class="logoTop" src="img/logo_m.jpg" title="Adobe Open Source"/>
-                        </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <dl class="sub-nav">
+                        <dd class="title"><strong>Adobe</strong> Open Source</dd>
+                        <dd data-magellan-arrival="featured"><a href="#featured">Featured</a></dd>
+                        <dd data-magellan-arrival="projects"><a href="#projects">Projects</a></dd>
+                        <dd data-magellan-arrival="organisations"><a href="#organisations">Organisation</a></dd>
+                    </dl>
+                    
+                    <div class="wrapLogoTop">
+                        <img class="logoTop" src="img/logo_m.jpg" title="Adobe Open Source"/>
                     </div>
                 </div>
             </div>
         </div>
         
 	</div>
+            
+        <!-- --------------------------------------------------------------------------------------
+                            Featured
+        --------------------------------------------------------------------------------------  -->
 
 	<div class="header">
-        <div class="row">
-            <div class="large-4 columns" id="text-header">
-                <h3>Brackets</h3>
-                <p class="details">Open-source code editor<br> built <em>with</em> the web <em>for</em> the web<br/>
-                <a href="">Learn more...</a>
-                </p>
-            </div>
-            
-            <div class="large-5 large-offset-1 columns">
-                <img class="logo original" id="logo1" src="img/brackets_logo.svg" title="Brackets, code the web" />
+        <div class="wrapper" ng-repeat="featured in featureds" ng-class="{actual: $index <= indexFeatured}">
+            <div class="row">
+                <div class="large-4 columns text-header" ng-bind-html-unsafe="featured.textHeader"></div>
+                
+                <div class="large-5 large-offset-1 columns">
+                    <img class="logo original" id="logo1" src="{{featured.logo}}" title="{{featured.title}}" />
+                </div>
             </div>
         </div>
         
+        <div class="prev" ng-click="changeIndexFeatured(-1)"></div>
+        <div class="next" ng-click="changeIndexFeatured(+1)"></div>
 	</div>
 
 	<div class="main top">
@@ -84,7 +85,7 @@
         </div>
                
         <!-- ------- Filters --------  -->
-        <div class="filters" ng-class="{flat: toggleFilters}">
+        <div class="filters" ng-class="{flat: !toggleFilters}">
             <div class="row">
                 <form class="custom large-12 columns mainFilters">
                     <div class="large-4 columns">

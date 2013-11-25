@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Brackets, code the web",
+        "logo": "img/brackets_logo.svg",
+        "textHeader": [
+            "<h3>Brackets</h3>",
+            "<p class='details'>Open-source code editor<br> built <em>with</em> the web <em>for</em> the web<br/>",
+            "<a href='http://brackets.io/'>Learn more...</a></p>"
+        ]
+    },
+    {
+        "title": "PhoneGap, Easily create apps using the web technologies you know and love: HTML, CSS, and JavaScript",
+        "logo": "img/phonegap.svg",
+        "textHeader": [
+            "<h3>PhoneGap</h3>",
+            "<p class='details'>Free and open source framework to create apps using web technologies.<br/>",
+            "PhoneGap is a distribution of <a href='http://cordova.apache.org/'>Apache Cordova</a><br/>",
+            "<a href='https://github.com/phonegap/'>View on GitHub ></a></p>"
+        ]
+    }
+]
