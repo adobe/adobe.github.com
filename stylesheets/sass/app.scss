@@ -154,7 +154,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         position:absolute; z-index: 999;
         overflow: hidden;
         cursor: pointer;
-        top: (($header-height - 50)/2)+px;
+        top: (($header-height - 110)/2)+px;
         
         &:before, &:after {
             content: "";
@@ -223,7 +223,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         
         &.original {
             width: 400px; height: 400px;
-            top: 10px; left:15%;
+            top: 10px;
         }
     }
 }
@@ -328,7 +328,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     position: relative;
     margin-top: 0;
     &.top { margin-top: $header-height+px; }
-    padding-top: 30px;
+    padding: 30px 0;
     
     h2 {
         font-weight: normal;
@@ -361,7 +361,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         
         margin-bottom: 10px;
         background: #e9e9e9;
-        width: 100%; /*height: 60px;*/
+        width: 100%; height: 110px;
         @include transition(height 0.2s);
         overflow: hidden;
         
@@ -392,20 +392,25 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
     
     .autocomplete {
-        position: relative;
+        width: 100%;
+        position: absolute;
+        top: 146px;
         z-index: 999;
-        top: -61px;
         
         .wrapperLang {
-            position: absolute;
-            padding-left: 3px;
         
             .items {
+                &:first-child { padding-left: 6px; }
+                padding-left: 17px;
                 
                 .item {
                     padding: 10px 20px;
                     display: block;
-                    border-bottom: $secondary-color 1px solid;
+                    border: {
+                        bottom: $secondary-color 1px solid;
+                        left: $secondary-color 1px solid;
+                        right: $secondary-color 1px solid;
+                    }
                     color: #333;
                     
                     background: white;
@@ -466,6 +471,10 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     
     .project { height: 140px; }
     .org { height: 100px; }
+    
+    .buttonMore {
+        position: absolute;
+    }
     
     .clear {
         clear: both;

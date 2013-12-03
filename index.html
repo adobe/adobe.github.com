@@ -87,6 +87,7 @@
                 </form>
             </div>
         </div>
+        
         <!-- ------- Filters --------  -->
         <div class="filters" ng-class="{flat: toggleFilters}">
             <div class="row">
@@ -104,41 +105,40 @@
                     </div>
                     
                     <div class="star large-2 columns">
+												<a ng-show="filterStarIndex" ng-click="majFilterStar(0); majDisplayStar(0)">X</a>
                         <div class="fitlerStar" ng-repeat="i in [1,2,3,4,5]" ng-class="{on: (i <= displayStarIndex)}" ng-click="majFilterStar(i)" ng-mouseenter="majDisplayStar(i)" ng-mouseleave="majDisplayStar(filterStarIndex)"></div>
                     </div>
                 </form>
-            </div>
-            
-            <div class="row" ng-show="searchLang.length != 0 || searchOrg.length != 0 || searchName">
-                <div class="large-12 columns activeFilter">
-                    <div>
-                        Filters : {{searchName}}, 
-                        <ul class="button-group filterLang" ng-repeat="lang in searchLang">
-                          <li><a class="button tiny"># {{lang}}</a></li>
-                          <li><a class="button tiny" ng-click="deleteFilter(searchLang, $index)">X</a></li>
-                        </ul>
-                        <ul class="button-group filterLang" ng-repeat="org in searchOrg">
-                          <li><a class="button tiny">{{org}}</a></li>
-                          <li><a class="button tiny" ng-click="deleteFilter(searchOrg, $index)">X</a></li>
-                        </ul>
-                    </div>
-                </div>
+							
+								<div ng-show="searchLang.length != 0 || searchOrg.length != 0 || searchName">
+									<div class="large-12 columns activeFilter">
+										<ul class="button-group filterLang" ng-repeat="lang in searchLang">
+											<li><a class="button tiny"># {{lang}}</a></li>
+											<li><a class="button tiny" ng-click="deleteFilter(searchLang, $index)">X</a></li>
+										</ul>
+										<ul class="button-group filterLang" ng-repeat="org in searchOrg">
+											<li><a class="button tiny">{{org}}</a></li>
+											<li><a class="button tiny" ng-click="deleteFilter(searchOrg, $index)">X</a></li>
+										</ul>
+									</div>
+							</div>
             </div>
         </div>
         
-        <div class="autocomplete row">
-            <div class="wrapperLang columns large-offset-4">
-                <div class="items large-3 columns" ng-show="searchLangInput">
-                    <a class="item" ng-repeat="lang in langs | filter:searchLangInput" ng-click="addFilter(searchLang, lang)">
-                        {{lang.name}}
-                    </a>
-                </div>
-            </div>
-            <div class="wrapperLang columns large-offset-4">
-                <div class="items large-3 columns" ng-show="searchOrgInput">
-                    <a class="item" ng-repeat="org in orgs | filter:searchOrgInput" ng-click="addFilter(searchOrg, org)">
-                        {{org.name}}
-                    </a>
+        <!-- TODO: Make it disapear when the focus is lost on the search field -->
+        <div class="autocomplete">
+            <div class="row">
+                <div class="wrapperLang columns large-6 large-offset-4">
+                    <div class="items large-6 columns" ng-show="searchLangInput">
+                        <a class="item" ng-repeat="lang in langs | filter:searchLangInput" ng-click="addFilter(searchLang, lang)">
+                            {{lang.name}}
+                        </a>
+                    </div>
+                    <div class="items large-6 columns" ng-show="searchOrgInput">
+                        <a class="item" ng-repeat="org in orgs | filter:searchOrgInput" ng-click="addFilter(searchOrg, org)">
+                            {{org.name}}
+                        </a>
+                    </div>
                 </div>
             </div>
         </div> 
@@ -181,11 +181,13 @@
                 </div>
             </div>
                         
-            <div class="row text-center">
+            <div ng-class="{ buttonMore: projLast == 100 }" ng-hide="(projects | projectsFilter:this).length < 10">
+                <div class="row text-center">
                     <button class="button" ng-click="showHideProj()">
                             <span ng-hide="projLast == 100">Show more...</span>
                             <span ng-hide="projLast == 10">Show less...</span>
                     </button>
+                </div>
             </div>
             
             <div ng-hide="loading == false">
@@ -196,6 +198,8 @@
     
     <div class="header_inline" id="header_org">
         <div class="row" id="text-header_org">
+            <img class="logo original" id="logo2" src="img/photoshop_logo.svg" title="Brackets, code the web" />
+            
             <div class="large-6 large-offset-6 columns">
                 <h3>Photoshop</h3>
                 <p class="details">Stuff from the Adobe Photoshop team<br/>
@@ -203,8 +207,6 @@
                 </p>
             </div>
         </div>
-        
-        <img class="logo original" id="logo2" src="img/photoshop_logo.svg" title="Brackets, code the web" />
     </div>
     
     <div class="main">

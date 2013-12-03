@@ -403,6 +403,8 @@ $(function(){
     
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
+        
+        $(".buttonMore").css({top: scrollTop});
 			
         // ----------------------------------------------------------------------------
         //					First parallax: header
