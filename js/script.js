@@ -403,8 +403,15 @@ $(function(){
     
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
-        
-        $(".buttonMore").css({top: scrollTop});
+				
+				var endOfProjects = scrollTop + $(window).height() - $('.top').height() - $('.header').height();
+				console.info(endOfProjects);
+				if (endOfProjects < 50 ) {
+        	$(".buttonMore").css({position: 'fixed', bottom: 50});
+				}
+				else {
+					$(".buttonMore").css({position: 'relative', bottom: 0});
+				}
 			
         // ----------------------------------------------------------------------------
         //					First parallax: header

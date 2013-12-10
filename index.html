@@ -181,7 +181,7 @@
                 </div>
             </div>
                         
-            <div ng-class="{ buttonMore: projLast == 100 }" ng-hide="(projects | projectsFilter:this).length < 10">
+            <div ng-class="{ buttonMore: projLast > 10, buttonLess : projLast == 10 }" ng-hide="(projects | projectsFilter:this).length < 10">
                 <div class="row text-center">
                     <button class="button" ng-click="showHideProj()">
                             <span ng-hide="projLast == 100">Show more...</span>

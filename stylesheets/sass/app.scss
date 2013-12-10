@@ -473,8 +473,16 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     .org { height: 100px; }
     
     .buttonMore {
-        position: absolute;
+				position: fixed;
+				left: 0;
+				bottom: 50px;
+				width: 100%;
     }
+	
+		.buttonLess {
+				bottom: 0 !important;
+				position: relative !important;
+		}
     
     .clear {
         clear: both;
