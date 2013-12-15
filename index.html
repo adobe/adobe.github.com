@@ -164,7 +164,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <p class=" large-6 columns"><span ng-repeat="language in project.languages | orderBy:'-value'" ng-hide="Math.floor( language.value * 100 / project.languagesTotal ) < 10 ">{{language.name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
+                                    <p class=" large-6 columns"><span ng-repeat="language in Object.keys(project.languages)" ng-hide="Math.floor( project.languages[language].value * 100 / project.languagesTotal ) < 10 ">{{project.languages[language].name}}<span ng-hide="$last">, </span></span><span ng-hide="project.languages.length != 0">Unknown</span></p>
                                     <p class=" large-6 columns text-right">{{project.org}}</p>
                                 </div>
                                 <p class="details">{{project.description | shortenStr}}</p>
