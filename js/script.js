@@ -86,7 +86,8 @@ app.filter('projectsFilter', function() {
             newProject = projects;
         }
         newProject = scope.filter('orderBy')(newProject,(scope.filterOrder) ? scope.filterOrder : "-watchers_count");
-		return newProject.slice(0, scope.projLast);
+			
+			return newProject.slice(0, scope.projLast);
     };
 });
 
@@ -170,19 +171,9 @@ app.filter('timeDiff', function() {
 /* ----------------------------------------------------------------------------
                 Main Controller */
 
-//Get Adobe Github orgs
-app.factory("OrgsAdobe", function($resource) {
-    return $resource("/offline/orgs.json")
-});
-
-//Get Adobe Github orgs
+//Get Adobe Github repos & orgs
 app.factory("ReposAdobe", function($resource) {
-    return $resource("/offline/repos.json")
-});
-
-//Get Adobe Github language used
-app.factory("LangAdobe", function($resource) {
-    return $resource("/offline/languages.json")
+    return $resource("http://localhost:8000", {'8000': ':8000'});
 });
 
 //Get Feaatured for the header
@@ -191,17 +182,18 @@ app.factory("FeaturedHeader", function($resource) {
 });
 
 //TODO : Manage offline project list when errors
-this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, FeaturedHeader) {
+this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
     
     //------------------------------- Init --------------------------------
     
 	//Be able to call math functions
 	$scope.Math = Math;
-    $scope.filter = $filter;
-    $scope.filterStarIndex = 0;
-    $scope.indexFeatured = 0;
-    $scope.searchLang = new Array();
-    $scope.searchOrg = new Array();
+	$scope.Object = Object;
+	$scope.filter = $filter;
+	$scope.filterStarIndex = 0;
+	$scope.indexFeatured = 0;
+	$scope.searchLang = new Array();
+	$scope.searchOrg = new Array();
 	
 	//Loading active
 	$scope.loading = true;
@@ -238,16 +230,21 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, Fe
 	$scope.projFirst = 0;
 	$scope.projLast = 10;
 	
-	//Reference Orgs
-	$scope.orgs = OrgsAdobe.query( function() { });
-    
-	$scope.langs = LangAdobe.query( function() { });
+	$scope.projects = [];
+	$scope.orgs = [];
 	
 	//Reference Orgs
-	$scope.projects = ReposAdobe.query(function() { 
+	ReposAdobe.query(function(rep) { 
+		console.log(rep);
+		if (rep[0]) {
+			$scope.projects = rep[0].repos;
+			$scope.orgs = rep[0].orgs;
+//			$scope.langs = rep[0].langs;
+		}
+		
 		//Loading over
 		$scope.loading = false;
-		//console.info($scope.projects);
+		console.info($scope.projects);
 	});
 	
 	$scope.showHideProj = function() {
@@ -287,110 +284,6 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, OrgsAdobe, LangAdobe, Fe
     }
 };
 
-/* ----------------------------------------------------------------------------
-                Offline Controller */
-
-//Get Adobe Github repos
-app.factory("GitAdobe", function($resource) {
-    return $resource("https://api.github.com/users/:user/:type?sort=updated", {user: "@user", type: "@type"})
-});
-
-//TODO : Manage offline project list when errors
-this.OfflineCtrl = function($scope, $filter, GitAdobe, OrgsAdobe) {	
-    //Initialize the project array
-    $scope.projects = new Array();
-    $scope.languages = new Array();
-    
-	$scope.getOffline = function() {
-	
-		//Loading active
-		$scope.loading = true;
-		
-		//Reference Orgs
-		$scope.orgs = OrgsAdobe.query(function() {
-			//To detect when all orgs has been processed
-			var recievedOrgProj = 0;
-			
-			//Get all projects from each org
-			$($scope.orgs).each(function (i) {
-				
-				GitAdobe.query({ user: $scope.orgs[i].userName, type: "repos" }, function(tempProjects) {
-					recievedOrgProj++;
-					
-					$scope.tempProjects = tempProjects;
-					
-					$(tempProjects).each(function(iProj) {
-						//And push it to the list
-						$scope.projects.push({
-							name: tempProjects[iProj].name
-							, watchers_count: tempProjects[iProj].watchers_count
-							, org: $scope.orgs[i].name
-							, languages: [ tempProjects[iProj].language ]
-							, description: tempProjects[iProj].description
-							, pushed_at: tempProjects[iProj].pushed_at
-							, html_url: tempProjects[iProj].html_url
-							, homepage: tempProjects[iProj].homepage
-						});
-						
-						//Then query for more languages
-						var actProj = $scope.projects[$scope.projects.length-1];
-						
-						var request = $.ajax({
-							url: tempProjects[iProj].languages_url,
-							cache: true
-						});
-						
-						request.done( function( repLang ) {
-							$scope.$apply( function () {
-								actProj.languages = new Array();
-								actProj.languagesTotal = 0;
-								for (var key in repLang) {
-									actProj.languages.push( { name: key, value: repLang[key] } );
-									actProj.languagesTotal += repLang[key];
-                                    $scope.addLanguage( { name: key, value: repLang[key] } );
-								};
-							});
-						});
-						
-						//If it fails, we use the main language only
-						request.fail( function ( jqXHR, textStatus ) {
-							console.log("Language query failed for "+actProj.name+", error: "+textStatus, jqXHR);
-						});
-					});
-					
-					if (recievedOrgProj == $scope.orgs.length) {
-						$scope.projects = $filter('orderBy')($scope.projects, '-watchers_count');
-						
-						//Everything loaded!
-						$scope.loading = false;
-						//console.info($scope.projects);
-					}
-				});
-				
-			});
-		},
-        function (data, status, headers, config) {
-            console.log(response);
-        });
-	};
-    
-    $scope.addLanguage = function (lang) {
-        var isPresent = false;
-        
-        for (var i = 0; i < $scope.languages.length; i++) {
-            if ($scope.languages[i].name == lang.name) {
-                $scope.languages[i].value += lang.value;
-                isPresent = true;
-            }
-        }
-        
-        console.log(lang, isPresent, $scope.languages);
-        if (!isPresent) {
-            $scope.languages.push( lang );
-        }
-    }
-};
-
 
 /* ----------------------------------------------------------------------------
                 Parrallax Scrolling
@@ -405,7 +298,7 @@ $(function(){
         scrollTop = $(window).scrollTop();
 				
 				var endOfProjects = scrollTop + $(window).height() - $('.top').height() - $('.header').height();
-				console.info(endOfProjects);
+//				console.info(endOfProjects);
 				if (endOfProjects < 50 ) {
         	$(".buttonMore").css({position: 'fixed', bottom: 50});
 				}
