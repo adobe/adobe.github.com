@@ -80,15 +80,36 @@ $red-dark2-color: rgb(200 , 0, 50);
 }
 
 //---------------------------------------------------------------------------------
+//                          Footer
+//---------------------------------------------------------------------------------
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	
+	img {
+		width: 400px;
+		position: relative;
+		top: 50px;
+		left: 180px;
+	}
+}
+
+//---------------------------------------------------------------------------------
 //                          Main
 //---------------------------------------------------------------------------------
 
-body, html, .wrapper {
+body, html {
 	background: $secondary-color;
 	height: 100%;
 }
 
 .wrapper {
+	position: relative;
+	z-index: 99;
+	
 	.punchline {
 		font-size: 1.5em;
 		margin: ($menu-height+80)+px 0 40px;
@@ -106,21 +127,9 @@ body, html, .wrapper {
 			font-size: 1.5em;
 			font-weight: 200;
 			text-transform: uppercase;
+			margin-top: 15px;
+			padding-left: 20px;
 		}
-	}
-}
-
-//---------------------------------------------------------------------------------
-//                          Footer
-//---------------------------------------------------------------------------------
-
-.footer {
-	position: absolute;
-	bottom: 0;
-	right: 20px;
-	
-	img {
-		width: 260px;
 	}
 }
 
