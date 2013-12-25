@@ -7412,57 +7412,58 @@ body, html, .wrapper {
   z-index: 1;
   -webkit-transform-origin: 100% 100%;
   -webkit-animation: to-flip 1s;
+  -webkit-transform: rotateX(180deg);
 }
 
 @-webkit-keyframes from-flip {
-  /* line 216, sass/app.scss */
+  /* line 217, sass/app.scss */
   0% {
     -webkit-transform: rotateX(180deg);
   }
 
-  /* line 220, sass/app.scss */
+  /* line 221, sass/app.scss */
   100% {
     -webkit-transform: rotateX(0deg);
   }
 }
 
 @-webkit-keyframes to-flip {
-  /* line 226, sass/app.scss */
+  /* line 227, sass/app.scss */
   0% {
     -webkit-transform: rotateX(0deg);
   }
 
-  /* line 230, sass/app.scss */
+  /* line 231, sass/app.scss */
   100% {
     -webkit-transform: rotateX(-180deg);
   }
 }
 
 @-webkit-keyframes fade-out {
-  /* line 236, sass/app.scss */
+  /* line 237, sass/app.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 240, sass/app.scss */
+  /* line 241, sass/app.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-webkit-keyframes fade-in {
-  /* line 246, sass/app.scss */
+  /* line 247, sass/app.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 250, sass/app.scss */
+  /* line 251, sass/app.scss */
   100% {
     opacity: 1;
   }
 }
 
-/* line 255, sass/app.scss */
+/* line 256, sass/app.scss */
 .counter .shadow {
   display: block;
   width: 120px;
@@ -7474,33 +7475,33 @@ body, html, .wrapper {
   opacity: 0;
 }
 
-/* line 266, sass/app.scss */
+/* line 267, sass/app.scss */
 .counter .top .shadow {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
-/* line 270, sass/app.scss */
+/* line 271, sass/app.scss */
 .counter .bottom .shadow {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-/* line 274, sass/app.scss */
+/* line 275, sass/app.scss */
 .counter .from.top .shadow {
   -webkit-animation: fade-out 1s;
 }
 
-/* line 278, sass/app.scss */
+/* line 279, sass/app.scss */
 .counter .to.bottom .shadow {
   -webkit-animation: fade-in 1s;
 }
 
-/* line 282, sass/app.scss */
+/* line 283, sass/app.scss */
 .hide .shadow {
   -webkit-animation: none !important;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 287, sass/app.scss */
+  /* line 288, sass/app.scss */
   .wrapCounter .counter > span span {
     color: rgba(0, 0, 0, 0);
     background: linear-gradient(#ff0000 0%, #f00000 100%);
