@@ -1,9 +1,7 @@
-calc("sec", getSec);
-calc("min", getMin);
-var intSec = setInterval('calc("sec", getSec)', 1000);
-var intMin;
+var intSec, intMin, intHour, intDay;
+var deadline = new Date(2013, 11, 26, 23, 21, 00, 00);
 
-function calc(type, func) {
+var calc = function(type, func) {
     $('.counter.'+type+' .to')
         .addClass('hide')
         .removeClass('to')
@@ -25,38 +23,158 @@ function calc(type, func) {
 }
 
 
-function getSec(next) {
-    var d = new Date();
-    var sec = 60-d.getSeconds();
+var getSec = function(next) {
+    var today = new Date();
+    var sec = secsUntil(today, deadline);
 	
-    if (next) {
-        sec--;
-        if (sec < 0) {
-            sec = 59;
-        }
-    } else if(sec == 60) {
-        sec = 0;
-		if (intMin == undefined) {
-			calc("min", getMin);
-			intMin = setInterval('calc("min", getMin)', 60000);
-		}
+    if (!next) {
+        sec++;
     }
+	
+	if (sec === 60) {
+		sec = 0;
+	} else if (sec === 61) {
+		sec = 1;
+	}
 	
     return (sec < 10 ? '0' + sec : sec);
 }
 
-function getMin(next) {
-    var d = new Date();
-    var min = 60-d.getMinutes();
-    if (next) {
-        min--;
-        if (min < 0) {
-            min = 59;
-        }
-    } else if(min == 60) {
-        min = 0;
-//				calcMin();
+var getMin = function(next) {
+    var today = new Date();
+    var min = minsUntil(today, deadline);
+	
+    if (!next) {
+        min++;
     }
+	
+	if (min === 60) {
+		min = 0;
+	}
 	
     return (min < 10 ? '0' + min : min);
 }
+
+var getHour = function(next) {
+    var today = new Date();
+    var hour = hoursUntil(today, deadline);
+	
+    if (!next) {
+        hour++;
+    }
+	
+	if (hour === 24) {
+		hour = 0;
+	} else if (hour === 25) {
+		hour = 1;
+	}
+	
+    return (hour < 10 ? '0' + hour : hour);
+}
+
+var getDay = function(next) {
+    var today = new Date();
+    var day = daysUntil(today, deadline);
+	
+    if (!next) {
+        day++;
+    }
+	
+	if (day < 0) {
+		day = 0;
+	}
+	
+    return (day < 10 ? '0' + day : day);
+}
+
+// Days until Date2 from Date1
+var daysUntil = function(date1, date2) {
+    // Convert both dates to milliseconds
+    var msD1 = date1.getTime();
+    var msD2 = date2.getTime();
+
+    // Calculate the difference in milliseconds
+    var msDiff = msD2 - msD1;
+
+    // Convert back to days and return
+    return (msDiff >= 0) ? Math.floor( msDiff / (24*3600*1000) ) : -1;
+}
+	
+// Hours until Date2 from Date1
+var hoursUntil = function(date1, date2) {
+	var hDiff = 0;
+	var daysLeft = daysUntil(date1, date2);
+	
+	if (daysLeft !== -1) {
+		// Convert both dates to milliseconds
+		var msD1 = date1.getTime();
+		var msD2 = date2.getTime();
+	
+		// Calculate the difference in milliseconds
+		hDiff = Math.floor( ( msD2 - msD1 ) / ( 3600*1000 ) ) - daysLeft * 24;
+	}
+	
+	return hDiff;
+}
+	
+// Minutes until Date2 from Date1
+var minsUntil = function(date1, date2) {
+	var mDiff = 0;
+	var daysLeft = daysUntil(date1, date2);
+	var hoursLeft = hoursUntil(date1, date2);
+	
+	if (daysLeft !== -1) {
+		// Convert both dates to milliseconds
+		var msD1 = date1.getTime();
+		var msD2 = date2.getTime();
+	
+		mDiff = Math.floor( ( msD2 - msD1 ) / ( 60*1000 ) ) - daysLeft * 24*60 - hoursLeft * 60;
+	}
+	
+	return mDiff;
+}
+	
+// Seconds until Date2 from Date1
+var secsUntil = function(date1, date2) {
+	var sDiff = 0;
+	var daysLeft = daysUntil(date1, date2);
+	var hoursLeft = hoursUntil(date1, date2);
+	var minsLeft = minsUntil(date1, date2);
+	
+	if (daysUntil(date1, date2) !== -1) {
+		// Convert both dates to milliseconds
+		var msD1 = date1.getTime();
+		var msD2 = date2.getTime();
+	
+		sDiff = Math.floor( ( msD2 - msD1 ) / ( 1000 ) ) - daysLeft * 24*3600 - hoursLeft * 3600 - minsLeft * 60;
+	}
+	
+	return sDiff;
+}
+
+calc("sec", getSec);
+calc("min", getMin);
+calc("hour", getHour);
+calc("day", getDay);
+if (parseInt(getDay(false)) !== -1) {
+	intSec = setInterval(function() {
+		calc("sec", getSec);
+		
+		if (parseInt(getSec(false)) === 0) {
+			calc("min", getMin);
+		
+			if (parseInt(getMin(false)) === 0) {
+				calc("hour", getHour);
+		
+				if (parseInt(getHour(false)) === 0) {
+					calc("day", getDay);
+				}
+			}
+		}
+	}, 1000);
+}
+var today = new Date();
+console.log(daysUntil(today, deadline));
+console.log(hoursUntil(today, deadline));
+console.log(minsUntil(today, deadline));
+console.log(secsUntil(today, deadline));
