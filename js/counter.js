@@ -1,5 +1,5 @@
-var intSec, intMin, intHour, intDay;
-var deadline = new Date(2013, 11, 26, 23, 21, 00, 00);
+var intSec;
+var deadline = new Date(2014, 0, 15, 20, 00, 00, 00);
 
 var calc = function(type, func) {
     $('.counter.'+type+' .to')
@@ -33,8 +33,6 @@ var getSec = function(next) {
 	
 	if (sec === 60) {
 		sec = 0;
-	} else if (sec === 61) {
-		sec = 1;
 	}
 	
     return (sec < 10 ? '0' + sec : sec);
@@ -156,13 +154,15 @@ calc("sec", getSec);
 calc("min", getMin);
 calc("hour", getHour);
 calc("day", getDay);
-if (parseInt(getDay(false)) !== -1) {
+var today = new Date();
+if (daysUntil(today, deadline) !== -1) {
 	intSec = setInterval(function() {
 		calc("sec", getSec);
 		
-		if (parseInt(getSec(false)) === 0) {
+		var actSec = parseInt(getSec(false));
+		if (actSec === 0) {
 			calc("min", getMin);
-		
+			
 			if (parseInt(getMin(false)) === 0) {
 				calc("hour", getHour);
 		
@@ -170,10 +170,16 @@ if (parseInt(getDay(false)) !== -1) {
 					calc("day", getDay);
 				}
 			}
+		} else if (
+			(actSec === 1)
+		 && (parseInt(getMin(false)) === 1)
+		 && (parseInt(getHour(false)) === 1)
+		 && (parseInt(getDay(false)) === 0)) {
+			console.log("STOP!");
+			clearInterval(intSec);
 		}
 	}, 1000);
 }
-var today = new Date();
 console.log(daysUntil(today, deadline));
 console.log(hoursUntil(today, deadline));
 console.log(minsUntil(today, deadline));
