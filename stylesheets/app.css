@@ -7307,7 +7307,7 @@ a.th {
 /* line 153, sass/app.scss */
 .header .dots, .header_inline .dots {
   position: absolute;
-  z-index: 999;
+  z-index: 500;
   left: 50%;
 }
 /* line 157, sass/app.scss */
@@ -7465,11 +7465,6 @@ a.th {
 /* line 293, sass/app.scss */
 .menu .logoTop {
   width: 45px;
-}
-
-/* line 298, sass/app.scss */
-[data-magellan-expedition] {
-  background: none !important;
 }
 
 /* line 300, sass/app.scss */

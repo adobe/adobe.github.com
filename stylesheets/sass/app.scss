@@ -151,7 +151,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
     
     .dots {
-        position: absolute; z-index: 999;
+        position: absolute; z-index: 500;
         left: 50%;
         
         .dot {
@@ -295,7 +295,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
 }
 
-[data-magellan-expedition] { background: none !important; }
+//[data-magellan-expedition] { background: white !important; }
 
 .title {
     font-family: "tekton-pro";
