@@ -293,6 +293,23 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
     $scope.deleteFilter = function(array, i) {
         array.splice(i, 1);
     }
+    
+    //--------------------------- Mobile & Parrallax -----------------------------
+	
+	$scope.mobile = isMobile(navigator.userAgent||navigator.vendor||window.opera);
+	$scope.menuOpen = false;
+	
+	if ($scope.mobile) {
+		$(window).off("scroll", scrollUpdate);
+	} else {
+		$(window).on("scroll", scrollUpdate);
+	}
+	
+	$(document).foundation();
+	
+	$scope.expandMenu = function() {
+		$scope.menuOpen = !$scope.menuOpen;
+	}
 };
 
 
@@ -316,45 +333,25 @@ var isMobile = function(a) {
 ---------------------------------------------------------------------------- */
 
 var scrollUpdate = function () {
-	scrollTop = $(window).scrollTop();
+	var scrollTop = $(window).scrollTop();
 		
 	// ----------------------------------------------------------------------------
 	//					First parallax: header
 	if (scrollTop < ($("#featuredProj").height() + 20) ) {
-		topLogo_header = ( $(window).scrollTop()/3 ) - 70;
+		var topLogo_header = ( $(window).scrollTop()/3 ) - 70;
 		$("#featuredProj .logo").css({ top: topLogo_header });
 		$("#featuredProj .text-header").css({ bottom: 0 + scrollTop });
 	}
 	
 	// ----------------------------------------------------------------------------
 	//					2nd parrallax: organisations
-	topLogo_org = ( ( $(window).scrollTop() - $("#featuredOrg").position().top + 350 ) / 2 ) - 10 ;
+	var topLogo_org = ( ( $(window).scrollTop() - $("#featuredOrg").position().top + 350 ) / 2 ) - 10 ;
 	if ( topLogo_org > 90 )
 		topLogo_org = 90;
 	$("#featuredOrg .logo").css({ top: topLogo_org });
 	
 	// ----------------------------------------------------------------------------
 	//					3rd parrallax: footer
-	topLogo_footer = ( scrollTop + $(window).height() - $("#footer").position().top - $("#footer").height()*2 ) - 115;
+	var topLogo_footer = ( scrollTop + $(window).height() - $("#footer").position().top - $("#footer").height()*2 ) - 115;
 	$("#logo3").css({ bottom: topLogo_footer });
 }
-
-
-/* ----------------------------------------------------------------------------
-                Main
----------------------------------------------------------------------------- */
-
-var scrollTop, topLogo_footer, topLogo_org, topLogo_header;
-$(function(){ 
-    $(document).foundation();
-        
-    var mobile = isMobile(navigator.userAgent||navigator.vendor||window.opera);
-	
-	if (mobile) {
-		$(window).off("scroll", scrollUpdate);
-	} else {
-		$(window).on("scroll", scrollUpdate);
-	}
-});
-
-$(document).foundation();
