@@ -264,19 +264,25 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         font-size: $menu-font-size+px; color: black;
         background: white;
 		
-		.menuLinks {
-			height: 0px;
-			@include transition(height 0.2s);
-			overflow: hidden;
-			clear: both;
-		}
-		
-		&.more .menuLinks {
-			height: 100px;
-	
-			dd {
+		&.mobile {
+			.menuLinks {
+				height: 0px;
+				@include transition(height 0.2s);
+				overflow: hidden;
 				clear: both;
+				
+				&.more {
+					height: 100px;
+			
+					dd {
+						clear: both;
+					}
+				}
 			}
+		}
+
+		&:not(.mobile) .menu-icon{
+			display: none;
 		}
         
         dd:not(.title) {
@@ -358,6 +364,15 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
             margin-bottom: 0;
         }
     }
+
+	.projects, .organisations {
+		position: relative;
+		bottom: -$menu-height+px;
+	}
+
+	//---------------------------------------------------------------------------------
+	//                          Filters
+	//---------------------------------------------------------------------------------
     
     .mainFilters {
         margin-top: 15px;
@@ -441,6 +456,10 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         }
     }
 
+	//---------------------------------------------------------------------------------
+	//                          Projects / Org
+	//---------------------------------------------------------------------------------
+
 	.wrapProjects {
 		padding-bottom: 50px;
 		position: relative;
@@ -467,7 +486,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         p { margin-bottom: 5px; }
         
         .details {
-            height: 45px;
+//            height: 45px;
             padding-left: 10px;
             color: #666;
         }
@@ -492,8 +511,8 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         }
     }
     
-    .project { height: 140px; }
-    .org { height: 100px; }
+//    .project { height: 140px; }
+//    .org { height: 100px; }
 
 	.buttonMore, .buttonLess {
 		width: 100%;

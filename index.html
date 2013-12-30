@@ -17,13 +17,13 @@
         <div data-magellan-expedition="fixed">
             <div class="row">
                 <div class="large-12 columns">
-                    <dl class="sub-nav" ng-class="{more: menuOpen}">
-						<a class="menu-icon" ng-click="expandMenu()" ng-show="mobile"><span></span></a>
+                    <dl class="sub-nav" ng-class="{mobile: mobile}">
+						<a class="menu-icon" ng-click="expandMenu()"><span></span></a>
 						
                         <dd class="title">
 							<strong>Adobe</strong> Open Source
 						</dd>
-                        <div class="menuLinks">
+                        <div class="menuLinks" ng-class="{more: menuOpen}">
 							<dd data-magellan-arrival="featured"><a href="#featured" ng-click="menuOpen = false">Featured</a></dd>
 							<dd data-magellan-arrival="projects"><a href="#projects" ng-click="menuOpen = false">Projects</a></dd>
 							<dd data-magellan-arrival="organisations"><a href="#organisations" ng-click="menuOpen = false">Organisation</a></dd>
@@ -97,7 +97,7 @@
         </div>
         
         <!-- ------- Filters --------  -->
-        <div class="filters" ng-class="{flat: toggleFilters}">
+        <div class="filters" ng-class="{flat: !toggleFilters}">
             <div class="row">
                 <form class="custom large-12 columns mainFilters">
                     <div class="large-4 columns">
