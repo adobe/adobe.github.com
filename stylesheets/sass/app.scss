@@ -263,6 +263,12 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     .sub-nav {
         font-size: $menu-font-size+px; color: black;
         background: white;
+		height: 37px;
+		@include transition(height 0.2s);
+		
+		&.more {
+			height: auto;
+		}
         
         dd:not(.title) {
             padding: 0px 10px;
