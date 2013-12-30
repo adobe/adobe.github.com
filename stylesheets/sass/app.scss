@@ -468,6 +468,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 	.buttonMore, .buttonLess {
 		width: 100%;
 		height: 100px;
+		overflow: hidden;
 	}
     
     .buttonMore {

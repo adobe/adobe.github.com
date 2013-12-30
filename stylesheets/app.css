@@ -7658,25 +7658,26 @@ a.th {
 .main .buttonMore, .main .buttonLess {
   width: 100%;
   height: 100px;
+  overflow: hidden;
 }
-/* line 473, sass/app.scss */
+/* line 474, sass/app.scss */
 .main .buttonMore {
   position: fixed;
   bottom: 0px;
   left: 0;
 }
-/* line 479, sass/app.scss */
+/* line 480, sass/app.scss */
 .main .buttonLess {
   bottom: -50px;
   position: absolute;
 }
-/* line 484, sass/app.scss */
+/* line 485, sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 491, sass/app.scss */
+/* line 492, sass/app.scss */
 .featured {
   position: absolute;
   top: 0;
