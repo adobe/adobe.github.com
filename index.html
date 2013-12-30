@@ -33,27 +33,29 @@
         
 	</div>
             
-        <!-- --------------------------------------------------------------------------------------
-                            Featured
-        --------------------------------------------------------------------------------------  -->
+	<!-- --------------------------------------------------------------------------------------
+						Featured
+	--------------------------------------------------------------------------------------  -->
 
-	<div class="header">
-        <div class="wrapper" ng-repeat="featured in featureds" ng-class="{actual: $index <= indexFeatured}">
+	<div class="header" id="featuredProj">
+        <div class="wrapper" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index <= indexFeatured['projects']}">
             <div class="row">
-                <div class="large-4 columns text-header" ng-bind-html-unsafe="featured.textHeader"></div>
+                <div class="large-5 columns text-header">
+					<div class="small-11 small-offset-1 columns" ng-bind-html-unsafe="featured.textHeader"></div>
+				</div>
                 
-                <div class="large-5 large-offset-1 columns">
+                <div class="large-6 columns">
                     <img class="logo logoFeatured original" src="{{featured.logo}}" title="{{featured.title}}" />
                 </div>
             </div>
         </div>
         
         <div class="dots">
-            <div class="dot" ng-repeat="featured in featureds" ng-class="{actual: $index == indexFeatured}" ng-click="setIndexFeatured($index)"></div>
+            <div class="dot" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index == indexFeatured['projects']}" ng-click="setIndexFeatured('projects', $index)"></div>
         </div>
         
-        <div class="prev" ng-click="changeIndexFeatured(-1)"></div>
-        <div class="next" ng-click="changeIndexFeatured(+1)"></div>
+        <div class="prev" ng-click="changeIndexFeatured('projects', -1)"></div>
+        <div class="next" ng-click="changeIndexFeatured('projects', +1)"></div>
 	</div>
 
 	<div class="main top">
@@ -184,29 +186,40 @@
             <div ng-class="{ buttonMore: projLast > 10, buttonLess : projLast == 10 }" ng-hide="(projects | projectsFilter:this).length < 10">
                 <div class="row text-center">
                     <button class="button" ng-click="showHideProj()">
-                            <span ng-hide="projLast != 10">Show more...</span>
-                            <span ng-show="projLast > 10">Show less...</span>
+						<span ng-hide="projLast != 10">Show more...</span>
+						<span ng-show="projLast > 10">Show less...</span>
                     </button>
                 </div>
             </div>
             
             <div ng-hide="loading == false">
-                                Loading...
-                            </div>
+				Loading...
+			</div>
         </div>
     </div>
-    
-    <div class="header_inline" id="header_org">
-        <div class="row" id="text-header_org">
-            <img class="logo original" id="logo2" src="img/photoshop_logo.svg" title="Brackets, code the web" />
             
-            <div class="large-6 large-offset-6 columns">
-                <h3>Photoshop</h3>
-                <p class="details">Stuff from the Adobe Photoshop team<br/>
-                <a href="">Learn more...</a>
-                </p>
+	<!-- --------------------------------------------------------------------------------------
+						Featured Organisations
+	--------------------------------------------------------------------------------------  -->
+    
+    <div class="header_inline" id="featuredOrg">
+        <div class="wrapper" ng-repeat="featured in featureds['org']" ng-class="{actual: $index <= indexFeatured['org']}">
+            <div class="row">
+                <div class="large-5 columns">
+                    <img class="logo logoFeatured original" src="{{featured.logo}}" title="{{featured.title}}" />
+                </div>
+                <div class="large-7 large-offset-5 columns text-header">
+					<div class="small-11 small-offset-1 columns" ng-bind-html-unsafe="featured.textHeader"></div>
+				</div>
             </div>
         </div>
+        
+        <div class="dots">
+            <div class="dot" ng-repeat="featured in featureds['org']" ng-class="{actual: $index == indexFeatured['org']}" ng-click="setIndexFeatured('org', $index)"></div>
+        </div>
+        
+        <div class="prev" ng-click="changeIndexFeatured('org', -1)"></div>
+        <div class="next" ng-click="changeIndexFeatured('org', +1)"></div>
     </div>
     
     <div class="main">

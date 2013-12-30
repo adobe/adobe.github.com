@@ -1,7 +1,7 @@
 
 
 //Foundation override
-$primary-color: rgb(255 , 0, 0);
+$primary-color: rgb(255,0,0);
 $secondary-color-alpha: rgba(233,233,233,0.8);
 //Personnal variables
 $header-height: 350;
@@ -72,7 +72,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 
 
 //---------------------------------------------------------------------------------
-//                          Header
+//                          Headers
 //---------------------------------------------------------------------------------
 
 .header {
@@ -80,7 +80,31 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     position: fixed; top: $menu-height+px; left: 0;
     height: $header-height+px; width: 100%;
     overflow: hidden;
+	
+	.dots {
+        bottom: 65px;
+	}
+	
+	.logo.original {
+		top: -70px;
+	}
+}
+
+.header_inline {
+    background: $secondary-color;
+    height: ($header-height - $menu-height)+px; 
+    overflow: hidden; position: relative;
+	
+	.dots {
+        bottom: 15px;
+	}
+	
+	.logo.original {
+		top: 10px;
+	}
+}
     
+.header, .header_inline {
     .wrapper {
         position: absolute; z-index: 99;
         left:100%;
@@ -90,10 +114,16 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         width: 100%; height: $header-height+px;
         
         &.actual { left: 0; }
+
+		&>.row {
+			position: relative;
+			height: ($header-height - $menu-height)+px;
+		}
         
         .text-header  {
             position: absolute;
-            bottom: 45px;
+			bottom: 0px;
+			padding-bottom: 20px;
 			z-index: 50;
             background: $secondary-color-alpha;
         }
@@ -112,17 +142,16 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         
         .logo {
             position: absolute; 
+			margin-left: 10%;
             
             &.original {
-                width: 400px; height: 400px;
-                top: -70px; right: 35%;
+                width: 80%;
             }
         }
     }
     
     .dots {
         position: absolute; z-index: 999;
-        bottom: 65px;
         left: 50%;
         
         .dot {
@@ -186,39 +215,6 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
 }
 
-//---------------------------------------------------------------------------------
-//                          Header 2 (inline)
-//---------------------------------------------------------------------------------
-
-.header_inline {
-    background: $secondary-color;
-    height: ($header-height - $menu-height)+px; 
-    overflow: hidden; position: relative;
-    
-    &>div { position: relative; }
-    
-    h3 { 
-        padding-top: 150px;
-        margin: 0;
-    }
-    
-    .details {
-        color: #888;
-        
-        a {
-            font-size: 13px;
-        }
-    }
-    
-    .logo {
-        position: absolute; 
-        
-        &.original {
-            width: 400px; height: 400px;
-            top: 10px;
-        }
-    }
-}
 
 //---------------------------------------------------------------------------------
 //                          Footer

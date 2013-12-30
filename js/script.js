@@ -191,7 +191,10 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 	$scope.Object = Object;
 	$scope.filter = $filter;
 	$scope.filterStarIndex = 0;
-	$scope.indexFeatured = 0;
+	$scope.indexFeatured = {
+		"org": 0,
+		"projects": 0
+	};
 	$scope.searchLang = new Array();
 	$scope.searchOrg = new Array();
 	
@@ -207,25 +210,31 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
     
     // hFeatured on the header
     $scope.featureds = FeaturedHeader.query( function() {
-        for (var i = 0; i < $scope.featureds.length; i++) {
-            var actFeatured = $scope.featureds[i];
-            
-            actFeatured.textHeader = actFeatured.textHeader.join("\n");
-        };
+		console.log("YEa");
+		$scope.featureds = $scope.featureds[0];
+		var keys = Object.keys($scope.featureds);
+        for (var i = 0; i < keys.length; i++) {
+			var actFeatured = $scope.featureds[keys[i]];
+			for (var j = 0; j < actFeatured.length; j++) {
+				var actFeaturedItem = actFeatured[j];
+				
+				actFeaturedItem.textHeader = actFeaturedItem.textHeader.join("\n");
+			};
+		};
     });
     
-    $scope.changeIndexFeatured = function(delta) {
-        if ($scope.indexFeatured <= 0 && delta < 0) {
-            $scope.indexFeatured = $scope.featureds.length - 1;
-        } else if ($scope.indexFeatured >= $scope.featureds.length-1 && delta > 0) {
-            $scope.indexFeatured = 0;
+    $scope.changeIndexFeatured = function(i, delta) {
+        if ($scope.indexFeatured[i] <= 0 && delta < 0) {
+            $scope.indexFeatured[i] = $scope.featureds[i].length - 1;
+        } else if ($scope.indexFeatured[i] >= $scope.featureds[i].length-1 && delta > 0) {
+            $scope.indexFeatured[i] = 0;
         } else {
-            $scope.indexFeatured += delta;
+            $scope.indexFeatured[i] += delta;
         }
     }
     
-    $scope.setIndexFeatured = function(index) {
-        $scope.indexFeatured = index;
+    $scope.setIndexFeatured = function(i, index) {
+        $scope.indexFeatured[i] = index;
     }
     
     //------------------------------- Datas --------------------------------
@@ -252,7 +261,7 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 			$scope.projLast = 100;
 		}
 		else {
-			$("html, body").animate({ scrollTop: 350 }, 100);
+			$("html, body").animate({ scrollTop: 380 }, 100);
 			$scope.projLast = 10;
 		}
 	}
@@ -296,29 +305,21 @@ $(function(){
     
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
-				
-		var endOfProjects = scrollTop + $(window).height() - $('.top').height() - $('.header').height();
-		if (endOfProjects < 80 ) {
-			$(".buttonMore").css({position: 'fixed', bottom: 0});
-		}
-		else {
-			$(".buttonMore").css({position: 'absolute', bottom: -50});
-		}
 			
         // ----------------------------------------------------------------------------
         //					First parallax: header
-        if (scrollTop < ($(".header").height() + 20) ) {
+        if (scrollTop < ($("#featuredProj").height() + 20) ) {
             topLogo_header = ( $(window).scrollTop()/3 ) - 70;
-            $(".logoFeatured").css({ top: topLogo_header });
-            $(".text-header").css({ bottom: 45 + scrollTop });
+            $("#featuredProj .logo").css({ top: topLogo_header });
+            $("#featuredProj .text-header").css({ bottom: 0 + scrollTop });
         }
         
         // ----------------------------------------------------------------------------
         //					2nd parrallax: organisations
-        topLogo_org = ( ( $(window).scrollTop() - $("#header_org").position().top + 350 ) / 2 ) - 10 ;
+        topLogo_org = ( ( $(window).scrollTop() - $("#featuredOrg").position().top + 350 ) / 2 ) - 10 ;
         if ( topLogo_org > 90 )
             topLogo_org = 90;
-        $("#logo2").css({ top: topLogo_org });
+        $("#featuredOrg .logo").css({ top: topLogo_org });
         
         // ----------------------------------------------------------------------------
         //					3rd parrallax: footer
