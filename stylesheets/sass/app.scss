@@ -225,10 +225,12 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     height: ($header-height - $menu-height)+px; 
     overflow: hidden; position: relative;
     
-    &>div { position: relative; }
+    .text-header {
+		position: relative;
+		padding-top: 2em;
+	}
     
     h3 { 
-        padding-top: 150px;
         margin: 0;
     }
     
@@ -241,12 +243,14 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
     
     .logo {
-        position: absolute; 
-        
-        &.original {
-            width: 400px; height: 400px;
-            bottom: 0px; right:25%;
-        }
+        position: relative; 
+		width: ($header-height - $menu-height)+px; height: ($header-height - $menu-height)+px;
+		bottom: 0px;
+	
+		img {
+			width: 100%;
+			height: 100%;
+		}
     }
 }
 
@@ -333,7 +337,6 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 
 .title {
     font-family: "tekton-pro";
-    font-size: 24px;
 	font-weight: 700 !important;
     margin: 3px 30px 3px 20px;
     

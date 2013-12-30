@@ -352,6 +352,9 @@ var scrollUpdate = function () {
 	
 	// ----------------------------------------------------------------------------
 	//					3rd parrallax: footer
-	var topLogo_footer = ( scrollTop + $(window).height() - $("#footer").position().top - $("#footer").height()*2 ) - 115;
+	var bottomScreen =  scrollTop + $(window).height();
+	var footerBottom = $("#footer").position().top + $("#footer").height() + 350;
+	var topLogo_footer = Math.round(bottomScreen - footerBottom);
+	console.log(bottomScreen, footerBottom, topLogo_footer);
 	$("#logo3").css({ bottom: topLogo_footer });
 }
