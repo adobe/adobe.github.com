@@ -338,9 +338,8 @@ var scrollUpdate = function () {
 	// ----------------------------------------------------------------------------
 	//					First parallax: header
 	if (scrollTop < ($("#featuredProj").height() + 20) ) {
-		var topLogo_header = ( $(window).scrollTop()/3 ) - 70;
+		var topLogo_header = ( $(window).scrollTop()*1.5 ) - 70;
 		$("#featuredProj .logo").css({ top: topLogo_header });
-		$("#featuredProj .text-header").css({ bottom: 0 + scrollTop });
 	}
 	
 	// ----------------------------------------------------------------------------
@@ -353,8 +352,7 @@ var scrollUpdate = function () {
 	// ----------------------------------------------------------------------------
 	//					3rd parrallax: footer
 	var bottomScreen =  scrollTop + $(window).height();
-	var footerBottom = $("#footer").position().top + $("#footer").height() + 350;
-	var topLogo_footer = Math.round(bottomScreen - footerBottom);
-	console.log(bottomScreen, footerBottom, topLogo_footer);
+	var footerBottom = $("#footer").position().top + $("#footer").height();
+	var topLogo_footer = Math.round(bottomScreen - footerBottom - $(".menu").height());
 	$("#logo3").css({ bottom: topLogo_footer });
 }

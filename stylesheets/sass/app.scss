@@ -4,7 +4,7 @@
 $primary-color: rgb(255,0,0);
 $secondary-color-alpha: rgba(233,233,233,0.8);
 //Personnal variables
-$header-height: 350;
+$header-height: 300;
 $menu-height: 50;
 $menu-font-size: 20;
 
@@ -76,35 +76,23 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 //---------------------------------------------------------------------------------
 
 .header {
-    background: $secondary-color;
-    position: fixed; top: $menu-height+px; left: 0;
-    height: $header-height+px; width: 100%;
-    overflow: hidden;
-	
-	.dots {
-        bottom: 65px;
-	}
+    margin-top: $menu-height+px;
 	
 	.logo.original {
 		top: -70px;
 	}
 }
 
-.header_inline {
-    background: $secondary-color;
-    height: ($header-height - $menu-height)+px; 
-    overflow: hidden; position: relative;
-	
-	.dots {
-        bottom: 15px;
-	}
-	
-	.logo.original {
-		top: 10px;
-	}
+.header_inline .logo.original {
+	top: 10px;
 }
     
 .header, .header_inline {
+	background: $secondary-color;
+    height: $header-height+px; width: 100%;
+    overflow: hidden; position: relative;
+	z-index: 20;
+	
     .wrapper {
         position: absolute; z-index: 99;
         left:100%;
@@ -117,14 +105,14 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 
 		&>.row {
 			position: relative;
-			height: ($header-height - $menu-height)+px;
+			height: $header-height+px;
 		}
         
         .text-header  {
             position: absolute;
 			bottom: 0px;
-			padding-bottom: 20px;
 			z-index: 50;
+			padding-bottom: 20px;
             background: $secondary-color-alpha;
         }
     
@@ -152,6 +140,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     
     .dots {
         position: absolute; z-index: 500;
+        bottom: 15px;
         left: 50%;
         
         .dot {
@@ -353,7 +342,6 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     background: #fff;
     position: relative;
     margin-top: 0;
-    &.top { margin-top: $header-height+px; }
     padding: 30px 0;
     
     h2 {
