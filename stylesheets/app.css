@@ -7455,10 +7455,6 @@ a.th {
 .menu .sub-nav dd:not(.title) a {
   color: black;
   font-size: 15px;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
 }
 /* line 298, sass/app.scss */
 .menu .sub-nav dd:not(.title).active a, .menu .sub-nav dd:not(.title):hover a {
@@ -7489,7 +7485,7 @@ a.th {
   width: 45px;
 }
 
-/* line 321, sass/app.scss */
+/* line 319, sass/app.scss */
 .menu-icon {
   display: block;
   float: left;
@@ -7497,7 +7493,7 @@ a.th {
   height: 30px;
   margin-right: 10px;
 }
-/* line 328, sass/app.scss */
+/* line 326, sass/app.scss */
 .menu-icon span {
   display: block;
   width: 100%;
@@ -7507,72 +7503,73 @@ a.th {
   box-shadow: 0 10px 0 1px red, 0 16px 0 1px red, 0 22px 0 1px red;
 }
 
-/* line 336, sass/app.scss */
+/* line 334, sass/app.scss */
 .title {
   font-family: "tekton-pro";
   font-size: 24px;
   font-weight: 700 !important;
   margin: 3px 30px 3px 20px;
 }
-/* line 342, sass/app.scss */
+/* line 340, sass/app.scss */
 .title strong {
   color: red;
 }
 
-/* line 351, sass/app.scss */
+/* line 349, sass/app.scss */
 .main {
   background: #fff;
   position: relative;
   margin-top: 0;
   padding: 30px 0;
 }
-/* line 355, sass/app.scss */
+/* line 353, sass/app.scss */
 .main.top {
   margin-top: 350px;
 }
-/* line 358, sass/app.scss */
+/* line 356, sass/app.scss */
 .main h2 {
   font-weight: normal;
 }
-/* line 363, sass/app.scss */
+/* line 361, sass/app.scss */
 .main .topProject h2, .main .topProject form {
   margin-bottom: 0;
 }
-/* line 368, sass/app.scss */
-.main .projects, .main .organisations {
-  position: relative;
-  bottom: -50px;
+/* line 366, sass/app.scss */
+.main .anchor {
+  display: block;
+  float: left;
+  margin-top: -50px;
 }
-/* line 377, sass/app.scss */
+/* line 375, sass/app.scss */
 .main .mainFilters {
   margin-top: 15px;
 }
-/* line 380, sass/app.scss */
+/* line 378, sass/app.scss */
 .main .mainFilters .button {
   padding: 6px 3px 4px;
 }
-/* line 382, sass/app.scss */
+/* line 380, sass/app.scss */
 .main .mainFilters .button svg {
   width: 19px;
   height: 19px;
 }
-/* line 385, sass/app.scss */
+/* line 383, sass/app.scss */
 .main .mainFilters .button svg path {
   fill: #fff;
 }
-/* line 390, sass/app.scss */
+/* line 388, sass/app.scss */
 .main .filters {
   margin-bottom: 10px;
   background: #e9e9e9;
   width: 100%;
   overflow: hidden;
 }
-/* line 391, sass/app.scss */
+/* line 389, sass/app.scss */
 .main .filters.flat {
   height: 0px;
   margin-bottom: 0px;
 }
-/* line 402, sass/app.scss */
+/* line 400, sass/app.scss */
 .main .filters .star .fitlerStar {
   width: 21px;
   height: 21px;
@@ -7581,39 +7578,39 @@ a.th {
   background-size: 21px 21px;
   float: left;
 }
-/* line 409, sass/app.scss */
+/* line 407, sass/app.scss */
 .main .filters .star .fitlerStar:hover, .main .filters .star .fitlerStar.on {
   background-image: url("../img/star_on.svg");
 }
-/* line 413, sass/app.scss */
+/* line 411, sass/app.scss */
 .main .filters .activeFilter {
   margin: -10px 0.9375em 15px;
 }
-/* line 416, sass/app.scss */
+/* line 414, sass/app.scss */
 .main .filters .activeFilter .filterLang {
   margin-right: 10px;
   display: inline-block;
 }
-/* line 420, sass/app.scss */
+/* line 418, sass/app.scss */
 .main .filters .activeFilter .filterLang .button {
   margin-bottom: 0px;
 }
-/* line 427, sass/app.scss */
+/* line 425, sass/app.scss */
 .main .autocomplete {
   width: 100%;
   position: absolute;
   top: 146px;
   z-index: 999;
 }
-/* line 435, sass/app.scss */
+/* line 433, sass/app.scss */
 .main .autocomplete .wrapperLang .items {
   padding-left: 17px;
 }
-/* line 436, sass/app.scss */
+/* line 434, sass/app.scss */
 .main .autocomplete .wrapperLang .items:first-child {
   padding-left: 6px;
 }
-/* line 439, sass/app.scss */
+/* line 437, sass/app.scss */
 .main .autocomplete .wrapperLang .items .item {
   padding: 10px 20px;
   display: block;
@@ -7623,16 +7620,16 @@ a.th {
   color: #333;
   background: white;
 }
-/* line 451, sass/app.scss */
+/* line 449, sass/app.scss */
 .main .autocomplete .wrapperLang .items .item:hover {
   color: red;
 }
-/* line 463, sass/app.scss */
+/* line 461, sass/app.scss */
 .main .wrapProjects {
   padding-bottom: 50px;
   position: relative;
 }
-/* line 468, sass/app.scss */
+/* line 466, sass/app.scss */
 .main .project, .main .org {
   font-size: 14px;
   border-left: 3px #e9e9e9 solid;
@@ -7644,71 +7641,71 @@ a.th {
   color: black;
   margin: 10px 0;
 }
-/* line 477, sass/app.scss */
+/* line 475, sass/app.scss */
 .main .project:hover, .main .org:hover {
   border-left: 3px red solid;
 }
-/* line 481, sass/app.scss */
+/* line 479, sass/app.scss */
 .main .project h1, .main .org h1 {
   font-size: 17px;
   margin-bottom: 3px;
 }
-/* line 486, sass/app.scss */
+/* line 484, sass/app.scss */
 .main .project p, .main .org p {
   margin-bottom: 5px;
 }
-/* line 488, sass/app.scss */
+/* line 486, sass/app.scss */
 .main .project .details, .main .org .details {
   padding-left: 10px;
   color: #666;
 }
-/* line 494, sass/app.scss */
+/* line 492, sass/app.scss */
 .main .project .star img, .main .org .star img {
   width: 20px;
 }
-/* line 496, sass/app.scss */
+/* line 494, sass/app.scss */
 .main .project .watchCount, .main .org .watchCount {
   padding: 5px 10px;
   float: right;
   color: #666;
 }
-/* line 502, sass/app.scss */
+/* line 500, sass/app.scss */
 .main .project .more, .main .org .more {
   margin-bottom: 25px;
 }
-/* line 505, sass/app.scss */
+/* line 503, sass/app.scss */
 .main .project .more .link, .main .org .more .link {
   text-align: right;
   color: red;
 }
-/* line 509, sass/app.scss */
+/* line 507, sass/app.scss */
 .main .project .more .link:hover, .main .org .more .link:hover {
   color: #e60000;
 }
-/* line 517, sass/app.scss */
+/* line 515, sass/app.scss */
 .main .buttonMore, .main .buttonLess {
   width: 100%;
   height: 100px;
   overflow: hidden;
 }
-/* line 523, sass/app.scss */
+/* line 521, sass/app.scss */
 .main .buttonMore {
   position: fixed;
   bottom: 0px;
   left: 0;
 }
-/* line 529, sass/app.scss */
+/* line 527, sass/app.scss */
 .main .buttonLess {
   bottom: -50px;
   position: absolute;
 }
-/* line 534, sass/app.scss */
+/* line 532, sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 541, sass/app.scss */
+/* line 539, sass/app.scss */
 .featured {
   position: absolute;
   top: 0;

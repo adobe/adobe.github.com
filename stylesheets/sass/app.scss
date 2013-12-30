@@ -292,7 +292,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
             a {
                 color: black;
                 font-size: 15px;
-                @include transition(all 0.1s);
+//                @include transition(all 0.1s);
             }
             
             &.active a, &:hover a {
@@ -315,8 +315,6 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         width: 45px;
     }
 }
-
-//[data-magellan-expedition] { background: white !important; }
 
 .menu-icon {
 	display: block;
@@ -365,9 +363,9 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         }
     }
 
-	.projects, .organisations {
-		position: relative;
-		bottom: -$menu-height+px;
+	.anchor {
+		display: block; float: left;
+		margin-top: -$menu-height+px;
 	}
 
 	//---------------------------------------------------------------------------------
