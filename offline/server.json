@@ -1,0 +1,2446 @@
+[
+    {
+        "repos": [
+            {
+                "name": "adobe.github.com",
+                "watchers_count": 32,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 62756
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 43694
+                    }
+                ],
+                "description": "Adobe central hub for open source",
+                "pushed_at": "2013-12-30T15:38:32Z",
+                "html_url": "https://github.com/adobe/adobe.github.com",
+                "languages_url": "https://api.github.com/repos/adobe/adobe.github.com/languages",
+                "homepage": "adobe.github.io",
+                "languagesTotal": 106450
+            },
+            {
+                "name": "source-code-pro",
+                "watchers_count": 3480,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 454
+                    }
+                ],
+                "description": "Repository for Source Code Pro Font",
+                "pushed_at": "2013-09-07T19:58:05Z",
+                "html_url": "https://github.com/adobe/source-code-pro",
+                "languages_url": "https://api.github.com/repos/adobe/source-code-pro/languages",
+                "homepage": null,
+                "languagesTotal": 454
+            },
+            {
+                "name": "brackets",
+                "watchers_count": 13743,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 8740476
+                    },
+                    {
+                        "name": "Ruby",
+                        "value": 9030
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 1602335
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 8449
+                    },
+                    {
+                        "name": "PHP",
+                        "value": 28502
+                    },
+                    {
+                        "name": "Clojure",
+                        "value": 28
+                    }
+                ],
+                "description": "An open source code editor for the web, written in JavaScript, HTML and CSS.",
+                "pushed_at": "2013-12-30T02:47:20Z",
+                "html_url": "https://github.com/adobe/brackets",
+                "languages_url": "https://api.github.com/repos/adobe/brackets/languages",
+                "homepage": "http://brackets.io",
+                "languagesTotal": 10388820
+            },
+            {
+                "name": "brackets-phonegap",
+                "watchers_count": 75,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 4799
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 108584
+                    }
+                ],
+                "description": "A brackets extension for PhoneGap development.",
+                "pushed_at": "2013-11-11T17:55:32Z",
+                "html_url": "https://github.com/adobe/brackets-phonegap",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-phonegap/languages",
+                "homepage": null,
+                "languagesTotal": 113383
+            },
+            {
+                "name": "brackets-shell",
+                "watchers_count": 452,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 123358
+                    },
+                    {
+                        "name": "Python",
+                        "value": 989310
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 152551
+                    },
+                    {
+                        "name": "C++",
+                        "value": 344099
+                    },
+                    {
+                        "name": "C",
+                        "value": 19715
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 9595
+                    }
+                ],
+                "description": "CEF3-based application shell for Brackets.",
+                "pushed_at": "2013-12-30T03:39:11Z",
+                "html_url": "https://github.com/adobe/brackets-shell",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-shell/languages",
+                "homepage": "http://brackets.io",
+                "languagesTotal": 1638628
+            },
+            {
+                "name": "source-sans-pro",
+                "watchers_count": 525,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 798
+                    }
+                ],
+                "description": "Repository for Source Sans Pro Font",
+                "pushed_at": "2013-10-10T08:37:43Z",
+                "html_url": "https://github.com/adobe/source-sans-pro",
+                "languages_url": "https://api.github.com/repos/adobe/source-sans-pro/languages",
+                "homepage": null,
+                "languagesTotal": 798
+            },
+            {
+                "name": "cssfilterlab",
+                "watchers_count": 284,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 14387578
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 119609
+                    },
+                    {
+                        "name": "F#",
+                        "value": 20110
+                    }
+                ],
+                "description": "CSS FilterLab",
+                "pushed_at": "2013-10-29T21:50:34Z",
+                "html_url": "https://github.com/adobe/cssfilterlab",
+                "languages_url": "https://api.github.com/repos/adobe/cssfilterlab/languages",
+                "homepage": "",
+                "languagesTotal": 14527297
+            },
+            {
+                "name": "Spry",
+                "watchers_count": 64,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "PHP",
+                        "value": 3552
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 1354211
+                    },
+                    {
+                        "name": "ColdFusion",
+                        "value": 2438
+                    }
+                ],
+                "description": "Spry is a JavaScript-based framework that enables the rapid development of Ajax-powered web pages.",
+                "pushed_at": "2012-08-16T15:26:28Z",
+                "html_url": "https://github.com/adobe/Spry",
+                "languages_url": "https://api.github.com/repos/adobe/Spry/languages",
+                "homepage": null,
+                "languagesTotal": 1360201
+            },
+            {
+                "name": "brackets-registry",
+                "watchers_count": 11,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 131514
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 3678
+                    }
+                ],
+                "description": "A registry system for hosting Brackets extensions powered by node.js",
+                "pushed_at": "2013-11-05T22:46:10Z",
+                "html_url": "https://github.com/adobe/brackets-registry",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-registry/languages",
+                "homepage": null,
+                "languagesTotal": 135192
+            },
+            {
+                "name": "brackets-app",
+                "watchers_count": 551,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "C",
+                        "value": 783645
+                    },
+                    {
+                        "name": "C++",
+                        "value": 1332843
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 3558
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 102532
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 28633
+                    },
+                    {
+                        "name": "Python",
+                        "value": 22389
+                    }
+                ],
+                "description": "Deprecated CEF1-based app shell for Brackets. Use https://github.com/adobe/brackets-shell instead.",
+                "pushed_at": "2012-09-18T20:59:44Z",
+                "html_url": "https://github.com/adobe/brackets-app",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-app/languages",
+                "homepage": "",
+                "languagesTotal": 2273600
+            },
+            {
+                "name": "GLS3D",
+                "watchers_count": 66,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "C",
+                        "value": 1347780
+                    },
+                    {
+                        "name": "C++",
+                        "value": 118082
+                    },
+                    {
+                        "name": "ActionScript",
+                        "value": 231552
+                    }
+                ],
+                "description": "An implementation of OpenGL for Stage3D that can run inside Flash Player 11+",
+                "pushed_at": "2013-05-31T03:38:23Z",
+                "html_url": "https://github.com/adobe/GLS3D",
+                "languages_url": "https://api.github.com/repos/adobe/GLS3D/languages",
+                "homepage": null,
+                "languagesTotal": 1697414
+            },
+            {
+                "name": "brackets.io",
+                "watchers_count": 15,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 259770
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 267610
+                    }
+                ],
+                "description": "brackets.io website",
+                "pushed_at": "2013-12-24T17:01:52Z",
+                "html_url": "https://github.com/adobe/brackets.io",
+                "languages_url": "https://api.github.com/repos/adobe/brackets.io/languages",
+                "homepage": null,
+                "languagesTotal": 527380
+            },
+            {
+                "name": "webkit",
+                "watchers_count": 70,
+                "org": "",
+                "languages": [],
+                "description": "Experiments and contributions to WebKit.  Tracks git://git.webkit.org/WebKit.git",
+                "pushed_at": "2013-04-17T17:32:10Z",
+                "html_url": "https://github.com/adobe/webkit",
+                "languages_url": "https://api.github.com/repos/adobe/webkit/languages",
+                "homepage": null,
+                "languagesTotal": 0
+            },
+            {
+                "name": "dds2atf",
+                "watchers_count": 46,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "C",
+                        "value": 221804
+                    },
+                    {
+                        "name": "C++",
+                        "value": 845089
+                    },
+                    {
+                        "name": "Perl",
+                        "value": 348976
+                    }
+                ],
+                "description": "Tool for converting DDS files into ATF files suitable for use with the Flash Stage3D API",
+                "pushed_at": "2012-08-10T02:36:29Z",
+                "html_url": "https://github.com/adobe/dds2atf",
+                "languages_url": "https://api.github.com/repos/adobe/dds2atf/languages",
+                "homepage": null,
+                "languagesTotal": 1415869
+            },
+            {
+                "name": "brackets-updates",
+                "watchers_count": 2,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 467
+                    }
+                ],
+                "description": "Update info and deployment scripts for Brackets/Edge Code",
+                "pushed_at": "2013-12-19T06:33:11Z",
+                "html_url": "https://github.com/adobe/brackets-updates",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-updates/languages",
+                "homepage": null,
+                "languagesTotal": 467
+            },
+            {
+                "name": "CodeMirror2",
+                "watchers_count": 62,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 1523714
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 56551
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 291
+                    },
+                    {
+                        "name": "LiveScript",
+                        "value": 6103
+                    }
+                ],
+                "description": "In-browser code editor",
+                "pushed_at": "2013-12-18T23:35:58Z",
+                "html_url": "https://github.com/adobe/CodeMirror2",
+                "languages_url": "https://api.github.com/repos/adobe/CodeMirror2/languages",
+                "homepage": "http://codemirror.net/",
+                "languagesTotal": 1586659
+            },
+            {
+                "name": "brackets-edge-web-fonts",
+                "watchers_count": 39,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 73722
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 11944
+                    }
+                ],
+                "description": "Edge Web Fonts extension for Brackets. Simply unzip and drop into your Brackets extension folder to browse and include Edge Web Fonts.",
+                "pushed_at": "2013-12-04T18:19:23Z",
+                "html_url": "https://github.com/adobe/brackets-edge-web-fonts",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-edge-web-fonts/languages",
+                "homepage": "http://html.adobe.com/edge/webfonts/",
+                "languagesTotal": 85666
+            },
+            {
+                "name": "chromium",
+                "watchers_count": 16,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Python",
+                        "value": 7157879
+                    },
+                    {
+                        "name": "C++",
+                        "value": 119862423
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 6376945
+                    },
+                    {
+                        "name": "C",
+                        "value": 73494730
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 1432298
+                    },
+                    {
+                        "name": "Java",
+                        "value": 62764
+                    },
+                    {
+                        "name": "Assembly",
+                        "value": 1178292
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 9900561
+                    },
+                    {
+                        "name": "AppleScript",
+                        "value": 6973
+                    },
+                    {
+                        "name": "PHP",
+                        "value": 97796
+                    },
+                    {
+                        "name": "Perl",
+                        "value": 918491
+                    },
+                    {
+                        "name": "XML",
+                        "value": 13419
+                    },
+                    {
+                        "name": "Go",
+                        "value": 18556
+                    },
+                    {
+                        "name": "R",
+                        "value": 524
+                    },
+                    {
+                        "name": "Logos",
+                        "value": 4517
+                    },
+                    {
+                        "name": "F#",
+                        "value": 381
+                    },
+                    {
+                        "name": "Ragel in Ruby Host",
+                        "value": 3239
+                    },
+                    {
+                        "name": "Awk",
+                        "value": 9519
+                    },
+                    {
+                        "name": "Matlab",
+                        "value": 5234
+                    },
+                    {
+                        "name": "Tcl",
+                        "value": 277077
+                    },
+                    {
+                        "name": "DOT",
+                        "value": 1239
+                    }
+                ],
+                "description": "Experiments and contributions to Chromium project",
+                "pushed_at": "2013-04-17T17:46:42Z",
+                "html_url": "https://github.com/adobe/chromium",
+                "languages_url": "https://api.github.com/repos/adobe/chromium/languages",
+                "homepage": null,
+                "languagesTotal": 220822857
+            },
+            {
+                "name": "glsl2agal",
+                "watchers_count": 123,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "C",
+                        "value": 1371515
+                    },
+                    {
+                        "name": "C++",
+                        "value": 2685075
+                    },
+                    {
+                        "name": "Perl",
+                        "value": 5387
+                    },
+                    {
+                        "name": "ActionScript",
+                        "value": 508348
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 7226
+                    },
+                    {
+                        "name": "Emacs Lisp",
+                        "value": 74
+                    },
+                    {
+                        "name": "Python",
+                        "value": 30508
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 31372
+                    },
+                    {
+                        "name": "F#",
+                        "value": 3140
+                    }
+                ],
+                "description": "GLSL To AGAL compiler -- Use this to compile GLSL shaders so they can be used in your flash application.",
+                "pushed_at": "2013-02-14T18:59:21Z",
+                "html_url": "https://github.com/adobe/glsl2agal",
+                "languages_url": "https://api.github.com/repos/adobe/glsl2agal/languages",
+                "homepage": "http://gaming.adobe.com",
+                "languagesTotal": 4642645
+            },
+            {
+                "name": "brackets-phonegap-prototype",
+                "watchers_count": 7,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 28883
+                    }
+                ],
+                "description": "Brackets Extension for interacting with PhoneGap.",
+                "pushed_at": "2012-08-22T18:51:19Z",
+                "html_url": "https://github.com/adobe/brackets-phonegap-prototype",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-phonegap-prototype/languages",
+                "homepage": "",
+                "languagesTotal": 28883
+            },
+            {
+                "name": "telemetry-utils",
+                "watchers_count": 24,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Python",
+                        "value": 6897
+                    }
+                ],
+                "description": "Tools to compliment Flash's Telemetry feature",
+                "pushed_at": "2013-01-29T05:57:57Z",
+                "html_url": "https://github.com/adobe/telemetry-utils",
+                "languages_url": "https://api.github.com/repos/adobe/telemetry-utils/languages",
+                "homepage": null,
+                "languagesTotal": 6897
+            },
+            {
+                "name": "web-platform",
+                "watchers_count": 76,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 1029363
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 1318114
+                    },
+                    {
+                        "name": "F#",
+                        "value": 1717
+                    },
+                    {
+                        "name": "Perl",
+                        "value": 860
+                    },
+                    {
+                        "name": "PHP",
+                        "value": 368
+                    },
+                    {
+                        "name": "Erlang",
+                        "value": 2150
+                    },
+                    {
+                        "name": "Python",
+                        "value": 12224
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 234
+                    }
+                ],
+                "description": "",
+                "pushed_at": "2013-10-15T00:24:36Z",
+                "html_url": "https://github.com/adobe/web-platform",
+                "languages_url": "https://api.github.com/repos/adobe/web-platform/languages",
+                "homepage": null,
+                "languagesTotal": 2365030
+            },
+            {
+                "name": "skia",
+                "watchers_count": 6,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "C",
+                        "value": 587649
+                    },
+                    {
+                        "name": "C++",
+                        "value": 5600716
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 45930
+                    },
+                    {
+                        "name": "Assembly",
+                        "value": 10233
+                    }
+                ],
+                "description": "Experiments and contributions to Skia project",
+                "pushed_at": "2012-05-05T01:00:15Z",
+                "html_url": "https://github.com/adobe/skia",
+                "languages_url": "https://api.github.com/repos/adobe/skia/languages",
+                "homepage": null,
+                "languagesTotal": 6244528
+            },
+            {
+                "name": "graphicalweb-keynote",
+                "watchers_count": 32,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 1064354
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 389
+                    },
+                    {
+                        "name": "F#",
+                        "value": 7281
+                    },
+                    {
+                        "name": "Ruby",
+                        "value": 841
+                    }
+                ],
+                "description": "Keynote for Graphical Web Conference",
+                "pushed_at": "2013-02-15T16:58:37Z",
+                "html_url": "https://github.com/adobe/graphicalweb-keynote",
+                "languages_url": "https://api.github.com/repos/adobe/graphicalweb-keynote/languages",
+                "homepage": null,
+                "languagesTotal": 1072865
+            },
+            {
+                "name": "flash-platform",
+                "watchers_count": 5,
+                "org": "",
+                "languages": [],
+                "description": "",
+                "pushed_at": "2012-07-04T06:44:04Z",
+                "html_url": "https://github.com/adobe/flash-platform",
+                "languages_url": "https://api.github.com/repos/adobe/flash-platform/languages",
+                "homepage": null,
+                "languagesTotal": 0
+            },
+            {
+                "name": "angle",
+                "watchers_count": 8,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "C++",
+                        "value": 1749402
+                    },
+                    {
+                        "name": "C",
+                        "value": 351058
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 1389
+                    }
+                ],
+                "description": "Experiments and contributions to ANGLE project. ",
+                "pushed_at": "2012-05-30T20:47:29Z",
+                "html_url": "https://github.com/adobe/angle",
+                "languages_url": "https://api.github.com/repos/adobe/angle/languages",
+                "homepage": null,
+                "languagesTotal": 2101849
+            },
+            {
+                "name": "css-pseudo-elements",
+                "watchers_count": 19,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 43140
+                    }
+                ],
+                "description": "Contains a prototype library for using a pseudo-elements syntax to create more boxes in the rendering tree, extending what is possible with ::before and ::after in CSS 2.1",
+                "pushed_at": "2012-08-21T23:29:42Z",
+                "html_url": "https://github.com/adobe/css-pseudo-elements",
+                "languages_url": "https://api.github.com/repos/adobe/css-pseudo-elements/languages",
+                "homepage": null,
+                "languagesTotal": 43140
+            },
+            {
+                "name": "angle.js",
+                "watchers_count": 4,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "C++",
+                        "value": 1929294
+                    },
+                    {
+                        "name": "C",
+                        "value": 420053
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 1353
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 439
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 4457
+                    }
+                ],
+                "description": "ANGLE port to JS",
+                "pushed_at": "2012-09-08T00:42:59Z",
+                "html_url": "https://github.com/adobe/angle.js",
+                "languages_url": "https://api.github.com/repos/adobe/angle.js/languages",
+                "homepage": null,
+                "languagesTotal": 2355596
+            },
+            {
+                "name": "incubator-cordova-weinre",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [],
+                "description": "Mirror of Apache Weinre",
+                "pushed_at": "2012-06-29T23:11:53Z",
+                "html_url": "https://github.com/adobe/incubator-cordova-weinre",
+                "languages_url": "https://api.github.com/repos/adobe/incubator-cordova-weinre/languages",
+                "homepage": null,
+                "languagesTotal": 0
+            },
+            {
+                "name": "iphone-filter-demo",
+                "watchers_count": 17,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 4274
+                    }
+                ],
+                "description": "demo for create the web showcasing filters on iPad",
+                "pushed_at": "2012-11-19T17:53:58Z",
+                "html_url": "https://github.com/adobe/iphone-filter-demo",
+                "languages_url": "https://api.github.com/repos/adobe/iphone-filter-demo/languages",
+                "homepage": null,
+                "languagesTotal": 4274
+            },
+            {
+                "name": "Snap.svg",
+                "watchers_count": 3074,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 897137
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 94330
+                    }
+                ],
+                "description": "The JavaScript library for modern SVG graphics.",
+                "pushed_at": "2013-12-23T01:45:35Z",
+                "html_url": "https://github.com/adobe-webplatform/Snap.svg",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/Snap.svg/languages",
+                "homepage": "http://snapsvg.io",
+                "languagesTotal": 991467
+            },
+            {
+                "name": "Demo-for-Alice-s-Adventures-in-Wonderland",
+                "watchers_count": 84,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 53240
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 38527
+                    }
+                ],
+                "description": "Demo of CSS Shapes using the Alice in Wonderland story.",
+                "pushed_at": "2013-10-25T08:36:16Z",
+                "html_url": "https://github.com/adobe-webplatform/Demo-for-Alice-s-Adventures-in-Wonderland",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/Demo-for-Alice-s-Adventures-in-Wonderland/languages",
+                "homepage": "adobe-webplatform.github.io/Demo-for-Alice-s-Adventures-in-Wonderland",
+                "languagesTotal": 91767
+            },
+            {
+                "name": "eve",
+                "watchers_count": 152,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 12489
+                    }
+                ],
+                "description": "Custom eventsâ€¦ ",
+                "pushed_at": "2013-12-22T04:01:21Z",
+                "html_url": "https://github.com/adobe-webplatform/eve",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/eve/languages",
+                "homepage": "http://dmitry.baranovskiy.com/eve/",
+                "languagesTotal": 12489
+            },
+            {
+                "name": "css-regions-polyfill",
+                "watchers_count": 114,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 121846
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 137837
+                    }
+                ],
+                "description": "Experimental CSS Regions polyfill written in JavaScript",
+                "pushed_at": "2013-10-29T20:20:55Z",
+                "html_url": "https://github.com/adobe-webplatform/css-regions-polyfill",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/css-regions-polyfill/languages",
+                "homepage": "http://adobe-webplatform.github.com/css-regions-polyfill",
+                "languagesTotal": 259683
+            },
+            {
+                "name": "balance-text",
+                "watchers_count": 586,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 11024
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 4856
+                    }
+                ],
+                "description": "A jQuery plugin for implementing balancing of wrapping text in a web page",
+                "pushed_at": "2013-12-26T20:02:56Z",
+                "html_url": "https://github.com/adobe-webplatform/balance-text",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/balance-text/languages",
+                "homepage": null,
+                "languagesTotal": 15880
+            },
+            {
+                "name": "screensaver",
+                "watchers_count": 6,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 32762
+                    }
+                ],
+                "description": "Screen Saver in HTML",
+                "pushed_at": "2013-02-08T23:42:28Z",
+                "html_url": "https://github.com/adobe-webplatform/screensaver",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/screensaver/languages",
+                "homepage": null,
+                "languagesTotal": 32762
+            },
+            {
+                "name": "Demo-for-National-Geographic-Forest-Giant",
+                "watchers_count": 130,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Perl",
+                        "value": 346
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 1749809
+                    },
+                    {
+                        "name": "PHP",
+                        "value": 166
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 74
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 146755
+                    },
+                    {
+                        "name": "VimL",
+                        "value": 17152
+                    },
+                    {
+                        "name": "F#",
+                        "value": 6285
+                    },
+                    {
+                        "name": "Ruby",
+                        "value": 1702
+                    }
+                ],
+                "description": "A prototypical adaptation of the National Geographic article \"Forest Giants\" using Adobe's contributions to WebKit.",
+                "pushed_at": "2013-12-05T18:07:30Z",
+                "html_url": "https://github.com/adobe-webplatform/Demo-for-National-Geographic-Forest-Giant",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/Demo-for-National-Geographic-Forest-Giant/languages",
+                "homepage": "http://adobe-webplatform.github.io/Demo-for-National-Geographic-Forest-Giant/browser/src/",
+                "languagesTotal": 1922289
+            },
+            {
+                "name": "Demo-for-National-Geographic-Orphan-Elephants",
+                "watchers_count": 10,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Erlang",
+                        "value": 4680
+                    },
+                    {
+                        "name": "Ruby",
+                        "value": 853
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 17241
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 1118503
+                    }
+                ],
+                "description": "A prototypical adaptation of the National Geographic article \"Orphan Elephants\" showcasing Regions in use with Viewport Units.",
+                "pushed_at": "2013-11-05T23:20:21Z",
+                "html_url": "https://github.com/adobe-webplatform/Demo-for-National-Geographic-Orphan-Elephants",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/Demo-for-National-Geographic-Orphan-Elephants/languages",
+                "homepage": "http://adobe-webplatform.github.io/Demo-for-National-Geographic-Orphan-Elephants/",
+                "languagesTotal": 1141277
+            },
+            {
+                "name": "shaderdsl",
+                "watchers_count": 44,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 538386
+                    }
+                ],
+                "description": "A compiler from a subset of JavaScript to GLSL.",
+                "pushed_at": "2013-09-24T17:58:14Z",
+                "html_url": "https://github.com/adobe-webplatform/shaderdsl",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/shaderdsl/languages",
+                "homepage": null,
+                "languagesTotal": 538386
+            },
+            {
+                "name": "regions-adaptive",
+                "watchers_count": 3,
+                "org": "",
+                "languages": [],
+                "description": "Demo of an adaptive web app UI built with CSS Regions",
+                "pushed_at": "2013-10-08T11:31:42Z",
+                "html_url": "https://github.com/adobe-webplatform/regions-adaptive",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/regions-adaptive/languages",
+                "homepage": "http://adobe-webplatform.github.com/regions-adaptive/",
+                "languagesTotal": 0
+            },
+            {
+                "name": "dr.js",
+                "watchers_count": 79,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 27456
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 11925
+                    }
+                ],
+                "description": "Tiny documentation builder",
+                "pushed_at": "2013-11-15T04:06:41Z",
+                "html_url": "https://github.com/adobe-webplatform/dr.js",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/dr.js/languages",
+                "homepage": "",
+                "languagesTotal": 39381
+            },
+            {
+                "name": "coding-guidelines",
+                "watchers_count": 11,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 1685
+                    }
+                ],
+                "description": "",
+                "pushed_at": "2013-06-13T17:43:45Z",
+                "html_url": "https://github.com/adobe-webplatform/coding-guidelines",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/coding-guidelines/languages",
+                "homepage": null,
+                "languagesTotal": 1685
+            },
+            {
+                "name": "transform-tests",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [],
+                "description": "",
+                "pushed_at": "2013-06-25T19:15:32Z",
+                "html_url": "https://github.com/adobe-webplatform/transform-tests",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/transform-tests/languages",
+                "homepage": null,
+                "languagesTotal": 0
+            },
+            {
+                "name": "html5devconf-2013",
+                "watchers_count": 6,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Erlang",
+                        "value": 1080
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 70386
+                    },
+                    {
+                        "name": "F#",
+                        "value": 1654
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 103979
+                    },
+                    {
+                        "name": "PHP",
+                        "value": 92
+                    }
+                ],
+                "description": "Slides from @adobe-webplatform team presented at HTML5 Dev Conf.",
+                "pushed_at": "2013-10-25T19:11:54Z",
+                "html_url": "https://github.com/adobe-webplatform/html5devconf-2013",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/html5devconf-2013/languages",
+                "homepage": null,
+                "languagesTotal": 177191
+            },
+            {
+                "name": "road-trip",
+                "watchers_count": 1,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 8437
+                    }
+                ],
+                "description": "â€œRoad Tripâ€ CSS Regions Demo",
+                "pushed_at": "2013-03-25T10:52:22Z",
+                "html_url": "https://github.com/adobe-webplatform/road-trip",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/road-trip/languages",
+                "homepage": "http://adobe-webplatform.github.com/road-trip/",
+                "languagesTotal": 8437
+            },
+            {
+                "name": "custom-filters-demo-travel-app",
+                "watchers_count": 45,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Ruby",
+                        "value": 1018
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 637189
+                    }
+                ],
+                "description": "An app that explores the use of custom filters to create UI enhancements",
+                "pushed_at": "2013-05-27T22:46:03Z",
+                "html_url": "https://github.com/adobe-webplatform/custom-filters-demo-travel-app",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/custom-filters-demo-travel-app/languages",
+                "homepage": "http://adobe-webplatform.github.io/custom-filters-demo-travel-app/src/",
+                "languagesTotal": 638207
+            },
+            {
+                "name": "exclusionsrecipe",
+                "watchers_count": 2,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 7441
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 8369
+                    }
+                ],
+                "description": "Demo of exclusions for mobile.",
+                "pushed_at": "2013-10-23T19:15:19Z",
+                "html_url": "https://github.com/adobe-webplatform/exclusionsrecipe",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/exclusionsrecipe/languages",
+                "homepage": "http://adobe-webplatform.github.com/exclusionsrecipe/",
+                "languagesTotal": 15810
+            },
+            {
+                "name": "csswg-test",
+                "watchers_count": 1,
+                "org": "",
+                "languages": [],
+                "description": "Mirror of CSS WG test repository - https://hg.csswg.org/test/",
+                "pushed_at": "2013-09-23T14:50:39Z",
+                "html_url": "https://github.com/adobe-webplatform/csswg-test",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/csswg-test/languages",
+                "homepage": null,
+                "languagesTotal": 0
+            },
+            {
+                "name": "theseus",
+                "watchers_count": 694,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 461
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 270020
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 9500
+                    }
+                ],
+                "description": "A pretty darn cool JavaScript debugger for Brackets",
+                "pushed_at": "2013-12-10T22:17:35Z",
+                "html_url": "https://github.com/adobe-research/theseus",
+                "languages_url": "https://api.github.com/repos/adobe-research/theseus/languages",
+                "homepage": "",
+                "languagesTotal": 279981
+            },
+            {
+                "name": "brackets",
+                "watchers_count": 8,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 7927344
+                    },
+                    {
+                        "name": "Ruby",
+                        "value": 9092
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 8449
+                    },
+                    {
+                        "name": "PHP",
+                        "value": 28362
+                    }
+                ],
+                "description": "An open source code editor for the web, written in JavaScript, HTML and CSS.",
+                "pushed_at": "2013-04-18T18:48:30Z",
+                "html_url": "https://github.com/adobe-research/brackets",
+                "languages_url": "https://api.github.com/repos/adobe-research/brackets/languages",
+                "homepage": "https://twitter.com/brackets",
+                "languagesTotal": 7973247
+            },
+            {
+                "name": "http_streaming_client",
+                "watchers_count": 1,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Ruby",
+                        "value": 43824
+                    }
+                ],
+                "description": "Ruby HTTP client with support for HTTP 1.1 streaming, GZIP compressed streams, and chunked transfer encoding. Includes extensible OAuth support for the Adobe Analytics Firehose and Twitter Streaming APIs.",
+                "pushed_at": "2013-12-10T18:06:35Z",
+                "html_url": "https://github.com/adobe-research/http_streaming_client",
+                "languages_url": "https://api.github.com/repos/adobe-research/http_streaming_client/languages",
+                "homepage": "",
+                "languagesTotal": 43824
+            },
+            {
+                "name": "fondue",
+                "watchers_count": 30,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 808963
+                    }
+                ],
+                "description": "JavaScript instrumentation library for collecting traces",
+                "pushed_at": "2013-10-08T16:38:20Z",
+                "html_url": "https://github.com/adobe-research/fondue",
+                "languages_url": "https://api.github.com/repos/adobe-research/fondue/languages",
+                "homepage": null,
+                "languagesTotal": 808963
+            },
+            {
+                "name": "libkafka",
+                "watchers_count": 10,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 10349
+                    },
+                    {
+                        "name": "C++",
+                        "value": 277839
+                    }
+                ],
+                "description": "A C++ client library for Apache Kafka v0.8+. Also includes C API.",
+                "pushed_at": "2013-12-19T14:13:26Z",
+                "html_url": "https://github.com/adobe-research/libkafka",
+                "languages_url": "https://api.github.com/repos/adobe-research/libkafka/languages",
+                "homepage": "",
+                "languagesTotal": 288188
+            },
+            {
+                "name": "node-theseus",
+                "watchers_count": 29,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 10167
+                    }
+                ],
+                "description": "",
+                "pushed_at": "2013-12-06T20:55:01Z",
+                "html_url": "https://github.com/adobe-research/node-theseus",
+                "languages_url": "https://api.github.com/repos/adobe-research/node-theseus/languages",
+                "homepage": null,
+                "languagesTotal": 10167
+            },
+            {
+                "name": "GCview",
+                "watchers_count": 46,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Python",
+                        "value": 20522
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 139930
+                    },
+                    {
+                        "name": "C++",
+                        "value": 69434
+                    }
+                ],
+                "description": "GC / memory management visualization and monitoring framework.",
+                "pushed_at": "2013-08-19T17:42:15Z",
+                "html_url": "https://github.com/adobe-research/GCview",
+                "languages_url": "https://api.github.com/repos/adobe-research/GCview/languages",
+                "homepage": null,
+                "languagesTotal": 229886
+            },
+            {
+                "name": "mississippi",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [],
+                "description": "Mississippi is a Python package that runs batch jobs in the Amazon Web Services (AWS) environment.",
+                "pushed_at": "2013-09-13T22:36:47Z",
+                "html_url": "https://github.com/adobe-research/mississippi",
+                "languages_url": "https://api.github.com/repos/adobe-research/mississippi/languages",
+                "homepage": "",
+                "languagesTotal": 0
+            },
+            {
+                "name": "mesh",
+                "watchers_count": 9,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 2751
+                    },
+                    {
+                        "name": "Java",
+                        "value": 1330120
+                    },
+                    {
+                        "name": "Matlab",
+                        "value": 172655
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 193100
+                    },
+                    {
+                        "name": "M",
+                        "value": 740
+                    }
+                ],
+                "description": "General-purpose programming language featuring functional idioms, strong static inferred types, and a concurrency model built on managed mutability and STM.",
+                "pushed_at": "2013-09-23T07:26:24Z",
+                "html_url": "https://github.com/adobe-research/mesh",
+                "languages_url": "https://api.github.com/repos/adobe-research/mesh/languages",
+                "homepage": "",
+                "languagesTotal": 1699366
+            },
+            {
+                "name": "generator-getting-started",
+                "watchers_count": 16,
+                "org": "",
+                "languages": [],
+                "description": "Adobe Generator Getting Started Tutorial. Scripting Photoshop with JavaScript Node.js",
+                "pushed_at": "2013-09-09T23:40:37Z",
+                "html_url": "https://github.com/adobe-photoshop/generator-getting-started",
+                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-getting-started/languages",
+                "homepage": "",
+                "languagesTotal": 0
+            },
+            {
+                "name": "generator-core",
+                "watchers_count": 253,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 186001
+                    }
+                ],
+                "description": "Core Node.js library for Adobe Photoshop CC's Generator extensibility layer",
+                "pushed_at": "2013-12-16T01:49:48Z",
+                "html_url": "https://github.com/adobe-photoshop/generator-core",
+                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-core/languages",
+                "homepage": "",
+                "languagesTotal": 186001
+            },
+            {
+                "name": "generator-assets",
+                "watchers_count": 124,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 93552
+                    }
+                ],
+                "description": "Generator Plug-in for Adobe Photoshop CC that helps users export image assets",
+                "pushed_at": "2013-12-03T21:39:15Z",
+                "html_url": "https://github.com/adobe-photoshop/generator-assets",
+                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-assets/languages",
+                "homepage": "",
+                "languagesTotal": 93552
+            },
+            {
+                "name": "generator-cli",
+                "watchers_count": 6,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 31119
+                    }
+                ],
+                "description": "Command line launcher for Photoshop Generator",
+                "pushed_at": "2013-12-04T00:42:06Z",
+                "html_url": "https://github.com/adobe-photoshop/generator-cli",
+                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-cli/languages",
+                "homepage": null,
+                "languagesTotal": 31119
+            },
+            {
+                "name": "generator-weblogger",
+                "watchers_count": 21,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 15917
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 231
+                    }
+                ],
+                "description": "",
+                "pushed_at": "2013-08-07T00:43:17Z",
+                "html_url": "https://github.com/adobe-photoshop/generator-weblogger",
+                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-weblogger/languages",
+                "homepage": null,
+                "languagesTotal": 16148
+            },
+            {
+                "name": "Adobe-Chef",
+                "watchers_count": 1,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "PowerShell",
+                        "value": 12788
+                    }
+                ],
+                "description": "Adobe's OSS Contributions to the Chef Community",
+                "pushed_at": "2013-04-25T08:45:19Z",
+                "html_url": "https://github.com/Adobe-CloudOps/Adobe-Chef",
+                "languages_url": "https://api.github.com/repos/Adobe-CloudOps/Adobe-Chef/languages",
+                "homepage": null,
+                "languagesTotal": 12788
+            },
+            {
+                "name": "topcoat-grunt-telemetry",
+                "watchers_count": 11,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 15179
+                    },
+                    {
+                        "name": "Python",
+                        "value": 18845
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 2921
+                    }
+                ],
+                "description": "grunt telemetry task",
+                "pushed_at": "2013-09-29T10:32:44Z",
+                "html_url": "https://github.com/topcoat/topcoat-grunt-telemetry",
+                "languages_url": "https://api.github.com/repos/topcoat/topcoat-grunt-telemetry/languages",
+                "homepage": null,
+                "languagesTotal": 36945
+            },
+            {
+                "name": "design",
+                "watchers_count": 130,
+                "org": "",
+                "languages": [],
+                "description": "Design assets for Topcoat",
+                "pushed_at": "2013-06-13T20:18:41Z",
+                "html_url": "https://github.com/topcoat/design",
+                "languages_url": "https://api.github.com/repos/topcoat/design/languages",
+                "homepage": null,
+                "languagesTotal": 0
+            },
+            {
+                "name": "topcoat",
+                "watchers_count": 3500,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 21939
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 345292
+                    },
+                    {
+                        "name": "Python",
+                        "value": 7395
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 2921
+                    }
+                ],
+                "description": "CSS for clean and fast web apps",
+                "pushed_at": "2013-10-19T00:12:24Z",
+                "html_url": "https://github.com/topcoat/topcoat",
+                "languages_url": "https://api.github.com/repos/topcoat/topcoat/languages",
+                "homepage": "topcoat.io",
+                "languagesTotal": 377547
+            },
+            {
+                "name": "icons",
+                "watchers_count": 131,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 820
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 120458
+                    }
+                ],
+                "description": "Open Source Icons designed for Topcoat",
+                "pushed_at": "2013-12-06T04:26:48Z",
+                "html_url": "https://github.com/topcoat/icons",
+                "languages_url": "https://api.github.com/repos/topcoat/icons/languages",
+                "homepage": "",
+                "languagesTotal": 121278
+            },
+            {
+                "name": "topcoat-effeckt",
+                "watchers_count": 12,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 61302
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 670374
+                    },
+                    {
+                        "name": "Python",
+                        "value": 7384
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 2921
+                    }
+                ],
+                "description": "UI-less, performant transitions & animations",
+                "pushed_at": "2013-08-08T16:38:35Z",
+                "html_url": "https://github.com/topcoat/topcoat-effeckt",
+                "languages_url": "https://api.github.com/repos/topcoat/topcoat-effeckt/languages",
+                "homepage": "http://h5bp.github.io/Effeckt.css/dist/",
+                "languagesTotal": 741981
+            },
+            {
+                "name": "topdoc",
+                "watchers_count": 24,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 26243
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 29910
+                    }
+                ],
+                "description": "A command line tool for generating usage docs based on css comments",
+                "pushed_at": "2013-12-28T06:09:52Z",
+                "html_url": "https://github.com/topcoat/topdoc",
+                "languages_url": "https://api.github.com/repos/topcoat/topdoc/languages",
+                "homepage": "https://npmjs.org/package/topdoc",
+                "languagesTotal": 56153
+            },
+            {
+                "name": "cdnjs",
+                "watchers_count": 1,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 8729730
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 142959223
+                    },
+                    {
+                        "name": "PHP",
+                        "value": 26884
+                    },
+                    {
+                        "name": "LiveScript",
+                        "value": 6103
+                    },
+                    {
+                        "name": "CoffeeScript",
+                        "value": 24432
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 1956
+                    }
+                ],
+                "description": "Our goal is to operate this CDN in a peer reviewed fashion.",
+                "pushed_at": "2013-12-09T05:05:53Z",
+                "html_url": "https://github.com/topcoat/cdnjs",
+                "languages_url": "https://api.github.com/repos/topcoat/cdnjs/languages",
+                "homepage": "http://cdnjs.com",
+                "languagesTotal": 151748328
+            },
+            {
+                "name": "yeoman-generator-topcoat",
+                "watchers_count": 10,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 3326
+                    }
+                ],
+                "description": "Yeoman Topcoat generator",
+                "pushed_at": "2013-06-19T16:46:38Z",
+                "html_url": "https://github.com/topcoat/yeoman-generator-topcoat",
+                "languages_url": "https://api.github.com/repos/topcoat/yeoman-generator-topcoat/languages",
+                "homepage": null,
+                "languagesTotal": 3326
+            },
+            {
+                "name": "resin",
+                "watchers_count": 36,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 2647
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 831
+                    }
+                ],
+                "description": "Opinionated CSS preprocessor for Topcoat made with rework",
+                "pushed_at": "2013-12-16T19:58:34Z",
+                "html_url": "https://github.com/topcoat/resin",
+                "languages_url": "https://api.github.com/repos/topcoat/resin/languages",
+                "homepage": "http://topcoat.io",
+                "languagesTotal": 3478
+            },
+            {
+                "name": "theme",
+                "watchers_count": 44,
+                "org": "",
+                "languages": [],
+                "description": "Topcoat default theme",
+                "pushed_at": "2013-10-29T05:00:49Z",
+                "html_url": "https://github.com/topcoat/theme",
+                "languages_url": "https://api.github.com/repos/topcoat/theme/languages",
+                "homepage": "",
+                "languagesTotal": 0
+            },
+            {
+                "name": "button-bar",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 8944
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 70280
+                    }
+                ],
+                "description": "TopCoat button bar",
+                "pushed_at": "2013-12-19T01:09:21Z",
+                "html_url": "https://github.com/topcoat/button-bar",
+                "languages_url": "https://api.github.com/repos/topcoat/button-bar/languages",
+                "homepage": null,
+                "languagesTotal": 79224
+            },
+            {
+                "name": "navigation-bar",
+                "watchers_count": 4,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 6826
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 16710
+                    }
+                ],
+                "description": "Topcoat Navigation Bar",
+                "pushed_at": "2013-12-19T01:01:10Z",
+                "html_url": "https://github.com/topcoat/navigation-bar",
+                "languages_url": "https://api.github.com/repos/topcoat/navigation-bar/languages",
+                "homepage": "",
+                "languagesTotal": 23536
+            },
+            {
+                "name": "navigation-bar-base",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 3274
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 4601
+                    }
+                ],
+                "description": "Base component for Topcoat navigation bar",
+                "pushed_at": "2013-12-19T00:45:27Z",
+                "html_url": "https://github.com/topcoat/navigation-bar-base",
+                "languages_url": "https://api.github.com/repos/topcoat/navigation-bar-base/languages",
+                "homepage": "",
+                "languagesTotal": 7875
+            },
+            {
+                "name": "checkbox-base",
+                "watchers_count": 1,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 2995
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 3586
+                    }
+                ],
+                "description": "Base reset styles for Topcoat checkbox",
+                "pushed_at": "2013-12-19T00:24:29Z",
+                "html_url": "https://github.com/topcoat/checkbox-base",
+                "languages_url": "https://api.github.com/repos/topcoat/checkbox-base/languages",
+                "homepage": null,
+                "languagesTotal": 6581
+            },
+            {
+                "name": "topdoc-theme",
+                "watchers_count": 2,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 13500
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 1400
+                    }
+                ],
+                "description": "Topdoc theme for Topcoat.",
+                "pushed_at": "2013-12-18T23:08:33Z",
+                "html_url": "https://github.com/topcoat/topdoc-theme",
+                "languages_url": "https://api.github.com/repos/topcoat/topdoc-theme/languages",
+                "homepage": null,
+                "languagesTotal": 14900
+            },
+            {
+                "name": "meet-topcoat",
+                "watchers_count": 5,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 38018
+                    }
+                ],
+                "description": "Topcoat Slides",
+                "pushed_at": "2013-07-19T17:10:23Z",
+                "html_url": "https://github.com/topcoat/meet-topcoat",
+                "languages_url": "https://api.github.com/repos/topcoat/meet-topcoat/languages",
+                "homepage": "",
+                "languagesTotal": 38018
+            },
+            {
+                "name": "checkbox",
+                "watchers_count": 6,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 8470
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 40161
+                    }
+                ],
+                "description": "Topcoat checkbox component",
+                "pushed_at": "2013-12-18T01:18:06Z",
+                "html_url": "https://github.com/topcoat/checkbox",
+                "languages_url": "https://api.github.com/repos/topcoat/checkbox/languages",
+                "homepage": "http://topcoat.io/checkbox",
+                "languagesTotal": 48631
+            },
+            {
+                "name": "switch",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 8564
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 42151
+                    }
+                ],
+                "description": "Topcoat switch skin",
+                "pushed_at": "2013-12-18T01:11:14Z",
+                "html_url": "https://github.com/topcoat/switch",
+                "languages_url": "https://api.github.com/repos/topcoat/switch/languages",
+                "homepage": null,
+                "languagesTotal": 50715
+            },
+            {
+                "name": "switch-base",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 3379
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 4393
+                    }
+                ],
+                "description": "Base component for Topcoat Switch",
+                "pushed_at": "2013-12-18T00:29:18Z",
+                "html_url": "https://github.com/topcoat/switch-base",
+                "languages_url": "https://api.github.com/repos/topcoat/switch-base/languages",
+                "homepage": null,
+                "languagesTotal": 7772
+            },
+            {
+                "name": "button",
+                "watchers_count": 3,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 6179
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 85044
+                    }
+                ],
+                "description": "Topcoat default button skin",
+                "pushed_at": "2013-12-17T22:36:50Z",
+                "html_url": "https://github.com/topcoat/button",
+                "languages_url": "https://api.github.com/repos/topcoat/button/languages",
+                "homepage": "http://topcoat.io/button",
+                "languagesTotal": 91223
+            },
+            {
+                "name": "theme-mobile-dark",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 363
+                    }
+                ],
+                "description": "Dark mobile application theme",
+                "pushed_at": "2013-12-17T22:05:37Z",
+                "html_url": "https://github.com/topcoat/theme-mobile-dark",
+                "languages_url": "https://api.github.com/repos/topcoat/theme-mobile-dark/languages",
+                "homepage": null,
+                "languagesTotal": 363
+            },
+            {
+                "name": "theme-mobile-light",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 358
+                    }
+                ],
+                "description": "Light theme for mobile applications",
+                "pushed_at": "2013-12-17T22:04:53Z",
+                "html_url": "https://github.com/topcoat/theme-mobile-light",
+                "languages_url": "https://api.github.com/repos/topcoat/theme-mobile-light/languages",
+                "homepage": null,
+                "languagesTotal": 358
+            },
+            {
+                "name": "theme-desktop-light",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 359
+                    }
+                ],
+                "description": "Light desktop theme for Topcoat.",
+                "pushed_at": "2013-12-17T22:03:56Z",
+                "html_url": "https://github.com/topcoat/theme-desktop-light",
+                "languages_url": "https://api.github.com/repos/topcoat/theme-desktop-light/languages",
+                "homepage": null,
+                "languagesTotal": 359
+            },
+            {
+                "name": "theme-desktop-dark",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 358
+                    }
+                ],
+                "description": "Dark desktop theme for Topcoat",
+                "pushed_at": "2013-12-17T22:03:21Z",
+                "html_url": "https://github.com/topcoat/theme-desktop-dark",
+                "languages_url": "https://api.github.com/repos/topcoat/theme-desktop-dark/languages",
+                "homepage": null,
+                "languagesTotal": 358
+            },
+            {
+                "name": "fonts",
+                "watchers_count": 0,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 322
+                    }
+                ],
+                "description": "Fonts for topcoat theme",
+                "pushed_at": "2013-12-17T21:02:27Z",
+                "html_url": "https://github.com/topcoat/fonts",
+                "languages_url": "https://api.github.com/repos/topcoat/fonts/languages",
+                "homepage": null,
+                "languagesTotal": 322
+            },
+            {
+                "name": "grunt-topcoat",
+                "watchers_count": 4,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 5770
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 18284
+                    }
+                ],
+                "description": "Grunt task for downloading Topcoat build dependencies.",
+                "pushed_at": "2013-12-16T22:37:21Z",
+                "html_url": "https://github.com/topcoat/grunt-topcoat",
+                "languages_url": "https://api.github.com/repos/topcoat/grunt-topcoat/languages",
+                "homepage": "",
+                "languagesTotal": 24054
+            },
+            {
+                "name": "angular-topcoat",
+                "watchers_count": 9,
+                "org": "",
+                "languages": [],
+                "description": "Angular directives for use with Topcoat",
+                "pushed_at": "2013-10-14T20:28:43Z",
+                "html_url": "https://github.com/topcoat/angular-topcoat",
+                "languages_url": "https://api.github.com/repos/topcoat/angular-topcoat/languages",
+                "homepage": null,
+                "languagesTotal": 0
+            },
+            {
+                "name": "overlay",
+                "watchers_count": 2,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 4476
+                    }
+                ],
+                "description": "Topcoat overlay component",
+                "pushed_at": "2013-07-25T12:33:22Z",
+                "html_url": "https://github.com/topcoat/overlay",
+                "languages_url": "https://api.github.com/repos/topcoat/overlay/languages",
+                "homepage": null,
+                "languagesTotal": 4476
+            },
+            {
+                "name": "notification",
+                "watchers_count": 3,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 8391
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 13868
+                    }
+                ],
+                "description": "Topcoat notification",
+                "pushed_at": "2013-12-06T07:50:08Z",
+                "html_url": "https://github.com/topcoat/notification",
+                "languages_url": "https://api.github.com/repos/topcoat/notification/languages",
+                "homepage": null,
+                "languagesTotal": 22259
+            },
+            {
+                "name": "topcoatify",
+                "watchers_count": 3,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 2109
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 148
+                    }
+                ],
+                "description": "A tool for custom Topcoat builds from npm. ",
+                "pushed_at": "2013-10-21T22:26:42Z",
+                "html_url": "https://github.com/topcoat/topcoatify",
+                "languages_url": "https://api.github.com/repos/topcoat/topcoatify/languages",
+                "homepage": null,
+                "languagesTotal": 2257
+            },
+            {
+                "name": "Malware-classifier",
+                "watchers_count": 2,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Python",
+                        "value": 31044
+                    }
+                ],
+                "description": "Perform quick, easy classification of binaries for malware analysis.",
+                "pushed_at": "2013-02-27T18:50:52Z",
+                "html_url": "https://github.com/adobe-security/Malware-classifier",
+                "languages_url": "https://api.github.com/repos/adobe-security/Malware-classifier/languages",
+                "homepage": null,
+                "languagesTotal": 31044
+            },
+            {
+                "name": "adobe-blank",
+                "watchers_count": 24,
+                "org": "",
+                "languages": [],
+                "description": "Adobe Blank",
+                "pushed_at": "2013-04-04T14:53:22Z",
+                "html_url": "https://github.com/adobe-fonts/adobe-blank",
+                "languages_url": "https://api.github.com/repos/adobe-fonts/adobe-blank/languages",
+                "homepage": null,
+                "languagesTotal": 0
+            },
+            {
+                "name": "crossbridge",
+                "watchers_count": 358,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 8856310
+                    },
+                    {
+                        "name": "C",
+                        "value": 268417872
+                    },
+                    {
+                        "name": "C++",
+                        "value": 97005049
+                    },
+                    {
+                        "name": "Assembly",
+                        "value": 18813595
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 21388608
+                    },
+                    {
+                        "name": "R",
+                        "value": 44081
+                    },
+                    {
+                        "name": "Logos",
+                        "value": 502868
+                    },
+                    {
+                        "name": "Perl",
+                        "value": 988249
+                    },
+                    {
+                        "name": "Awk",
+                        "value": 98814
+                    },
+                    {
+                        "name": "Python",
+                        "value": 10010186
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 242749
+                    },
+                    {
+                        "name": "ColdFusion",
+                        "value": 1755
+                    },
+                    {
+                        "name": "ActionScript",
+                        "value": 32984587
+                    },
+                    {
+                        "name": "Java",
+                        "value": 42314945
+                    },
+                    {
+                        "name": "Smalltalk",
+                        "value": 150473
+                    },
+                    {
+                        "name": "Scheme",
+                        "value": 79604
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 466908
+                    },
+                    {
+                        "name": "VimL",
+                        "value": 22523
+                    },
+                    {
+                        "name": "Emacs Lisp",
+                        "value": 62914
+                    },
+                    {
+                        "name": "D",
+                        "value": 17236590
+                    },
+                    {
+                        "name": "Eiffel",
+                        "value": 2798
+                    },
+                    {
+                        "name": "Erlang",
+                        "value": 512
+                    },
+                    {
+                        "name": "M",
+                        "value": 59348
+                    },
+                    {
+                        "name": "SuperCollider",
+                        "value": 363520
+                    },
+                    {
+                        "name": "Pure Data",
+                        "value": 1391
+                    },
+                    {
+                        "name": "Elixir",
+                        "value": 157
+                    },
+                    {
+                        "name": "Turing",
+                        "value": 11
+                    },
+                    {
+                        "name": "FORTRAN",
+                        "value": 1818225
+                    },
+                    {
+                        "name": "Lua",
+                        "value": 55694
+                    },
+                    {
+                        "name": "PHP",
+                        "value": 85076
+                    },
+                    {
+                        "name": "Pike",
+                        "value": 7939
+                    },
+                    {
+                        "name": "Ruby",
+                        "value": 122420
+                    },
+                    {
+                        "name": "Tcl",
+                        "value": 48625
+                    },
+                    {
+                        "name": "XSLT",
+                        "value": 20333
+                    },
+                    {
+                        "name": "Scilab",
+                        "value": 690693
+                    },
+                    {
+                        "name": "Racket",
+                        "value": 87511
+                    },
+                    {
+                        "name": "C#",
+                        "value": 433975
+                    },
+                    {
+                        "name": "Verilog",
+                        "value": 34576
+                    },
+                    {
+                        "name": "Ada",
+                        "value": 29385440
+                    },
+                    {
+                        "name": "Pascal",
+                        "value": 84184
+                    },
+                    {
+                        "name": "Matlab",
+                        "value": 85680
+                    },
+                    {
+                        "name": "OCaml",
+                        "value": 513262
+                    },
+                    {
+                        "name": "Haskell",
+                        "value": 2194
+                    },
+                    {
+                        "name": "DOT",
+                        "value": 473
+                    },
+                    {
+                        "name": "CLIPS",
+                        "value": 13866
+                    },
+                    {
+                        "name": "Scala",
+                        "value": 36
+                    },
+                    {
+                        "name": "Go",
+                        "value": 89398
+                    },
+                    {
+                        "name": "Common Lisp",
+                        "value": 13780
+                    }
+                ],
+                "description": "Welcome to visit the homepage!",
+                "pushed_at": "2013-11-04T08:49:24Z",
+                "html_url": "https://github.com/adobe-flash/crossbridge",
+                "languages_url": "https://api.github.com/repos/adobe-flash/crossbridge/languages",
+                "homepage": "http://www.crossbridge.io",
+                "languagesTotal": 553709797
+            },
+            {
+                "name": "avmplus",
+                "watchers_count": 4,
+                "org": "",
+                "languages": [
+                    {
+                        "name": "C",
+                        "value": 3239425
+                    },
+                    {
+                        "name": "C++",
+                        "value": 14264675
+                    },
+                    {
+                        "name": "Python",
+                        "value": 1789770
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 2102
+                    },
+                    {
+                        "name": "ColdFusion",
+                        "value": 1755
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 952609
+                    },
+                    {
+                        "name": "ActionScript",
+                        "value": 32571225
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 53946
+                    },
+                    {
+                        "name": "Assembly",
+                        "value": 696023
+                    },
+                    {
+                        "name": "Java",
+                        "value": 6593
+                    },
+                    {
+                        "name": "R",
+                        "value": 2001
+                    },
+                    {
+                        "name": "Smalltalk",
+                        "value": 140381
+                    },
+                    {
+                        "name": "Scheme",
+                        "value": 1420
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 389839
+                    },
+                    {
+                        "name": "VimL",
+                        "value": 1994
+                    }
+                ],
+                "description": "Source code for the Actionscript virtual machine ",
+                "pushed_at": "2013-12-03T00:05:33Z",
+                "html_url": "https://github.com/adobe-flash/avmplus",
+                "languages_url": "https://api.github.com/repos/adobe-flash/avmplus/languages",
+                "homepage": null,
+                "languagesTotal": 54113758
+            }
+        ],
+        "orgs": [
+            {
+                "userName": "adobe",
+                "name": "Adobe Systems",
+                "desc": "Repository for certain Adobe Open Source releases"
+            },
+            {
+                "userName": "adobe-webplatform",
+                "name": "Adobe Web Platform",
+                "desc": "Releases from the Adobe Web Platform teams"
+            },
+            {
+                "userName": "adobe-research",
+                "name": "Adobe Research",
+                "desc": "Releases from the Adobe Research teams"
+            },
+            {
+                "userName": "adobe-photoshop",
+                "name": "Adobe Photoshop",
+                "desc": "Stuff from the Adobe Photoshop team"
+            },
+            {
+                "userName": "Adobe-cloudOps",
+                "name": "Adobe CloudOps",
+                "desc": "Releases from the Adobe Cloud Operations teams"
+            },
+            {
+                "userName": "topcoat",
+                "name": "Topcoat",
+                "desc": "UI Library for creating beautiful and responsive applications using web standards"
+            },
+            {
+                "userName": "adobe-security",
+                "name": "Adobe Security",
+                "desc": "Releases from the Adobe Security teams"
+            },
+            {
+                "userName": "adobe-fonts",
+                "name": "Adobe Fonts",
+                "desc": "Releases from the Adobe Font teams"
+            },
+            {
+                "userName": "adobe-flash",
+                "name": "Adobe Flash",
+                "desc": "Stuff from the Adobe Flash team"
+            }
+        ]
+    }
+]
