@@ -2,6 +2,7 @@
 
 //Foundation override
 $primary-color: rgb(255 , 0, 0);
+$secondary-color-alpha: rgba(233,233,233,0.8);
 //Personnal variables
 $header-height: 350;
 $menu-height: 50;
@@ -83,6 +84,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     .wrapper {
         position: absolute; z-index: 99;
         left:100%;
+		overflow: hidden;
         @include transition(left 0.5s);
         background: $secondary-color;
         width: 100%; height: $header-height+px;
@@ -92,10 +94,8 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         .text-header  {
             position: absolute;
             bottom: 45px;
-        }
-        
-        h3, p {
-            background: $secondary-color;
+			z-index: 50;
+            background: $secondary-color-alpha;
         }
     
         h3 { 

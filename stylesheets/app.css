@@ -7217,7 +7217,7 @@ a.th {
   max-width: 800px;
 }
 
-/* line 77, sass/app.scss */
+/* line 78, sass/app.scss */
 .header {
   background: #e9e9e9;
   position: fixed;
@@ -7227,11 +7227,12 @@ a.th {
   width: 100%;
   overflow: hidden;
 }
-/* line 83, sass/app.scss */
+/* line 84, sass/app.scss */
 .header .wrapper {
   position: absolute;
   z-index: 99;
   left: 100%;
+  overflow: hidden;
   -webkit-transition: left 0.5s;
   -moz-transition: left 0.5s;
   -o-transition: left 0.5s;
@@ -7240,18 +7241,16 @@ a.th {
   width: 100%;
   height: 350px;
 }
-/* line 90, sass/app.scss */
+/* line 92, sass/app.scss */
 .header .wrapper.actual {
   left: 0;
 }
-/* line 92, sass/app.scss */
+/* line 94, sass/app.scss */
 .header .wrapper .text-header {
   position: absolute;
   bottom: 45px;
-}
-/* line 97, sass/app.scss */
-.header .wrapper h3, .header .wrapper p {
-  background: #e9e9e9;
+  z-index: 50;
+  background: rgba(233, 233, 233, 0.8);
 }
 /* line 101, sass/app.scss */
 .header .wrapper h3 {
@@ -7671,7 +7670,7 @@ a.th {
 /* line 477, sass/app.scss */
 .main .buttonMore {
   position: fixed;
-  bottom: 00px;
+  bottom: 0px;
   left: 0;
 }
 /* line 483, sass/app.scss */
