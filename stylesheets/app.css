@@ -7483,7 +7483,7 @@ a.th {
 /* line 304, sass/app.scss */
 .title {
   font-family: "tekton-pro";
-  font-size: 55px;
+  font-size: 24px;
   font-weight: 700 !important;
   margin: 3px 30px 3px 20px;
 }
@@ -7597,6 +7597,11 @@ a.th {
   color: red;
 }
 /* line 418, sass/app.scss */
+.main .wrapProjects {
+  padding-bottom: 50px;
+  position: relative;
+}
+/* line 423, sass/app.scss */
 .main .project, .main .org {
   font-size: 14px;
   border-left: 3px #e9e9e9 solid;
@@ -7608,75 +7613,79 @@ a.th {
   color: black;
   margin: 10px 0;
 }
-/* line 427, sass/app.scss */
+/* line 432, sass/app.scss */
 .main .project:hover, .main .org:hover {
   border-left: 3px red solid;
 }
-/* line 431, sass/app.scss */
+/* line 436, sass/app.scss */
 .main .project h1, .main .org h1 {
   font-size: 17px;
   margin-bottom: 3px;
 }
-/* line 436, sass/app.scss */
+/* line 441, sass/app.scss */
 .main .project p, .main .org p {
   margin-bottom: 5px;
 }
-/* line 438, sass/app.scss */
+/* line 443, sass/app.scss */
 .main .project .details, .main .org .details {
   height: 45px;
   padding-left: 10px;
   color: #666;
 }
-/* line 444, sass/app.scss */
+/* line 449, sass/app.scss */
 .main .project .star img, .main .org .star img {
   width: 20px;
 }
-/* line 446, sass/app.scss */
+/* line 451, sass/app.scss */
 .main .project .watchCount, .main .org .watchCount {
   padding: 5px 10px;
   float: right;
   color: #666;
 }
-/* line 452, sass/app.scss */
+/* line 457, sass/app.scss */
 .main .project .more, .main .org .more {
   margin-bottom: 25px;
 }
-/* line 455, sass/app.scss */
+/* line 460, sass/app.scss */
 .main .project .more .link, .main .org .more .link {
   text-align: right;
   color: red;
 }
-/* line 459, sass/app.scss */
+/* line 464, sass/app.scss */
 .main .project .more .link:hover, .main .org .more .link:hover {
   color: #e60000;
 }
-/* line 464, sass/app.scss */
+/* line 469, sass/app.scss */
 .main .project {
   height: 140px;
 }
-/* line 465, sass/app.scss */
+/* line 470, sass/app.scss */
 .main .org {
   height: 100px;
 }
-/* line 467, sass/app.scss */
+/* line 472, sass/app.scss */
+.main .buttonMore, .main .buttonLess {
+  width: 100%;
+  height: 100px;
+}
+/* line 477, sass/app.scss */
 .main .buttonMore {
   position: fixed;
+  bottom: 00px;
   left: 0;
-  bottom: 50px;
-  width: 100%;
 }
-/* line 474, sass/app.scss */
+/* line 483, sass/app.scss */
 .main .buttonLess {
-  bottom: 0 !important;
-  position: relative !important;
+  bottom: -50px;
+  position: absolute;
 }
-/* line 479, sass/app.scss */
+/* line 488, sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 486, sass/app.scss */
+/* line 495, sass/app.scss */
 .featured {
   position: absolute;
   top: 0;

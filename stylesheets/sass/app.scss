@@ -303,7 +303,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 
 .title {
     font-family: "tekton-pro";
-    font-size: 55px;
+    font-size: 24px;
 	font-weight: 700 !important;
     margin: 3px 30px 3px 20px;
     
@@ -414,6 +414,11 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
             }
         }
     }
+
+	.wrapProjects {
+		padding-bottom: 50px;
+		position: relative;
+	}
         
     .project, .org {
         font-size: 14px;
@@ -463,18 +468,22 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     
     .project { height: 140px; }
     .org { height: 100px; }
+
+	.buttonMore, .buttonLess {
+		width: 100%;
+		height: 100px;
+	}
     
     .buttonMore {
-				position: fixed;
-				left: 0;
-				bottom: 50px;
-				width: 100%;
+		position: fixed;
+		bottom: 0px;
+		left: 0;
     }
 	
-		.buttonLess {
-				bottom: 0 !important;
-				position: relative !important;
-		}
+	.buttonLess {
+		bottom: -50px;
+		position: absolute;
+	}
     
     .clear {
         clear: both;

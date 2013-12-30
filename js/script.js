@@ -195,6 +195,10 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 	$scope.searchLang = new Array();
 	$scope.searchOrg = new Array();
 	
+	//Init display range
+	$scope.projFirst = 0;
+	$scope.projLast = 10;
+	
 	//Loading active
 	$scope.loading = true;
     
@@ -225,10 +229,6 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
     }
     
     //------------------------------- Datas --------------------------------
-	
-	//Init display range
-	$scope.projFirst = 0;
-	$scope.projLast = 10;
 	
 	$scope.projects = [];
 	$scope.orgs = [];
@@ -297,14 +297,13 @@ $(function(){
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
 				
-				var endOfProjects = scrollTop + $(window).height() - $('.top').height() - $('.header').height();
-//				console.info(endOfProjects);
-				if (endOfProjects < 50 ) {
-        	$(".buttonMore").css({position: 'fixed', bottom: 50});
-				}
-				else {
-					$(".buttonMore").css({position: 'relative', bottom: 0});
-				}
+		var endOfProjects = scrollTop + $(window).height() - $('.top').height() - $('.header').height();
+		if (endOfProjects < 80 ) {
+			$(".buttonMore").css({position: 'fixed', bottom: 0});
+		}
+		else {
+			$(".buttonMore").css({position: 'absolute', bottom: -50});
+		}
 			
         // ----------------------------------------------------------------------------
         //					First parallax: header

@@ -25,7 +25,7 @@
                     </dl>
                     
                     <div class="wrapLogoTop">
-                        <img class="logoTop" src="img/logo_m.jpg" title="Adobe Open Source"/>
+                        <img class="logoTop" src="img/adobe-tag.png" title="Adobe Open Source"/>
                     </div>
                 </div>
             </div>
@@ -110,18 +110,18 @@
                     </div>
                 </form>
 							
-								<div ng-show="searchLang.length != 0 || searchOrg.length != 0 || searchName">
-									<div class="large-12 columns activeFilter">
-										<ul class="button-group filterLang" ng-repeat="lang in searchLang">
-											<li><a class="button tiny"># {{lang}}</a></li>
-											<li><a class="button tiny" ng-click="deleteFilter(searchLang, $index)">X</a></li>
-										</ul>
-										<ul class="button-group filterLang" ng-repeat="org in searchOrg">
-											<li><a class="button tiny">{{org}}</a></li>
-											<li><a class="button tiny" ng-click="deleteFilter(searchOrg, $index)">X</a></li>
-										</ul>
-									</div>
-							</div>
+				<div ng-show="searchLang.length != 0 || searchOrg.length != 0 || searchName">
+					<div class="large-12 columns activeFilter">
+						<ul class="button-group filterLang" ng-repeat="lang in searchLang">
+							<li><a class="button tiny"># {{lang}}</a></li>
+							<li><a class="button tiny" ng-click="deleteFilter(searchLang, $index)">X</a></li>
+						</ul>
+						<ul class="button-group filterLang" ng-repeat="org in searchOrg">
+							<li><a class="button tiny">{{org}}</a></li>
+							<li><a class="button tiny" ng-click="deleteFilter(searchOrg, $index)">X</a></li>
+						</ul>
+					</div>
+				</div>
             </div>
         </div>
         
@@ -145,8 +145,8 @@
                  
         
         <!-- ------- Items --------  -->
-        <div class="row">
-            <div class="wrapProject large-12 columns" ng-show="loading == false">
+        <div class="row wrapProjects">
+            <div class="large-12 columns" ng-show="loading == false">
                 <div class="row">
                     <div class="large-6 columns" ng-repeat="project in projects | projectsFilter:this" ng-class-odd="'clear'">
                         <a href="{{project | link}}" target="_blank">
@@ -184,8 +184,8 @@
             <div ng-class="{ buttonMore: projLast > 10, buttonLess : projLast == 10 }" ng-hide="(projects | projectsFilter:this).length < 10">
                 <div class="row text-center">
                     <button class="button" ng-click="showHideProj()">
-                            <span ng-hide="projLast == 100">Show more...</span>
-                            <span ng-hide="projLast == 10">Show less...</span>
+                            <span ng-hide="projLast != 10">Show more...</span>
+                            <span ng-show="projLast > 10">Show less...</span>
                     </button>
                 </div>
             </div>
