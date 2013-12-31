@@ -87,7 +87,8 @@ app.filter('projectsFilter', function() {
         }
         newProject = scope.filter('orderBy')(newProject,(scope.filterOrder) ? scope.filterOrder : "-watchers_count");
 			
-			return newProject.slice(0, scope.projLast);
+		return newProject.slice(0, scope.projLast);
+//		return projects.slice(0, scope.projLast);
     };
 });
 
@@ -198,8 +199,8 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 		"org": 0,
 		"projects": 0
 	};
-	$scope.searchLang = new Array();
-	$scope.searchOrg = new Array();
+	$scope.searchLang = [];
+	$scope.searchOrg = [];
 	
 	//Init display range
 	$scope.projFirst = 0;
@@ -250,7 +251,32 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 		if (rep[0]) {
 			$scope.projects = rep[0].repos;
 			$scope.orgs = rep[0].orgs;
-//			$scope.langs = rep[0].langs;
+			$scope.langs = rep[0].langs;
+			
+			console.log($scope.objToNamedArray($scope.langs));
+			
+			$("#searchLang").autocomplete({
+				source: $scope.objToNamedArray($scope.langs),
+				select: function(e, q) {
+					$scope.$apply(function () {
+						$("#searchLang").val('Loading...');
+						$scope.addFilter($scope.searchLang, q.item.value);
+						$scope.searchLangInput = "";
+					});
+					return false;
+				}
+			});
+			$("#searchOrg").autocomplete({
+				source: $scope.objToNamedArray($scope.orgs),
+				select: function(e, q) {
+					$scope.$apply(function () {
+						$("#searchOrg").val('Loading...');
+						$scope.addFilter($scope.searchOrg, q.item.value);
+						$scope.searchOrgInput = "";
+					});
+					return false;
+				}
+			});
 		}
 		
 		//Loading over
@@ -267,6 +293,14 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 			$scope.projLast = 10;
 		}
 	}
+	
+	$scope.objToNamedArray = function(objs) {
+		var namedArray = [];
+		for (var i=0; i < objs.length; i++) {
+			namedArray.push(objs[i].name);
+		}
+		return namedArray;
+	}
     
     //------------------------------- Filters --------------------------------
     
@@ -277,17 +311,14 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
         var present = false;
         
         for (var i=0; i < filter.length; i++) {
-            if (filter[i].name == item.name) {
+            if (filter[i] == item) {
                 present = true;
             }
         }
         
         if (!present) {
-            filter.push(item.name);
+            filter.push(item);
         }
-        
-        $scope.searchLangInput = "";
-        $scope.searchOrgInput = "";
     }
     
     $scope.deleteFilter = function(array, i) {

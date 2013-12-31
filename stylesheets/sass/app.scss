@@ -388,6 +388,12 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
         overflow: hidden;
         
         .star {
+			.cancel {
+				float: right;
+				position: relative;
+				top: 5px;
+			}
+
             .fitlerStar {
                 width: 21px; height: 21px;
                 margin-top: 5px;

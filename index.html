@@ -9,6 +9,7 @@
     <title>Adobe Open Source | Advancing technology through open initiatives</title>
     <link rel="stylesheet" href="stylesheets/app.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
 </head>
 
 <body ng-controller="GitHubCtrl">
@@ -97,7 +98,7 @@
         </div>
         
         <!-- ------- Filters --------  -->
-        <div class="filters" ng-class="{flat: !toggleFilters}">
+        <div class="filters" ng-class="{flat: toggleFilters}">
             <div class="row">
                 <form class="custom large-12 columns mainFilters">
                     <div class="large-4 columns">
@@ -105,15 +106,15 @@
                     </div>
                     
                     <div class="large-3 columns">
-                      <input type="text" ng-model="searchLangInput" placeholder="Languages">
+                      <input type="text" ng-model="searchLangInput" id="searchLang" placeholder="Languages">
                     </div>
                     
                     <div class="large-3 columns">
-                      <input type="text" ng-model="searchOrgInput" placeholder="Organisations">
+                      <input type="text" ng-model="searchOrgInput" id="searchOrg" placeholder="Organisations">
                     </div>
                     
                     <div class="star large-2 columns">
-												<a ng-show="filterStarIndex" ng-click="majFilterStar(0); majDisplayStar(0)">X</a>
+						<a ng-show="filterStarIndex" ng-click="majFilterStar(0); majDisplayStar(0)" class="button tiny cancel">X</a>
                         <div class="fitlerStar" ng-repeat="i in [1,2,3,4,5]" ng-class="{on: (i <= displayStarIndex)}" ng-click="majFilterStar(i)" ng-mouseenter="majDisplayStar(i)" ng-mouseleave="majDisplayStar(filterStarIndex)"></div>
                     </div>
                 </form>
@@ -131,26 +132,7 @@
 					</div>
 				</div>
             </div>
-        </div>
-        
-        <!-- TODO: Make it disapear when the focus is lost on the search field -->
-        <div class="autocomplete">
-            <div class="row">
-                <div class="wrapperLang columns large-6 large-offset-4">
-                    <div class="items large-6 columns" ng-show="searchLangInput">
-                        <a class="item" ng-repeat="lang in langs | filter:searchLangInput" ng-click="addFilter(searchLang, lang)">
-                            {{lang.name}}
-                        </a>
-                    </div>
-                    <div class="items large-6 columns" ng-show="searchOrgInput">
-                        <a class="item" ng-repeat="org in orgs | filter:searchOrgInput" ng-click="addFilter(searchOrg, org)">
-                            {{org.name}}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> 
-                 
+        </div>   
         
         <!-- ------- Items --------  -->
         <div class="row wrapProjects">
@@ -281,7 +263,8 @@
     <script src="js/vendor/custom.modernizr.js"></script>
     <script type="text/javascript" src="//use.typekit.net/gad4asz.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="js/vendor/jquery.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="js/vendor/angular.min.js"></script>
     <script src="js/vendor/angular-resource.js"></script>
     <script src="js/foundation/foundation.js"></script>
