@@ -386,4 +386,15 @@ var scrollUpdate = function () {
 	var footerBottom = $("#footer").position().top + $("#footer").height();
 	var topLogo_footer = Math.round(bottomScreen - footerBottom - $(".menu").height());
 	$("#logo3").css({ bottom: topLogo_footer });
+	
+	
+	// ----------------------------------------------------------------------------
+	//					Show More/Less button
+	var endOfProjects = scrollTop + $(window).height() - $('.top').height() - $('.header').height();
+	if (endOfProjects < 130 ) {
+		$(".buttonMore").css({position: 'fixed', bottom: 0});
+	}
+	else {
+		$(".buttonMore").css({position: 'absolute', bottom: -50});
+	}
 }
