@@ -173,11 +173,9 @@ app.filter('timeDiff', function() {
                 Main Controller */
 
 //Get Adobe Github repos & orgs
-//app.factory("ReposAdobe", function($resource) {
-//    return $resource("http://localhost:8000", {'8000': ':8000'});
-//});
 app.factory("ReposAdobe", function($resource) {
     return $resource("offline/server.json");
+//    return $resource("http://localhost:8000", {'8000': ':8000'});
 });
 
 //Get Feaatured for the header
@@ -253,8 +251,6 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 			$scope.orgs = rep[0].orgs;
 			$scope.langs = rep[0].langs;
 			
-			console.log($scope.objToNamedArray($scope.langs));
-			
 			$("#searchLang").autocomplete({
 				source: $scope.objToNamedArray($scope.langs),
 				select: function(e, q) {
@@ -281,7 +277,6 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 		
 		//Loading over
 		$scope.loading = false;
-		console.info($scope.projects);
 	});
 	
 	$scope.showHideProj = function() {
