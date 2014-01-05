@@ -70,24 +70,46 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+body, html { width: 100%; }
+
+.wrapProjects {
+	overflow: hidden;
+}
+
+
+.intro {
+    margin-top: $menu-height+px;
+    
+    blockquote {
+        margin-top: 30px;
+        font-size: 1.3em;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    strong {
+        color: red;
+    }
+}
 
 //---------------------------------------------------------------------------------
 //                          Headers
 //---------------------------------------------------------------------------------
 
-.header {
-    margin-top: $menu-height+px;
+.header_inline {
 	
-	.logo.original {
+	&:nth-child(1) .logo.original {
 		top: -70px;
 	}
-}
-
-.header_inline .logo.original {
+    
+    &:nth-child(2) .logo.original {
 	top: 10px;
+    }
 }
     
-.header, .header_inline {
+.header_inline {
 	background: $secondary-color;
     height: $header-height+px; width: 100%;
     overflow: hidden; position: relative;
@@ -349,6 +371,9 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
     }
     
     .topProject {
+        position: relative;
+        z-index: 50;
+    
         h2, form {
             margin-bottom: 0;
         }
@@ -458,6 +483,7 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 	.wrapProjects {
 		padding-bottom: 50px;
 		position: relative;
+        z-index: 30;
 	}
         
     .project, .org {

@@ -1,15 +1,18 @@
 [
     {
-        "lastUpdate": "2014-01-02T14:32:21.734Z",
+        "lastUpdate": "2014-01-05T23:04:37.236Z",
+        "stats": {
+            "nbLinesCode": 1054566197
+        },
         "repos": [
             {
                 "name": "brackets",
-                "watchers_count": 13767,
+                "watchers_count": 13807,
                 "org": "Adobe Systems",
                 "languages": [
                     {
                         "name": "JavaScript",
-                        "value": 8740476
+                        "value": 8826216
                     },
                     {
                         "name": "Ruby",
@@ -17,7 +20,7 @@
                     },
                     {
                         "name": "CSS",
-                        "value": 1602335
+                        "value": 1605433
                     },
                     {
                         "name": "Shell",
@@ -33,15 +36,15 @@
                     }
                 ],
                 "description": "An open source code editor for the web, written in JavaScript, HTML and CSS.",
-                "pushed_at": "2014-01-02T05:09:39Z",
+                "pushed_at": "2014-01-05T22:43:52Z",
                 "html_url": "https://github.com/adobe/brackets",
                 "languages_url": "https://api.github.com/repos/adobe/brackets/languages",
                 "homepage": "http://brackets.io",
-                "languagesTotal": 10388820
+                "languagesTotal": 10477658
             },
             {
                 "name": "source-code-pro",
-                "watchers_count": 3484,
+                "watchers_count": 3504,
                 "org": "Adobe Systems",
                 "languages": [
                     {
@@ -55,6 +58,123 @@
                 "languages_url": "https://api.github.com/repos/adobe/source-code-pro/languages",
                 "homepage": null,
                 "languagesTotal": 454
+            },
+            {
+                "name": "brackets-phonegap",
+                "watchers_count": 78,
+                "org": "Adobe Systems",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 4799
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 108584
+                    }
+                ],
+                "description": "A brackets extension for PhoneGap development.",
+                "pushed_at": "2013-11-11T17:55:32Z",
+                "html_url": "https://github.com/adobe/brackets-phonegap",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-phonegap/languages",
+                "homepage": null,
+                "languagesTotal": 113383
+            },
+            {
+                "name": "source-sans-pro",
+                "watchers_count": 528,
+                "org": "Adobe Systems",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 798
+                    }
+                ],
+                "description": "Repository for Source Sans Pro Font",
+                "pushed_at": "2013-10-10T08:37:43Z",
+                "html_url": "https://github.com/adobe/source-sans-pro",
+                "languages_url": "https://api.github.com/repos/adobe/source-sans-pro/languages",
+                "homepage": null,
+                "languagesTotal": 798
+            },
+            {
+                "name": "brackets-shell",
+                "watchers_count": 456,
+                "org": "Adobe Systems",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 123358
+                    },
+                    {
+                        "name": "Python",
+                        "value": 989310
+                    },
+                    {
+                        "name": "Objective-C",
+                        "value": 152551
+                    },
+                    {
+                        "name": "C++",
+                        "value": 344099
+                    },
+                    {
+                        "name": "C",
+                        "value": 19715
+                    },
+                    {
+                        "name": "Shell",
+                        "value": 9595
+                    }
+                ],
+                "description": "CEF3-based application shell for Brackets.",
+                "pushed_at": "2014-01-04T21:02:39Z",
+                "html_url": "https://github.com/adobe/brackets-shell",
+                "languages_url": "https://api.github.com/repos/adobe/brackets-shell/languages",
+                "homepage": "http://brackets.io",
+                "languagesTotal": 1638628
+            },
+            {
+                "name": "adobe.github.com",
+                "watchers_count": 33,
+                "org": "Adobe Systems",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 62756
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 43694
+                    }
+                ],
+                "description": "Adobe central hub for open source",
+                "pushed_at": "2014-01-03T09:06:54Z",
+                "html_url": "https://github.com/adobe/adobe.github.com",
+                "languages_url": "https://api.github.com/repos/adobe/adobe.github.com/languages",
+                "homepage": "adobe.github.io",
+                "languagesTotal": 106450
+            },
+            {
+                "name": "brackets.io",
+                "watchers_count": 15,
+                "org": "Adobe Systems",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 259770
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 267610
+                    }
+                ],
+                "description": "brackets.io website",
+                "pushed_at": "2014-01-02T18:19:47Z",
+                "html_url": "https://github.com/adobe/brackets.io",
+                "languages_url": "https://api.github.com/repos/adobe/brackets.io/languages",
+                "homepage": null,
+                "languagesTotal": 527380
             },
             {
                 "name": "cssfilterlab",
@@ -126,102 +246,6 @@
                 "languages_url": "https://api.github.com/repos/adobe/CodeMirror2/languages",
                 "homepage": "http://codemirror.net/",
                 "languagesTotal": 1586659
-            },
-            {
-                "name": "adobe.github.com",
-                "watchers_count": 33,
-                "org": "Adobe Systems",
-                "languages": [
-                    {
-                        "name": "CSS",
-                        "value": 62756
-                    },
-                    {
-                        "name": "JavaScript",
-                        "value": 43694
-                    }
-                ],
-                "description": "Adobe central hub for open source",
-                "pushed_at": "2013-12-31T00:17:04Z",
-                "html_url": "https://github.com/adobe/adobe.github.com",
-                "languages_url": "https://api.github.com/repos/adobe/adobe.github.com/languages",
-                "homepage": "adobe.github.io",
-                "languagesTotal": 106450
-            },
-            {
-                "name": "brackets.io",
-                "watchers_count": 15,
-                "org": "Adobe Systems",
-                "languages": [
-                    {
-                        "name": "CSS",
-                        "value": 259770
-                    },
-                    {
-                        "name": "JavaScript",
-                        "value": 267610
-                    }
-                ],
-                "description": "brackets.io website",
-                "pushed_at": "2013-12-24T17:01:52Z",
-                "html_url": "https://github.com/adobe/brackets.io",
-                "languages_url": "https://api.github.com/repos/adobe/brackets.io/languages",
-                "homepage": null,
-                "languagesTotal": 527380
-            },
-            {
-                "name": "brackets-shell",
-                "watchers_count": 452,
-                "org": "Adobe Systems",
-                "languages": [
-                    {
-                        "name": "JavaScript",
-                        "value": 123358
-                    },
-                    {
-                        "name": "Python",
-                        "value": 989310
-                    },
-                    {
-                        "name": "Objective-C",
-                        "value": 152551
-                    },
-                    {
-                        "name": "C++",
-                        "value": 344099
-                    },
-                    {
-                        "name": "C",
-                        "value": 19715
-                    },
-                    {
-                        "name": "Shell",
-                        "value": 9595
-                    }
-                ],
-                "description": "CEF3-based application shell for Brackets.",
-                "pushed_at": "2013-12-30T23:28:40Z",
-                "html_url": "https://github.com/adobe/brackets-shell",
-                "languages_url": "https://api.github.com/repos/adobe/brackets-shell/languages",
-                "homepage": "http://brackets.io",
-                "languagesTotal": 1638628
-            },
-            {
-                "name": "source-sans-pro",
-                "watchers_count": 527,
-                "org": "Adobe Systems",
-                "languages": [
-                    {
-                        "name": "Shell",
-                        "value": 798
-                    }
-                ],
-                "description": "Repository for Source Sans Pro Font",
-                "pushed_at": "2013-10-10T08:37:43Z",
-                "html_url": "https://github.com/adobe/source-sans-pro",
-                "languages_url": "https://api.github.com/repos/adobe/source-sans-pro/languages",
-                "homepage": null,
-                "languagesTotal": 798
             },
             {
                 "name": "chromium",
@@ -319,27 +343,6 @@
                 "languages_url": "https://api.github.com/repos/adobe/chromium/languages",
                 "homepage": null,
                 "languagesTotal": 220822857
-            },
-            {
-                "name": "brackets-phonegap",
-                "watchers_count": 75,
-                "org": "Adobe Systems",
-                "languages": [
-                    {
-                        "name": "CSS",
-                        "value": 4799
-                    },
-                    {
-                        "name": "JavaScript",
-                        "value": 108584
-                    }
-                ],
-                "description": "A brackets extension for PhoneGap development.",
-                "pushed_at": "2013-11-11T17:55:32Z",
-                "html_url": "https://github.com/adobe/brackets-phonegap",
-                "languages_url": "https://api.github.com/repos/adobe/brackets-phonegap/languages",
-                "homepage": null,
-                "languagesTotal": 113383
             },
             {
                 "name": "Spry",
@@ -810,8 +813,25 @@
                 "languagesTotal": 4274
             },
             {
+                "name": "coding-guidelines",
+                "watchers_count": 12,
+                "org": "Adobe Web Platform",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 1685
+                    }
+                ],
+                "description": "",
+                "pushed_at": "2013-06-13T17:43:45Z",
+                "html_url": "https://github.com/adobe-webplatform/coding-guidelines",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/coding-guidelines/languages",
+                "homepage": null,
+                "languagesTotal": 1685
+            },
+            {
                 "name": "Snap.svg",
-                "watchers_count": 3091,
+                "watchers_count": 3112,
                 "org": "Adobe Web Platform",
                 "languages": [
                     {
@@ -828,11 +848,32 @@
                     }
                 ],
                 "description": "The JavaScript library for modern SVG graphics.",
-                "pushed_at": "2014-01-02T08:43:42Z",
+                "pushed_at": "2014-01-03T01:24:00Z",
                 "html_url": "https://github.com/adobe-webplatform/Snap.svg",
                 "languages_url": "https://api.github.com/repos/adobe-webplatform/Snap.svg/languages",
                 "homepage": "http://snapsvg.io",
                 "languagesTotal": 993206
+            },
+            {
+                "name": "Demo-for-Alice-s-Adventures-in-Wonderland",
+                "watchers_count": 85,
+                "org": "Adobe Web Platform",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 53240
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 38527
+                    }
+                ],
+                "description": "Demo of CSS Shapes using the Alice in Wonderland story.",
+                "pushed_at": "2013-10-25T08:36:16Z",
+                "html_url": "https://github.com/adobe-webplatform/Demo-for-Alice-s-Adventures-in-Wonderland",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/Demo-for-Alice-s-Adventures-in-Wonderland/languages",
+                "homepage": "adobe-webplatform.github.io/Demo-for-Alice-s-Adventures-in-Wonderland",
+                "languagesTotal": 91767
             },
             {
                 "name": "balance-text",
@@ -854,6 +895,27 @@
                 "languages_url": "https://api.github.com/repos/adobe-webplatform/balance-text/languages",
                 "homepage": null,
                 "languagesTotal": 15880
+            },
+            {
+                "name": "css-regions-polyfill",
+                "watchers_count": 115,
+                "org": "Adobe Web Platform",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 121846
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 137837
+                    }
+                ],
+                "description": "Experimental CSS Regions polyfill written in JavaScript",
+                "pushed_at": "2013-10-29T20:20:55Z",
+                "html_url": "https://github.com/adobe-webplatform/css-regions-polyfill",
+                "languages_url": "https://api.github.com/repos/adobe-webplatform/css-regions-polyfill/languages",
+                "homepage": "http://adobe-webplatform.github.com/css-regions-polyfill",
+                "languagesTotal": 259683
             },
             {
                 "name": "dr.js",
@@ -881,27 +943,6 @@
                 "languagesTotal": 42717
             },
             {
-                "name": "Demo-for-Alice-s-Adventures-in-Wonderland",
-                "watchers_count": 84,
-                "org": "Adobe Web Platform",
-                "languages": [
-                    {
-                        "name": "JavaScript",
-                        "value": 53240
-                    },
-                    {
-                        "name": "CSS",
-                        "value": 38527
-                    }
-                ],
-                "description": "Demo of CSS Shapes using the Alice in Wonderland story.",
-                "pushed_at": "2013-10-25T08:36:16Z",
-                "html_url": "https://github.com/adobe-webplatform/Demo-for-Alice-s-Adventures-in-Wonderland",
-                "languages_url": "https://api.github.com/repos/adobe-webplatform/Demo-for-Alice-s-Adventures-in-Wonderland/languages",
-                "homepage": "adobe-webplatform.github.io/Demo-for-Alice-s-Adventures-in-Wonderland",
-                "languagesTotal": 91767
-            },
-            {
                 "name": "eve",
                 "watchers_count": 152,
                 "org": "Adobe Web Platform",
@@ -917,27 +958,6 @@
                 "languages_url": "https://api.github.com/repos/adobe-webplatform/eve/languages",
                 "homepage": "http://dmitry.baranovskiy.com/eve/",
                 "languagesTotal": 12489
-            },
-            {
-                "name": "css-regions-polyfill",
-                "watchers_count": 114,
-                "org": "Adobe Web Platform",
-                "languages": [
-                    {
-                        "name": "CSS",
-                        "value": 121846
-                    },
-                    {
-                        "name": "JavaScript",
-                        "value": 137837
-                    }
-                ],
-                "description": "Experimental CSS Regions polyfill written in JavaScript",
-                "pushed_at": "2013-10-29T20:20:55Z",
-                "html_url": "https://github.com/adobe-webplatform/css-regions-polyfill",
-                "languages_url": "https://api.github.com/repos/adobe-webplatform/css-regions-polyfill/languages",
-                "homepage": "http://adobe-webplatform.github.com/css-regions-polyfill",
-                "languagesTotal": 259683
             },
             {
                 "name": "screensaver",
@@ -1060,23 +1080,6 @@
                 "languagesTotal": 0
             },
             {
-                "name": "coding-guidelines",
-                "watchers_count": 11,
-                "org": "Adobe Web Platform",
-                "languages": [
-                    {
-                        "name": "JavaScript",
-                        "value": 1685
-                    }
-                ],
-                "description": "",
-                "pushed_at": "2013-06-13T17:43:45Z",
-                "html_url": "https://github.com/adobe-webplatform/coding-guidelines",
-                "languages_url": "https://api.github.com/repos/adobe-webplatform/coding-guidelines/languages",
-                "homepage": null,
-                "languagesTotal": 1685
-            },
-            {
                 "name": "transform-tests",
                 "watchers_count": 0,
                 "org": "Adobe Web Platform",
@@ -1193,8 +1196,25 @@
                 "languagesTotal": 0
             },
             {
+                "name": "fondue",
+                "watchers_count": 32,
+                "org": "Adobe Research",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 808963
+                    }
+                ],
+                "description": "JavaScript instrumentation library for collecting traces",
+                "pushed_at": "2013-10-08T16:38:20Z",
+                "html_url": "https://github.com/adobe-research/fondue",
+                "languages_url": "https://api.github.com/repos/adobe-research/fondue/languages",
+                "homepage": null,
+                "languagesTotal": 808963
+            },
+            {
                 "name": "theseus",
-                "watchers_count": 697,
+                "watchers_count": 700,
                 "org": "Adobe Research",
                 "languages": [
                     {
@@ -1218,21 +1238,42 @@
                 "languagesTotal": 279981
             },
             {
-                "name": "fondue",
-                "watchers_count": 31,
+                "name": "http_streaming_client",
+                "watchers_count": 1,
                 "org": "Adobe Research",
                 "languages": [
                     {
-                        "name": "JavaScript",
-                        "value": 808963
+                        "name": "Ruby",
+                        "value": 46077
                     }
                 ],
-                "description": "JavaScript instrumentation library for collecting traces",
-                "pushed_at": "2013-10-08T16:38:20Z",
-                "html_url": "https://github.com/adobe-research/fondue",
-                "languages_url": "https://api.github.com/repos/adobe-research/fondue/languages",
-                "homepage": null,
-                "languagesTotal": 808963
+                "description": "Ruby HTTP client with support for HTTP 1.1 streaming, GZIP compressed streams, and chunked transfer encoding. Includes extensible OAuth support for the Adobe Analytics Firehose and Twitter Streaming APIs.",
+                "pushed_at": "2014-01-03T23:30:48Z",
+                "html_url": "https://github.com/adobe-research/http_streaming_client",
+                "languages_url": "https://api.github.com/repos/adobe-research/http_streaming_client/languages",
+                "homepage": "",
+                "languagesTotal": 46077
+            },
+            {
+                "name": "libkafka",
+                "watchers_count": 10,
+                "org": "Adobe Research",
+                "languages": [
+                    {
+                        "name": "Shell",
+                        "value": 10349
+                    },
+                    {
+                        "name": "C++",
+                        "value": 277839
+                    }
+                ],
+                "description": "A C++ client library for Apache Kafka v0.8+. Also includes C API.",
+                "pushed_at": "2013-12-19T14:13:26Z",
+                "html_url": "https://github.com/adobe-research/libkafka",
+                "languages_url": "https://api.github.com/repos/adobe-research/libkafka/languages",
+                "homepage": "",
+                "languagesTotal": 288188
             },
             {
                 "name": "brackets",
@@ -1262,44 +1303,6 @@
                 "languages_url": "https://api.github.com/repos/adobe-research/brackets/languages",
                 "homepage": "https://twitter.com/brackets",
                 "languagesTotal": 7973247
-            },
-            {
-                "name": "http_streaming_client",
-                "watchers_count": 1,
-                "org": "Adobe Research",
-                "languages": [
-                    {
-                        "name": "Ruby",
-                        "value": 43824
-                    }
-                ],
-                "description": "Ruby HTTP client with support for HTTP 1.1 streaming, GZIP compressed streams, and chunked transfer encoding. Includes extensible OAuth support for the Adobe Analytics Firehose and Twitter Streaming APIs.",
-                "pushed_at": "2013-12-10T18:06:35Z",
-                "html_url": "https://github.com/adobe-research/http_streaming_client",
-                "languages_url": "https://api.github.com/repos/adobe-research/http_streaming_client/languages",
-                "homepage": "",
-                "languagesTotal": 43824
-            },
-            {
-                "name": "libkafka",
-                "watchers_count": 10,
-                "org": "Adobe Research",
-                "languages": [
-                    {
-                        "name": "Shell",
-                        "value": 10349
-                    },
-                    {
-                        "name": "C++",
-                        "value": 277839
-                    }
-                ],
-                "description": "A C++ client library for Apache Kafka v0.8+. Also includes C API.",
-                "pushed_at": "2013-12-19T14:13:26Z",
-                "html_url": "https://github.com/adobe-research/libkafka",
-                "languages_url": "https://api.github.com/repos/adobe-research/libkafka/languages",
-                "homepage": "",
-                "languagesTotal": 288188
             },
             {
                 "name": "node-theseus",
@@ -1389,20 +1392,8 @@
                 "languagesTotal": 1699366
             },
             {
-                "name": "generator-getting-started",
-                "watchers_count": 16,
-                "org": "Adobe Photoshop",
-                "languages": [],
-                "description": "Adobe Generator Getting Started Tutorial. Scripting Photoshop with JavaScript Node.js",
-                "pushed_at": "2013-09-09T23:40:37Z",
-                "html_url": "https://github.com/adobe-photoshop/generator-getting-started",
-                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-getting-started/languages",
-                "homepage": "",
-                "languagesTotal": 0
-            },
-            {
                 "name": "generator-core",
-                "watchers_count": 253,
+                "watchers_count": 256,
                 "org": "Adobe Photoshop",
                 "languages": [
                     {
@@ -1419,7 +1410,7 @@
             },
             {
                 "name": "generator-assets",
-                "watchers_count": 124,
+                "watchers_count": 127,
                 "org": "Adobe Photoshop",
                 "languages": [
                     {
@@ -1435,25 +1426,20 @@
                 "languagesTotal": 93552
             },
             {
-                "name": "generator-cli",
-                "watchers_count": 6,
+                "name": "generator-getting-started",
+                "watchers_count": 17,
                 "org": "Adobe Photoshop",
-                "languages": [
-                    {
-                        "name": "JavaScript",
-                        "value": 31119
-                    }
-                ],
-                "description": "Command line launcher for Photoshop Generator",
-                "pushed_at": "2013-12-04T00:42:06Z",
-                "html_url": "https://github.com/adobe-photoshop/generator-cli",
-                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-cli/languages",
-                "homepage": null,
-                "languagesTotal": 31119
+                "languages": [],
+                "description": "Adobe Generator Getting Started Tutorial. Scripting Photoshop with JavaScript Node.js",
+                "pushed_at": "2013-09-09T23:40:37Z",
+                "html_url": "https://github.com/adobe-photoshop/generator-getting-started",
+                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-getting-started/languages",
+                "homepage": "",
+                "languagesTotal": 0
             },
             {
                 "name": "generator-weblogger",
-                "watchers_count": 21,
+                "watchers_count": 20,
                 "org": "Adobe Photoshop",
                 "languages": [
                     {
@@ -1473,9 +1459,26 @@
                 "languagesTotal": 16148
             },
             {
+                "name": "generator-cli",
+                "watchers_count": 6,
+                "org": "Adobe Photoshop",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 31119
+                    }
+                ],
+                "description": "Command line launcher for Photoshop Generator",
+                "pushed_at": "2013-12-04T00:42:06Z",
+                "html_url": "https://github.com/adobe-photoshop/generator-cli",
+                "languages_url": "https://api.github.com/repos/adobe-photoshop/generator-cli/languages",
+                "homepage": null,
+                "languagesTotal": 31119
+            },
+            {
                 "name": "Adobe-Chef",
                 "watchers_count": 1,
-                "org": "",
+                "org": "Adobe CloudOps",
                 "languages": [
                     {
                         "name": "PowerShell",
@@ -1491,7 +1494,7 @@
             },
             {
                 "name": "topcoat",
-                "watchers_count": 3504,
+                "watchers_count": 3505,
                 "org": "Topcoat",
                 "languages": [
                     {
@@ -1517,6 +1520,65 @@
                 "languages_url": "https://api.github.com/repos/topcoat/topcoat/languages",
                 "homepage": "topcoat.io",
                 "languagesTotal": 377547
+            },
+            {
+                "name": "icons",
+                "watchers_count": 135,
+                "org": "Topcoat",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 820
+                    },
+                    {
+                        "name": "JavaScript",
+                        "value": 120458
+                    }
+                ],
+                "description": "Open Source Icons designed for Topcoat",
+                "pushed_at": "2013-12-06T04:26:48Z",
+                "html_url": "https://github.com/topcoat/icons",
+                "languages_url": "https://api.github.com/repos/topcoat/icons/languages",
+                "homepage": "",
+                "languagesTotal": 121278
+            },
+            {
+                "name": "theme-mobile-light",
+                "watchers_count": 0,
+                "org": "Topcoat",
+                "languages": [
+                    {
+                        "name": "CSS",
+                        "value": 358
+                    }
+                ],
+                "description": "Light theme for mobile applications",
+                "pushed_at": "2013-12-17T22:04:53Z",
+                "html_url": "https://github.com/topcoat/theme-mobile-light",
+                "languages_url": "https://api.github.com/repos/topcoat/theme-mobile-light/languages",
+                "homepage": null,
+                "languagesTotal": 358
+            },
+            {
+                "name": "grid",
+                "watchers_count": 26,
+                "org": "Topcoat",
+                "languages": [
+                    {
+                        "name": "JavaScript",
+                        "value": 748
+                    },
+                    {
+                        "name": "CSS",
+                        "value": 2999
+                    }
+                ],
+                "description": "small grid system using CSS flex properties",
+                "pushed_at": "2013-11-27T23:59:57Z",
+                "html_url": "https://github.com/topcoat/grid",
+                "languages_url": "https://api.github.com/repos/topcoat/grid/languages",
+                "homepage": null,
+                "languagesTotal": 3747
             },
             {
                 "name": "resin",
@@ -1571,27 +1633,6 @@
                 "languages_url": "https://api.github.com/repos/topcoat/angular-topcoat/languages",
                 "homepage": null,
                 "languagesTotal": 0
-            },
-            {
-                "name": "icons",
-                "watchers_count": 132,
-                "org": "Topcoat",
-                "languages": [
-                    {
-                        "name": "CSS",
-                        "value": 820
-                    },
-                    {
-                        "name": "JavaScript",
-                        "value": 120458
-                    }
-                ],
-                "description": "Open Source Icons designed for Topcoat",
-                "pushed_at": "2013-12-06T04:26:48Z",
-                "html_url": "https://github.com/topcoat/icons",
-                "languages_url": "https://api.github.com/repos/topcoat/icons/languages",
-                "homepage": "",
-                "languagesTotal": 121278
             },
             {
                 "name": "topcoat.github.com",
@@ -1974,23 +2015,6 @@
                 "languagesTotal": 363
             },
             {
-                "name": "theme-mobile-light",
-                "watchers_count": 0,
-                "org": "Topcoat",
-                "languages": [
-                    {
-                        "name": "CSS",
-                        "value": 358
-                    }
-                ],
-                "description": "Light theme for mobile applications",
-                "pushed_at": "2013-12-17T22:04:53Z",
-                "html_url": "https://github.com/topcoat/theme-mobile-light",
-                "languages_url": "https://api.github.com/repos/topcoat/theme-mobile-light/languages",
-                "homepage": null,
-                "languagesTotal": 358
-            },
-            {
                 "name": "theme-desktop-light",
                 "watchers_count": 0,
                 "org": "Topcoat",
@@ -2080,27 +2104,6 @@
                 "languagesTotal": 4476
             },
             {
-                "name": "notification",
-                "watchers_count": 3,
-                "org": "Topcoat",
-                "languages": [
-                    {
-                        "name": "JavaScript",
-                        "value": 8391
-                    },
-                    {
-                        "name": "CSS",
-                        "value": 13868
-                    }
-                ],
-                "description": "Topcoat notification",
-                "pushed_at": "2013-12-06T07:50:08Z",
-                "html_url": "https://github.com/topcoat/notification",
-                "languages_url": "https://api.github.com/repos/topcoat/notification/languages",
-                "homepage": null,
-                "languagesTotal": 22259
-            },
-            {
                 "name": "Malware-classifier",
                 "watchers_count": 2,
                 "org": "Adobe Security",
@@ -2119,7 +2122,7 @@
             },
             {
                 "name": "adobe-blank",
-                "watchers_count": 24,
+                "watchers_count": 25,
                 "org": "Adobe Fonts",
                 "languages": [],
                 "description": "Adobe Blank",
@@ -2131,7 +2134,7 @@
             },
             {
                 "name": "crossbridge",
-                "watchers_count": 358,
+                "watchers_count": 360,
                 "org": "Adobe Flash",
                 "languages": [
                     {
@@ -2411,39 +2414,15 @@
         "langs": [
             {
                 "name": "CSS",
-                "value": 14024625
+                "value": 14016854
             },
             {
                 "name": "JavaScript",
-                "value": 198127143
-            },
-            {
-                "name": "Ruby",
-                "value": 188780
+                "value": 198205240
             },
             {
                 "name": "Shell",
                 "value": 11308223
-            },
-            {
-                "name": "PHP",
-                "value": 270798
-            },
-            {
-                "name": "Clojure",
-                "value": 28
-            },
-            {
-                "name": "F#",
-                "value": 40568
-            },
-            {
-                "name": "ColdFusion",
-                "value": 5948
-            },
-            {
-                "name": "LiveScript",
-                "value": 12206
             },
             {
                 "name": "Python",
@@ -2462,16 +2441,16 @@
                 "value": 350255246
             },
             {
-                "name": "ActionScript",
-                "value": 66295712
+                "name": "Ruby",
+                "value": 191033
             },
             {
-                "name": "Perl",
-                "value": 2262309
+                "name": "PHP",
+                "value": 270798
             },
             {
-                "name": "Emacs Lisp",
-                "value": 62988
+                "name": "Clojure",
+                "value": 28
             },
             {
                 "name": "Java",
@@ -2484,6 +2463,10 @@
             {
                 "name": "AppleScript",
                 "value": 6973
+            },
+            {
+                "name": "Perl",
+                "value": 2262309
             },
             {
                 "name": "XML",
@@ -2500,6 +2483,10 @@
             {
                 "name": "Logos",
                 "value": 507385
+            },
+            {
+                "name": "F#",
+                "value": 40568
             },
             {
                 "name": "Ragel in Ruby Host",
@@ -2522,12 +2509,32 @@
                 "value": 18117
             },
             {
+                "name": "ColdFusion",
+                "value": 5948
+            },
+            {
+                "name": "ActionScript",
+                "value": 66295712
+            },
+            {
                 "name": "Erlang",
                 "value": 8422
             },
             {
+                "name": "Emacs Lisp",
+                "value": 62988
+            },
+            {
+                "name": "LiveScript",
+                "value": 12206
+            },
+            {
                 "name": "VimL",
                 "value": 41669
+            },
+            {
+                "name": "CoffeeScript",
+                "value": 26348
             },
             {
                 "name": "M",
@@ -2536,10 +2543,6 @@
             {
                 "name": "PowerShell",
                 "value": 12788
-            },
-            {
-                "name": "CoffeeScript",
-                "value": 26348
             },
             {
                 "name": "Smalltalk",
@@ -2638,47 +2641,89 @@
             {
                 "userName": "adobe",
                 "name": "Adobe Systems",
-                "desc": "Repository for certain Adobe Open Source releases"
+                "desc": "Repository for certain Adobe Open Source releases",
+                "avatar_url": "https://gravatar.com/avatar/cc40327f6f93a7b75207a152962d8dbe?d=https%3A%2F%2Fidenticons.github.com%2Fb388f007cd411941d8225ac4d11766a3.png&r=x",
+                "blog": "http://www.adobe.com/open-source.html",
+                "public_repos": 32,
+                "html_url": "https://github.com/adobe",
+                "updated_at": "2014-01-05T22:47:25Z"
             },
             {
                 "userName": "adobe-webplatform",
                 "name": "Adobe Web Platform",
-                "desc": "Releases from the Adobe Web Platform teams"
+                "desc": "Releases from the Adobe Web Platform teams",
+                "avatar_url": "https://identicons.github.com/0cf913c9f9270dfe3ea59f178a9fec1c.png",
+                "public_repos": 18,
+                "html_url": "https://github.com/adobe-webplatform",
+                "updated_at": "2014-01-05T21:17:43Z"
             },
             {
                 "userName": "adobe-research",
                 "name": "Adobe Research",
-                "desc": "Releases from the Adobe Research teams"
+                "desc": "Releases from the Adobe Research teams",
+                "avatar_url": "https://gravatar.com/avatar/0ac147765b2f6b242f47cb9ccef149e0?d=https%3A%2F%2Fidenticons.github.com%2Fc04d167c0e17f9ae8cd4296b83f8bb84.png&r=x",
+                "blog": "http://research.adobe.com",
+                "public_repos": 9,
+                "html_url": "https://github.com/adobe-research",
+                "updated_at": "2014-01-04T23:41:23Z"
             },
             {
                 "userName": "adobe-photoshop",
                 "name": "Adobe Photoshop",
-                "desc": "Stuff from the Adobe Photoshop team"
+                "desc": "Stuff from the Adobe Photoshop team",
+                "avatar_url": "https://gravatar.com/avatar/77e4e1f2014c46ddc40676d4a2c5156c?d=https%3A%2F%2Fidenticons.github.com%2Fbb627d582af1ea312108e3e5b4922f04.png&r=x",
+                "blog": null,
+                "public_repos": 5,
+                "html_url": "https://github.com/adobe-photoshop",
+                "updated_at": "2014-01-05T22:12:28Z"
             },
             {
                 "userName": "adobe-cloudops",
                 "name": "Adobe CloudOps",
-                "desc": "Releases from the Adobe Cloud Operations teams"
+                "desc": "Releases from the Adobe Cloud Operations teams",
+                "avatar_url": "https://identicons.github.com/6eca5f49ceec3413752edb7d3ea220d4.png",
+                "public_repos": 1,
+                "html_url": "https://github.com/Adobe-CloudOps",
+                "updated_at": "2013-12-21T15:39:02Z"
             },
             {
                 "userName": "topcoat",
                 "name": "Topcoat",
-                "desc": "UI Library for creating beautiful and responsive applications using web standards"
+                "desc": "UI Library for creating beautiful and responsive applications using web standards",
+                "avatar_url": "https://gravatar.com/avatar/015206a28497444e665f9896ca017814?d=https%3A%2F%2Fidenticons.github.com%2F4972fd23980bf8b5d6879a422198ac33.png&r=x",
+                "blog": "http://topcoat.io",
+                "public_repos": 73,
+                "html_url": "https://github.com/topcoat",
+                "updated_at": "2014-01-04T16:02:09Z"
             },
             {
                 "userName": "adobe-security",
                 "name": "Adobe Security",
-                "desc": "Releases from the Adobe Security teams"
+                "desc": "Releases from the Adobe Security teams",
+                "avatar_url": "https://identicons.github.com/471c72eb462b08eef560044fe19b3ea5.png",
+                "blog": null,
+                "public_repos": 1,
+                "html_url": "https://github.com/adobe-security",
+                "updated_at": "2013-10-25T21:13:23Z"
             },
             {
                 "userName": "adobe-fonts",
                 "name": "Adobe Fonts",
-                "desc": "Releases from the Adobe Font teams"
+                "desc": "Releases from the Adobe Font teams",
+                "avatar_url": "https://identicons.github.com/242d5a2340c6407b8a0f96115ae7037e.png",
+                "public_repos": 1,
+                "html_url": "https://github.com/adobe-fonts",
+                "updated_at": "2014-01-05T19:56:45Z"
             },
             {
                 "userName": "adobe-flash",
                 "name": "Adobe Flash",
-                "desc": "Stuff from the Adobe Flash team"
+                "desc": "Stuff from the Adobe Flash team",
+                "avatar_url": "https://gravatar.com/avatar/08468976ba96edfd8cd0c37a0f0a0056?d=https%3A%2F%2Fidenticons.github.com%2Fae439562334df5d60b7ea629d7c7dc9d.png&r=x",
+                "blog": "http://adobe.github.io/",
+                "public_repos": 2,
+                "html_url": "https://github.com/adobe-flash",
+                "updated_at": "2014-01-05T02:55:46Z"
             }
         ]
     }

@@ -103,7 +103,7 @@ app.filter('niceNum', function() {
 		var niceNum = "";
 		var step = 1;
         
-		while ( num > 1 ) {
+		while ( num >= 1 ) {
 			rest = num % 1000;
 			
 			//Put it in a nice string
@@ -113,12 +113,12 @@ app.filter('niceNum', function() {
                 }
 				else if ( rest < 100 ) {
 					rest = "0" + rest;
-                };
+                }
             };
 
 			niceNum =  rest + "'" + niceNum;
 			num = Math.floor(num / 1000);
-    }
+        }
         
 		return (niceNum == "") ? "0" : niceNum.substring(0, niceNum.length-1);
     }
@@ -135,37 +135,36 @@ app.filter('timeDiff', function() {
 	return function (timeRaw) {
     var now = new Date();
     var time = new Date( timeRaw );
-		var diff = now - time;
-		
-		var days = Math.floor(diff / 1000 / 60 / (60 * 24));
+    var diff = now - time;
+    
+    var days = Math.floor(diff / 1000 / 60 / (60 * 24));
 
     var date_diff = new Date( diff );
-		
-		var sDate = "";
+    var sDate = "";
     if (days != 0) {
-			//Count and display nb years
-			var years = Math.floor( days / 365 );
-			if (years != 0) {
-				sDate += years + " year";
-				sDate += (years > 1) ? "s " : " ";
-				//Reduce it to the number of days not counted
-				days = days % 365;
-			}
-			
-			var months = Math.floor( days / 30 );
-			if (months != 0 ) {
-				sDate += months + " month";
-				sDate += (months > 1) ? "s " : " ";
-			}
-			else if (years == 0) {
-				sDate += days + " d "+ date_diff.getHours() + " h";
-			}
-		}
-		else {
-			sDate += date_diff.getHours() + " h " + date_diff.getMinutes() + " min";
-		}
-		
-		return sDate;
+        //Count and display nb years
+        var years = Math.floor( days / 365 );
+        if (years != 0) {
+            sDate += years + " year";
+            sDate += (years > 1) ? "s " : " ";
+            //Reduce it to the number of days not counted
+            days = days % 365;
+        }
+        
+        var months = Math.floor( days / 30 );
+        if (months != 0 ) {
+            sDate += months + " month";
+            sDate += (months > 1) ? "s " : " ";
+        }
+        else if (years == 0) {
+            sDate += days + " d "+ date_diff.getHours() + " h";
+        }
+    }
+    else {
+        sDate += date_diff.getHours() + " h " + date_diff.getMinutes() + " min";
+    }
+    
+    return sDate;
   }
 });
 
@@ -173,7 +172,7 @@ app.filter('timeDiff', function() {
                 Main Controller */
 
 //Get Adobe Github repos & orgs
-app.factory("ReposAdobe", function($resource) {
+app.factory("DatasAdobe", function($resource) {
     return $resource("offline/server.json");
 //    return $resource("http://localhost:8000", {'8000': ':8000'});
 });
@@ -184,7 +183,7 @@ app.factory("FeaturedHeader", function($resource) {
 });
 
 //TODO : Manage offline project list when errors
-this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
+this.GitHubCtrl = function($scope, $filter, DatasAdobe, FeaturedHeader) {
     
     //------------------------------- Init --------------------------------
     
@@ -244,12 +243,13 @@ this.GitHubCtrl = function($scope, $filter, ReposAdobe, FeaturedHeader) {
 	$scope.orgs = [];
 	
 	//Reference Orgs
-	ReposAdobe.query(function(rep) { 
+	DatasAdobe.query(function(rep) { 
 		console.log(rep);
 		if (rep[0]) {
 			$scope.projects = rep[0].repos;
 			$scope.orgs = rep[0].orgs;
 			$scope.langs = rep[0].langs;
+			$scope.stats = rep[0].stats;
 			
 			$("#searchLang").autocomplete({
 				source: $scope.objToNamedArray($scope.langs),

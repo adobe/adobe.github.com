@@ -36,12 +36,37 @@
 			</div>
         </div>
 	</div>
+    
+    <div class="intro">
+        <div class="row">
+            <div class="large-5 columns">
+                <blockquote>Advancing technology through open initiatives</blockquote>
+                <p class="text-center"><a href="http://www.adobe.com/careers.html">Want to join?</a></p>
+            </div>
+            <div class="large-7 columns">
+                <div class="large-12 columns">
+                    <h4>Statistics</h4>
+                </div>
+                <div class="large-6 columns">
+                    <ul>
+                        <li><strong>{{projects.length}}</strong> public repos</li>
+                        <li><strong>{{orgs.length}}</strong> organisations</li>
+                        <li><strong>{{stats.nbLinesCode | niceNum}}</strong> lines of code</li>
+                        <li><strong>{{projects[0].pushed_at | timeDiff}}</strong> since last commit</li>
+                    </ul>
+                </div>
+                <div class="large-6 columns">
+                    Pie chart lang
+                </div>
+            </div>
+        </div>
+    </div>
             
 	<!-- --------------------------------------------------------------------------------------
 						Featured
 	--------------------------------------------------------------------------------------  -->
 
-	<div class="header" id="featuredProj">
+	<div class="header_inline" id="featuredProj">
         <a name="featured" class="anchor" data-magellan-destination="featured"></a>
         <div class="wrapper" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index <= indexFeatured['projects']}">
             <div class="row">
