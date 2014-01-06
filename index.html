@@ -44,19 +44,22 @@
                 <p class="text-center"><a href="http://www.adobe.com/careers.html">Want to join?</a></p>
             </div>
             <div class="large-7 columns">
-                <div class="large-12 columns">
-                    <h4>Statistics</h4>
+                <div class="large-7 columns">
+                    <div class="large-12 columns">
+                        <h4>Statistics</h4>
+                    </div>
+                    <div class="large-12 columns">
+                        <ul>
+                            <li><strong>{{projects.length}}</strong> public repos</li>
+                            <li><strong>{{orgs.length}}</strong> organisations</li>
+                            <li><strong>{{langs.length}}</strong> languages</li>
+                            <li><strong>{{stats.nbLinesCode | niceNum}}</strong> lines of code</li>
+                            <li><strong>{{projects[0].pushed_at | timeDiff}}</strong> since last commit</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="large-6 columns">
-                    <ul>
-                        <li><strong>{{projects.length}}</strong> public repos</li>
-                        <li><strong>{{orgs.length}}</strong> organisations</li>
-                        <li><strong>{{stats.nbLinesCode | niceNum}}</strong> lines of code</li>
-                        <li><strong>{{projects[0].pushed_at | timeDiff}}</strong> since last commit</li>
-                    </ul>
-                </div>
-                <div class="large-6 columns">
-                    Pie chart lang
+                <div class="large-5 columns text-center">
+                    <div id="langChart"></div>
                 </div>
             </div>
         </div>
@@ -75,7 +78,7 @@
 				</div>
                 
                 <div class="large-6 columns">
-                    <img class="logo logoFeatured original" src="{{featured.logo}}" title="{{featured.title}}" />
+                    <img class="logo logoFeatured first" src="{{featured.logo}}" title="{{featured.title}}" />
                 </div>
             </div>
         </div>
@@ -161,7 +164,7 @@
             <div class="large-12 columns" ng-show="loading == false">
                 <div class="row">
                     <div class="large-6 columns" ng-repeat="project in projects | projectsFilter:this" ng-class-odd="'clear'">
-                        <a href="{{project | link}}" target="_blank">
+                        <a href="{{project | linkProject}}" target="_blank">
                             <section class="project">
                                 <div class="row">
                                     <div class="large-6 columns">
@@ -216,7 +219,7 @@
         <div class="wrapper" ng-repeat="featured in featureds['org']" ng-class="{actual: $index <= indexFeatured['org']}">
             <div class="row">
                 <div class="large-5 columns">
-                    <img class="logo logoFeatured original" src="{{featured.logo}}" title="{{featured.title}}" />
+                    <img class="logo logoFeatured second" src="{{featured.logo}}" title="{{featured.title}}" />
                 </div>
                 <div class="large-7 large-offset-5 columns text-header">
 					<div class="small-11 small-offset-1 columns" ng-bind-html-unsafe="featured.textHeader"></div>
@@ -246,7 +249,7 @@
                 <!-- Grid Example -->
                 <div class="row">
                     <div class="large-6 columns" ng-repeat="org in orgs" ng-class-odd="'clear'">
-                        <a href="http://github.com/{{org.userName}}" target="_blank">
+                        <a href="{{org | linkOrg}}" target="_blank">
                             <section class="org">
                                 <div class="row">
                                     <div class="large-6 columns">
@@ -292,6 +295,9 @@
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
     <script src="js/foundation/foundation.forms.js"></script>
+    <script src="js/dcjs/crossfilter.min.js"></script>
+    <script src="js/dcjs/d3.min.js"></script>
+    <script src="js/dcjs/dc.min.js"></script>
     <script src="js/script.js"></script>
 	
     <!-- Analytics Google

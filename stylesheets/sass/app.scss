@@ -76,9 +76,13 @@ body, html { width: 100%; }
 	overflow: hidden;
 }
 
+//---------------------------------------------------------------------------------
+//                          Headers
+//---------------------------------------------------------------------------------
 
 .intro {
     margin-top: $menu-height+px;
+    padding: 20px 0;
     
     blockquote {
         margin-top: 30px;
@@ -92,6 +96,15 @@ body, html { width: 100%; }
     strong {
         color: red;
     }
+
+    .dc-chart {
+        margin-top: 15px;
+    
+        svg text {
+            font-size: 0.6em;
+            stroke: white;
+        }
+    }
 }
 
 //---------------------------------------------------------------------------------
@@ -99,13 +112,12 @@ body, html { width: 100%; }
 //---------------------------------------------------------------------------------
 
 .header_inline {
-	
-	&:nth-child(1) .logo.original {
-		top: -70px;
+	.logo.first {
+		top: -180px;
 	}
     
-    &:nth-child(2) .logo.original {
-	top: 10px;
+    .logo.second {
+	   top: 10px;
     }
 }
     
@@ -153,10 +165,7 @@ body, html { width: 100%; }
         .logo {
             position: absolute; 
 			margin-left: 10%;
-            
-            &.original {
-                width: 80%;
-            }
+            width: 80%;
         }
     }
     

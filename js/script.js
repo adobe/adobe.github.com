@@ -92,9 +92,46 @@ app.filter('projectsFilter', function() {
     };
 });
 
-app.filter('link', function() {
+app.filter('majorLangs', function() {
+	return function(langs, max) {
+        var majorLangs = [];
+        var other = {
+            "name": "Others",
+            "value": 0
+        };
+        
+        for (var i = 0; i < langs.length; i++) {
+            var lang = langs[i];
+            
+            if ( (lang.value/max) > 0.08 ) {
+                majorLangs.push(lang);
+            } else {
+                other.value += lang.value;
+            }
+        }
+        majorLangs.push(other);
+        
+        return majorLangs;
+    };
+});
+
+app.filter('linkProject', function() {
 	return function(project) {
-        return (project.homepage == "" || project.homepage == null) ? project.html_url : project.homepage;
+        if (project.homepage == "" || project.homepage == null) {
+            return project.html_url;
+        } else {
+            return (project.homepage.substring(0,4) != "http") ? "http://"+project.homepage : project.homepage;
+        }
+    };
+});
+
+app.filter('linkOrg', function() {
+	return function(org) {
+        if (org.blog == "" || org.blog == null) {
+            return org.html_url;
+        } else {
+            return (org.blog.substring(0,4) != "http") ? "http://"+org.blog : org.blog;
+        }
     };
 });
 
@@ -262,6 +299,7 @@ this.GitHubCtrl = function($scope, $filter, DatasAdobe, FeaturedHeader) {
 					return false;
 				}
 			});
+            
 			$("#searchOrg").autocomplete({
 				source: $scope.objToNamedArray($scope.orgs),
 				select: function(e, q) {
@@ -273,11 +311,39 @@ this.GitHubCtrl = function($scope, $filter, DatasAdobe, FeaturedHeader) {
 					return false;
 				}
 			});
+            
+            $scope.updateGraph();
 		}
 		
 		//Loading over
 		$scope.loading = false;
 	});
+    
+    $scope.updateGraph = function() {
+        // Filtering langs for only major ones
+        var majorLangs = $scope.filter('majorLangs')($scope.langs, $scope.stats.nbLinesCode);
+        
+        //Initiate graphs
+        var langChart = dc.pieChart("#langChart");
+        //Import data in crossfilter
+        var langsData = crossfilter(majorLangs);
+        var langsDim = langsData.dimension(function (d) {
+            return d.name;
+        });
+        var langsGroup = langsDim.group().reduceSum(function(d) {
+            return d.value;
+        }).order(function(d) {
+            return d.value;
+        });
+        console.log(langsGroup, langChart);
+        langChart.width(160).height(160).radius(80).dimension(langsDim).group(langsGroup).title(function(d) {
+            console.info(d);
+            return d.data.key;
+        }).label(function(d) {
+            return d.data.key;
+        }).renderLabel(true).colors(d3.scale.category20b());
+        dc.renderAll();
+    }
 	
 	$scope.showHideProj = function() {
 		if ($scope.projLast == 10) {
@@ -363,8 +429,8 @@ var scrollUpdate = function () {
 		
 	// ----------------------------------------------------------------------------
 	//					First parallax: header
-	if (scrollTop < ($("#featuredProj").height() + 20) ) {
-		var topLogo_header = ( $(window).scrollTop()*1.5 ) - 70;
+	if (scrollTop < ($("#featuredProj").height() + 100) ) {
+		var topLogo_header = ( $(window).scrollTop()*1.5 ) - 180;
 		$("#featuredProj .logo").css({ top: topLogo_header });
 	}
 	
