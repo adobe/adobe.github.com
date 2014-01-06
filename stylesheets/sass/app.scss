@@ -260,13 +260,21 @@ form.custom .custom.dropdown.open.medium ul {
     
     h3 { 
         margin: 0;
+        
+        .next { font-size: 0.85em; }
+        .title { margin: 0; }
     }
     
     .details {
         color: #888;
-        
+        font-weight: normal;
+    
         a {
-            font-size: 13px;
+            color: #333;
+        
+            &:hover {
+                color: darken($primary-color, 0);
+            }
         }
     }
     

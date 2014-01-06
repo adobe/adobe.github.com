@@ -103,7 +103,7 @@ app.filter('majorLangs', function() {
         for (var i = 0; i < langs.length; i++) {
             var lang = langs[i];
             
-            if ( (lang.value/max) > 0.08 ) {
+            if ( (lang.value/max) > 0.1 ) {
                 majorLangs.push(lang);
             } else {
                 other.value += lang.value;
