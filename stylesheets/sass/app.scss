@@ -70,10 +70,18 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+//---------------------------------------------------------------------------------
+//                          Bugfixes
+//---------------------------------------------------------------------------------
+
 body, html { width: 100%; }
 
 .wrapProjects {
 	overflow: hidden;
+}
+
+form.custom .custom.dropdown.open.medium ul {
+    min-width: 100%;
 }
 
 //---------------------------------------------------------------------------------
