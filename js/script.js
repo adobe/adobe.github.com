@@ -451,11 +451,14 @@ var scrollUpdate = function () {
 	
 	// ----------------------------------------------------------------------------
 	//					Show More/Less button
-	var endOfProjects = scrollTop + $(window).height() - $('.top').height() - $('.header').height();
-	if (endOfProjects < 130 ) {
-		$(".buttonMore").css({position: 'fixed', bottom: 0});
+	var bottomScreem = scrollTop + $(window).height();
+    console.log(bottomScreem, $("#featuredOrg").offset().top)
+	if ( (bottomScreem > $("#featuredOrg").offset().top + 25 )
+      || ($scope.projLast == 10) )
+    {
+		$(".buttonMore").css({position: 'absolute', bottom: -50});
 	}
 	else {
-		$(".buttonMore").css({position: 'absolute', bottom: -50});
+		$(".buttonMore").css({position: 'fixed', bottom: 0});
 	}
 }
