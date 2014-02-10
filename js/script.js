@@ -161,6 +161,26 @@ app.filter('niceNum', function() {
     }
 });
 
+app.filter('unitNum', function() {
+	return function(num) {
+        if (num > 1000000000) {
+         return (Math.round(num / 10000000) / 100) + " tera"
+        }
+        else if (num > 1000000) {
+         return (Math.round(num / 10000) / 100) + " giga"
+        }
+        else if (num > 1000) {
+         return (Math.round(num / 10) / 100)  + " mega"
+        }
+        else if (num > 0) {
+          return "kilo";
+        }
+        else {
+          return "";
+        }
+    };
+});
+
 app.filter('shortenStr', function() {
 	return function (string) {
         maxChar = 120;
