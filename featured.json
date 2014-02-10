@@ -1,0 +1,54 @@
+[
+	{
+		"projects": [
+			{
+				"title": "Brackets, code the web",
+				"logo": "img/brackets_logo.svg",
+				"textHeader": [
+					"<h3>Brackets</h3>",
+					"<p class='details'>Open-source code editor<br> built <em>with</em> the web <em>for</em> the web<br/>",
+					"<a href='http://brackets.io/'>Learn more...</a></p>"
+				]
+			},
+			{
+				"title": "PhoneGap, Easily create apps using the web technologies you know and love: HTML, CSS, and JavaScript",
+				"logo": "img/phonegap.svg",
+				"textHeader": [
+					"<h3>PhoneGap</h3>",
+					"<p class='details'>Free and open source framework to create apps using web technologies.<br/>",
+					"PhoneGap is a distribution of <a href='http://cordova.apache.org/'>Apache Cordova</a><br/>",
+					"<a href='https://github.com/phonegap/'>View on GitHub ></a></p>"
+				]
+			},
+			{
+				"title": "Snap.svg",
+				"logo": "img/snapsvg.svg",
+				"textHeader": [
+					"<h3>Snap.svg</h3>",
+					"<p class='details'>The JavaScript SVG library for the modern web.<br/>",
+					"<a href='http://snapsvg.io/'>Learn more...</a></p>"
+				]
+			}
+		],
+		"org": [
+			{
+				"title": "Adobe Research",
+				"logo": "img/adobe_research.png",
+				"textHeader": [
+					"<h3>Adobe Research</h3>",
+					"<p class='details'>Open-source published code form cutting-edge research at Adobe.<br/>",
+					"<a href='http://www.adobe.com/technology.html'>Learn more...</a>"
+				]
+			},
+			{
+				"title": "Photoshop",
+				"logo": "img/photoshop_logo.svg",
+				"textHeader": [
+					"<h3>Photoshop</h3>",
+					"<p class='details'>Code produced by the Adobe Photoshop team<br/>",
+					"<a href='https://github.com/adobe-photoshop'>View on github...</a>"
+				]
+			}
+		]
+	}
+]
