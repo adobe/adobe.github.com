@@ -382,11 +382,13 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 .title {
-    font-family: "tekton-pro";
-	font-weight: 700 !important;
+    font-family: "source-sans-pro", 'Open Sans', sans-serif;
+	font-weight: 600 !important;
     margin: 3px 30px 3px 20px;
     
+    
     strong {
+	   font-weight: 600 !important;
         color: $primary-color;
     }
 }
