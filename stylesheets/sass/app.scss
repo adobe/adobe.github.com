@@ -108,9 +108,19 @@ form.custom .custom.dropdown.open.medium ul {
     .dc-chart {
         margin-top: 15px;
     
-        svg text {
-            font-size: 0.6em;
-            stroke: white;
+        svg {
+            .axis {
+                display: none;
+            }
+
+            .domain {
+                fill: white;
+            }
+
+            text {
+                font-size: 0.75em;
+                fill: #333;
+            }
         }
     }
 }

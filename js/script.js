@@ -103,7 +103,7 @@ app.filter('majorLangs', function() {
         for (var i = 0; i < langs.length; i++) {
             var lang = langs[i];
             
-            if ( (lang.value/max) > 0.1 ) {
+            if ( (lang.value/max) > 0.075 ) {
                 majorLangs.push(lang);
             } else {
                 other.value += lang.value;
@@ -333,6 +333,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
 			});
             
             $scope.updateGraph();
+            $scope.posLabel();
 		}
 		
 		//Loading over
@@ -344,7 +345,8 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
         var majorLangs = $scope.filter('majorLangs')($scope.langs, $scope.stats.nbLinesCode);
         
         //Initiate graphs
-        var langChart = dc.pieChart("#langChart");
+//        var langChart = dc.pieChart("#langChart");
+        var langChart = dc.rowChart("#langChart");
         //Import data in crossfilter
         var langsData = crossfilter(majorLangs);
         var langsDim = langsData.dimension(function (d) {
@@ -355,12 +357,22 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
         }).order(function(d) {
             return d.value;
         });
-        langChart.width(160).height(160).radius(80).dimension(langsDim).group(langsGroup).title(function(d) {
-            return d.data.key;
+        langChart.width(200).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 70, right: 0, bottom: 20})
+ .title(function(d) {
+            return d.key+ ' (' + Math.round((d.value / $scope.stats.nbLinesCode)*100) + '%)';
         }).label(function(d) {
-            return d.data.key;
-        }).renderLabel(true).colors(d3.scale.category20b());
+            return d.key;
+        }).renderLabel(true).colors(d3.scale.category20());
         dc.renderAll();
+    }
+    
+    $scope.posLabel = function() {
+        $('.dc-chart svg .row text').each(function(index) {
+            var actText = $('.dc-chart svg .row text')[index];
+            
+            var newX = - $(actText).attr('x') - $(actText).width();
+            $(actText).attr('x', newX);
+        });
     }
 	
 	$scope.showHideProj = function() {
