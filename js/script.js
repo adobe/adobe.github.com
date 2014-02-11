@@ -103,12 +103,13 @@ app.filter('majorLangs', function() {
         for (var i = 0; i < langs.length; i++) {
             var lang = langs[i];
             
-            if ( (lang.value/max) > 0.075 ) {
+            if ( (lang.value/max) > 0.070 ) {
                 majorLangs.push(lang);
             } else {
                 other.value += lang.value;
             }
         }
+        majorLangs.sort(function(a,b){return a.value-b.value});
         majorLangs.push(other);
         
         return majorLangs;
@@ -230,8 +231,9 @@ app.filter('timeDiff', function() {
 
 //Get Adobe Github repos & orgs
 app.factory("DatasAdobe", function($resource) {
-    return $resource("offline/server.json");
+//    return $resource("offline/server.json");
 //    return $resource("http://localhost:8000", {'8000': ':8000'});
+    return $resource("http://ec2-54-221-78-73.compute-1.amazonaws.com:8000", {'8000': ':8000'});
 });
 
 //Get Feaatured for the header
@@ -357,7 +359,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
         }).order(function(d) {
             return d.value;
         });
-        langChart.width(200).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 70, right: 0, bottom: 20})
+        langChart.width(220).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 80, right: 0, bottom: 20})
  .title(function(d) {
             return d.key+ ' (' + Math.round((d.value / $scope.stats.nbLinesCode)*100) + '%)';
         }).label(function(d) {
