@@ -1,7 +1,7 @@
 adobe.github.com
 =======================
 
-This is the repo for the [Adobe Github Homepage](adobe.github.com).
+This is the repo for the [Adobe Github Homepage](http://adobe.github.com).
 
 ## Dependencies
 
