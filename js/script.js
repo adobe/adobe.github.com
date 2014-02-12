@@ -231,14 +231,14 @@ app.filter('timeDiff', function() {
 
 //Get Adobe Github repos & orgs
 app.factory("DatasAdobe", function($resource) {
-//    return $resource("offline/server.json");
+//    return $resource("data/server.json");
 //    return $resource("http://localhost:8000", {'8000': ':8000'});
     return $resource("http://ec2-54-221-78-73.compute-1.amazonaws.com:8000", {'8000': ':8000'});
 });
 
 //Get Feaatured for the header
 app.factory("FeaturedHeader", function($resource) {
-    return $resource("offline/featured.json")
+    return $resource("data/featured.json")
 });
 
 //TODO : Manage offline project list when errors
