@@ -10,7 +10,7 @@ var app = angular.module("AdobeOpenSource", ["ngResource"]);
 
 //Get Adobe Github repos & orgs
 app.factory("DatasAdobe", function($resource) {
-    return $resource("http://ec2-54-221-78-73.compute-1.amazonaws.com:8000", {'8000': ':8000'});
+    return $resource("http://ec2-54-221-78-73.compute-1.amazonaws.com");
 });
 
 //Offline backup of json
