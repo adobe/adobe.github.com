@@ -75,7 +75,7 @@
 				</div>
                 
                 <div class="large-6 columns">
-                    <img class="logo logoFeatured first" src="{{featured.logo}}" title="{{featured.title}}" />
+                    <img class="logo logoFeatured first" ng-src="{{featured.logo}}" title="{{featured.title}}" />
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@
         <div class="wrapper" ng-repeat="featured in featureds['org']" ng-class="{actual: $index <= indexFeatured['org']}">
             <div class="row">
                 <div class="large-5 columns">
-                    <img class="logo logoFeatured second" src="{{featured.logo}}" title="{{featured.title}}" />
+                    <img class="logo logoFeatured second" ng-src="{{featured.logo}}" title="{{featured.title}}" />
                 </div>
                 <div class="large-7 large-offset-5 columns text-header">
 					<div class="small-11 small-offset-1 columns" ng-bind-html="featured.textHeader"></div>
