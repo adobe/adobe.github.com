@@ -23,7 +23,7 @@
 						<strong>Adobe</strong> Open Source
 					</dd>
 					<div class="menuLinks" ng-class="{more: menuOpen}">
-						<dd data-magellan-arrival="featured"><a href="#featured" ng-click="menuOpen = false">Featured</a></dd>
+						<dd data-magellan-arrival="statistics"><a href="#statistics" ng-click="menuOpen = false">Statistics</a></dd>
 						<dd data-magellan-arrival="projects"><a href="#projects" ng-click="menuOpen = false">Projects</a></dd>
 						<dd data-magellan-arrival="organisations"><a href="#organisations" ng-click="menuOpen = false">Organisation</a></dd>
 					</div>
@@ -36,8 +36,8 @@
         </div>
 	</div>
     
-    <a name="featured" class="anchor"></a>
-    <div class="intro" data-magellan-destination="featured">
+    <a name="statistics" class="anchor" data-magellan-destination="statistics"></a>
+    <div class="intro">
         <div class="row">
             <div class="large-4 columns">
                 <blockquote>Advancing technology through open initiatives</blockquote>
@@ -67,6 +67,7 @@
 	--------------------------------------------------------------------------------------  -->
 
 	<div class="header_inline" id="featuredProj">
+        <a name="projects" class="anchor" data-magellan-destination="projects"></a>
         <div class="wrapper" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index <= indexFeatured['projects']}">
             <div class="row">
                 <div class="large-5 columns text-header">
@@ -96,9 +97,8 @@
         <!-- ------- Header --------  -->
         <div class="row topProject">
             <div class="large-12 columns">
-                <a name="projects" class="anchor"></a>
                 
-                <h2 class="large-6 small-4 columns" data-magellan-destination="projects">Repos</h2>
+                <h2 class="large-6 small-4 columns">Repos</h2>
                 <form class="large-3 small-8 columns custom mainFilters">
                     <div class="large-10 small-10 columns">
                         <select id="orderby" class="medium" ng-model="filterOrder">
@@ -164,7 +164,7 @@
             <div ng-show="!loading">
                 <div class="large-12 columns">
                     <div class="row">
-                        <div class="large-6 columns" ng-repeat="actProject in projects | projectsFilter:this" ng-class-odd="'clear'">
+                        <div class="large-6 columns listItem" ng-repeat="actProject in projects | projectsFilter:this" ng-class-odd="'clear'">
                             <project project="actProject" />
                         </div>
                         
@@ -193,7 +193,7 @@
 	--------------------------------------------------------------------------------------  -->
     
     <div class="header_inline" id="featuredOrg">
-        <div class="wrapper" ng-repeat="featured in featureds['org']" ng-class="{actual: $index <= indexFeatured['org']}">
+        <div class="wrapper" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index <= indexFeatured['org']}">
             <div class="row">
                 <div class="large-5 columns">
                     <img class="logo logoFeatured second" ng-src="{{featured.logo}}" title="{{featured.title}}" />
@@ -229,7 +229,7 @@
                     </div>
                     
                     <div ng-show="!loading">
-                        <div class="large-6 columns" ng-repeat="actOrg in orgs" ng-class-odd="'clear'">
+                        <div class="large-6 columns listItem" ng-repeat="actOrg in orgs" ng-class-odd="'clear'">
                             <org org="actOrg"/>
                         </div>
                     </div>

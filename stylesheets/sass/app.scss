@@ -522,6 +522,8 @@ form.custom .custom.dropdown.open.medium ul {
 		position: relative;
         z-index: 30;
 	}
+
+    .listItem { float: left !important; }
         
     .project, .org {
         font-size: 14px;
