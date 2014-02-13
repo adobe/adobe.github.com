@@ -308,6 +308,59 @@ var isMobile = function(a) {
 
 
 /* ----------------------------------------------------------------------------
+                Modules */
+
+app.directive('loading', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'views/loading.html'
+  };
+});
+
+app.directive('stats', function() {
+  return {
+    restrict: 'E',
+    scope: {
+      projects: '=',
+      orgs: '=',
+      langs: '=',
+      stats: '='
+    },
+    templateUrl: 'views/stats.html',
+    replace: true
+  };
+});
+
+app.directive('project', function() {
+  return {
+    restrict: 'E',
+    scope: {
+        project: '='
+    },
+    templateUrl: 'views/project.html',
+    replace: true,
+    link: function(scope) {
+        scope.Math = Math;
+    }
+  };
+});
+
+app.directive('org', function() {
+  return {
+    restrict: 'E',
+    scope: {
+        org: '='
+    },
+    templateUrl: 'views/org.html',
+    replace: true,
+    link: function(scope) {
+        scope.Math = Math;   
+    }
+  };
+});
+
+
+/* ----------------------------------------------------------------------------
                 Filters */
 app.filter('star', function() {
 	return function(infos) {

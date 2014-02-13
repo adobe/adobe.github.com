@@ -49,10 +49,10 @@
                         <h4>Statistics</h4>
                     </div>
                     <div class="large-12 columns" ng-show="loading">
-                        <ng-include src="'views/loading.html'"/>
+                        <loading />
                     </div>
                     <div class="large-12 columns" ng-show="!loading">
-                        <ng-include src="'views/stats.html'"/>
+                        <stats projects="projects" orgs="orgs" stats="stats" langs="langs"/>
                     </div>
                 </div>
                 <div class="large-6 columns" ng-click="posLabel()">
@@ -119,18 +119,69 @@
         </div>
         
         <!-- ------- Filters --------  -->
-        <div>
-            <ng-include src="'views/filters.html'"/>
-        </div>
+        <div class="filters flat" ng-class="{flat: !toggleFilters}">
+            <div class="row">
+                <form class="custom large-12 columns mainFilters">
+                    <div class="large-4 columns">
+                      <input type="text" ng-model="searchName" placeholder="Search name, description...">
+                    </div>
+                    
+                    <div class="large-3 columns">
+                      <input type="text" ng-model="searchLangInput" id="searchLang" placeholder="Languages">
+                    </div>
+                    
+                    <div class="large-3 columns">
+                      <input type="text" ng-model="searchOrgInput" id="searchOrg" placeholder="Organisations">
+                    </div>
+                    
+                    <div class="star large-2 columns">
+                        <a ng-show="filterStarIndex" ng-click="majFilterStar(0); majDisplayStar(0)" class="button tiny cancel">X</a>
+                        <div class="fitlerStar" ng-repeat="i in [1,2,3,4,5]" ng-class="{on: (i <= displayStarIndex)}" ng-click="majFilterStar(i)" ng-mouseenter="majDisplayStar(i)" ng-mouseleave="majDisplayStar(filterStarIndex)"></div>
+                    </div>
+                </form>
+                            
+                <div ng-show="searchLang.length != 0 || searchOrg.length != 0 || searchName">
+                    <div class="large-12 columns activeFilter">
+                        <ul class="button-group filterLang" ng-repeat="lang in searchLang">
+                            <li><a class="button tiny"># {{lang}}</a></li>
+                            <li><a class="button tiny" ng-click="deleteFilter(searchLang, $index)">X</a></li>
+                        </ul>
+                        <ul class="button-group filterLang" ng-repeat="org in searchOrg">
+                            <li><a class="button tiny">{{org}}</a></li>
+                            <li><a class="button tiny" ng-click="deleteFilter(searchOrg, $index)">X</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>   
         
         <!-- ------- Items --------  -->
         <div class="row wrapProjects">
             <div ng-show="loading">
-				<ng-include src="'views/loading.html'"/>
+				<loading />
 			</div>
             
             <div ng-show="!loading">
-                <ng-include src="'views/projects.html'"/>
+                <div class="large-12 columns">
+                    <div class="row">
+                        <div class="large-6 columns" ng-repeat="actProject in projects | projectsFilter:this" ng-class-odd="'clear'">
+                            <project project="actProject" />
+                        </div>
+                        
+                        <!-- Reseter -->
+                        <div class="large-6 columns clear"></div>
+                    </div>
+                </div>
+                            
+                <div ng-class="{ buttonLess: projLast > 10, buttonMore : projLast == 10 }" ng-hide="(projects | projectsFilter:this).length < 10">
+                    <div class="row text-center">
+                        <button class="button" ng-click="showHideProj()">
+                            {{nbProj}}
+                            <span ng-show="nbProj == 10">Show more...</span>
+                            <span id="showLess" ng-show="nbProj > 10">Show less...</span>
+                        </button>
+                    </div>
+                </div>
             </div>
                     
             <!-- Reseter -->
@@ -175,11 +226,13 @@
 
                 <div class="row">
                     <div ng-show="loading">
-                        <ng-include src="'views/loading.html'"/>
+                        <loading />
                     </div>
                     
                     <div ng-show="!loading">
-                        <ng-include src="'views/orgs.html'"/>
+                        <div class="large-6 columns" ng-repeat="actOrg in orgs" ng-class-odd="'clear'">
+                            <org org="actOrg"/>
+                        </div>
                     </div>
                     
                     <!-- Reseter -->
@@ -209,7 +262,7 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
     <script src="js/vendor/angular-resource.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
