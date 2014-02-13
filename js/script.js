@@ -158,11 +158,14 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
 	
 	$scope.showHideProj = function() {
 		if ($scope.projLast == 10) {
-			$scope.projLast = 100;
+			$scope.projLast = 1000;
+            showMore = true;
+            $(".buttonMore").css({position: 'fixed', bottom: 0});
 		}
 		else {
 			$("html, body").animate({ scrollTop: 380 }, 100);
 			$scope.projLast = 10;
+            showMore = false;
 		}
 	}
 	
@@ -203,9 +206,9 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
 	$scope.menuOpen = false;
 	
 	if ($scope.mobile) {
-		$(window).off("scroll", $scope.scrollUpdate);
+		$(window).off("scroll", scrollUpdate);
 	} else {
-		$(window).on("scroll", $scope.scrollUpdate);
+		$(window).on("scroll", scrollUpdate);
 	}
 	
 	$(document).foundation();
@@ -213,50 +216,54 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
 	$scope.expandMenu = function() {
 		$scope.menuOpen = !$scope.menuOpen;
 	}
-    
-    /* ----------------------------------------------------------------------------
-                    Parrallax Scrolling
-    ---------------------------------------------------------------------------- */
-    
-    $scope.scrollUpdate = function () {
-        var scrollTop = $(window).scrollTop();
-            
-        // ----------------------------------------------------------------------------
-        //					First parallax: header
-        if (scrollTop < ($("#featuredProj").height() + 100) ) {
-            var topLogo_header = ( $(window).scrollTop()*1.5 ) - 180;
-            $("#featuredProj .logo").css({ top: topLogo_header });
-        }
-        
-        // ----------------------------------------------------------------------------
-        //					2nd parrallax: organisations
-        var topLogo_org = ( ( $(window).scrollTop() - $("#featuredOrg").position().top + 350 ) / 2 ) - 10 ;
-        if ( topLogo_org > 90 )
-            topLogo_org = 90;
-        $("#featuredOrg .logo").css({ top: topLogo_org });
-        
-        // ----------------------------------------------------------------------------
-        //					3rd parrallax: footer
-        var bottomScreen =  scrollTop + $(window).height();
-        var footerBottom = $("#footer").position().top + $("#footer").height();
-        var topLogo_footer = Math.round(bottomScreen - footerBottom - $(".menu").height());
-        $("#logo3").css({ bottom: topLogo_footer });
-        
-        
-        // ----------------------------------------------------------------------------
-        //					Show More/Less button
-        var bottomScreem = scrollTop + $(window).height();
-        if ( (bottomScreem > $("#featuredOrg").offset().top + 25 )
-          || ($scope.projLast == 10) )
-        {
-            $(".buttonMore").css({position: 'absolute', bottom: -50});
-        }
-        else {
-            $(".buttonMore").css({position: 'fixed', bottom: 0});
-        }
-    }
 };
 
+/* ----------------------------------------------------------------------------
+                Parrallax Scrolling
+---------------------------------------------------------------------------- */
+
+var showMore = false;
+var scrollUpdate = function () {
+    var scrollTop = $(window).scrollTop();
+        
+    // ----------------------------------------------------------------------------
+    //					First parallax: header
+    if (scrollTop < ($("#featuredProj").height() + 100) ) {
+        var topLogo_header = ( $(window).scrollTop()*1.5 ) - 180;
+        $("#featuredProj .logo").css({ top: topLogo_header });
+    }
+    
+    // ----------------------------------------------------------------------------
+    //					2nd parrallax: organisations
+    var topLogo_org = ( ( $(window).scrollTop() - $("#featuredOrg").position().top + 350 ) / 2 ) - 10 ;
+    if ( topLogo_org > 90 )
+        topLogo_org = 90;
+    $("#featuredOrg .logo").css({ top: topLogo_org });
+    
+    // ----------------------------------------------------------------------------
+    //					3rd parrallax: footer
+    var bottomScreen =  scrollTop + $(window).height();
+    var footerBottom = $("#footer").position().top + $("#footer").height();
+    var topLogo_footer = Math.round(bottomScreen - footerBottom - $(".menu").height());
+    $("#logo3").css({ bottom: topLogo_footer });
+    
+    
+    // ----------------------------------------------------------------------------
+    //					Show More/Less button
+    if (!showMore) {
+        $(".buttonMore").css({position: 'absolute', bottom: -50});
+    } else {
+        var bottomScreen = scrollTop + $(window).height();
+        
+        if ( (bottomScreen > $("#featuredOrg").offset().top + 25 ) )
+        {
+            $(".buttonLess").css({position: 'absolute', bottom: -50});
+        }
+        else {
+            $(".buttonLess").css({position: 'fixed', bottom: 0});
+        }
+    }
+}
 
 /* ----------------------------------------------------------------------------
                 Mobile Detection

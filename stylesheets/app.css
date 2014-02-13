@@ -7743,13 +7743,13 @@ form.custom .custom.dropdown.open.medium ul {
   overflow: hidden;
 }
 /* line 581, sass/app.scss */
-.main .buttonMore {
+.main .buttonLess {
   position: fixed;
   bottom: 0px;
   left: 0;
 }
 /* line 587, sass/app.scss */
-.main .buttonLess {
+.main .buttonMore {
   bottom: -50px;
   position: absolute;
 }
