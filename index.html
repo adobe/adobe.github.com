@@ -13,6 +13,7 @@
 </head>
 
 <body ng-controller="GitHubCtrl" class="ng-cloak">
+    <a name="featured" class="anchor" data-magellan-destination="featured"></a>
 
 	<div class="menu" data-magellan-expedition='fixed'>
 		<div class="row">
@@ -70,7 +71,6 @@
 	--------------------------------------------------------------------------------------  -->
 
 	<div class="header_inline" id="featuredProj">
-        <a name="featured" class="anchor" data-magellan-destination="featured"></a>
         <div class="wrapper" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index <= indexFeatured['projects']}">
             <div class="row">
                 <div class="large-5 columns text-header">
