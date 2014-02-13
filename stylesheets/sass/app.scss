@@ -594,9 +594,48 @@ form.custom .custom.dropdown.open.medium ul {
     }
 }
 
-
 /* For reseting magellan on top :) */
 .featured {
     position: absolute; top: 0;
     margin-top: - ($header-height -$menu-height)+px; display: block;
+}
+
+
+//---------------------------------------------------------------------------------
+//                          Loading
+//---------------------------------------------------------------------------------
+
+.loading{
+    width:100px;
+    height:50px;
+    margin:20px auto;
+    
+	.bars {
+        div {
+            height:40px;
+            width:3px;
+            background: $primary-color;
+            display:inline-block;
+            @include animation(loader 1.3s infinite);
+            
+            @for $i from 1 through 10 {
+                &:nth-child(#{$i}) {
+                    @include animation-delay(($i*0.1)+s);
+                }
+            }
+        }
+    }
+
+    .text {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight:bold;
+        margin-top: 5px;
+        position: relative;
+        right: 5px;
+    }
+}
+    
+@include keyframes(loader) {
+    50% { height:3px; margin-top:37px; opacity:.1; }
 }

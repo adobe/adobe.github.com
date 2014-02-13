@@ -7759,10 +7759,143 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 /* For reseting magellan on top :) */
-/* line 599, sass/app.scss */
+/* line 598, sass/app.scss */
 .featured {
   position: absolute;
   top: 0;
   margin-top: -250px;
   display: block;
+}
+
+/* line 608, sass/app.scss */
+.loading {
+  width: 100px;
+  height: 50px;
+  margin: 20px auto;
+}
+/* line 614, sass/app.scss */
+.loading .bars div {
+  height: 40px;
+  width: 3px;
+  background: red;
+  display: inline-block;
+  -webkit-animation: loader 1.3s infinite;
+  -moz-animation: loader 1.3s infinite;
+  -o-animation: loader 1.3s infinite;
+  animation: loader 1.3s infinite;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  -o-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+/* line 622, sass/app.scss */
+.loading .bars div:nth-child(10) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 629, sass/app.scss */
+.loading .text {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+  position: relative;
+  right: 5px;
+}
+
+@-moz-keyframes loader {
+  /* line 640, sass/app.scss */
+  50% {
+    height: 3px;
+    margin-top: 37px;
+    opacity: .1;
+  }
+}
+
+@-webkit-keyframes loader {
+  /* line 640, sass/app.scss */
+  50% {
+    height: 3px;
+    margin-top: 37px;
+    opacity: .1;
+  }
+}
+
+@-o-keyframes loader {
+  /* line 640, sass/app.scss */
+  50% {
+    height: 3px;
+    margin-top: 37px;
+    opacity: .1;
+  }
+}
+
+@keyframes loader {
+  /* line 640, sass/app.scss */
+  50% {
+    height: 3px;
+    margin-top: 37px;
+    opacity: .1;
+  }
 }
