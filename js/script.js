@@ -10,9 +10,12 @@ var app = angular.module("AdobeOpenSource", ["ngResource"]);
 
 //Get Adobe Github repos & orgs
 app.factory("DatasAdobe", function($resource) {
-//    return $resource("data/server.json");
-//    return $resource("http://localhost:8000", {'8000': ':8000'});
     return $resource("http://ec2-54-221-78-73.compute-1.amazonaws.com:8000", {'8000': ':8000'});
+});
+
+//Offline backup of json
+app.factory("DatasAdobeOffline", function($resource) {
+    return $resource("data/server.json");
 });
 
 //Get Feaatured for the header
@@ -21,7 +24,7 @@ app.factory("FeaturedHeader", function($resource) {
 });
 
 //TODO : Manage offline project list when errors
-this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
+this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline, FeaturedHeader) {
     
     //------------------------------- Init --------------------------------
     
@@ -59,7 +62,6 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
 				actFeaturedItem.textHeader = $sce.trustAsHtml(actFeaturedItem.textHeader.join("\n"));
 			};
 		};
-        console.log($scope.featureds);
     });
     
     $scope.changeIndexFeatured = function(i, delta) {
@@ -81,45 +83,68 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
 	$scope.projects = [];
 	$scope.orgs = [];
 	
-	//Reference Orgs
 	DatasAdobe.query(function(rep) {
 		if (rep[0]) {
-			$scope.projects = rep[0].repos;
-			$scope.orgs = rep[0].orgs;
-			$scope.langs = rep[0].langs;
-			$scope.stats = rep[0].stats;
-			
-			$("#searchLang").autocomplete({
-				source: $scope.objToNamedArray($scope.langs),
-				select: function(e, q) {
-					$scope.$apply(function () {
-						$("#searchLang").val('Loading...');
-						$scope.addFilter($scope.searchLang, q.item.value);
-						$scope.searchLangInput = "";
-					});
-					return false;
-				}
-			});
-            
-			$("#searchOrg").autocomplete({
-				source: $scope.objToNamedArray($scope.orgs),
-				select: function(e, q) {
-					$scope.$apply(function () {
-						$("#searchOrg").val('Loading...');
-						$scope.addFilter($scope.searchOrg, q.item.value);
-						$scope.searchOrgInput = "";
-					});
-					return false;
-				}
-			});
-            
-            $scope.updateGraph();
-            $scope.posLabel();
-		}
-		
-		//Loading over
-		$scope.loading = false;
-	});
+			$scope.updateData(rep[0]);
+		} else {
+            console.error("ERROR: The data recieved from the server seems to be corrupted.");
+            $scope.loadOffline();
+        }
+	}, function(error) {
+        console.error("ERROR: Server error.\n", error);
+        $scope.loadOffline();
+    });
+    
+    $scope.loadOffline = function () {
+        //TODO: display message in front
+        
+        DatasAdobeOffline.query(function(rep) {
+            if (rep[0]) {
+                $scope.updateData(rep[0]);
+            } else {
+                console.error("ERROR: All the datas seems corrupted. Please reload.");
+            }
+        }, function(error) {
+            console.error("ERROR: Impossible to load the data. Please reload.");
+        });
+    }
+    
+    $scope.updateData = function (data) {
+        $scope.projects = data.repos;
+        $scope.orgs = data.orgs;
+        $scope.langs = data.langs;
+        $scope.stats = data.stats;
+        
+        $("#searchLang").autocomplete({
+            source: $scope.objToNamedArray($scope.langs),
+            select: function(e, q) {
+                $scope.$apply(function () {
+                    $("#searchLang").val('Loading...');
+                    $scope.addFilter($scope.searchLang, q.item.value);
+                    $scope.searchLangInput = "";
+                });
+                return false;
+            }
+        });
+        
+        $("#searchOrg").autocomplete({
+            source: $scope.objToNamedArray($scope.orgs),
+            select: function(e, q) {
+                $scope.$apply(function () {
+                    $("#searchOrg").val('Loading...');
+                    $scope.addFilter($scope.searchOrg, q.item.value);
+                    $scope.searchOrgInput = "";
+                });
+                return false;
+            }
+        });
+        
+        $scope.updateGraph();
+        $scope.posLabel();
+    
+        //Loading over
+        $scope.loading = false;
+    }
     
     $scope.updateGraph = function() {
         // Filtering langs for only major ones
@@ -217,6 +242,8 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, FeaturedHeader) {
 		$scope.menuOpen = !$scope.menuOpen;
 	}
 };
+	
+$(document).foundation();
 
 /* ----------------------------------------------------------------------------
                 Parrallax Scrolling
