@@ -193,7 +193,7 @@
 	--------------------------------------------------------------------------------------  -->
     
     <div class="header_inline" id="featuredOrg">
-        <div class="wrapper" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index <= indexFeatured['org']}">
+        <div class="wrapper" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index <= indexFeatured['orgs']}">
             <div class="row">
                 <div class="large-5 columns">
                     <img class="logo logoFeatured second" ng-src="{{featured.logo}}" title="{{featured.title}}" />
@@ -205,11 +205,11 @@
         </div>
         
         <div class="dots">
-            <div class="dot" ng-repeat="featured in featureds['org']" ng-class="{actual: $index == indexFeatured['org']}" ng-click="setIndexFeatured('org', $index)"></div>
+            <div class="dot" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index == indexFeatured['orgs']}" ng-click="setIndexFeatured('orgs', $index)"></div>
         </div>
         
-        <div class="prev" ng-click="changeIndexFeatured('org', -1)"></div>
-        <div class="next" ng-click="changeIndexFeatured('org', +1)"></div>
+        <div class="prev" ng-click="changeIndexFeatured('orgs', -1)"></div>
+        <div class="next" ng-click="changeIndexFeatured('orgs', +1)"></div>
     </div>
     
     <div class="main">

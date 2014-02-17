@@ -34,7 +34,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
 	$scope.filter = $filter;
 	$scope.filterStarIndex = 0;
 	$scope.indexFeatured = {
-		"org": 0,
+		"orgs": 0,
 		"projects": 0
 	};
 	$scope.searchLang = [];
