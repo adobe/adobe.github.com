@@ -1,3 +1,8 @@
+if (/MSIE [0-8]/.test(navigator.userAgent)) {
+    document.getElementById('old').style.display = 'block';
+    document.getElementById('supported').style.display = 'none';
+} else {
+
 /* ----------------------------------------------------------------------------
                 GitHup Ctrl
 ---------------------------------------------------------------------------- */
@@ -570,3 +575,5 @@ app.filter('timeDiff', function() {
     return sDate;
   }
 });
+    
+}

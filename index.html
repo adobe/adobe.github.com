@@ -13,262 +13,269 @@
 </head>
 
 <body ng-controller="GitHubCtrl" class="ng-cloak">
-	<div class="menu" data-magellan-expedition='fixed'>
-		<div class="row">
-			<div class="large-12 columns">
-				<dl class="sub-nav" ng-class="{mobile: mobile}">
-					<a class="menu-icon" ng-click="expandMenu()"><span></span></a>
-					
-					<dd class="title">
-						<strong>Adobe</strong> Open Source
-					</dd>
-					<div class="menuLinks" ng-class="{more: menuOpen}">
-						<dd data-magellan-arrival="statistics"><a href="#statistics" ng-click="menuOpen = false">Statistics</a></dd>
-						<dd data-magellan-arrival="projects"><a href="#projects" ng-click="menuOpen = false">Projects</a></dd>
-						<dd data-magellan-arrival="organizations"><a href="#organizations" ng-click="menuOpen = false">Organization</a></dd>
-					</div>
-				</dl>
-				
-				<div class="wrapLogoTop">
-					<img class="logoTop" src="img/adobe-tag.png" title="Adobe Open Source"/>
-				</div>
-			</div>
-        </div>
-	</div>
-    
-    <a name="statistics" class="anchor" data-magellan-destination="statistics"></a>
-    <div class="intro">
-        <div class="row">
-            <div class="large-4 columns">
-                <blockquote>Advancing technology through open initiatives</blockquote>
-                <p class="text-center"><a href="http://www.adobe.com/careers.html">Want to join?</a></p>
-            </div>
-            <div class="large-8 columns">
-                <div class="large-6 columns">
-                    <div class="large-12 columns">
-                        <h4>Statistics</h4>
-                    </div>
-                    <div class="large-12 columns" ng-show="loading">
-                        <loading />
-                    </div>
-                    <div class="large-12 columns" ng-show="!loading">
-                        <stats projects="projects" orgs="orgs" stats="stats" langs="langs"/>
-                    </div>
-                </div>
-                <div class="large-6 columns" ng-click="posLabel()">
-                    <div id="langChart"></div>
-                </div>
-            </div>
-        </div>
+    <div id="old" class="old text-center">
+        <h1>This browser is waaaaayyy too old.</h1>
     </div>
-            
-	<!-- --------------------------------------------------------------------------------------
-						Featured
-	--------------------------------------------------------------------------------------  -->
-
-	<div class="header_inline" id="featuredProj">
-        <a name="projects" class="anchor" data-magellan-destination="projects"></a>
-        <div class="wrapper" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index <= indexFeatured['projects']}">
+    <div id="supported">
+        <div class="menu" data-magellan-expedition='fixed'>
             <div class="row">
-                <div class="large-5 columns text-header">
-					<div class="small-11 small-offset-1 columns" ng-bind-html="featured.textHeader"></div>
-				</div>
-                
-                <div class="large-6 columns">
-                    <img class="logo logoFeatured first" ng-src="{{featured.logo}}" title="{{featured.title}}" />
+                <div class="large-12 columns">
+                    <dl class="sub-nav" ng-class="{mobile: mobile}">
+                        <a class="menu-icon" ng-click="expandMenu()"><span></span></a>
+                        
+                        <dd class="title">
+                            <strong>Adobe</strong> Open Source
+                        </dd>
+                        <div class="menuLinks" ng-class="{more: menuOpen}">
+                            <dd data-magellan-arrival="statistics"><a href="#statistics" ng-click="menuOpen = false">Statistics</a></dd>
+                            <dd data-magellan-arrival="projects"><a href="#projects" ng-click="menuOpen = false">Projects</a></dd>
+                            <dd data-magellan-arrival="organizations"><a href="#organizations" ng-click="menuOpen = false">Organization</a></dd>
+                        </div>
+                    </dl>
+                    
+                    <div class="wrapLogoTop">
+                        <img class="logoTop" src="img/adobe-tag.png" title="Adobe Open Source"/>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class="dots">
-            <div class="dot" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index == indexFeatured['projects']}" ng-click="setIndexFeatured('projects', $index)"></div>
+        <a name="statistics" class="anchor" data-magellan-destination="statistics"></a>
+        <div class="intro">
+            <div class="row">
+                <div class="large-4 columns">
+                    <blockquote>Advancing technology through open initiatives</blockquote>
+                    <p class="text-center"><a href="http://www.adobe.com/careers.html">Want to join?</a></p>
+                </div>
+                <div class="large-8 columns">
+                    <div class="large-6 columns">
+                        <div class="large-12 columns">
+                            <h4>Statistics</h4>
+                        </div>
+                        <div class="large-12 columns" ng-show="loading">
+                            <loading />
+                        </div>
+                        <div class="large-12 columns" ng-show="!loading">
+                            <stats projects="projects" orgs="orgs" stats="stats" langs="langs"/>
+                        </div>
+                    </div>
+                    <div class="large-6 columns" ng-click="posLabel()">
+                        <div id="langChart"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="prev" ng-click="changeIndexFeatured('projects', -1)"></div>
-        <div class="next" ng-click="changeIndexFeatured('projects', +1)"></div>
-	</div>
-
-	<div class="main top">
-            
+                
         <!-- --------------------------------------------------------------------------------------
-                            Projects
+                            Featured
+        --------------------------------------------------------------------------------------  -->
+    
+        <div class="header_inline" id="featuredProj">
+            <a name="projects" class="anchor" data-magellan-destination="projects"></a>
+            <div class="wrapper" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index <= indexFeatured['projects']}">
+                <div class="row">
+                    <div class="large-5 columns text-header">
+                        <div class="small-11 small-offset-1 columns" ng-bind-html="featured.textHeader"></div>
+                    </div>
+                    
+                    <div class="large-6 columns">
+                        <img class="logo logoFeatured first" ng-src="{{featured.logo}}" title="{{featured.title}}" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dots">
+                <div class="dot" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index == indexFeatured['projects']}" ng-click="setIndexFeatured('projects', $index)"></div>
+            </div>
+            
+            <div class="prev" ng-click="changeIndexFeatured('projects', -1)"></div>
+            <div class="next" ng-click="changeIndexFeatured('projects', +1)"></div>
+        </div>
+    
+        <div class="main top">
+                
+            <!-- --------------------------------------------------------------------------------------
+                                Projects
+            --------------------------------------------------------------------------------------  -->
+            
+            <!-- ------- Header --------  -->
+            <div class="row topProject">
+                <div class="large-12 columns">
+                    
+                    <h2 class="large-6 small-4 columns">Repos</h2>
+                    <form class="large-3 small-8 columns custom mainFilters">
+                        <div class="large-10 small-10 columns">
+                            <select id="orderby" class="medium" ng-model="filterOrder">
+                                <option value="" DISABLED>Order by:</option>
+                                <option value="-watchers_count" selected>Popularity</option>
+                                <option value="-pushed_at">Last Push</option>
+                                <option value="org">Organization</option>
+                                <option value="name">Name</option>
+                            </select>
+                        </div>
+                        <div class="button large-2 small-2 culumns" ng-click="toggleFilters = !toggleFilters" ng-class="{disabled: loading}">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+    <path fill="#000000" d="M50.717,2.495c-29.288,0-47.692,6-47.692,10.833c0,5.932,16.029,19.893,20.167,23.667  c4.712,4.299,16.044,16.058,16.5,18.001c0.147,2.147,2.002,35.008,2.002,35.008s-0.168,5.5,8.998,5.5  c9.166,0,8.498-5.334,8.498-5.334s2.169-32.674,2.169-34.84s8.333-10.835,18.5-20.002c10.167-9.167,18.167-15.758,18.167-22  C98.025,8.299,80.004,2.495,50.717,2.495z M50.481,21.083C28.676,21.083,11,17.965,11,14.12s17.676-7.964,39.481-7.964  c21.801,0,39.478,4.119,39.478,7.964S72.282,21.083,50.481,21.083z"/>
+    </svg>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- ------- Filters --------  -->
+            <div class="filters flat" ng-class="{flat: !toggleFilters}">
+                <div class="row">
+                    <form class="custom large-12 columns mainFilters">
+                        <div class="large-4 columns">
+                          <input type="text" ng-model="searchName" placeholder="Search name, description...">
+                        </div>
+                        
+                        <div class="large-3 columns">
+                          <input type="text" ng-model="searchLangInput" id="searchLang" placeholder="Languages">
+                        </div>
+                        
+                        <div class="large-3 columns">
+                          <input type="text" ng-model="searchOrgInput" id="searchOrg" placeholder="Organizations">
+                        </div>
+                        
+                        <div class="star large-2 columns">
+                            <a ng-show="filterStarIndex" ng-click="majFilterStar(0); majDisplayStar(0)" class="button tiny cancel">X</a>
+                            <div class="fitlerStar" ng-repeat="i in [1,2,3,4,5]" ng-class="{on: (i <= displayStarIndex)}" ng-click="majFilterStar(i)" ng-mouseenter="majDisplayStar(i)" ng-mouseleave="majDisplayStar(filterStarIndex)"></div>
+                        </div>
+                    </form>
+                                
+                    <div ng-show="searchLang.length != 0 || searchOrg.length != 0 || searchName">
+                        <div class="large-12 columns activeFilter">
+                            <ul class="button-group filterLang" ng-repeat="lang in searchLang">
+                                <li><a class="button tiny"># {{lang}}</a></li>
+                                <li><a class="button tiny" ng-click="deleteFilter(searchLang, $index)">X</a></li>
+                            </ul>
+                            <ul class="button-group filterLang" ng-repeat="org in searchOrg">
+                                <li><a class="button tiny">{{org}}</a></li>
+                                <li><a class="button tiny" ng-click="deleteFilter(searchOrg, $index)">X</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+            <!-- ------- Items --------  -->
+            <div class="row wrapProjects">
+                <div ng-show="loading">
+                    <loading />
+                </div>
+                
+                <div ng-show="!loading">
+                    <div class="large-12 columns">
+                        <div class="row">
+                            <div class="large-6 columns listItem" ng-repeat="actProject in projects | projectsFilter:this" ng-class-odd="'clear'">
+                                <project project="actProject" />
+                            </div>
+                            
+                            <!-- Reseter -->
+                            <div class="large-6 columns clear"></div>
+                        </div>
+                    </div>
+                                
+                    <div class="ng-hide" ng-class="{ buttonLess: projLast > 10, buttonMore : projLast == 10 }" ng-hide="(projects | projectsFilter:this).length < 10">
+                        <div class="row text-center">
+                            <button class="button" ng-click="showHideProj()">
+                                <span ng-show="projLast == 10">Show more...</span>
+                                <span id="showLess" ng-show="projLast > 10">Show less...</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                        
+                <!-- Reseter -->
+                <div class="large-6 columns" class"clear"></div>
+            </div>
+        </div>
+                
+        <!-- --------------------------------------------------------------------------------------
+                            Featured Organizations
         --------------------------------------------------------------------------------------  -->
         
-        <!-- ------- Header --------  -->
-        <div class="row topProject">
-            <div class="large-12 columns">
-                
-                <h2 class="large-6 small-4 columns">Repos</h2>
-                <form class="large-3 small-8 columns custom mainFilters">
-                    <div class="large-10 small-10 columns">
-                        <select id="orderby" class="medium" ng-model="filterOrder">
-                            <option value="" DISABLED>Order by:</option>
-                            <option value="-watchers_count" selected>Popularity</option>
-                            <option value="-pushed_at">Last Push</option>
-                            <option value="org">Organization</option>
-                            <option value="name">Name</option>
-                        </select>
+        <div class="header_inline" id="featuredOrg">
+            <div class="wrapper" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index <= indexFeatured['orgs']}">
+                <div class="row">
+                    <div class="large-5 columns">
+                        <img class="logo logoFeatured second" ng-src="{{featured.logo}}" title="{{featured.title}}" />
                     </div>
-                    <div class="button large-2 small-2 culumns" ng-click="toggleFilters = !toggleFilters" ng-class="{disabled: loading}">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<path fill="#000000" d="M50.717,2.495c-29.288,0-47.692,6-47.692,10.833c0,5.932,16.029,19.893,20.167,23.667  c4.712,4.299,16.044,16.058,16.5,18.001c0.147,2.147,2.002,35.008,2.002,35.008s-0.168,5.5,8.998,5.5  c9.166,0,8.498-5.334,8.498-5.334s2.169-32.674,2.169-34.84s8.333-10.835,18.5-20.002c10.167-9.167,18.167-15.758,18.167-22  C98.025,8.299,80.004,2.495,50.717,2.495z M50.481,21.083C28.676,21.083,11,17.965,11,14.12s17.676-7.964,39.481-7.964  c21.801,0,39.478,4.119,39.478,7.964S72.282,21.083,50.481,21.083z"/>
-</svg>
-                    </div>
-                </form>
-            </div>
-        </div>
-        
-        <!-- ------- Filters --------  -->
-        <div class="filters flat" ng-class="{flat: !toggleFilters}">
-            <div class="row">
-                <form class="custom large-12 columns mainFilters">
-                    <div class="large-4 columns">
-                      <input type="text" ng-model="searchName" placeholder="Search name, description...">
-                    </div>
-                    
-                    <div class="large-3 columns">
-                      <input type="text" ng-model="searchLangInput" id="searchLang" placeholder="Languages">
-                    </div>
-                    
-                    <div class="large-3 columns">
-                      <input type="text" ng-model="searchOrgInput" id="searchOrg" placeholder="Organizations">
-                    </div>
-                    
-                    <div class="star large-2 columns">
-                        <a ng-show="filterStarIndex" ng-click="majFilterStar(0); majDisplayStar(0)" class="button tiny cancel">X</a>
-                        <div class="fitlerStar" ng-repeat="i in [1,2,3,4,5]" ng-class="{on: (i <= displayStarIndex)}" ng-click="majFilterStar(i)" ng-mouseenter="majDisplayStar(i)" ng-mouseleave="majDisplayStar(filterStarIndex)"></div>
-                    </div>
-                </form>
-                            
-                <div ng-show="searchLang.length != 0 || searchOrg.length != 0 || searchName">
-                    <div class="large-12 columns activeFilter">
-                        <ul class="button-group filterLang" ng-repeat="lang in searchLang">
-                            <li><a class="button tiny"># {{lang}}</a></li>
-                            <li><a class="button tiny" ng-click="deleteFilter(searchLang, $index)">X</a></li>
-                        </ul>
-                        <ul class="button-group filterLang" ng-repeat="org in searchOrg">
-                            <li><a class="button tiny">{{org}}</a></li>
-                            <li><a class="button tiny" ng-click="deleteFilter(searchOrg, $index)">X</a></li>
-                        </ul>
+                    <div class="large-7 large-offset-5 columns text-header">
+                        <div class="small-11 small-offset-1 columns" ng-bind-html="featured.textHeader"></div>
                     </div>
                 </div>
             </div>
-        </div>   
-        
-        <!-- ------- Items --------  -->
-        <div class="row wrapProjects">
-            <div ng-show="loading">
-				<loading />
-			</div>
             
-            <div ng-show="!loading">
+            <div class="dots">
+                <div class="dot" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index == indexFeatured['orgs']}" ng-click="setIndexFeatured('orgs', $index)"></div>
+            </div>
+            
+            <div class="prev" ng-click="changeIndexFeatured('orgs', -1)"></div>
+            <div class="next" ng-click="changeIndexFeatured('orgs', +1)"></div>
+        </div>
+        
+        <div class="main">
+            <div class="row">
                 <div class="large-12 columns">
+                
+                <!-- --------------------------------------------------------------------------------------
+                                    Organizations
+                --------------------------------------------------------------------------------------  -->
+                
+                    <a name="organizations" class="anchor"></a>
+                    <h2 data-magellan-destination="organizations">Organizations</h2>
+    
                     <div class="row">
-                        <div class="large-6 columns listItem" ng-repeat="actProject in projects | projectsFilter:this" ng-class-odd="'clear'">
-                            <project project="actProject" />
+                        <div ng-show="loading">
+                            <loading />
+                        </div>
+                        
+                        <div ng-show="!loading">
+                            <div class="large-6 columns listItem" ng-repeat="actOrg in orgs" ng-class-odd="'clear'">
+                                <org org="actOrg"/>
+                            </div>
                         </div>
                         
                         <!-- Reseter -->
-                        <div class="large-6 columns clear"></div>
-                    </div>
-                </div>
-                            
-                <div class="ng-hide" ng-class="{ buttonLess: projLast > 10, buttonMore : projLast == 10 }" ng-hide="(projects | projectsFilter:this).length < 10">
-                    <div class="row text-center">
-                        <button class="button" ng-click="showHideProj()">
-                            <span ng-show="projLast == 10">Show more...</span>
-                            <span id="showLess" ng-show="projLast > 10">Show less...</span>
-                        </button>
+                        <div class="large-6 columns" class"clear"></div>
                     </div>
                 </div>
             </div>
-                    
-            <!-- Reseter -->
-            <div class="large-6 columns" class"clear"></div>
         </div>
-    </div>
-            
-	<!-- --------------------------------------------------------------------------------------
-						Featured Organizations
-	--------------------------------------------------------------------------------------  -->
-    
-    <div class="header_inline" id="featuredOrg">
-        <div class="wrapper" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index <= indexFeatured['orgs']}">
+        
+        <div class="footer" id="footer">
             <div class="row">
-                <div class="large-5 columns">
-                    <img class="logo logoFeatured second" ng-src="{{featured.logo}}" title="{{featured.title}}" />
+                <div class="small-12 columns text-header text-center" id="text-header_org">
+                    <h3><span class="title"><strong>Adobe</strong> Open Source</span><span class="next">, built with love.</span></h3>
+                    <h5 class="details">and with <a target="_blank" href="http://angularjs.org/" title="AngularJS">AngularJS</a>, <a target="_blank" href="http://foundation.zurb.com/" title="Foundation">Foundation</a>,<br />
+                        <a target="_blank" href="http://pages.github.com/" title="Github Pages">Github Pages</a> and <a target="_blank" href="http://developer.github.com/v3/" title="Github API">API</a>,<br />
+                        <a target="_blank" href="http://www.adobe.com/products/creativecloud.html" title="Adobe Creative Cloud">Adobe Creative Cloud</a>.</h5>
                 </div>
-                <div class="large-7 large-offset-5 columns text-header">
-					<div class="small-11 small-offset-1 columns" ng-bind-html="featured.textHeader"></div>
-				</div>
-            </div>
-        </div>
-        
-        <div class="dots">
-            <div class="dot" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index == indexFeatured['orgs']}" ng-click="setIndexFeatured('orgs', $index)"></div>
-        </div>
-        
-        <div class="prev" ng-click="changeIndexFeatured('orgs', -1)"></div>
-        <div class="next" ng-click="changeIndexFeatured('orgs', +1)"></div>
-    </div>
-    
-    <div class="main">
-        <div class="row">
-            <div class="large-12 columns">
-            
-            <!-- --------------------------------------------------------------------------------------
-                                Organizations
-            --------------------------------------------------------------------------------------  -->
-            
-                <a name="organizations" class="anchor"></a>
-                <h2 data-magellan-destination="organizations">Organizations</h2>
-
-                <div class="row">
-                    <div ng-show="loading">
-                        <loading />
+                <div class="small-5 columns">
+                    <div class="logo" id="logo3">
+                        <img src="img/github_logo.svg" title="Github" />
                     </div>
-                    
-                    <div ng-show="!loading">
-                        <div class="large-6 columns listItem" ng-repeat="actOrg in orgs" ng-class-odd="'clear'">
-                            <org org="actOrg"/>
-                        </div>
-                    </div>
-                    
-                    <!-- Reseter -->
-                    <div class="large-6 columns" class"clear"></div>
                 </div>
-            </div>
         </div>
-	</div>
-    
-    <div class="footer" id="footer">
-        <div class="row">
-			<div class="small-12 columns text-header text-center" id="text-header_org">
-				<h3><span class="title"><strong>Adobe</strong> Open Source</span><span class="next">, built with love.</span></h3>
-                <h5 class="details">and with <a target="_blank" href="http://angularjs.org/" title="AngularJS">AngularJS</a>, <a target="_blank" href="http://foundation.zurb.com/" title="Foundation">Foundation</a>,<br />
-                    <a target="_blank" href="http://pages.github.com/" title="Github Pages">Github Pages</a> and <a target="_blank" href="http://developer.github.com/v3/" title="Github API">API</a>,<br />
-                    <a target="_blank" href="http://www.adobe.com/products/creativecloud.html" title="Adobe Creative Cloud">Adobe Creative Cloud</a>.</h5>
-			</div>
-            <div class="small-5 columns">
-                <div class="logo" id="logo3">
-					<img src="img/github_logo.svg" title="Github" />
-				</div>
-            </div>
     </div>
-    
-    <script src="js/vendor/custom.modernizr.js"></script>
-    <script type="text/javascript" src="//use.typekit.net/gad4asz.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
-    <script src="js/vendor/angular-resource.js"></script>
-    <script src="js/foundation/foundation.js"></script>
-    <script src="js/foundation/foundation.magellan.js"></script>
-    <script src="js/foundation/foundation.forms.js"></script>
-    <script src="js/dcjs/crossfilter.min.js"></script>
-    <script src="js/dcjs/d3.min.js"></script>
-    <script src="js/dcjs/dc.min.js"></script>
+        
+    <!--[if gte IE 8]><!-->
+        <script src="js/vendor/custom.modernizr.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/gad4asz.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+        <script src="js/vendor/angular-resource.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.magellan.js"></script>
+        <script src="js/foundation/foundation.forms.js"></script>
+        <script src="js/dcjs/crossfilter.min.js"></script>
+        <script src="js/dcjs/d3.min.js"></script>
+        <script src="js/dcjs/dc.min.js"></script>
+    <!--<![endif]-->
     <script src="js/script.js"></script>
 	
     <!-- Analytics Google
