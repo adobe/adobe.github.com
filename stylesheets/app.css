@@ -7232,34 +7232,58 @@ form.custom .custom.dropdown.open.medium ul {
   min-width: 100%;
 }
 
-/* line 87, sass/app.scss */
-.old {
-  display: none;
+/* line 89, sass/app.scss */
+.old .punchline {
+  margin: 100px auto 0;
+  width: 600px;
+}
+/* line 93, sass/app.scss */
+.old .links {
+  margin: 30px auto 0;
+  width: 600px;
+}
+/* line 97, sass/app.scss */
+.old .links .item {
+  display: block;
+  margin: 0 20px;
+}
+/* line 101, sass/app.scss */
+.old .links .item, .old .links .item img, .old .links .item p {
+  float: left;
+}
+/* line 105, sass/app.scss */
+.old .links .item p {
+  width: 80px;
+  margin: 40px 10px 0;
+}
+/* line 110, sass/app.scss */
+.old .links .item img {
+  width: 160px;
 }
 
-/* line 95, sass/app.scss */
+/* line 121, sass/app.scss */
 .intro {
   margin-top: 50px;
   padding: 20px 0;
 }
-/* line 99, sass/app.scss */
+/* line 125, sass/app.scss */
 .intro blockquote {
   margin-top: 30px;
   font-size: 1.3em;
 }
-/* line 104, sass/app.scss */
+/* line 130, sass/app.scss */
 .intro ul {
   list-style-type: none;
 }
-/* line 108, sass/app.scss */
+/* line 134, sass/app.scss */
 .intro strong {
   color: red;
 }
-/* line 112, sass/app.scss */
+/* line 138, sass/app.scss */
 .intro .dc-chart {
   margin-top: 15px;
 }
-/* line 117, sass/app.scss */
+/* line 143, sass/app.scss */
 .intro .dc-chart svg .row rect {
   -webkit-transform: translate(90px, 0);
   -moz-transform: translate(90px, 0);
@@ -7267,7 +7291,7 @@ form.custom .custom.dropdown.open.medium ul {
   -o-transform: translate(90px, 0);
   transform: translate(90px, 0);
 }
-/* line 121, sass/app.scss */
+/* line 147, sass/app.scss */
 .intro .dc-chart svg .row text {
   -webkit-transform: translate(70px, 0);
   -moz-transform: translate(70px, 0);
@@ -7276,38 +7300,38 @@ form.custom .custom.dropdown.open.medium ul {
   transform: translate(70px, 0);
   text-anchor: end;
 }
-/* line 127, sass/app.scss */
+/* line 153, sass/app.scss */
 .intro .dc-chart svg .axis {
   display: none;
 }
-/* line 131, sass/app.scss */
+/* line 157, sass/app.scss */
 .intro .dc-chart svg .domain {
   fill: white;
 }
-/* line 135, sass/app.scss */
+/* line 161, sass/app.scss */
 .intro .dc-chart svg text {
   font-size: 0.75em;
   fill: #333;
 }
 
-/* line 150, sass/app.scss */
+/* line 176, sass/app.scss */
 .header_inline.mobile .logo.first {
   top: 10px;
 }
-/* line 154, sass/app.scss */
+/* line 180, sass/app.scss */
 .header_inline.mobile .logo.second {
   top: 10px;
 }
-/* line 159, sass/app.scss */
+/* line 185, sass/app.scss */
 .header_inline .logo.first {
   top: -180px;
 }
-/* line 163, sass/app.scss */
+/* line 189, sass/app.scss */
 .header_inline .logo.second {
   top: 10px;
 }
 
-/* line 168, sass/app.scss */
+/* line 194, sass/app.scss */
 .header_inline {
   background: #e9e9e9;
   height: 300px;
@@ -7316,7 +7340,7 @@ form.custom .custom.dropdown.open.medium ul {
   position: relative;
   z-index: 20;
 }
-/* line 174, sass/app.scss */
+/* line 200, sass/app.scss */
 .header_inline .wrapper {
   position: absolute;
   z-index: 99;
@@ -7330,16 +7354,16 @@ form.custom .custom.dropdown.open.medium ul {
   width: 100%;
   height: 300px;
 }
-/* line 182, sass/app.scss */
+/* line 208, sass/app.scss */
 .header_inline .wrapper.actual {
   left: 0;
 }
-/* line 184, sass/app.scss */
+/* line 210, sass/app.scss */
 .header_inline .wrapper > .row {
   position: relative;
   height: 300px;
 }
-/* line 189, sass/app.scss */
+/* line 215, sass/app.scss */
 .header_inline .wrapper .text-header {
   position: absolute;
   bottom: 0px;
@@ -7347,32 +7371,32 @@ form.custom .custom.dropdown.open.medium ul {
   padding-bottom: 20px;
   background: rgba(233, 233, 233, 0.8);
 }
-/* line 197, sass/app.scss */
+/* line 223, sass/app.scss */
 .header_inline .wrapper h3 {
   margin: 0;
 }
-/* line 201, sass/app.scss */
+/* line 227, sass/app.scss */
 .header_inline .wrapper .details {
   color: #888;
 }
-/* line 204, sass/app.scss */
+/* line 230, sass/app.scss */
 .header_inline .wrapper .details a {
   font-size: 13px;
 }
-/* line 209, sass/app.scss */
+/* line 235, sass/app.scss */
 .header_inline .wrapper .logo {
   position: absolute;
   margin-left: 10%;
   width: 80%;
 }
-/* line 216, sass/app.scss */
+/* line 242, sass/app.scss */
 .header_inline .dots {
   position: absolute;
   z-index: 500;
   bottom: 15px;
   left: 50%;
 }
-/* line 221, sass/app.scss */
+/* line 247, sass/app.scss */
 .header_inline .dots .dot {
   width: 10px;
   height: 10px;
@@ -7381,11 +7405,11 @@ form.custom .custom.dropdown.open.medium ul {
   background: #b6b6b6;
   float: left;
 }
-/* line 228, sass/app.scss */
+/* line 254, sass/app.scss */
 .header_inline .dots .dot.actual, .header_inline .dots .dot:hover {
   background: red;
 }
-/* line 235, sass/app.scss */
+/* line 261, sass/app.scss */
 .header_inline .prev, .header_inline .next {
   width: 30px;
   height: 50px;
@@ -7396,7 +7420,7 @@ form.custom .custom.dropdown.open.medium ul {
   cursor: pointer;
   top: 95px;
 }
-/* line 244, sass/app.scss */
+/* line 270, sass/app.scss */
 .header_inline .prev:before, .header_inline .prev:after, .header_inline .next:before, .header_inline .next:after {
   content: "";
   width: 0;
@@ -7406,86 +7430,86 @@ form.custom .custom.dropdown.open.medium ul {
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
 }
-/* line 253, sass/app.scss */
+/* line 279, sass/app.scss */
 .header_inline .prev {
   left: 0;
 }
-/* line 256, sass/app.scss */
+/* line 282, sass/app.scss */
 .header_inline .prev:before {
   left: 6px;
   border-right: 12px solid white;
 }
-/* line 261, sass/app.scss */
+/* line 287, sass/app.scss */
 .header_inline .prev:after {
   left: 12px;
   border-right: 12px solid red;
 }
-/* line 267, sass/app.scss */
+/* line 293, sass/app.scss */
 .header_inline .next {
   right: 0;
 }
-/* line 270, sass/app.scss */
+/* line 296, sass/app.scss */
 .header_inline .next:before {
   right: 6px;
   border-left: 12px solid white;
 }
-/* line 275, sass/app.scss */
+/* line 301, sass/app.scss */
 .header_inline .next:after {
   right: 12px;
   border-left: 12px solid red;
 }
 
-/* line 287, sass/app.scss */
+/* line 313, sass/app.scss */
 .footer {
   background: #e9e9e9;
   height: 250px;
   overflow: hidden;
   position: relative;
 }
-/* line 292, sass/app.scss */
+/* line 318, sass/app.scss */
 .footer .text-header {
   position: relative;
   padding-top: 2em;
 }
-/* line 297, sass/app.scss */
+/* line 323, sass/app.scss */
 .footer h3 {
   margin: 0;
 }
-/* line 300, sass/app.scss */
+/* line 326, sass/app.scss */
 .footer h3 .next {
   font-size: 0.85em;
 }
-/* line 301, sass/app.scss */
+/* line 327, sass/app.scss */
 .footer h3 .title {
   margin: 0;
 }
-/* line 304, sass/app.scss */
+/* line 330, sass/app.scss */
 .footer .details {
   color: #888;
   font-weight: normal;
 }
-/* line 308, sass/app.scss */
+/* line 334, sass/app.scss */
 .footer .details a {
   color: #333;
 }
-/* line 311, sass/app.scss */
+/* line 337, sass/app.scss */
 .footer .details a:hover {
   color: red;
 }
-/* line 317, sass/app.scss */
+/* line 343, sass/app.scss */
 .footer .logo {
   position: relative;
   width: 250px;
   height: 250px;
   bottom: 0px;
 }
-/* line 322, sass/app.scss */
+/* line 348, sass/app.scss */
 .footer .logo img {
   width: 100%;
   height: 100%;
 }
 
-/* line 333, sass/app.scss */
+/* line 359, sass/app.scss */
 .menu {
   height: 50px;
   width: 100%;
@@ -7494,13 +7518,13 @@ form.custom .custom.dropdown.open.medium ul {
   top: 0;
   z-index: 999;
 }
-/* line 339, sass/app.scss */
+/* line 365, sass/app.scss */
 .menu .sub-nav {
   font-size: 20px;
   color: black;
   background: white;
 }
-/* line 344, sass/app.scss */
+/* line 370, sass/app.scss */
 .menu .sub-nav.mobile .menuLinks {
   height: 0px;
   -webkit-transition: height 0.2s;
@@ -7510,29 +7534,29 @@ form.custom .custom.dropdown.open.medium ul {
   overflow: hidden;
   clear: both;
 }
-/* line 350, sass/app.scss */
+/* line 376, sass/app.scss */
 .menu .sub-nav.mobile .menuLinks.more {
   height: 100px;
 }
-/* line 353, sass/app.scss */
+/* line 379, sass/app.scss */
 .menu .sub-nav.mobile .menuLinks.more dd {
   clear: both;
 }
-/* line 360, sass/app.scss */
+/* line 386, sass/app.scss */
 .menu .sub-nav:not(.mobile) .menu-icon {
   display: none;
 }
-/* line 364, sass/app.scss */
+/* line 390, sass/app.scss */
 .menu .sub-nav dd:not(.title) {
   padding: 0px 10px;
   cursor: pointer;
 }
-/* line 368, sass/app.scss */
+/* line 394, sass/app.scss */
 .menu .sub-nav dd:not(.title) a {
   color: black;
   font-size: 15px;
 }
-/* line 374, sass/app.scss */
+/* line 400, sass/app.scss */
 .menu .sub-nav dd:not(.title).active a, .menu .sub-nav dd:not(.title):hover a {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -7544,7 +7568,7 @@ form.custom .custom.dropdown.open.medium ul {
   padding: 0.1875em 0;
   cursor: default;
 }
-/* line 384, sass/app.scss */
+/* line 410, sass/app.scss */
 .menu .wrapLogoTop {
   position: absolute;
   top: -10px;
@@ -7556,12 +7580,12 @@ form.custom .custom.dropdown.open.medium ul {
   -o-transition: height 0.2s;
   transition: height 0.2s;
 }
-/* line 390, sass/app.scss */
+/* line 416, sass/app.scss */
 .menu .logoTop {
   width: 45px;
 }
 
-/* line 395, sass/app.scss */
+/* line 421, sass/app.scss */
 .menu-icon {
   display: block;
   float: left;
@@ -7569,7 +7593,7 @@ form.custom .custom.dropdown.open.medium ul {
   height: 30px;
   margin-right: 10px;
 }
-/* line 402, sass/app.scss */
+/* line 428, sass/app.scss */
 .menu-icon span {
   display: block;
   width: 100%;
@@ -7579,80 +7603,80 @@ form.custom .custom.dropdown.open.medium ul {
   box-shadow: 0 10px 0 1px red, 0 16px 0 1px red, 0 22px 0 1px red;
 }
 
-/* line 410, sass/app.scss */
+/* line 436, sass/app.scss */
 .title {
   font-family: "source-sans-pro", 'Open Sans', sans-serif;
   font-weight: 600 !important;
   margin: 3px 30px 3px 20px;
 }
-/* line 416, sass/app.scss */
+/* line 442, sass/app.scss */
 .title strong {
   font-weight: 600 !important;
   color: red;
 }
 
-/* line 426, sass/app.scss */
+/* line 452, sass/app.scss */
 .main {
   background: #fff;
   position: relative;
   margin-top: 0;
   padding: 30px 0;
 }
-/* line 432, sass/app.scss */
+/* line 458, sass/app.scss */
 .main h2 {
   font-weight: normal;
 }
-/* line 436, sass/app.scss */
+/* line 462, sass/app.scss */
 .main .topProject {
   position: relative;
   z-index: 50;
 }
-/* line 440, sass/app.scss */
+/* line 466, sass/app.scss */
 .main .topProject h2, .main .topProject form {
   margin-bottom: 0;
 }
-/* line 445, sass/app.scss */
+/* line 471, sass/app.scss */
 .main .anchor {
   display: block;
   float: left;
   margin-top: -50px;
 }
-/* line 454, sass/app.scss */
+/* line 480, sass/app.scss */
 .main .mainFilters {
   margin-top: 15px;
 }
-/* line 457, sass/app.scss */
+/* line 483, sass/app.scss */
 .main .mainFilters .button {
   padding: 6px 3px 4px;
 }
-/* line 459, sass/app.scss */
+/* line 485, sass/app.scss */
 .main .mainFilters .button svg {
   width: 19px;
   height: 19px;
 }
-/* line 462, sass/app.scss */
+/* line 488, sass/app.scss */
 .main .mainFilters .button svg path {
   fill: #fff;
 }
-/* line 467, sass/app.scss */
+/* line 493, sass/app.scss */
 .main .filters {
   margin-bottom: 10px;
   background: #e9e9e9;
   width: 100%;
   overflow: hidden;
 }
-/* line 468, sass/app.scss */
+/* line 494, sass/app.scss */
 .main .filters.flat {
   height: 0px;
   margin-bottom: 0px;
 }
-/* line 479, sass/app.scss */
+/* line 505, sass/app.scss */
 .main .filters .star .cancel {
   float: right;
   position: relative;
   top: 5px;
 }
-/* line 485, sass/app.scss */
+/* line 511, sass/app.scss */
 .main .filters .star .fitlerStar {
   width: 21px;
   height: 21px;
@@ -7661,39 +7685,39 @@ form.custom .custom.dropdown.open.medium ul {
   background-size: 21px 21px;
   float: left;
 }
-/* line 492, sass/app.scss */
+/* line 518, sass/app.scss */
 .main .filters .star .fitlerStar:hover, .main .filters .star .fitlerStar.on {
   background-image: url("../img/star_on.svg");
 }
-/* line 496, sass/app.scss */
+/* line 522, sass/app.scss */
 .main .filters .activeFilter {
   margin: -10px 0.9375em 15px;
 }
-/* line 499, sass/app.scss */
+/* line 525, sass/app.scss */
 .main .filters .activeFilter .filterLang {
   margin-right: 10px;
   display: inline-block;
 }
-/* line 503, sass/app.scss */
+/* line 529, sass/app.scss */
 .main .filters .activeFilter .filterLang .button {
   margin-bottom: 0px;
 }
-/* line 510, sass/app.scss */
+/* line 536, sass/app.scss */
 .main .autocomplete {
   width: 100%;
   position: absolute;
   top: 146px;
   z-index: 999;
 }
-/* line 518, sass/app.scss */
+/* line 544, sass/app.scss */
 .main .autocomplete .wrapperLang .items {
   padding-left: 17px;
 }
-/* line 519, sass/app.scss */
+/* line 545, sass/app.scss */
 .main .autocomplete .wrapperLang .items:first-child {
   padding-left: 6px;
 }
-/* line 522, sass/app.scss */
+/* line 548, sass/app.scss */
 .main .autocomplete .wrapperLang .items .item {
   padding: 10px 20px;
   display: block;
@@ -7703,21 +7727,21 @@ form.custom .custom.dropdown.open.medium ul {
   color: #333;
   background: white;
 }
-/* line 534, sass/app.scss */
+/* line 560, sass/app.scss */
 .main .autocomplete .wrapperLang .items .item:hover {
   color: red;
 }
-/* line 546, sass/app.scss */
+/* line 572, sass/app.scss */
 .main .wrapProjects {
   padding-bottom: 50px;
   position: relative;
   z-index: 30;
 }
-/* line 552, sass/app.scss */
+/* line 578, sass/app.scss */
 .main .listItem {
   float: left !important;
 }
-/* line 554, sass/app.scss */
+/* line 580, sass/app.scss */
 .main .project, .main .org {
   font-size: 14px;
   border-left: 3px #e9e9e9 solid;
@@ -7729,75 +7753,75 @@ form.custom .custom.dropdown.open.medium ul {
   color: black;
   margin: 10px 0;
 }
-/* line 563, sass/app.scss */
+/* line 589, sass/app.scss */
 .main .project:hover, .main .org:hover {
   border-left: 3px red solid;
 }
-/* line 567, sass/app.scss */
+/* line 593, sass/app.scss */
 .main .project h1, .main .org h1 {
   font-size: 17px;
   margin-bottom: 3px;
 }
-/* line 572, sass/app.scss */
+/* line 598, sass/app.scss */
 .main .project p, .main .org p {
   margin-bottom: 5px;
 }
-/* line 574, sass/app.scss */
+/* line 600, sass/app.scss */
 .main .project .details, .main .org .details {
   padding-left: 10px;
   color: #666;
 }
-/* line 580, sass/app.scss */
+/* line 606, sass/app.scss */
 .main .project .star img, .main .org .star img {
   width: 20px;
 }
-/* line 582, sass/app.scss */
+/* line 608, sass/app.scss */
 .main .project .watchCount, .main .org .watchCount {
   padding: 5px 10px;
   float: right;
   color: #666;
 }
-/* line 588, sass/app.scss */
+/* line 614, sass/app.scss */
 .main .project .more, .main .org .more {
   margin-bottom: 25px;
 }
-/* line 591, sass/app.scss */
+/* line 617, sass/app.scss */
 .main .project .more .link, .main .org .more .link {
   text-align: right;
   color: red;
 }
-/* line 595, sass/app.scss */
+/* line 621, sass/app.scss */
 .main .project .more .link:hover, .main .org .more .link:hover {
   color: #e60000;
 }
-/* line 603, sass/app.scss */
+/* line 629, sass/app.scss */
 .main .buttonMore, .main .buttonLess {
   width: 100%;
   height: 100px;
   overflow: hidden;
 }
-/* line 609, sass/app.scss */
+/* line 635, sass/app.scss */
 .main .buttonLess {
   position: fixed;
   bottom: 0px;
   left: 0;
 }
-/* line 615, sass/app.scss */
+/* line 641, sass/app.scss */
 .main .buttonMore {
   bottom: -50px;
   position: absolute;
 }
-/* line 620, sass/app.scss */
+/* line 646, sass/app.scss */
 .main .ng-hide {
   display: none;
 }
-/* line 624, sass/app.scss */
+/* line 650, sass/app.scss */
 .main .clear {
   clear: both;
 }
 
 /* For reseting magellan on top :) */
-/* line 630, sass/app.scss */
+/* line 656, sass/app.scss */
 .featured {
   position: absolute;
   top: 0;
@@ -7805,13 +7829,13 @@ form.custom .custom.dropdown.open.medium ul {
   display: block;
 }
 
-/* line 640, sass/app.scss */
+/* line 666, sass/app.scss */
 .loading {
   width: 100px;
   height: 50px;
   margin: 20px auto;
 }
-/* line 646, sass/app.scss */
+/* line 672, sass/app.scss */
 .loading .bars div {
   height: 40px;
   width: 3px;
@@ -7822,77 +7846,77 @@ form.custom .custom.dropdown.open.medium ul {
   -o-animation: loader 1.3s infinite;
   animation: loader 1.3s infinite;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(1) {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -o-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(2) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -o-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(3) {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   -o-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(4) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   -o-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(5) {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   -o-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(6) {
   -webkit-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
   -o-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(7) {
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
   -o-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(8) {
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
   -o-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(9) {
   -webkit-animation-delay: 0.9s;
   -moz-animation-delay: 0.9s;
   -o-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
-/* line 654, sass/app.scss */
+/* line 680, sass/app.scss */
 .loading .bars div:nth-child(10) {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -o-animation-delay: 1s;
   animation-delay: 1s;
 }
-/* line 661, sass/app.scss */
+/* line 687, sass/app.scss */
 .loading .text {
   color: red;
   text-transform: uppercase;
@@ -7903,7 +7927,7 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 @-moz-keyframes loader {
-  /* line 672, sass/app.scss */
+  /* line 698, sass/app.scss */
   50% {
     height: 3px;
     margin-top: 37px;
@@ -7912,7 +7936,7 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 @-webkit-keyframes loader {
-  /* line 672, sass/app.scss */
+  /* line 698, sass/app.scss */
   50% {
     height: 3px;
     margin-top: 37px;
@@ -7921,7 +7945,7 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 @-o-keyframes loader {
-  /* line 672, sass/app.scss */
+  /* line 698, sass/app.scss */
   50% {
     height: 3px;
     margin-top: 37px;
@@ -7930,7 +7954,7 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 @keyframes loader {
-  /* line 672, sass/app.scss */
+  /* line 698, sass/app.scss */
   50% {
     height: 3px;
     margin-top: 37px;

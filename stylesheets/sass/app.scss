@@ -85,7 +85,33 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 .old {
-    display: none;
+//    display: none;
+    .punchline {
+        margin: 100px auto 0; width: 600px;
+    }
+
+    .links {
+        margin: 30px auto 0;
+        width: 600px;
+    
+        .item {
+            display: block;
+            margin: 0 20px;
+        
+            &, img, p {
+                float: left;
+            }
+
+            p {
+                width: 80px;
+                margin: 40px 10px 0;
+            }
+            
+            img {
+                width: 160px;
+            }
+        }
+    }
 }
 
 //---------------------------------------------------------------------------------
