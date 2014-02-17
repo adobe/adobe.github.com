@@ -14,8 +14,31 @@
 
 <body ng-controller="GitHubCtrl" class="ng-cloak">
     <div id="old" class="old text-center">
-        <h1>This browser is waaaaayyy too old.</h1>
+        <div class="menu">
+            <div class="row">
+                <div class="large-12 columns">
+                    <dl class="sub-nav">
+                        <dd class="title">
+                            <strong>Adobe</strong> Open Source
+                        </dd>
+                    </dl>
+                    
+                    <div class="wrapLogoTop">
+                        <img class="logoTop" src="img/adobe-tag.png" title="Adobe Open Source"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header_inline" id="featuredProj">
+            <div class="wrapper">
+                <div class="row text-center">
+                    <h1>Your browser is outdated. Please update to a version respecting Web Standards.</h1>
+                </div>
+            </div>
+        </div>
     </div>
+    
     <div id="supported">
         <div class="menu" data-magellan-expedition='fixed'>
             <div class="row">
@@ -261,7 +284,7 @@
         </div>
     </div>
         
-    <!--[if gte IE 8]><!-->
+    <!--[if gte IE 9]><!-->
         <script src="js/vendor/custom.modernizr.js"></script>
         <script type="text/javascript" src="//use.typekit.net/gad4asz.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
