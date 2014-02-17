@@ -43,5 +43,10 @@
 	  "userName": "adobe-flash",
 	  "name": "Adobe Flash",
 	  "desc": "Stuff from the Adobe Flash team"
+	},
+	{
+	  "userName": "adobe-consulting-services",
+	  "name": "Adobe Consulting Services",
+	  "desc": "Adobe Consulting's open source projects"
 	}
 ]
