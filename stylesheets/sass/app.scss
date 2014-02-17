@@ -85,7 +85,7 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 //---------------------------------------------------------------------------------
-//                          Headers
+//                          Stats
 //---------------------------------------------------------------------------------
 
 .intro {
@@ -130,6 +130,17 @@ form.custom .custom.dropdown.open.medium ul {
 //---------------------------------------------------------------------------------
 
 .header_inline {
+    
+    &.mobile {
+        .logo.first {
+            top: 10px;
+        }
+        
+        .logo.second {
+           top: 10px;
+        }
+    }
+
 	.logo.first {
 		top: -180px;
 	}

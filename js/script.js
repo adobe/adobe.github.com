@@ -232,6 +232,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
 	
 	if ($scope.mobile) {
 		$(window).off("scroll", scrollUpdate);
+        $('.header_inline').addClass('mobile');
 	} else {
 		$(window).on("scroll", scrollUpdate);
 	}
