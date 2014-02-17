@@ -464,6 +464,48 @@ form.custom .custom.dropdown.open.medium ul {
         position: relative;
         z-index: 50;
     
+        &>div { position: relative; }
+
+        .popup {
+            position: absolute;
+            right: 30px;
+            top: -70px;
+            background: $primary-color;
+            border: solid 1px darken($primary-color, 10);
+            color: white;
+            padding: 20px 30px;
+            width: 200px;
+            text-align: center;
+            font-size: 0.875em;
+    
+            .close {
+                display: block;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                padding: 6px;
+                color: #eee;
+                font-weight: bold;
+                font-size: 13px;
+                
+                &:hover {
+                    color: #ddd;
+                }
+            }
+    
+            &:after {
+                content: ' ';
+                position: absolute;
+                right: 9px;
+                bottom: -12px;
+                width: 0;
+                height: 0;
+                border-top: 12px solid $primary-color;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+            }
+        }
+    
         h2, form {
             margin-bottom: 0;
         }
