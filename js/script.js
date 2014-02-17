@@ -1,4 +1,4 @@
-if (/MSIE [0-8]/.test(navigator.userAgent)) {
+if (/MSIE [5-9]/.test(navigator.userAgent)) {
     document.getElementById('old').style.display = 'block';
     document.getElementById('supported').style.display = 'none';
 } else {
