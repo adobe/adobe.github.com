@@ -220,6 +220,15 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         array.splice(i, 1);
     }
     
+    $scope.closeHelp = function() {
+        $scope.helped = true;
+    }
+    
+    $scope.toggleFiltersButton = function() {
+        $scope.closeHelp();
+        $scope.toggleFilters = !$scope.toggleFilters;
+    }
+    
     //--------------------------- Mobile & Parrallax -----------------------------
 	
 	$scope.mobile = isMobile(navigator.userAgent||navigator.vendor||window.opera);

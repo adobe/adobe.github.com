@@ -7665,7 +7665,7 @@ form.custom .custom.dropdown.open.medium ul {
 }
 /* line 491, sass/app.scss */
 .main .topProject .popup .close:hover {
-  color: #ddd;
+  color: #fff;
 }
 /* line 496, sass/app.scss */
 .main .topProject .popup:after {
