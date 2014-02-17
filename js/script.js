@@ -140,7 +140,6 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         });
         
         $scope.updateGraph();
-        $scope.posLabel();
     
         //Loading over
         $scope.loading = false;
@@ -163,22 +162,13 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         }).order(function(d) {
             return d.value;
         });
-        langChart.width(220).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 80, right: 0, bottom: 20})
+        langChart.width(220).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 0, right: 0, bottom: 20})
  .title(function(d) {
             return d.key+ ' (' + Math.round((d.value / $scope.stats.nbLinesCode)*100) + '%)';
         }).label(function(d) {
             return d.key;
         }).renderLabel(true).colors(d3.scale.category20());
         dc.renderAll();
-    }
-    
-    $scope.posLabel = function() {
-        $('.dc-chart svg .row text').each(function(index) {
-            var actText = $('.dc-chart svg .row text')[index];
-            
-            var newX = - $(actText).attr('x') - $(actText).width();
-            $(actText).attr('x', newX);
-        });
     }
 	
 	$scope.showHideProj = function() {
