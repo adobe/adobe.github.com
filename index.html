@@ -25,7 +25,7 @@
 					<div class="menuLinks" ng-class="{more: menuOpen}">
 						<dd data-magellan-arrival="statistics"><a href="#statistics" ng-click="menuOpen = false">Statistics</a></dd>
 						<dd data-magellan-arrival="projects"><a href="#projects" ng-click="menuOpen = false">Projects</a></dd>
-						<dd data-magellan-arrival="organisations"><a href="#organisations" ng-click="menuOpen = false">Organisation</a></dd>
+						<dd data-magellan-arrival="organizations"><a href="#organizations" ng-click="menuOpen = false">Organization</a></dd>
 					</div>
 				</dl>
 				
@@ -105,7 +105,7 @@
                             <option value="" DISABLED>Order by:</option>
                             <option value="-watchers_count" selected>Popularity</option>
                             <option value="-pushed_at">Last Push</option>
-                            <option value="org">Organisation</option>
+                            <option value="org">Organization</option>
                             <option value="name">Name</option>
                         </select>
                     </div>
@@ -131,7 +131,7 @@
                     </div>
                     
                     <div class="large-3 columns">
-                      <input type="text" ng-model="searchOrgInput" id="searchOrg" placeholder="Organisations">
+                      <input type="text" ng-model="searchOrgInput" id="searchOrg" placeholder="Organizations">
                     </div>
                     
                     <div class="star large-2 columns">
@@ -189,7 +189,7 @@
     </div>
             
 	<!-- --------------------------------------------------------------------------------------
-						Featured Organisations
+						Featured Organizations
 	--------------------------------------------------------------------------------------  -->
     
     <div class="header_inline" id="featuredOrg">
@@ -217,11 +217,11 @@
             <div class="large-12 columns">
             
             <!-- --------------------------------------------------------------------------------------
-                                Organisations
+                                Organizations
             --------------------------------------------------------------------------------------  -->
             
-                <a name="organisations" class="anchor"></a>
-                <h2 data-magellan-destination="organisations">Organisations</h2>
+                <a name="organizations" class="anchor"></a>
+                <h2 data-magellan-destination="organizations">Organizations</h2>
 
                 <div class="row">
                     <div ng-show="loading">
