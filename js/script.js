@@ -152,7 +152,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
     
     $scope.updateGraph = function() {
         // Filtering langs for only major ones
-        var majorLangs = $scope.filter('majorLangs')($scope.langs, $scope.stats.nbLinesCode);
+        var majorLangs = $scope.filter('majorLangs')($scope.langs, $scope.stats.bitesLangCode);
         
         //Initiate graphs
 //        var langChart = dc.pieChart("#langChart");
@@ -169,7 +169,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         });
         langChart.width(220).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 0, right: 0, bottom: 20})
  .title(function(d) {
-            return d.key+ ' (' + Math.round((d.value / $scope.stats.nbLinesCode)*100) + '%)';
+            return d.key+ ' (' + Math.round((d.value / $scope.stats.bitesLangCode)*100) + '%)';
         }).label(function(d) {
             return d.key;
         }).renderLabel(true).colors(d3.scale.category20());
