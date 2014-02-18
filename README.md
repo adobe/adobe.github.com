@@ -29,14 +29,14 @@ Hummm... you want to learn more about how all this is structured? A good sketch 
 
 <p align="center"> <img src="https://raw2.github.com/adobe/adobe.github.com/master/img/schema_adobe_open_source.png"  alt="Adobe Open Source schema" /></p>
 
-The information is pulled directly from the [Github API](http://developer.github.com/v3/) and aggregated by a [NodeJS](nodejs.org) server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is made available through an simple REST API, thanks to [restify](mcavage.me/node-restify/).
+The information is pulled directly from the [Github API](http://developer.github.com/v3/) and aggregated by a [NodeJS](nodejs.org) server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is available through an simple REST API, thanks to [restify](mcavage.me/node-restify/).
 
-[AngularJS](http://angularjs.org/) then make a unique API call to the server and inject the data on your browser, based on the [Foundation](http://foundation.zurb.com/) CSS framework and using [dc.js](nickqizhu.github.io/dc.js/) for the graphs. The filtering engine for the repositories was built on top of Angular.
+[AngularJS](http://angularjs.org/) then makes a unique API call to the server and inject the data on your browser, based on the [Foundation](http://foundation.zurb.com/) CSS framework and using [dc.js](nickqizhu.github.io/dc.js/) for the graphs. The filtering engine for the repositories was built on top of Angular.
 
 ## Be in touch!
 
 We hope you love this new homepage. Any feedback, ideas or bugfixs is very welcome.
 
-All this seems interesting? You want to contribute to the web with Adobe?
+All this seems interesting to you? You want to contribute to the web with Adobe?
 
 <h4 align="center"><a href="http://www.adobe.com/careers.html" target="_blank">Join the team!</a></h4>
