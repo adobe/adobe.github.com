@@ -3,14 +3,16 @@
 
 Presenting [Adobe Github Homepage v2.0](http://adobe.github.com), the new central hub for **Adobe Open sources** projects.
 
-Allowing you to **search through Adobe Github repositories**, you can focus on what you are passionated about.
+Allowing you to **search through Adobe Github repositories**, you can focus on what you are really passionated about.
 
 - You are a *web developer*? Search the repositories only containing *Javascript* code, because it rocks!
 - You love doing *technology watching*? Order by *Popularity*, by *Last Push* or select only the *5 stars (>1k followers)* projects to get the hotest repos!
 - You are a *web designer* and want the perfect code editor? Search *brackets* and get all the repositories related to this awesome project!
-- You are a *researcher*? Check out the project pushed in Open Source by *Adobe Research*!
+- You are a *researcher*? Check out the project pushed in Open Source by the *Adobe Research* organisation!
 
-As you can see, we love Open Source. That's why we built this project on top of cutting-edge technologies like:
+<h4 align="center"> Adobe + Open Source = ♥ </h4>
+
+That's why we built this project on top of cutting-edge technologies like:
 
 - [AngularJS](http://angularjs.org/),
 - [Foundation](http://foundation.zurb.com/),
@@ -27,6 +29,14 @@ Hummm... you want to learn more about how all this is structured? A good sketch 
 
 <p align="center"> <img src="https://raw2.github.com/adobe/adobe.github.com/master/img/schema_adobe_open_source.png"  alt="Adobe Open Source schema" /></p>
 
-The information is pulled directly from the Github API and aggregated by a NodeJS server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is made available through an simple REST API, thanks to restify.
+The information is pulled directly from the [Github API](http://developer.github.com/v3/) and aggregated by a [NodeJS](nodejs.org) server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is made available through an simple REST API, thanks to [restify](mcavage.me/node-restify/).
 
-AngularJS then make a unique API call to the server and inject the data on your browser, based on dc.js and the Fondation CSS framework. The filtering engine for the repositories was built on top of Angular.
+[AngularJS](http://angularjs.org/) then make a unique API call to the server and inject the data on your browser, based on the [Foundation](http://foundation.zurb.com/) CSS framework and using [dc.js](nickqizhu.github.io/dc.js/) for the graphs. The filtering engine for the repositories was built on top of Angular.
+
+## Be in touch!
+
+We hope you love this new homepage. Any feedback, ideas or bugfixs is very welcome.
+
+All this seems interesting? You want to contribute to the web with Adobe?
+
+<h4 align="center"><a href="http://www.adobe.com/careers.html" target="_blank">Join the team!</a></h4>
