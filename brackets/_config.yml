@@ -1,9 +1,0 @@
-auto: true
-permalink: /blog/:year/:month/:day/:title
-
-title: Brackets Blog
-description: News and helpful information from the Brackets team.
-production_url: http://brackets.io
-author:
-  name: Adam Lehman
-  email: info@brackets.io
