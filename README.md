@@ -25,7 +25,7 @@ The [Adobe Creative Cloud](http://www.adobe.com/products/creativecloud.html) was
 
 Hummm... you want to learn more about how all this is structured? A good sketch is better than a long speech, so here is a little schema:
 
-![image](https://raw2.github.com/adobe/adobe.github.com/master/img/schema_adobe_open_source.png)
+->![image](https://raw2.github.com/adobe/adobe.github.com/master/img/schema_adobe_open_source.png)<-
 
 The information is pulled directly from the Github API and aggregated by a NodeJS server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is made available through an simple REST API, thanks to restify.
 
