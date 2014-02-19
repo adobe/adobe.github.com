@@ -7,17 +7,17 @@
 	{
 	  "userName": "adobe-webplatform",
 	  "name": "Adobe Web Platform",
-	  "desc": "Releases from the Adobe Web Platform teams"
+	  "desc": "We work with standards bodies to advance technologies that let you create ever-more compelling experiences for the web."
 	},
 	{
 	  "userName": "adobe-research",
 	  "name": "Adobe Research",
-	  "desc": "Releases from the Adobe Research teams"
+	  "desc": "We create innovative technologies relevant to our software products."
 	},
 	{
 	  "userName": "adobe-photoshop",
 	  "name": "Adobe Photoshop",
-	  "desc": "Stuff from the Adobe Photoshop team"
+	  "desc": "Just about every creative digital project has Photoshop CC at its core."
 	},
 	{
 	  "userName": "adobe-cloudops",
@@ -52,11 +52,11 @@
 	{
 	  "userName": "adobe-marketing-cloud",
 	  "name": "Adobe Marketing Cloud",
-	  "desc": "Adobe Marketing Cloud's open source projects"
+	  "desc": "The most comprehensive set of marketing solutions."
 	},
 	{
 	  "userName": "phonegap",
 	  "name": "PhoneGap",
-	  "desc": "Open source projects from PhoneGap!"
+	  "desc": "Easily create apps using the web technologies you know and love: HTML, CSS, and JavaScript"
 	}
 ]
