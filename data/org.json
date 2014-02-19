@@ -53,5 +53,10 @@
 	  "userName": "adobe-marketing-cloud",
 	  "name": "Adobe Marketing Cloud",
 	  "desc": "Adobe Marketing Cloud's open source projects"
+	},
+	{
+	  "userName": "phonegap",
+	  "name": "PhoneGap",
+	  "desc": "Open source projects from PhoneGap!"
 	}
 ]
