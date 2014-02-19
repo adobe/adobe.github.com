@@ -487,10 +487,10 @@ app.filter('linkProject', function() {
 
 app.filter('linkOrg', function() {
 	return function(org) {
-        if (org.blog == "" || org.blog == null) {
-            return org.html_url;
+        if (org.userName) {
+            return "https://github.com/"+org.userName;
         } else {
-            return (org.blog.substring(0,4) != "http") ? "http://"+org.blog : org.blog;
+            return "#";
         }
     };
 });
