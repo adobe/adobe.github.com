@@ -23,6 +23,14 @@ That's why we built this project on top of cutting-edge technologies like:
 
 The [Adobe Creative Cloud](http://www.adobe.com/products/creativecloud.html) was also a great asset for [designing](photoshop.com) and [coding](brackets.io) purposes.
 
+## Be in touch!
+
+We hope you love this new homepage. Any feedback, ideas or bugfixs is very welcome. Here is the [Trello board](https://trello.com/b/eLlfvaVe/adobe-github-com) on which you can add you ideas. You can also check out the [wiki page](https://github.com/adobe/adobe.github.com/wiki) to know how to update the page easily. 
+
+All this seems interesting to you? You want to contribute to the web with Adobe?
+
+<h4 align="center"><a href="http://www.adobe.com/careers.html" target="_blank">Join the team!</a></h4>
+
 ## Architecture
 
 Hummm... you want to learn more about how all this is structured? A good sketch is better than a long speech, so here is a little schema:
@@ -32,11 +40,3 @@ Hummm... you want to learn more about how all this is structured? A good sketch 
 The information is pulled directly from the [Github API](http://developer.github.com/v3/) and aggregated by a [NodeJS](nodejs.org) server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is available through an simple REST API, thanks to [restify](mcavage.me/node-restify/).
 
 [AngularJS](http://angularjs.org/) then makes a unique API call to the server and inject the data on your browser, based on the [Foundation](http://foundation.zurb.com/) CSS framework and using [dc.js](nickqizhu.github.io/dc.js/) for the graphs. The filtering engine for the repositories was built on top of Angular.
-
-## Be in touch!
-
-We hope you love this new homepage. Any feedback, ideas or bugfixs is very welcome.
-
-All this seems interesting to you? You want to contribute to the web with Adobe?
-
-<h4 align="center"><a href="http://www.adobe.com/careers.html" target="_blank">Join the team!</a></h4>
