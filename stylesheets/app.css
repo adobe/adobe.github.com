@@ -433,7 +433,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Source Sans", Cambria, "Times New Roman", Times, sans-serif;
+  font-family: "Source Sans Pro", Cambria, "Times New Roman", Times, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -2037,7 +2037,7 @@ p aside {
 /* Default header styles */
 /* line 181, ../../../../../../Users/chouard/.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.1/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans", Cambria, "Times New Roman", Times, sans-serif;
+  font-family: "Source Sans Pro", Cambria, "Times New Roman", Times, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -7613,7 +7613,7 @@ form.custom .custom.dropdown.open.medium ul {
 
 /* line 437, sass/app.scss */
 .title {
-  font-family: "source-sans-pro", 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600 !important;
   margin: 3px 30px 3px 20px;
 }
