@@ -140,6 +140,8 @@ form.custom .custom.dropdown.open.medium ul {
         margin-top: 15px;
     
         svg {
+            width: 300px !important;
+        
             .row {
                 rect {
                     @include transform(translate(90px, 0));

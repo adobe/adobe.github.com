@@ -167,7 +167,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         }).order(function(d) {
             return d.value;
         });
-        langChart.width(220).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 0, right: 0, bottom: 20})
+        langChart.width(190).height(180).dimension(langsDim).group(langsGroup).margins({top: 0, left: 0, right: 0, bottom: 20})
  .title(function(d) {
             return d.key+ ' (' + Math.round((d.value / $scope.stats.bitesLangCode)*100) + '%)';
         }).label(function(d) {
