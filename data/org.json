@@ -48,5 +48,10 @@
 	  "userName": "adobe-consulting-services",
 	  "name": "Adobe Consulting Services",
 	  "desc": "Adobe Consulting's open source projects"
+	},
+	{
+	  "userName": "adobe-marketing-cloud",
+	  "name": "Adobe Marketing Cloud",
+	  "desc": "Adobe Marketing Cloud's open source projects"
 	}
 ]
