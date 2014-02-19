@@ -10,7 +10,6 @@ $menu-font-size: 20;
 
 $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
 $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
-
     
 
 // Global Foundation Settings
@@ -92,12 +91,13 @@ form.custom .custom.dropdown.open.medium ul {
     }
 
     .links {
-        margin: 30px auto 0;
+        margin: 30px auto 0;    
         width: 600px;
     
         .item {
             display: block;
             margin: 0 20px;
+            float: left;
         
             &, img, p {
                 float: left;

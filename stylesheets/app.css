@@ -7217,39 +7217,40 @@ a.th {
   max-width: 800px;
 }
 
-/* line 77, sass/app.scss */
+/* line 76, sass/app.scss */
 body, html {
   width: 100%;
 }
 
-/* line 79, sass/app.scss */
+/* line 78, sass/app.scss */
 .wrapProjects {
   overflow: hidden;
 }
 
-/* line 83, sass/app.scss */
+/* line 82, sass/app.scss */
 form.custom .custom.dropdown.open.medium ul {
   min-width: 100%;
 }
 
-/* line 87, sass/app.scss */
+/* line 86, sass/app.scss */
 .old {
   display: none;
 }
-/* line 90, sass/app.scss */
+/* line 89, sass/app.scss */
 .old .punchline {
   margin: 100px auto 0;
   width: 600px;
 }
-/* line 94, sass/app.scss */
+/* line 93, sass/app.scss */
 .old .links {
   margin: 30px auto 0;
   width: 600px;
 }
-/* line 98, sass/app.scss */
+/* line 97, sass/app.scss */
 .old .links .item {
   display: block;
   margin: 0 20px;
+  float: left;
 }
 /* line 102, sass/app.scss */
 .old .links .item, .old .links .item img, .old .links .item p {
