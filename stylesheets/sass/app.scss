@@ -5,7 +5,7 @@ $primary-color: rgb(255,0,0);
 $secondary-color-alpha: rgba(233,233,233,0.8);
 //Personnal variables
 $header-height: 300;
-$menu-height: 50;
+$menu-height: 50;   
 $menu-font-size: 20;
 
 $body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
@@ -81,6 +81,11 @@ body, html { width: 100%; }
 
 form.custom .custom.dropdown.open.medium ul {
     min-width: 100%;
+}
+
+.head-anchor {
+    position:absolute;
+    margin-top: -$menu-height+px;
 }
 
 .old {
@@ -173,7 +178,7 @@ form.custom .custom.dropdown.open.medium ul {
 //                          Headers
 //---------------------------------------------------------------------------------
 
-.header_inline {
+.header-inline {
     
     &.mobile {
         .logo.first {
@@ -194,7 +199,7 @@ form.custom .custom.dropdown.open.medium ul {
     }
 }
     
-.header_inline {
+.header-inline {
 	background: $secondary-color;
     height: $header-height+px; width: 100%;
     overflow: hidden; position: relative;
@@ -512,11 +517,6 @@ form.custom .custom.dropdown.open.medium ul {
             margin-bottom: 0;
         }
     }
-
-	.anchor {
-		display: block; float: left;
-		margin-top: -$menu-height+px;
-	}
 
 	//---------------------------------------------------------------------------------
 	//                          Filters
