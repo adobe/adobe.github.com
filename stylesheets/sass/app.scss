@@ -22,6 +22,9 @@ $header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif 
 @import "foundation";
 @import "compass/css3";
 
+// Local import of css3 mixins to avoid buggy gem dependancy (animation)
+@import "mixincss3";
+
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 
@@ -719,7 +722,7 @@ form.custom .custom.dropdown.open.medium ul {
             width:3px;
             background: $primary-color;
             display:inline-block;
-            @include animation(loader 1.3s infinite);
+            @include animation(loader, 1.3s, infinite);
             
             @for $i from 1 through 10 {
                 &:nth-child(#{$i}) {
