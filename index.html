@@ -50,7 +50,7 @@ Okay, now let's take a look on how this website is codded!
             </div>
         </div>
         
-        <div class="header_inline">
+        <div class="header-inline">
             <p class="punchline">Your browser is outdated. Please update to a version respecting Web Standards.</p>
             <div class="links">
                 <a class="item" href="https://www.google.com/intl/en/chrome/browser/">
@@ -76,9 +76,9 @@ Okay, now let's take a look on how this website is codded!
                             <strong>Adobe</strong> Open Source
                         </dd>
                         <div class="menuLinks" ng-class="{more: menuOpen}">
-                            <dd data-magellan-arrival="statistics"><a href="#statistics" ng-click="menuOpen = false">Statistics</a></dd>
-                            <dd data-magellan-arrival="projects"><a href="#projects" ng-click="menuOpen = false">Projects</a></dd>
-                            <dd data-magellan-arrival="organizations"><a href="#organizations" ng-click="menuOpen = false">Organization</a></dd>
+                            <dd class="head-base"><a href="#statistics" ng-click="menuOpen = false">Statistics</a></dd>
+                            <dd class="head-base"><a href="#projects" ng-click="menuOpen = false">Projects</a></dd>
+                            <dd class="head-base"><a href="#organizations" ng-click="menuOpen = false">Organization</a></dd>
                         </div>
                     </dl>
                     
@@ -89,7 +89,7 @@ Okay, now let's take a look on how this website is codded!
             </div>
         </div>
         
-        <a name="statistics" class="anchor" data-magellan-destination="statistics"></a>
+        <a name="statistics" class="head-anchor"></a>
         <div class="intro">
             <div class="row">
                 <div class="large-4 columns">
@@ -119,8 +119,8 @@ Okay, now let's take a look on how this website is codded!
                             Featured
         --------------------------------------------------------------------------------------  -->
     
-        <div class="header_inline" id="featuredProj">
-            <a name="projects" class="anchor" data-magellan-destination="projects"></a>
+        <div class="header-inline" id="featuredProj">
+            <a name="projects" class="head-anchor"></a>
             <div class="wrapper" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index <= indexFeatured['projects']}">
                 <div class="row">
                     <div class="large-5 columns text-header">
@@ -248,8 +248,8 @@ Okay, now let's take a look on how this website is codded!
         <!-- --------------------------------------------------------------------------------------
                             Featured Organizations
         --------------------------------------------------------------------------------------  -->
-        
-        <div class="header_inline" id="featuredOrg">
+        <a name="organizations" class="head-anchor"></a>
+        <div class="header-inline" id="featuredOrg">
             <div class="wrapper" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index <= indexFeatured['orgs']}">
                 <div class="row">
                     <div class="large-5 columns">
@@ -277,8 +277,7 @@ Okay, now let's take a look on how this website is codded!
                                     Organizations
                 --------------------------------------------------------------------------------------  -->
                 
-                    <a name="organizations" class="anchor"></a>
-                    <h2 data-magellan-destination="organizations">Organizations</h2>
+                    <h2 class="large-6 small-4 columns">Organizations</h2>
     
                     <div class="row">
                         <div ng-show="loading">
@@ -334,8 +333,6 @@ Okay, now let's take a look on how this website is codded!
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
         <script src="js/vendor/angular-resource.js"></script>
         <script src="js/foundation/foundation.js"></script>
-        <!-- Magellan make pages lag...
-        <script src="js/foundation/foundation.magellan.js"></script>-->
         <script src="js/foundation/foundation.forms.js"></script>
         <script src="js/dcjs/crossfilter.min.js"></script>
         <script src="js/dcjs/d3.min.js"></script>

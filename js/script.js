@@ -251,12 +251,35 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
 $(document).foundation();
 
 /* ----------------------------------------------------------------------------
-                Parrallax Scrolling
+                Scrolling
 ---------------------------------------------------------------------------- */
 
+//Getting the header item list, and the anchors associated (have to be in the same order in the DOM)
+var bases = $(".head-base");
+var anchors = $(".head-anchor");
+var active_index = 0;
+//Making the first item active
+bases.eq(active_index).addClass("active");
+    
 var showMore = false;
 var scrollUpdate = function () {
     var scrollTop = $(window).scrollTop();
+    
+    var index = 0;
+    //Looping over the differents anchors
+    while(index + 1 != anchors.length ) {
+        //If the top position of the anchor has been reached ...
+        if(scrollTop + 1 > anchors.eq(index + 1).offset().top) {
+            index++;    
+        } else {
+            break;  //... if not, we're good to go
+        } 
+    }
+    if(active_index != index) {
+        bases.eq(active_index).removeClass("active");
+        bases.eq(index).addClass("active");
+        active_index = index;
+    }
         
     // ----------------------------------------------------------------------------
     //					First parallax: header
