@@ -28,11 +28,11 @@ Okay, now let's take a look on how this website is codded!
     <meta name="viewport" content="width=device-width">
     <title>Adobe Open Source | Advancing technology through open initiatives</title>
     <link rel="stylesheet" href="stylesheets/app.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
 </head>
 
-<body ng-controller="GitHubCtrl" class="ng-cloak">
+<body class="ng-cloak" ng-controller="GitHubCtrl">
     <div id="old" class="old text-center">
         <div class="menu">
             <div class="row">
@@ -66,11 +66,13 @@ Okay, now let's take a look on how this website is codded!
     </div>
     
     <div id="supported">
-        <div class="menu" data-magellan-expedition='fixed'>
+        <div class="menu" data-magellan-expedition="fixed">
             <div class="row">
                 <div class="large-12 columns">
                     <dl class="sub-nav" ng-class="{mobile: mobile}">
-                        <a class="menu-icon" ng-click="expandMenu()"><span></span></a>
+                        <a class="menu-icon" ng-click="expandMenu()">
+                            <span></span>
+			</a>
                         
                         <dd class="title">
                             <strong>Adobe</strong> Open Source
@@ -89,7 +91,7 @@ Okay, now let's take a look on how this website is codded!
             </div>
         </div>
         
-        <a name="statistics" class="head-anchor"></a>
+        <a class="head-anchor" name="statistics"></a>
         <div class="intro">
             <div class="row">
                 <div class="large-4 columns">
@@ -120,7 +122,7 @@ Okay, now let's take a look on how this website is codded!
         --------------------------------------------------------------------------------------  -->
     
         <div class="header-inline" id="featuredProj">
-            <a name="projects" class="head-anchor"></a>
+            <a class="head-anchor" name="projects"></a>
             <div class="wrapper" ng-repeat="featured in featureds['projects']" ng-class="{actual: $index <= indexFeatured['projects']}">
                 <div class="row">
                     <div class="large-5 columns text-header">
@@ -157,8 +159,8 @@ Okay, now let's take a look on how this website is codded!
                     <h2 class="large-6 small-4 columns">Repos</h2>
                     <form class="large-3 small-8 columns custom mainFilters">
                         <div class="large-10 small-10 columns">
-                            <select id="orderby" class="medium" ng-model="filterOrder">
-                                <option value="" DISABLED>Order by:</option>
+                            <select class="medium" id="orderby" ng-model="filterOrder">
+                                <option value="" disabled>Order by:</option>
                                 <option value="-watchers_count" selected>Popularity</option>
                                 <option value="-pushed_at">Last Push</option>
                                 <option value="org">Organization</option>
@@ -168,8 +170,8 @@ Okay, now let's take a look on how this website is codded!
                         </div>
                         <div class="button large-2 small-2 culumns" ng-click="toggleFiltersButton()" ng-class="{disabled: loading}">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-    <path fill="#000000" d="M50.717,2.495c-29.288,0-47.692,6-47.692,10.833c0,5.932,16.029,19.893,20.167,23.667  c4.712,4.299,16.044,16.058,16.5,18.001c0.147,2.147,2.002,35.008,2.002,35.008s-0.168,5.5,8.998,5.5  c9.166,0,8.498-5.334,8.498-5.334s2.169-32.674,2.169-34.84s8.333-10.835,18.5-20.002c10.167-9.167,18.167-15.758,18.167-22  C98.025,8.299,80.004,2.495,50.717,2.495z M50.481,21.083C28.676,21.083,11,17.965,11,14.12s17.676-7.964,39.481-7.964  c21.801,0,39.478,4.119,39.478,7.964S72.282,21.083,50.481,21.083z"/>
-    </svg>
+                                <path fill="#000000" d="M50.717,2.495c-29.288,0-47.692,6-47.692,10.833c0,5.932,16.029,19.893,20.167,23.667  c4.712,4.299,16.044,16.058,16.5,18.001c0.147,2.147,2.002,35.008,2.002,35.008s-0.168,5.5,8.998,5.5  c9.166,0,8.498-5.334,8.498-5.334s2.169-32.674,2.169-34.84s8.333-10.835,18.5-20.002c10.167-9.167,18.167-15.758,18.167-22  C98.025,8.299,80.004,2.495,50.717,2.495z M50.481,21.083C28.676,21.083,11,17.965,11,14.12s17.676-7.964,39.481-7.964  c21.801,0,39.478,4.119,39.478,7.964S72.282,21.083,50.481,21.083z"/>
+                            </svg>
                         </div>
                     </form>
                 </div>
@@ -184,15 +186,15 @@ Okay, now let's take a look on how this website is codded!
                         </div>
                         
                         <div class="large-3 columns">
-                          <input type="text" ng-model="searchLangInput" id="searchLang" placeholder="Languages">
+                          <input id="searchLang" type="text" ng-model="searchLangInput" placeholder="Languages">
                         </div>
                         
                         <div class="large-3 columns">
-                          <input type="text" ng-model="searchOrgInput" id="searchOrg" placeholder="Organizations">
+                          <input id="searchOrg" type="text" ng-model="searchOrgInput" placeholder="Organizations">
                         </div>
                         
                         <div class="star large-2 columns">
-                            <a ng-show="filterStarIndex" ng-click="majFilterStar(0); majDisplayStar(0)" class="button tiny cancel">X</a>
+                            <a class="button tiny cancel" ng-show="filterStarIndex" ng-click="majFilterStar(0); majDisplayStar(0)">X</a>
                             <div class="fitlerStar" ng-repeat="i in [1,2,3,4,5]" ng-class="{on: (i <= displayStarIndex)}" ng-click="majFilterStar(i)" ng-mouseenter="majDisplayStar(i)" ng-mouseleave="majDisplayStar(filterStarIndex)"></div>
                         </div>
                     </form>
@@ -241,14 +243,14 @@ Okay, now let's take a look on how this website is codded!
                 </div>
                         
                 <!-- Reseter -->
-                <div class="large-6 columns" class="clear"></div>
+                <div class="large-6 columns clear"></div>
             </div>
         </div>
                 
         <!-- --------------------------------------------------------------------------------------
                             Featured Organizations
         --------------------------------------------------------------------------------------  -->
-        <a name="organizations" class="head-anchor"></a>
+        <a class="head-anchor" name="organizations"></a>
         <div class="header-inline" id="featuredOrg">
             <div class="wrapper" ng-repeat="featured in featureds['orgs']" ng-class="{actual: $index <= indexFeatured['orgs']}">
                 <div class="row">
@@ -291,7 +293,7 @@ Okay, now let's take a look on how this website is codded!
                         </div>
                         
                         <!-- Reseter -->
-                        <div class="large-6 columns" class="clear"></div>
+                        <div class="large-6 columns clear"></div>
                     </div>
                 </div>
             </div>
@@ -326,8 +328,8 @@ Okay, now let's take a look on how this website is codded!
         
     <!--[if gte IE 10]><!-->
         <script src="js/vendor/custom.modernizr.js"></script>
-        <script type="text/javascript" src="//use.typekit.net/gad4asz.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="//use.typekit.net/gad4asz.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
