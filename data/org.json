@@ -39,6 +39,11 @@
 	  "name": "Adobe Fonts",
 	  "desc": "Releases from the Adobe Font teams"
 	},
+  {
+    "userName": "typekit",
+    "name": "Adobe Typekit",
+    "desc": "Open source projects by Adobe Typekit"
+  },
 	{
 	  "userName": "adobe-flash",
 	  "name": "Adobe Flash",
