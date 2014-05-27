@@ -8,8 +8,8 @@ $header-height: 300;
 $menu-height: 50;   
 $menu-font-size: 20;
 
-$body-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
-$header-font-family: 'Open Sans', Cambria, 'Times New Roman', Times, sans-serif !default;
+$body-font-family: source-sans-pro, Cambria, 'Times New Roman', Times, sans-serif !default;
+$header-font-family: source-sans-pro, Cambria, 'Times New Roman', Times, sans-serif !default;
     
 
 // Global Foundation Settings
@@ -133,7 +133,7 @@ form.custom .custom.dropdown.open.medium ul {
     
     blockquote {
         margin-top: 30px;
-        font-size: 1.3em;
+        font-size: 1.45em;
     }
 
     ul {
@@ -170,7 +170,7 @@ form.custom .custom.dropdown.open.medium ul {
             }
 
             text {
-                font-size: 0.75em;
+                font-size: 0.8em;
                 fill: #333;
             }
         }
@@ -404,7 +404,7 @@ form.custom .custom.dropdown.open.medium ul {
         
             a {
                 color: black;
-                font-size: 15px;
+                font-size: 16px;
 //                @include transition(all 0.1s);
             }
             
@@ -445,7 +445,7 @@ form.custom .custom.dropdown.open.medium ul {
 }
 
 .title {
-    font-family: "source-sans-pro", 'Open Sans', sans-serif;
+    font-family: "source-sans-pro", sans-serif;
 	font-weight: 600 !important;
     margin: 3px 30px 3px 20px;
     
@@ -486,7 +486,7 @@ form.custom .custom.dropdown.open.medium ul {
             padding: 20px 30px;
             width: 200px;
             text-align: center;
-            font-size: 0.875em;
+            font-size: 1em;
     
             .close {
                 display: block;
@@ -495,7 +495,7 @@ form.custom .custom.dropdown.open.medium ul {
                 right: 0px;
                 padding: 6px;
                 color: #eee;
-                font-weight: bold;
+                font-weight: 600;
                 font-size: 13px;
                 
                 &:hover {
@@ -735,7 +735,7 @@ form.custom .custom.dropdown.open.medium ul {
     .text {
         color: $primary-color;
         text-transform: uppercase;
-        font-weight:bold;
+        font-weight:600;
         margin-top: 5px;
         position: relative;
         right: 5px;

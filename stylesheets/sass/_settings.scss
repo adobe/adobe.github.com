@@ -161,7 +161,7 @@ $default-float: left;
 // Control header font styles
 
 // $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+ $header-font-weight: 600;
 // $header-font-style: normal;
 // $header-font-color: #222;
 // $header-line-height: 1.4;
@@ -1247,7 +1247,7 @@ $default-float: left;
 
 // Controlling the styles for the title in the top bar
 
-$topbar-title-weight: bold;
+$topbar-title-weight: 600;
 $topbar-title-font-size: emCalc(17);
 
 // Style the top bar dropdown elements
