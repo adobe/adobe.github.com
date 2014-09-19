@@ -3,12 +3,12 @@
 
 Presenting [Adobe Github Homepage v2.0](http://adobe.github.com), the new central hub for **Adobe Open sources** projects.
 
-Allowing you to **search through Adobe Github repositories**, you can focus on what you are really passionated about.
+Allowing you to **search through Adobe Github repositories**, you can focus on what you are really passionate about.
 
 - You are a *web developer*? Search the repositories only containing *Javascript* code, because it rocks!
-- You love doing *technology watching*? Order by *Popularity*, by *Last Push* or select only the *5 stars (>1k followers)* projects to get the hotest repos!
+- You love doing *technology watching*? Order by *Popularity*, by *Last Push* or select only the *5 stars (>1k followers)* projects to get the hottest repos!
 - You are a *web designer* and want the perfect code editor? Search *brackets* and get all the repositories related to this awesome project!
-- You are a *researcher*? Check out the project pushed in Open Source by the *Adobe Research* organisation!
+- You are a *researcher*? Check out the project pushed in Open Source by the *Adobe Research* organization!
 
 <h4 align="center"> Adobe + Open Source = ♥ </h4>
 
@@ -25,7 +25,7 @@ The [Adobe Creative Cloud](http://www.adobe.com/products/creativecloud.html) was
 
 ## Be in touch!
 
-We hope you love this new homepage. Any feedback, ideas or bugfixs is very welcome. Here is the [Trello board](https://trello.com/b/eLlfvaVe/adobe-github-com) on which you can add you ideas. You can also check out the [wiki page](https://github.com/adobe/adobe.github.com/wiki) to know how to update the page easily. 
+We hope you love this new homepage. Any feedback, ideas or bugfixes are very welcome. Here is the [Trello board](https://trello.com/b/eLlfvaVe/adobe-github-com) on which you can add you ideas. You can also check out the [wiki page](https://github.com/adobe/adobe.github.com/wiki) to know how to update the page easily. 
 
 All this seems interesting to you? You want to contribute to the web with Adobe?
 
