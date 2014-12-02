@@ -35,7 +35,7 @@ All this seems interesting to you? You want to contribute to the web with Adobe?
 
 Hummm... you want to learn more about how all this is structured? A good sketch is better than a long speech, so here is a little schema:
 
-<p align="center"> <img src="https://raw2.github.com/adobe/adobe.github.com/master/img/schema_adobe_open_source.png"  alt="Adobe Open Source schema" /></p>
+<p align="center"> <img src="https://raw.github.com/adobe/adobe.github.com/master/img/schema_adobe_open_source.png"  alt="Adobe Open Source schema" /></p>
 
 The information is pulled directly from the [Github API](http://developer.github.com/v3/) and aggregated by a [NodeJS](http://nodejs.org) server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is available through an simple REST API, thanks to [restify](http://mcavage.me/node-restify/).
 
