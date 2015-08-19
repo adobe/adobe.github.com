@@ -68,5 +68,15 @@
 	  "userName": "adobe-digital-imaging",
 	  "name": "Adobe Digital Imaging",
 	  "desc": "Home of projects from the Digital Imaging group."
+	},
+	{
+	  "userName": "Adobe-Digital-Composites",
+	  "name": "Adobe Digital Composites",
+	  "desc": "Home of projects that are part of Adobe Digital Composites."
+	},
+	{
+	  "userName": "adobe-apiplatform",
+	  "name": "Adobe API Platform",
+	  "desc": "Home of projects that are part of the API Platform."
 	}
 ]
