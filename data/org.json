@@ -78,5 +78,10 @@
 	  "userName": "adobe-apiplatform",
 	  "name": "Adobe API Platform",
 	  "desc": "Home of projects that are part of the API Platform."
-	}
+	},
+	{
+	  "userName": "adobe-sign",
+	  "name": "Adobe Sign",
+	  "desc": "Home of projects that are part of Adobe Sign."
+	}	
 ]
