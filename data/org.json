@@ -82,6 +82,6 @@
 	{
 	  "userName": "adobe-sign",
 	  "name": "Adobe Sign",
-	  "desc": "Home of projects that are part of Adobe Sign."
+	  "desc": "SDK to integrate with Adobe Sign. Send documents for signature and manage them using the Adobe Sign APIs."
 	}	
 ]
