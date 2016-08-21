@@ -15,7 +15,7 @@ var app = angular.module("AdobeOpenSource", ["ngResource"]);
 
 //Get Adobe Github repos & orgs
 app.factory("DatasAdobe", function($resource) {
-    return $resource("http://server-adobe-github.herokuapp.com");
+    return $resource("https://server-adobe-github.herokuapp.com");
 });
 
 //Offline backup of json
@@ -32,7 +32,7 @@ app.factory("FeaturedHeader", function($resource) {
 this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline, FeaturedHeader) {
 
     //------------------------------- Init --------------------------------
-    
+
 	//Be able to call math functions
 	$scope.Math = Math;
 	$scope.Object = Object;
@@ -44,17 +44,17 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
 	};
 	$scope.searchLang = [];
 	$scope.searchOrg = [];
-	
+
 	//Init display range
 	$scope.projFirst = 0;
 	$scope.projLast = 10;
-	
+
 	//Loading active
 	$scope.loading = true;
 
 
     //------------------------------- Featured header --------------------------------
-    
+
     // hFeatured on the header
     $scope.featureds = FeaturedHeader.query(function() {
         $scope.featureds = $scope.featureds[0];
@@ -68,7 +68,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
             }
         }
     });
-    
+
     $scope.changeIndexFeatured = function(i, delta) {
         if ($scope.indexFeatured[i] <= 0 && delta < 0) {
             $scope.indexFeatured[i] = $scope.featureds[i].length - 1;
@@ -78,11 +78,11 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
             $scope.indexFeatured[i] += delta;
         }
     };
-    
+
     $scope.setIndexFeatured = function(i, index) {
         $scope.indexFeatured[i] = index;
     };
-    
+
     //------------------------------- Datas --------------------------------
 
     $scope.projects = [];
@@ -99,10 +99,10 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
         console.error("ERROR: Server error.\n", error);
         $scope.loadOffline();
     });
-    
+
     $scope.loadOffline = function() {
         //TODO: display message in front
-        
+
         DatasAdobeOffline.query(function(rep) {
             if (rep[0]) {
                 $scope.updateData(rep[0]);
@@ -113,13 +113,13 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
             console.error("ERROR: Impossible to load the data. Please reload.");
         });
     };
-    
+
     $scope.updateData = function(data) {
         $scope.projects = data.repos;
         $scope.orgs = data.orgs;
         $scope.langs = data.langs;
         $scope.stats = data.stats;
-        
+
         $("#searchLang").autocomplete({
             source: $scope.objToNamedArray($scope.langs),
             select: function(e, q) {
@@ -131,7 +131,7 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
                 return false;
             }
         });
-        
+
         $("#searchOrg").autocomplete({
             source: $scope.objToNamedArray($scope.orgs),
             select: function(e, q) {
@@ -143,17 +143,17 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
                 return false;
             }
         });
-        
+
         $scope.updateGraph();
 
         //Loading over
         $scope.loading = false;
     };
-    
+
     $scope.updateGraph = function() {
         // Filtering langs for only major ones
         var majorLangs = $scope.filter('majorLangs')($scope.langs, $scope.stats.bitesLangCode);
-        
+
         //Initiate graphs
 //        var langChart = dc.pieChart("#langChart");
         var langChart = dc.rowChart("#langChart");
@@ -198,37 +198,37 @@ this.GitHubCtrl = function($scope, $sce, $filter, DatasAdobe, DatasAdobeOffline,
     };
 
     //------------------------------- Filters --------------------------------
-    
+
     $scope.majDisplayStar = function(index) { $scope.displayStarIndex = index; };
     $scope.majFilterStar = function(index) { $scope.filterStarIndex = index; };
-    
+
     $scope.addFilter = function(filter, item) {
         var present = false;
-        
+
         for (var i = 0; i < filter.length; i++) {
             if (filter[i] == item) {
                 present = true;
             }
         }
-        
+
         if (!present) {
             filter.push(item);
         }
     };
-    
+
     $scope.deleteFilter = function(array, i) {
         array.splice(i, 1);
     };
-    
+
     $scope.closeHelp = function() {
         $scope.helped = true;
     };
-    
+
     $scope.toggleFiltersButton = function() {
         $scope.closeHelp();
         $scope.toggleFilters = !$scope.toggleFilters;
     };
-    
+
     //--------------------------- Mobile & Parrallax -----------------------------
 
     $scope.mobile = isMobile(navigator.userAgent||navigator.vendor||window.opera);
@@ -264,7 +264,7 @@ bases.eq(active_index).addClass("active");
 var showMore = false;
 var scrollUpdate = function() {
     var scrollTop = $(window).scrollTop();
-    
+
     var index = 0;
     //Looping over the differents anchors
     while (index + 1 !== anchors.length) {
@@ -287,29 +287,29 @@ var scrollUpdate = function() {
         var topLogo_header = ( $(window).scrollTop() * 1.5 ) - 180;
         $("#featuredProj .logo").css({ top: topLogo_header });
     }
-    
+
     // ----------------------------------------------------------------------------
     //					2nd parrallax: organisations
     var topLogo_org = ( ( $(window).scrollTop() - $("#featuredOrg").position().top + 350 ) / 2 ) - 10 ;
     if (topLogo_org > 90)
         topLogo_org = 90;
     $("#featuredOrg .logo").css({ top: topLogo_org });
-    
+
     // ----------------------------------------------------------------------------
     //					3rd parrallax: footer
     var bottomScreen =  scrollTop + $(window).height();
     var footerBottom = $("#footer").position().top + $("#footer").height();
     var topLogo_footer = Math.round(bottomScreen - footerBottom - $(".menu").height());
     $("#logo3").css({ bottom: topLogo_footer });
-    
-    
+
+
     // ----------------------------------------------------------------------------
     //					Show More/Less button
     if (!showMore) {
         $(".buttonMore").css({position: 'absolute', bottom: -50});
     } else {
         var bottomScreen = scrollTop + $(window).height();
-        
+
         if (bottomScreen > $("#featuredOrg").offset().top + 25) {
             $(".buttonLess").css({position: 'absolute', bottom: -50});
         } else {
@@ -417,7 +417,7 @@ app.filter('projectsFilter', function() {
     return function(projects, scope) {
         projects = scope.filter('filter')(scope.projects, scope.searchName);
         var newProject = [];
-        
+
         if (scope.searchLang || scope.searchOrg || scope.filterStarIndex !== 0) {
             for (var i = 0; i < projects.length; i++) {
                 var actProj = projects[i];
@@ -453,7 +453,7 @@ app.filter('projectsFilter', function() {
                     var regOrg = new RegExp(scope.searchOrg[k], "i");
                     resOrg = actProj.org.search(regOrg);
                 }
-                
+
                 if ((resLang.length || scope.searchLang.length === 0) &&
                         (resOrg !== -1 || !scope.searchOrg) &&
                         filterStarBool) {
@@ -477,10 +477,10 @@ app.filter('majorLangs', function() {
             "name": "Others",
             "value": 0
         };
-        
+
         for (var i = 0; i < langs.length; i++) {
             var lang = langs[i];
-            
+
             if ( (lang.value / max) > 0.070 ) {
                 majorLangs.push(lang);
             } else {
@@ -489,7 +489,7 @@ app.filter('majorLangs', function() {
         }
         majorLangs.sort(function(a,b) { return a.value - b.value; });
         majorLangs.push(other);
-        
+
         return majorLangs;
     };
 });
@@ -581,7 +581,7 @@ app.filter('timeDiff', function() {
                 //Reduce it to the number of days not counted
                 days = days % 365;
             }
-            
+
             var months = Math.floor( days / 30 );
             if (months !== 0 ) {
                 sDate += months + " month";
@@ -592,7 +592,7 @@ app.filter('timeDiff', function() {
         } else {
             sDate += date_diff.getHours() + " h " + date_diff.getMinutes() + " min";
         }
-    
+
         return sDate;
     };
 });
