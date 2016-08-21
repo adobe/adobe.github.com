@@ -15,7 +15,7 @@ var app = angular.module("AdobeOpenSource", ["ngResource"]);
 
 //Get Adobe Github repos & orgs
 app.factory("DatasAdobe", function($resource) {
-    return $resource("https://server-adobe-github.herokuapp.com");
+    return $resource("http://server-adobe-github.herokuapp.com");
 });
 
 //Offline backup of json
