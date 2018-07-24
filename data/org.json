@@ -30,11 +30,6 @@
 	  "desc": "UI Library for creating beautiful and responsive applications using web standards"
 	},
 	{
-	  "userName": "adobe-security",
-	  "name": "Adobe Security",
-	  "desc": "Releases from the Adobe Security teams"
-	},
-	{
 	  "userName": "adobe-fonts",
 	  "name": "Adobe Fonts",
 	  "desc": "Releases from the Adobe Font teams"
@@ -63,11 +58,6 @@
 	  "userName": "phonegap",
 	  "name": "PhoneGap",
 	  "desc": "Easily create apps using the web technologies you know and love: HTML, CSS, and JavaScript"
-	},
-	{
-	  "userName": "adobe-digital-imaging",
-	  "name": "Adobe Digital Imaging",
-	  "desc": "Home of projects from the Digital Imaging group."
 	},
 	{
 	  "userName": "Adobe-Digital-Composites",
