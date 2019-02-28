@@ -25,12 +25,55 @@ Okay, now let's take a look on how this website is codded!
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobe Open Source | Advancing technology through open initiatives</title>
     <link href="stylesheets/app.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
 </head>
+<style>
+        .footer{
+           
+            display: inline;
+           
+        }
+        .row{
+         display: block;
+        }
+        .imggit{
+           
+            float: right;
+            display: inline;
+            width: 25%;
+            height: 35%;
+        }
+    
+        #logo3{
+            width: 55%;
+            height: 55%;
+            display: inline-block;
+            float: right;
+            
+            
+        }
+        
+        
+        .menuLinks{
+            font-size: 8vw ;
+        }
+
+        @media screen and (max-width: 800px) {
+        .body{
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+         }
+         
+        }
+       
+    
+    </style>
+
 
 <body class="ng-cloak" ng-controller="GitHubCtrl">
     <div id="old" class="old text-center">
@@ -77,6 +120,7 @@ Okay, now let's take a look on how this website is codded!
                         <dd class="title">
                             <strong>Adobe</strong> Open Source
                         </dd>
+                        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light"></nav>
                         <div class="menuLinks" ng-class="{more: menuOpen}">
                             <dd class="head-base"><a href="#statistics" ng-click="menuOpen = false">Statistics</a></dd>
                             <dd class="head-base"><a href="#projects" ng-click="menuOpen = false">Repositories</a></dd>
@@ -86,7 +130,7 @@ Okay, now let's take a look on how this website is codded!
                     </dl>
 
                     <div class="wrapLogoTop">
-                        <img class="logoTop" src="img/adobe-tag.png" title="Adobe Open Source"/>
+                        <img class="logoTop" src="img/adobe-tag.png" title="Adobe Open Source" style="max-width:100%;"/>
                     </div>
                 </div>
             </div>
@@ -302,17 +346,24 @@ Okay, now let's take a look on how this website is codded!
 
         <div class="footer" id="footer">
             <div class="row">
-                <div class="small-12 columns text-header text-center" id="text-header_org">
+                    
+                            
+                                     
+                    
+                <div class="small-12 columns text-header text-center" id="text-header_org" >
                     <h3><span class="title"><strong>Adobe</strong> Open Source</span><span class="next">, built with love...</span></h3>
                     <h5 class="details">...and with <a target="_blank" href="http://angularjs.org/" title="AngularJS">AngularJS</a>, <a target="_blank" href="http://foundation.zurb.com/" title="Foundation">Foundation</a>,<br />
                         <a target="_blank" href="http://pages.github.com/" title="Github Pages">Github Pages</a> and <a target="_blank" href="http://developer.github.com/v3/" title="Github API">API</a>,<br />
                         <a target="_blank" href="http://www.adobe.com/products/creativecloud.html" title="Adobe Creative Cloud">Adobe Creative Cloud</a>.</h5>
-                </div>
-                <div class="small-5 columns">
-                    <div class="logo" id="logo3">
-                        <img src="img/github_logo.svg" title="Github" alt="github_logo" />
-                    </div>
-                </div>
+                        <div class="logo" id="logo3">
+                                <span class="imggit">
+                                <img src="img/github_logo.svg" title="Github" alt="github_logo" />
+                            </span>
+                        </div>  
+                 </div>
+            </div>
+                
+               
         </div>
     </div>
 
