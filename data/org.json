@@ -78,5 +78,10 @@
 	  "userName": "magento",
 	  "name": "Magento",
 	  "desc": "open-source e-commerce platform"
-	}	
+	},
+	{
+	  "userName": "adobe-xd",
+	  "name": "Adobe XD",
+	  "desc": "Docs and Samples for Adobe XD Plugins"
+	}		
 ]
