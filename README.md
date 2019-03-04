@@ -40,3 +40,15 @@ Hummm... want to learn more about how all this is structured? A good sketch is b
 The information is pulled directly from the [Github API](http://developer.github.com/v3/) and aggregated by a [NodeJS](http://nodejs.org) server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is available through an simple REST API, thanks to [restify](http://mcavage.me/node-restify/).
 
 [AngularJS](http://angularjs.org/) then makes a unique API call to the server and inject the data on your browser, based on the [Foundation](http://foundation.zurb.com/) CSS framework and using [dc.js](http://nickqizhu.github.io/dc.js/) for the graphs. The filtering engine for the repositories was built on top of Angular.
+
+## Deploying Locally
+
+Install local web server globally
+
+```
+npm i -g local-web-server
+```
+
+Run `ws` command in your terminal in the root of this project to lauch a local web server showing the site
+
+Site should be running on `http://localhost:8000/`	
