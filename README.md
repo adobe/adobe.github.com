@@ -37,7 +37,7 @@ Hummm... want to learn more about how all this is structured? A good sketch is b
 
 <p align="center"> <img src="https://raw.github.com/adobe/adobe.github.com/master/img/schema_adobe_open_source.png"  alt="Adobe Open Source schema" /></p>
 
-The information is pulled directly from the [Github API](http://developer.github.com/v3/) and aggregated by a [NodeJS](http://nodejs.org) server (its code source is available [in this repository](https://github.com/kimchouard/server.adobe.github.com)). It is available through an simple REST API, thanks to [restify](http://mcavage.me/node-restify/).
+The information is pulled directly from the [Github API](http://developer.github.com/v3/) and aggregated by a [NodeJS](http://nodejs.org) server (its code source is available [in this repository](https://github.com/adobe/server.adobe.github.com)). It is available through an simple REST API, thanks to [restify](http://mcavage.me/node-restify/).
 
 [AngularJS](http://angularjs.org/) then makes a unique API call to the server and inject the data on your browser, based on the [Foundation](http://foundation.zurb.com/) CSS framework and using [dc.js](http://nickqizhu.github.io/dc.js/) for the graphs. The filtering engine for the repositories was built on top of Angular.
 
