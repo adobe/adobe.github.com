@@ -1,87 +1,62 @@
 [
-    {
+  {
     "userName": "adobe",
-	  "name": "Adobe Systems",
-	  "desc": "Repository for certain Adobe Open Source releases"
-	},
-	{
-	  "userName": "adobe-webplatform",
-	  "name": "Adobe Web Platform",
-	  "desc": "We work with standards bodies to advance technologies that let you create ever-more compelling experiences for the web."
-	},
-	{
-	  "userName": "adobe-research",
-	  "name": "Adobe Research",
-	  "desc": "We create innovative technologies relevant to our software products."
-	},
-	{
-	  "userName": "adobe-photoshop",
-	  "name": "Adobe Photoshop",
-	  "desc": "Just about every creative digital project has Photoshop CC at its core."
-	},
-	{
-	  "userName": "adobe-cloudops",
-	  "name": "Adobe CloudOps",
-	  "desc": "Releases from the Adobe Cloud Operations teams"
-	},
-	{
-	  "userName": "topcoat",
-	  "name": "Topcoat",
-	  "desc": "UI Library for creating beautiful and responsive applications using web standards"
-	},
-	{
-	  "userName": "adobe-fonts",
-	  "name": "Adobe Fonts",
-	  "desc": "Releases from the Adobe Font teams"
-	},
-    {
-      "userName": "typekit",
-      "name": "Adobe Typekit",
-      "desc": "Open source projects by Adobe Typekit"
-    },
-	{
-	  "userName": "adobe-flash",
-	  "name": "Adobe Flash",
-	  "desc": "Stuff from the Adobe Flash team"
-	},
-	{
-	  "userName": "adobe-consulting-services",
-	  "name": "Adobe Consulting Services",
-	  "desc": "Adobe Consulting's open source projects"
-	},
-	{
-	  "userName": "adobe-marketing-cloud",
-	  "name": "Adobe Marketing Cloud",
-	  "desc": "The most comprehensive set of marketing solutions."
-	},
-	{
-	  "userName": "phonegap",
-	  "name": "PhoneGap",
-	  "desc": "Easily create apps using the web technologies you know and love: HTML, CSS, and JavaScript"
-	},
-	{
-	  "userName": "Adobe-Digital-Composites",
-	  "name": "Adobe Digital Composites",
-	  "desc": "Home of projects that are part of Adobe Digital Composites."
-	},
-	{
-	  "userName": "adobe-apiplatform",
-	  "name": "Adobe API Platform",
-	  "desc": "Home of projects that are part of the API Platform."
-	},
-	{
-	  "userName": "adobe-sign",
-	  "name": "Adobe Sign",
-	  "desc": "SDK to integrate with Adobe Sign. Send documents for signature and manage them using the Adobe Sign APIs."
-	},
-	{
-	  "userName": "magento",
-	  "name": "Magento",
-	  "desc": "open-source e-commerce platform"
-	},
-	{
-	  "userName": "adobexd",
-	  "name": "Adobe XD",
-	  "desc": "Docs and Samples for Adobe XD Plugins"
-	}		
+    "name": "Adobe Systems",
+    "desc": "Repository for certain Adobe Open Source releases"
+  },
+  {
+    "userName": "adobe-webplatform",
+    "name": "Adobe Web Platform",
+    "desc": "We work with standards bodies to advance technologies that let you create ever-more compelling experiences for the web."
+  },
+  {
+    "userName": "adobe-research",
+    "name": "Adobe Research",
+    "desc": "We create innovative technologies relevant to our software products."
+  },
+  {
+    "userName": "adobe-photoshop",
+    "name": "Adobe Photoshop",
+    "desc": "Just about every creative digital project has Photoshop CC at its core."
+  },
+  {
+    "userName": "adobe-fonts",
+    "name": "Adobe Fonts",
+    "desc": "Releases from the Adobe Font teams"
+  },
+  {
+    "userName": "typekit",
+    "name": "Adobe Typekit",
+    "desc": "Open source projects by Adobe Typekit"
+  },
+  {
+    "userName": "adobe-consulting-services",
+    "name": "Adobe Consulting Services",
+    "desc": "Adobe Consulting's open source projects"
+  },
+  {
+    "userName": "adobe-marketing-cloud",
+    "name": "Adobe Marketing Cloud",
+    "desc": "The most comprehensive set of marketing solutions."
+  },
+  {
+    "userName": "adobe-apiplatform",
+    "name": "Adobe API Platform",
+    "desc": "Home of projects that are part of the API Platform."
+  },
+  {
+    "userName": "adobe-sign",
+    "name": "Adobe Sign",
+    "desc": "SDK to integrate with Adobe Sign. Send documents for signature and manage them using the Adobe Sign APIs."
+  },
+  {
+    "userName": "magento",
+    "name": "Magento",
+    "desc": "open-source e-commerce platform"
+  },
+  {
+    "userName": "adobexd",
+    "name": "Adobe XD",
+    "desc": "Docs and Samples for Adobe XD Plugins"
+  }
 ]
