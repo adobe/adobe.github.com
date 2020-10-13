@@ -7599,8 +7599,15 @@ form.custom .custom.dropdown.open.medium ul {
 }
 /* line 359, sass/app.scss */
 .footer .logo img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    position: relative;
+    top: -123px;
+    right: 63px;
+    bottom: 30px;
+    height: 117px;
+    text-align: center;
+    padding-right: -3px;
+    margin-left: 120px;
 }
 
 /* line 370, sass/app.scss */
