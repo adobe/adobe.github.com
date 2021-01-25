@@ -2600,24 +2600,6 @@
         "languagesTotal": 3881
       },
       {
-        "name": "Malware-classifier",
-        "watchers_count": 2,
-        "org": "Adobe Security",
-        "languages": [
-          {
-            "name": "Python",
-            "value": 31044
-          }
-        ],
-        "description": "Perform quick, easy classification of binaries for malware analysis.",
-        "size": 99,
-        "pushed_at": "2013-02-27T18:50:52Z",
-        "html_url": "https://github.com/adobe-security/Malware-classifier",
-        "languages_url": "https://api.github.com/repos/adobe-security/Malware-classifier/languages",
-        "homepage": null,
-        "languagesTotal": 31044
-      },
-      {
         "name": "source-code-pro",
         "watchers_count": 4974,
         "org": "Adobe Fonts",
@@ -4486,16 +4468,6 @@
         "public_repos": 80,
         "html_url": "https://github.com/topcoat",
         "updated_at": "2014-12-02T07:14:14Z"
-      },
-      {
-        "userName": "adobe-security",
-        "name": "Adobe Security",
-        "desc": "Releases from the Adobe Security teams",
-        "avatar_url": "https://avatars.githubusercontent.com/u/3719043?v=3",
-        "blog": null,
-        "public_repos": 1,
-        "html_url": "https://github.com/adobe-security",
-        "updated_at": "2014-04-22T13:36:31Z"
       },
       {
         "userName": "adobe-fonts",
