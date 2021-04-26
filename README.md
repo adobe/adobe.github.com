@@ -1,9 +1,9 @@
 [Adobe Open Source](http://adobe.github.com)
 =======================
 
-Presenting [Adobe Github Homepage v2.0](http://adobe.github.com), the new central hub for **Adobe Open sources** projects.
+Presenting [Adobe GitHub Homepage v2.0](http://adobe.github.com), the new central hub for **Adobe Open sources** projects.
 
-Allowing you to **search through Adobe Github repositories**, you can focus on what you are really passionate about.
+Allowing you to **search through Adobe GitHub repositories**, you can focus on what you are really passionate about.
 
 - Are you a *web developer*? Search the repositories only containing *Javascript* code, because it rocks!
 - Love doing *technology watching*? Order by *Popularity*, by *Last Push* or select only the *5 stars (>1k followers)* projects to get the hottest repos!
