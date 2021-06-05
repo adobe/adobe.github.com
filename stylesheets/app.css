@@ -73,6 +73,7 @@ html {
   /* 4 */
   -webkit-text-size-adjust: 100%;
   /* 4 */
+  scroll-behavior: smooth;
 }
 
 /**
