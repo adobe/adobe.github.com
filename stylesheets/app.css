@@ -7672,6 +7672,7 @@ form.custom .custom.dropdown.open.medium ul {
   position: absolute;
   top: -10px;
   right: 20px;
+  margin: 5px;
   overflow: hidden;
   height: 100px;
   -webkit-transition: height 0.2s;
