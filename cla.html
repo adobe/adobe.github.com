@@ -86,12 +86,27 @@
       </div>
     </div>
 
-    <iframe
+    <style>
+      .docs{
+        border: 0; overflow: hidden; min-height: 500px; min-width: 600px; margin-top: 35px;
+      }
+      @media only screen and (max-width: 800px) {
+       .docs{
+        margin-top: 80px;
+       }
+      }
+      @media only screen and (max-width: 445px) {
+       .docs{
+        margin-top: 100px;
+       }
+      }
+    </style>
+
+    <iframe class="docs"
       src="https://adobe.na1.documents.adobe.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCSt6j3rlOsjJYtaVDbSFP8yMe0S67pjh2eTmCguy2UX6WxVS5h4bt6Wzs6-HcCTLM*&hosted=false"
       width="100%"
       height="100%"
       frameborder="0"
-      style="border: 0; overflow: hidden; min-height: 500px; min-width: 600px;"
     ></iframe>
   </body>
 </html>
