@@ -2,15 +2,6 @@
   {
     "projects": [
       {
-        "title": "Brackets, code the web",
-        "logo": "img/brackets_logo.svg",
-        "textHeader": [
-          "<h3>Brackets</h3>",
-          "<p class='details'>Open-source code editor<br> built <em>with</em> the web <em>for</em> the web<br/>",
-          "<a href='http://brackets.io/' target='_blank'>Learn more...</a></p>"
-        ]
-      },
-      {
         "title": "Snap.svg",
         "logo": "img/snapsvg.svg",
         "textHeader": [

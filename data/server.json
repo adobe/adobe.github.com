@@ -7,48 +7,6 @@
     },
     "repos": [
       {
-        "name": "brackets",
-        "watchers_count": 20034,
-        "org": "Adobe Systems",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "value": 11327974
-          },
-          {
-            "name": "Ruby",
-            "value": 9030
-          },
-          {
-            "name": "CSS",
-            "value": 508123
-          },
-          {
-            "name": "Shell",
-            "value": 8449
-          },
-          {
-            "name": "PHP",
-            "value": 28796
-          },
-          {
-            "name": "Makefile",
-            "value": 2176
-          },
-          {
-            "name": "Clojure",
-            "value": 28
-          }
-        ],
-        "description": "An open source code editor for the web, written in JavaScript, HTML and CSS.",
-        "size": 379966,
-        "pushed_at": "2014-12-02T00:51:22Z",
-        "html_url": "https://github.com/adobe/brackets",
-        "languages_url": "https://api.github.com/repos/adobe/brackets/languages",
-        "homepage": "http://brackets.io",
-        "languagesTotal": 11884576
-      },
-      {
         "name": "adobe.github.com",
         "watchers_count": 208,
         "org": "Adobe Systems",
@@ -117,48 +75,6 @@
         "languages_url": "https://api.github.com/repos/adobe/cssfilterlab/languages",
         "homepage": "",
         "languagesTotal": 14478996
-      },
-      {
-        "name": "brackets-shell",
-        "watchers_count": 810,
-        "org": "Adobe Systems",
-        "languages": [
-          {
-            "name": "Objective-C",
-            "value": 22670
-          },
-          {
-            "name": "Objective-C++",
-            "value": 134222
-          },
-          {
-            "name": "C++",
-            "value": 388219
-          },
-          {
-            "name": "C",
-            "value": 33836
-          },
-          {
-            "name": "JavaScript",
-            "value": 130119
-          },
-          {
-            "name": "Python",
-            "value": 989337
-          },
-          {
-            "name": "Shell",
-            "value": 12939
-          }
-        ],
-        "description": "CEF3-based application shell for Brackets.",
-        "size": 83100,
-        "pushed_at": "2014-12-02T06:33:07Z",
-        "html_url": "https://github.com/adobe/brackets-shell",
-        "languages_url": "https://api.github.com/repos/adobe/brackets-shell/languages",
-        "homepage": "http://brackets.io",
-        "languagesTotal": 1711342
       },
       {
         "name": "chromium",
@@ -257,50 +173,6 @@
         "languages_url": "https://api.github.com/repos/adobe/chromium/languages",
         "homepage": null,
         "languagesTotal": 220822857
-      },
-      {
-        "name": "brackets-edge-web-fonts",
-        "watchers_count": 47,
-        "org": "Adobe Systems",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "value": 71155
-          },
-          {
-            "name": "CSS",
-            "value": 11740
-          }
-        ],
-        "description": "Edge Web Fonts extension for Brackets. Simply unzip and drop into your Brackets extension folder to browse and include Edge Web Fonts.",
-        "size": 2245,
-        "pushed_at": "2014-11-27T17:50:54Z",
-        "html_url": "https://github.com/adobe/brackets-edge-web-fonts",
-        "languages_url": "https://api.github.com/repos/adobe/brackets-edge-web-fonts/languages",
-        "homepage": "https://edgewebfonts.adobe.com/",
-        "languagesTotal": 82895
-      },
-      {
-        "name": "brackets.io",
-        "watchers_count": 54,
-        "org": "Adobe Systems",
-        "languages": [
-          {
-            "name": "CSS",
-            "value": 70082
-          },
-          {
-            "name": "JavaScript",
-            "value": 223241
-          }
-        ],
-        "description": "brackets.io website",
-        "size": 15458,
-        "pushed_at": "2014-11-13T00:33:30Z",
-        "html_url": "https://github.com/adobe/brackets.io",
-        "languages_url": "https://api.github.com/repos/adobe/brackets.io/languages",
-        "homepage": null,
-        "languagesTotal": 293323
       },
       {
         "name": "CodeMirror2",
@@ -553,44 +425,6 @@
         "languagesTotal": 1872455
       },
       {
-        "name": "brackets-app",
-        "watchers_count": 545,
-        "org": "Adobe Systems",
-        "languages": [
-          {
-            "name": "C",
-            "value": 783645
-          },
-          {
-            "name": "C++",
-            "value": 1332843
-          },
-          {
-            "name": "Shell",
-            "value": 3558
-          },
-          {
-            "name": "Objective-C",
-            "value": 102532
-          },
-          {
-            "name": "JavaScript",
-            "value": 28633
-          },
-          {
-            "name": "Python",
-            "value": 22389
-          }
-        ],
-        "description": "Deprecated CEF1-based app shell for Brackets. Use https://github.com/adobe/brackets-shell instead.",
-        "size": 156407,
-        "pushed_at": "2012-09-18T20:59:44Z",
-        "html_url": "https://github.com/adobe/brackets-app",
-        "languages_url": "https://api.github.com/repos/adobe/brackets-app/languages",
-        "homepage": "",
-        "languagesTotal": 2273600
-      },
-      {
         "name": "edge-hub",
         "watchers_count": 1,
         "org": "Adobe Systems",
@@ -602,68 +436,6 @@
         "languages_url": "https://api.github.com/repos/adobe/edge-hub/languages",
         "homepage": null,
         "languagesTotal": 0
-      },
-      {
-        "name": "brackets-updates",
-        "watchers_count": 6,
-        "org": "Adobe Systems",
-        "languages": [
-          {
-            "name": "Shell",
-            "value": 1055
-          },
-          {
-            "name": "JavaScript",
-            "value": 2427
-          }
-        ],
-        "description": "Update info and deployment scripts for Brackets/Edge Code",
-        "size": 4278,
-        "pushed_at": "2014-11-03T13:43:42Z",
-        "html_url": "https://github.com/adobe/brackets-updates",
-        "languages_url": "https://api.github.com/repos/adobe/brackets-updates/languages",
-        "homepage": null,
-        "languagesTotal": 3482
-      },
-      {
-        "name": "brackets-registry",
-        "watchers_count": 34,
-        "org": "Adobe Systems",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "value": 224776
-          },
-          {
-            "name": "CSS",
-            "value": 3760
-          }
-        ],
-        "description": "A registry system for hosting Brackets extensions powered by node.js",
-        "size": 1996,
-        "pushed_at": "2014-11-17T19:33:43Z",
-        "html_url": "https://github.com/adobe/brackets-registry",
-        "languages_url": "https://api.github.com/repos/adobe/brackets-registry/languages",
-        "homepage": null,
-        "languagesTotal": 228536
-      },
-      {
-        "name": "brackets-plugin-exclusions",
-        "watchers_count": 8,
-        "org": "Adobe Systems",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "value": 19509
-          }
-        ],
-        "description": "Brackets plugin for working with CSS Exclusions",
-        "size": 138,
-        "pushed_at": "2013-03-15T22:06:14Z",
-        "html_url": "https://github.com/adobe/brackets-plugin-exclusions",
-        "languages_url": "https://api.github.com/repos/adobe/brackets-plugin-exclusions/languages",
-        "homepage": null,
-        "languagesTotal": 19509
       },
       {
         "name": "telemetry-utils",
@@ -940,28 +712,6 @@
         "languages_url": "https://api.github.com/repos/adobe-webplatform/css-regions-polyfill/languages",
         "homepage": "http://adobe-webplatform.github.com/css-regions-polyfill",
         "languagesTotal": 212537
-      },
-      {
-        "name": "brackets-css-shapes-editor",
-        "watchers_count": 47,
-        "org": "Adobe Web Platform",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "value": 61346
-          },
-          {
-            "name": "CSS",
-            "value": 726
-          }
-        ],
-        "description": "CSS Shapes Editor extension for Brackets / Adobe Edge Code",
-        "size": 656,
-        "pushed_at": "2014-09-02T13:13:02Z",
-        "html_url": "https://github.com/adobe-webplatform/brackets-css-shapes-editor",
-        "languages_url": "https://api.github.com/repos/adobe-webplatform/brackets-css-shapes-editor/languages",
-        "homepage": "",
-        "languagesTotal": 62072
       },
       {
         "name": "shaderdsl",
@@ -1363,32 +1113,6 @@
         "languagesTotal": 0
       },
       {
-        "name": "theseus",
-        "watchers_count": 1106,
-        "org": "Adobe Research",
-        "languages": [
-          {
-            "name": "Shell",
-            "value": 461
-          },
-          {
-            "name": "JavaScript",
-            "value": 280199
-          },
-          {
-            "name": "CSS",
-            "value": 9500
-          }
-        ],
-        "description": "A pretty darn cool JavaScript debugger for Brackets",
-        "size": 2531,
-        "pushed_at": "2014-11-16T02:41:42Z",
-        "html_url": "https://github.com/adobe-research/theseus",
-        "languages_url": "https://api.github.com/repos/adobe-research/theseus/languages",
-        "homepage": "",
-        "languagesTotal": 290160
-      },
-      {
         "name": "fondue",
         "watchers_count": 59,
         "org": "Adobe Research",
@@ -1648,36 +1372,6 @@
         "languages_url": "https://api.github.com/repos/adobe-research/audio-retargeting/languages",
         "homepage": null,
         "languagesTotal": 0
-      },
-      {
-        "name": "brackets",
-        "watchers_count": 12,
-        "org": "Adobe Research",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "value": 7927344
-          },
-          {
-            "name": "Ruby",
-            "value": 9092
-          },
-          {
-            "name": "Shell",
-            "value": 8449
-          },
-          {
-            "name": "PHP",
-            "value": 28362
-          }
-        ],
-        "description": "An open source code editor for the web, written in JavaScript, HTML and CSS.",
-        "size": 45576,
-        "pushed_at": "2013-04-18T18:48:30Z",
-        "html_url": "https://github.com/adobe-research/brackets",
-        "languages_url": "https://api.github.com/repos/adobe-research/brackets/languages",
-        "homepage": "https://twitter.com/brackets",
-        "languagesTotal": 7973247
       },
       {
         "name": "mesh",
@@ -3738,32 +3432,6 @@
         "languagesTotal": 23468
       },
       {
-        "name": "aem-sightly-brackets-extension",
-        "watchers_count": 18,
-        "org": "Adobe Marketing Cloud",
-        "languages": [
-          {
-            "name": "Shell",
-            "value": 87
-          },
-          {
-            "name": "JavaScript",
-            "value": 185374
-          },
-          {
-            "name": "CSS",
-            "value": 1092
-          }
-        ],
-        "description": "Brackets extension for AEM front-end developers with auto-sync and Sightly support.",
-        "size": 1509,
-        "pushed_at": "2014-11-07T20:34:52Z",
-        "html_url": "https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension",
-        "languages_url": "https://api.github.com/repos/Adobe-Marketing-Cloud/aem-sightly-brackets-extension/languages",
-        "homepage": "http://docs.adobe.com/docs/en/dev-tools/sightly-brackets.html",
-        "languagesTotal": 186553
-      },
-      {
         "name": "sightly-spec",
         "watchers_count": 4,
         "org": "Adobe Marketing Cloud",
@@ -3937,24 +3605,6 @@
         "languages_url": "https://api.github.com/repos/Adobe-Marketing-Cloud/data-connectors-api-examples/languages",
         "homepage": null,
         "languagesTotal": 26228
-      },
-      {
-        "name": "aem-sightly-ide-api",
-        "watchers_count": 0,
-        "org": "Adobe Marketing Cloud",
-        "languages": [
-          {
-            "name": "Java",
-            "value": 10953
-          }
-        ],
-        "description": "Use-API auto-completion support for the AEM Sightly Brackets Extension",
-        "size": 116,
-        "pushed_at": "2014-07-28T19:34:58Z",
-        "html_url": "https://github.com/Adobe-Marketing-Cloud/aem-sightly-ide-api",
-        "languages_url": "https://api.github.com/repos/Adobe-Marketing-Cloud/aem-sightly-ide-api/languages",
-        "homepage": null,
-        "languagesTotal": 10953
       },
       {
         "name": "tools",
