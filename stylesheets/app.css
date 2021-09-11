@@ -7939,7 +7939,7 @@ form.custom .custom.dropdown.open.medium ul {
 }
 /* line 683, sass/app.scss */
 .main .buttonLess {
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   left: 0;
 }
