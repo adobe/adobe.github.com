@@ -213,7 +213,7 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
       if ($scope.projLast === 10) {
         $scope.projLast = 1000;
         showMore = true;
-        $(".buttonMore").css({ position: "fixed", bottom: 0 });
+        $(".buttonMore").css({ position: "absolute", bottom: 0 });
       } else {
         $("html, body").animate({ scrollTop: 380 }, 100);
         $scope.projLast = 10;
@@ -352,7 +352,7 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
       if (bottomScreen > $("#featuredOrg").offset().top + 25) {
         $(".buttonLess").css({ position: "absolute", bottom: -50 });
       } else {
-        $(".buttonLess").css({ position: "fixed", bottom: 0 });
+        $(".buttonLess").css({ position: "absolute", bottom: 0 });
       }
     }
   };
