@@ -572,8 +572,8 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
 
   app.filter("niceNum", function () {
     return function (num) {
-      if (!num || isNaN(num)) {
-        return 0;
+      if (isNaN(num)) {
+        return '0';
       }
 
       return parseInt(num, 10).toLocaleString();
