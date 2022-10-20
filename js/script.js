@@ -572,26 +572,11 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
 
   app.filter("niceNum", function () {
     return function (num) {
-      var niceNum = "";
-      var step = 1;
-
-      while (num >= 1) {
-        rest = num % 1000;
-
-        //Put it in a nice string
-        if (num > 1000) {
-          if (rest < 10) {
-            rest = "00" + rest;
-          } else if (rest < 100) {
-            rest = "0" + rest;
-          }
-        }
-
-        niceNum = rest + "'" + niceNum;
-        num = Math.floor(num / 1000);
+      if (!num || isNaN(num)) {
+        return 0;
       }
 
-      return niceNum === "" ? "0" : niceNum.substring(0, niceNum.length - 1);
+      return parseInt(num, 10).toLocaleString();
     };
   });
 
