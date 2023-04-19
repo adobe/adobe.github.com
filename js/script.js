@@ -573,7 +573,7 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
   app.filter("niceNum", function () {
     return function (num) {
       if (isNaN(num)) {
-        return '0';
+   throw new Error("Input is not a number");
       }
 
       return parseInt(num, 10).toLocaleString();
