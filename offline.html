@@ -1,41 +1,43 @@
-
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" ng-app="AdobeOpenSource"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" ng-app="AdobeOpenSource">
+  <!--<![endif]-->
 
-<head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Adobe Open Source - Offline pull</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Adobe Open Source - Offline pull</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body ng-controller="OfflineCtrl">
+    <input class="button" type="button" value="Load" ng-click="getOffline()" />
+    <div ng-hide="loading == false || loading == unknown">Loading...</div>
 
-  
-  <link rel="stylesheet" href="stylesheets/app.css">
-  <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-</head>
-<body ng-controller="OfflineCtrl">
-		<input class="button" type="button" value="Load" ng-click="getOffline()"/>
-		<div ng-hide="loading == false || loading == unknown">
-			Loading...
-		</div>
-	
-		<textarea ng-show="loading == false">
+    <textarea ng-show="loading == false">
 			{{projects}}
-		</textarea>
-	
-		<textarea ng-show="loading == false">
+		</textarea
+    >
+
+    <textarea ng-show="loading == false">
 			{{languages}}
-		</textarea>
-    
+		</textarea
+    >
+
     <script src="js/vendor/custom.modernizr.js"></script>
-    
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/angular.min.js"></script>
     <script src="js/vendor/angular-resource.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
     <script src="js/script.js"></script>
-    
+
     <!-- Unused Foundation scripts
     <script src="js/foundation/foundation.abide.js"></script>
     <script src="js/foundation/foundation.alerts.js"></script>
@@ -52,5 +54,5 @@
     <script src="js/foundation/foundation.tooltips.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
     -->
-</body>
+  </body>
 </html>
