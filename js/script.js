@@ -348,8 +348,8 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
       $(".buttonMore").css({ position: "absolute", bottom: -50 });
     } else {
       var bottomScreen = scrollTop + $(window).height();
-
-      if (bottomScreen > $("#featuredOrg").offset().top + 25) {
+      
+      if ((bottomScreen > $("#featuredOrg").offset().top + 25) || (bottomScreen < $('#featuredProj').offset().top + 500)) {
         $(".buttonLess").css({ position: "absolute", bottom: -50 });
       } else {
         $(".buttonLess").css({ position: "fixed", bottom: 0 });
