@@ -212,12 +212,12 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
     $scope.showHideProj = function () {
       if ($scope.projLast === 10) {
         $scope.projLast = 1000;
-        showMore = true;
-        $(".buttonMore").css({ position: "fixed", bottom: 0 });
+        // showMore = true;
+        // $(".buttonMore").css({ position: "fixed", bottom: 0 });
       } else {
         $("html, body").animate({ scrollTop: 380 }, 100);
         $scope.projLast = 10;
-        showMore = false;
+        // showMore = false;
       }
     };
 
@@ -299,7 +299,7 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
   //Making the first item active
   bases.eq(active_index).addClass("active");
 
-  var showMore = false;
+  // var showMore = false;
   var scrollUpdate = function () {
     var scrollTop = $(window).scrollTop();
 
@@ -344,17 +344,18 @@ if (/MSIE [5-9]/.test(navigator.userAgent)) {
 
     // ----------------------------------------------------------------------------
     //					Show More/Less button
-    if (!showMore) {
-      $(".buttonMore").css({ position: "absolute", bottom: -50 });
-    } else {
-      var bottomScreen = scrollTop + $(window).height();
+    // if (!showMore) {
+    //   $(".buttonMore").css({ position: "absolute", bottom: -50 });
+    // } else {
+    //   var bottomScreen = scrollTop + $(window).height();
 
-      if (bottomScreen > $("#featuredOrg").offset().top + 25) {
-        $(".buttonLess").css({ position: "absolute", bottom: -50 });
-      } else {
-        $(".buttonLess").css({ position: "fixed", bottom: 0 });
-      }
-    }
+    //   if (bottomScreen > $("#featuredOrg").offset().top + 25) {
+    //     $(".buttonLess").css({ position: "absolute", bottom: -50 });
+    //   } else {
+    //     $(".buttonLess").css({ position: "fixed", bottom: 0 });
+    //   }
+    // }
+    $(".buttonMore").css({ position: "absolute", bottom: -50 });
   };
 
   /* ----------------------------------------------------------------------------
