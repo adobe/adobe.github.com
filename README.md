@@ -52,3 +52,4 @@ npm i -g local-web-server
 Run `ws` command in your terminal in the root of this project to lauch a local web server showing the site
 
 Site should be running on `http://localhost:8000/`	
+Small change for PR
